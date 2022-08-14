@@ -544,8 +544,8 @@ players of all skill levels and beginners are always welcome. </p>
 	<h6 style="text-align: center;">    </h6>
 Click the time link to watch the video, click the song title link to see the music<br>
 
-<!-- Pass the timestamp for VideoIndex.js as an unused parameter to prevent caching -->
-<script src="TuesdayUkes/music/scripts/VideoIndex.js?random=<?php echo filemtime('TuesdayUkes/music/scripts/VideoIndex.js'); ?>"></script>
+<!-- Pass the random values as an unused parameter to prevent caching -->
+<script src="TuesdayUkes/music/scripts/VideoIndex.js?random=<?php echo rand(); ?>"></script>
 
 </p>
 <p>

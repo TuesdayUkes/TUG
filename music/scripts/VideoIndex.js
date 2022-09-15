@@ -1,15 +1,12 @@
 document.write('\
 <table>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=15m10s">15:10</a><td>Christine <td><a href=http://69.5.217.253/music/PDFs/Winter%202021-22/Wish%20I%20Could%20Retire.pdf>I Wish I Could Retire</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=19m42s">19:42</a><td>Paul <td><a href=http://69.5.217.253/music/PDFs/Summer%202022/Watching%20the%20Wheels.pdf>Watching the Wheels</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=24m25s">24:25</a><td>Walter <td><a href=http://69.5.217.253/music/PDFs/Summer%202022/Dancin\'%20in%20the%20Street.pdf>Dancin\' in the Street</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=31m43s">31:43</a><td>Gary <td><a href=https://ozbcoz.com/Songs/song.php?ID=1799,soprano>City of New Orleans</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=37m37s">37:37</a><td>Vany <td><a href=https://ozbcoz.com/Songs/song.php?ID=1799,soprano>City of New Orleans</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=44m16s">44:16</a><td>Brenda <td><a href=https://www.sanjoseukeclub.org/Song%20Book/Downtown%20-%20v2%20web.pdf>Downtown</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=50m09s">50:09</a><td>Mary Jane <td><a href=http://69.5.217.253/music/PDFs/Summer%202022/Hobo\'s%20Meditation.pdf>Hobo\'s Meditation</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=56m34s">56:34</a><td>Gary and Paulette <td><a href=http://69.5.217.253/music/PDFs/Summer%202022/Because%20the%20Night.pdf>Because the Night</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=1h03m35s">1:03:35</a><td>Kent <td><a href=https://scorpexuke.com/america_simon_and_garfunkel/>America</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=1h09m40s">1:09:40</a><td>Mary Jane <td><a href=http://69.5.217.253/music/PDFs/Summer%202022/In%20the%20Ghetto.pdf>In the Ghetto</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=1h12m52s">1:12:52</a><td>Christine <td><a href=http://69.5.217.253/music/PDFs/Summer%202022/Talking%20in%20Your%20Sleep-Romantic.pdf>Talkin in Your Sleep</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/maTMkIYolQU?t=1h18m40s">1:18:40</a><td>Marty <td><a href=http://69.5.217.253/music/PDFs/Kevin\'s%20Memorial/Happy%20Trails.pdf>Happy Trails</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=18m57s">18:57</a><td>Mary Jane <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/The%20Meeting%20of%20the%20Waters.pdf>The Meeting of the Waters</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=23m59s">23:59</a><td>Brenda <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/The%20Gambler.pdf>The Gambler</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=29m16s">29:16</a><td>Gary <td><a href=http://tuesdayukes.org/music/PDFs/Spring%202021/Way%20Over%20Yonder%20in%20the%20Minor%20Key.pdf>Way Over Yonder in the Minor Key</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=36m05s">36:05</a><td>Paul <td><a href=http://tuesdayukes.org/music/PDFs/The%20Last%20Moonshiner.pdf>The Last Moonshiner</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=42m15s">42:15</a><td>Walter <td><a href=http://tuesdayukes.org/music/PDFs/Winter%202020-21/He%20Played%20the%20Ukulele%20as%20the%20Ship%20Went%20Down.pdf>He Played the Ukulele as the Ship Went Down</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=45m42s">45:42</a><td>Kent </td><td>Her Majesty</td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=50m10s">50:10</a><td>Mary Jane <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/Black%20Muddy%20River.pdf>Black Muddy River</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=55m28s">55:28</a><td>Paul <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202020/Smile.pdf>Smile</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=1h04m52s">1:04:52</a><td>Paul <td><a href=http://tuesdayukes.org/music/PDFs/Spring%202022/Walk%20on%20Boy.pdf>Walk on Boy</a></td></td></tr>\
 </table>')

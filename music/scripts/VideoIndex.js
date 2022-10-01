@@ -1,11 +1,12 @@
 document.write('\
 <table>\
-<tr><td><a href="https://youtu.be/RrBgp8wxyq8?t=15m42s">15:42</a><td>TUG </td><td>Marty Talks</td></tr>\
-<tr><td><a href="https://youtu.be/RrBgp8wxyq8?t=17m37s">17:37</a><td>TUG </td><td>Proud Mary</td></tr>\
-<tr><td><a href="https://youtu.be/RrBgp8wxyq8?t=20m49s">20:49</a><td>TUG </td><td>Happy Trails</td></tr>\
-<tr><td><a href="https://youtu.be/VXKp6pYVAtY">Marty\'s phone</a><td>TUG </td><td>Proud Mary</td></tr>\
-<tr><td><a href="https://youtu.be/8QdOn7aOuF4">Marty\'s phone</a><td>TUG </td><td>Happy Trails</td></tr>\
-<tr><td><a href="https://youtu.be/RrBgp8wxyq8?t=48m31s">48:31</a><td>Mary Jane </td><td>Drought Break</td></tr>\
-<tr><td><a href="https://youtu.be/TttOQbCemUg?t=55m43s">55:43</a><td>Paul </td><td>Just the Two of Us</td></tr>\
-<tr><td><a href="https://youtu.be/TttOQbCemUg?t=58m51s">58:51</a><td>Paul </td><td>Reminiscing</td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=18m57s">18:57</a><td>Mary Jane <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/The%20Meeting%20of%20the%20Waters.pdf>The Meeting of the Waters</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=23m59s">23:59</a><td>Brenda <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/The%20Gambler.pdf>The Gambler</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=29m16s">29:16</a><td>Gary <td><a href=http://tuesdayukes.org/music/PDFs/Spring%202021/Way%20Over%20Yonder%20in%20the%20Minor%20Key.pdf>Way Over Yonder in the Minor Key</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=36m05s">36:05</a><td>Paul <td><a href=http://tuesdayukes.org/music/PDFs/The%20Last%20Moonshiner.pdf>The Last Moonshiner</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=42m15s">42:15</a><td>Walter <td><a href=http://tuesdayukes.org/music/PDFs/Winter%202020-21/He%20Played%20the%20Ukulele%20as%20the%20Ship%20Went%20Down.pdf>He Played the Ukulele as the Ship Went Down</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=45m42s">45:42</a><td>Kent </td><td>Her Majesty</td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=50m10s">50:10</a><td>Mary Jane <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/Black%20Muddy%20River.pdf>Black Muddy River</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=55m28s">55:28</a><td>Paul <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202020/Smile.pdf>Smile</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=1h04m52s">1:04:52</a><td>Paul <td><a href=http://tuesdayukes.org/music/PDFs/Spring%202022/Walk%20on%20Boy.pdf>Walk on Boy</a></td></td></tr>\
 </table>')

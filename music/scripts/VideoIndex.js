@@ -1,12 +1,12 @@
 document.write('\
 <table>\
-<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=18m57s">18:57</a><td>Mary Jane <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/The%20Meeting%20of%20the%20Waters.pdf>The Meeting of the Waters</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=23m59s">23:59</a><td>Brenda <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/The%20Gambler.pdf>The Gambler</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=29m16s">29:16</a><td>Gary <td><a href=http://tuesdayukes.org/music/PDFs/Spring%202021/Way%20Over%20Yonder%20in%20the%20Minor%20Key.pdf>Way Over Yonder in the Minor Key</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=36m05s">36:05</a><td>Paul <td><a href=http://tuesdayukes.org/music/PDFs/The%20Last%20Moonshiner.pdf>The Last Moonshiner</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=42m15s">42:15</a><td>Walter <td><a href=http://tuesdayukes.org/music/PDFs/Winter%202020-21/He%20Played%20the%20Ukulele%20as%20the%20Ship%20Went%20Down.pdf>He Played the Ukulele as the Ship Went Down</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=45m42s">45:42</a><td>Kent </td><td>Her Majesty</td></tr>\
-<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=50m10s">50:10</a><td>Mary Jane <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/Black%20Muddy%20River.pdf>Black Muddy River</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=55m28s">55:28</a><td>Paul <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202020/Smile.pdf>Smile</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/jCbBP5nLIIQ?t=1h04m52s">1:04:52</a><td>Paul <td><a href=http://tuesdayukes.org/music/PDFs/Spring%202022/Walk%20on%20Boy.pdf>Walk on Boy</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/4Qq67G93C04?t=10m50s">10:50</a><td>Paul <td><a href=http://tuesdayukes.org/music/musescore/Summertime.pdf>Summertime</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/4Qq67G93C04?t=26m26s">26:26</a><td>Walter <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/I\'ll%20Fly%20Away.pdf>I\'ll Fly Away</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/4Qq67G93C04?t=34m30s">34:30</a><td>Marty </td><td>Chords in C</td></tr>\
+<tr><td><a href="https://youtu.be/4Qq67G93C04?t=39m10s">39:10</a><td>Rich <td><a href=https://www.ozbcoz.com/Songs/song.php?ID=2948,guitar>Will You Still Love Me Tomorrow</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/4Qq67G93C04?t=45m05s">45:05</a><td>Paulette and Gary <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/It\'s%20a%20Hard%20Life%20Wherever%20You%20Go.pdf>It\'s a Hard Life Wherever You Go</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/4Qq67G93C04?t=50m40s">50:40</a><td>Brenda <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/Good%20Riddance.pdf>Good Riddance</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/4Qq67G93C04?t=58m32s">58:32</a><td>Christine <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/I\'m%20Coming%20Home.pdf>I\'m Coming Home</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/4Qq67G93C04?t=1h10m49s">1:10:49</a><td>All <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></td></tr>\
+<tr></tr>\
 </table>')

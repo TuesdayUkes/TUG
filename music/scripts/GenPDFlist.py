@@ -35,6 +35,8 @@ for p in Path(musicFolder).rglob('*.cho'):
   allFiles.append(p)
 for p in Path(musicFolder).rglob('*.mscz'):
   allFiles.append(p)
+for p in Path(musicFolder).rglob('*.url'):
+  allFiles.append(p)
 
 def findMatchingBasename(files, basename):
   matches = [f for f in files if f[0].lower() == l(basename).lower()]
@@ -69,7 +71,11 @@ with open("PDFLinks.html", "w") as htmlOutput:
       htmlOutput.write(f"  <td>{f[0]}</td>\n<td>")
       # the remainder of f's elements are files that match the title in f[0]
       for i in f[1:]:
-        if ext(i) != ".pdf":
+        if ext(i) == ".url":
+          with open(i, "r") as urlFile:
+            address = urlFile.readline()
+          htmlOutput.write(f"<a href=\"{address}\">video</a>\n")
+        elif ext(i) != ".pdf":
           htmlOutput.write(f"  <a href=\"{str(i)}\" download>{ext(i)}</a>\n")
         else:
           htmlOutput.write(f"  <a href=\"{str(i)}\">{ext(i)}</a>\n")

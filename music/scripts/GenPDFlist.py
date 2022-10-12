@@ -2,6 +2,7 @@ from pathlib import Path
 from posixpath import basename, splitext
 import os
 import argparse
+from re import M
 
 parser = argparse.ArgumentParser()
 parser.add_argument("musicFolder")
@@ -13,7 +14,7 @@ musicFolder = args.musicFolder
 l = lambda p: str(os.path.splitext(os.path.basename(p))[0])
 
 # lambda ext is like lambda l, except it returns the file extension
-ext = lambda p: str(os.path.splitext(os.path.basename(p))[1])
+ext = lambda p: str(os.path.splitext(os.path.basename(p))[1]).lower()
 
 articles = ['a', 'an', 'the']
 def dictCompare(s):
@@ -26,17 +27,11 @@ def dictCompare(s):
 with open(musicFolder + "/scripts/HTMLheader.txt", "r") as headerText:
   header = headerText.readlines()
 
+extensions = [".PDF", ".chopro", ".cho", ".mscz", ".url"]
 allFiles = []
-for p in Path(musicFolder).rglob('*.pdf'):
-  allFiles.append(p)
-for p in Path(musicFolder).rglob('*.chopro'):
-  allFiles.append(p)
-for p in Path(musicFolder).rglob('*.cho'):
-  allFiles.append(p)
-for p in Path(musicFolder).rglob('*.mscz'):
-  allFiles.append(p)
-for p in Path(musicFolder).rglob('*.url'):
-  allFiles.append(p)
+for p in Path(musicFolder).rglob('*'):
+  if ext(p).upper() in (extension.upper() for extension in extensions):
+    allFiles.append(p)
 
 def findMatchingBasename(files, basename):
   matches = [f for f in files if f[0].lower() == l(basename).lower()]

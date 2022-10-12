@@ -55,6 +55,7 @@ for p in allFiles:
     # found a song for the first time. Add the title and the filename
     allTitles.append([l(p), str(p)])
 
+downloadExtensions = [".cho", ".chopro"]
 sortedTitles = sorted(allTitles, key=(lambda e: dictCompare(e[0]).casefold()))
 with open("PDFLinks.html", "w") as htmlOutput:
   htmlOutput.writelines(header)
@@ -70,7 +71,7 @@ with open("PDFLinks.html", "w") as htmlOutput:
           with open(i, "r") as urlFile:
             address = urlFile.readline()
           htmlOutput.write(f"<a href=\"{address}\">video</a>\n")
-        elif ext(i) != ".pdf":
+        elif ext(i) in downloadExtensions:
           htmlOutput.write(f"  <a href=\"{str(i)}\" download>{ext(i)}</a>\n")
         else:
           htmlOutput.write(f"  <a href=\"{str(i)}\">{ext(i)}</a>\n")

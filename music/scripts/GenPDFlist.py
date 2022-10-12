@@ -30,7 +30,7 @@ with open(musicFolder + "/scripts/HTMLheader.txt", "r") as headerText:
 extensions = [".PDF", ".chopro", ".cho", ".mscz", ".url"]
 allFiles = []
 for p in Path(musicFolder).rglob('*'):
-  if ext(p).upper() in (extension.upper() for extension in extensions):
+  if ext(p) in (extension.lower() for extension in extensions):
     allFiles.append(p)
 
 def findMatchingBasename(files, basename):

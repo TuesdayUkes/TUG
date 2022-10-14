@@ -69,8 +69,9 @@ with open("PDFLinks.html", "w") as htmlOutput:
       for i in f[1:]:
         if ext(i) == ".url":
           with open(i, "r") as urlFile:
+            label = urlFile.readline()
             address = urlFile.readline()
-          htmlOutput.write(f"<a href=\"{address}\">video</a>\n")
+          htmlOutput.write(f"<a href=\"{address}\">{label}</a>\n")
         elif ext(i) in downloadExtensions:
           htmlOutput.write(f"  <a href=\"{str(i)}\" download>{ext(i)}</a>\n")
         else:

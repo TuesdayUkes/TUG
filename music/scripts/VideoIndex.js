@@ -1,11 +1,13 @@
 document.write('\
 <table>\
-<tr><td><a href="https://youtu.be/VYbnatxpMh0?t=30m01s">30:01</a><td>Vany <td><a href=https://cynthialin.com/ukulele/>Moon River</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/VYbnatxpMh0?t=42m25s">42:25</a><td>group <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/Some%20Beach.pdf>Some Beach</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/VYbnatxpMh0?t=50m45s">50:45</a><td>group <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/The%20Battle%20of%20New%20Orleans.pdf>The Battle of New Orleans</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/VYbnatxpMh0?t=1h20m07s">1:20:07</a><td>Barbara <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202022/Cold,%20Cold%20Heart.pdf>Cold, Cold Heart</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/VYbnatxpMh0?t=1h24m15s">1:24:15</a><td>Brenda <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Scarborough%20Fair.pdf>Scarborough Fair</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/VYbnatxpMh0?t=1h30m40s">1:30:40</a><td>Paulette and Gary <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202022/Moonshadow%20%E2%80%93%20Cat%20Stevens%20-%201970.pdf>Moonshadow</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/VYbnatxpMh0?t=1h36m01s">1:36:01</a><td>Walter <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/I%20Want%20a%20Hippopotamus%20for%20Christmas%20-%20Walter.pdf>I Want a Hippopotamus for Christmas</a></td></td></tr>\
-<tr><td><a href="https://youtu.be/VYbnatxpMh0?t=1h41m41s">1:41:41</a><td>group <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=6m45s">6:45</a><td>group <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/The%20Battle%20of%20New%20Orleans.pdf>The Battle of New Orleans</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=23m45s">23:45</a><td>group <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/Some%20Beach.pdf>Some Beach</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=33m17s">33:17</a><td>Walter <td><a href=http://tuesdayukes.org/music/PDFs/Fall%202022/I%20Want%20a%20Hippopotamus%20for%20Christmas%20-%20Walter.pdf>I Want a Hippopotamus for Christmas</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=39m53s">39:53</a><td>Mary Jane <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202022/Blue%20Kentucky%20Girl.pdf>Blue Kentucky Girl</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=45m29s">45:29</a><td>Brenda <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202022/59th%20Street%20Bridge%20Song%20</td><td>Feelin\'%20Groovy.pdf>Feelin\' Groovy</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=53m34s">53:34</a><td>Marty </td><td>Foggy Mountain Special</td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=1h00m37s">1:00:37</a><td>Vany <td><a href=https://www.sanjoseukeclub.org/Song%20Book/What%20a%20Wonderful%20World%20-%20v3c%20web.pdf>What a Wonderful World</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=1h04m48s">1:04:48</a><td>Barbara <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202022/Side%20by%20Side.pdf>Side by Side</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=1h08m45s">1:08:45</a><td>Paul <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202022/I%20Don\'t%20Know%20What%20Christmas%20Is%20</td><td>But%20Christmastime%20Is%20Here.pdf>I Don\'t Know What Christmas Is</a></td></td></tr>\
+<tr><td><a href="https://youtu.be/Qz3lSf6GOlk?t=1h13m30s">1:13:30</a><td>group <td><a href=http://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></td></tr>\
 </table>')

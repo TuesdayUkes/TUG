@@ -1,8 +1,9 @@
 {t: WORKIN' IN A COAL MINE}
 {st: Allen Toussaint}
 
-Intro: [F7] Working in a coal mine, going down, down, down
-[F7] Working in a coal mine, Whoops! about to slip down
+Intro: 
+&blue: [F7] Working in a coal mine, going down, down, down
+&blue: [F7] Working in a coal mine, Whoops! about to slip down
 
 [F7] Working in a coal mine, going down down down
 [F7] Working in a coal mine, Whoops! about to slip down
@@ -61,4 +62,3 @@ Kazoo:
 &blue: [F7] Working in a coal mine, Whoops! about to slip down
 &blue: [F7] Working in a coal mine, going down, down, down
 &blue: [F7] Working in a coal mine, Whoops! about to slip down
-

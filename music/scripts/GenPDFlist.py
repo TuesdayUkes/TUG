@@ -35,7 +35,7 @@ def dictCompare(s):
 with open(musicFolder + "/scripts/HTMLheader.txt", "r") as headerText:
   header = headerText.readlines()
 
-extensions = [".PDF", ".chopro", ".cho", ".mscz", ".url"]
+extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt"]
 allFiles = []
 for p in Path(musicFolder).rglob('*'):
   if ext(p) in (extension.lower() for extension in extensions):

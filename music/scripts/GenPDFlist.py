@@ -75,7 +75,7 @@ with open("PDFLinks.html", "w") as htmlOutput:
       htmlOutput.write(f"  <td>{f[0]}</td>\n<td>")
       # the remainder of f's elements are files that match the title in f[0]
       for i in f[1:]:
-        if ext(i) == ".url":
+        if ext(i) == ".urltxt":
           with open(i, "r") as urlFile:
             label = urlFile.readline()
             address = urlFile.readline()

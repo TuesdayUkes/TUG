@@ -1,15 +1,14 @@
 document.write('\
 <table>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=21m44s">21:44</a></td> <td>group</td> <td>Dance the Night Away</td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=27m47s">27:47</a></td> <td>Marty</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/Railroad%20Town%20Without%20a%20Train.pdf>Railroad Town Without a Train</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=36m21s">36:21</a></td> <td>Barbara</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/Keep%20on%20the%20Sunny%20Side.pdf>Keep on the Sunny Side</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=42m17s">42:17</a></td> <td>Gary</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202021-22/Don\'t%20Worry%20Be%20Happy.pdf>Don\'t Worry - Be Happy</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=49m00s">49:00</a></td> <td>Christine</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/Island%20in%20the%20Sun.pdf>Island in the Sun</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=56m22s">56:22</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202020/Gulf%20Coast%20Highway.pdf>Gulf Coast Highway</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=1h03m13s">1:03:13</a></td> <td>Gary and Paulette</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/His%20Latest%20Flame.pdf>His Latest Flame</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=1h09m41s">1:09:41</a></td> <td>Paul</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/Linger.pdf>Linger</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=1h16m33s">1:16:33</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/Come%20Go%20With%20Me.pdf>Come Go with Me</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=1h20m07s">1:20:07</a></td> <td>Brenda</td> <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202020/Big%20Rock%20Candy%20Mountain.pdf>Big Rock Candy Mountain</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=1h26m48s">1:26:48</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202020/The%20Songs%20the%20Water%20Sings.pdf>The Songs the Water Sings</a></td></tr>\
-<tr><td><a href="https://youtu.be/TESVwSi1ZiA?t=1h32m06s">1:32:06</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=16m32s">16:32</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202022/El%20Camino.pdf>El Camino</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=20m24s">20:24</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Popeye%20the%20Sailor%20Man.pdf>Popeye the Sailor Man</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=28m26s">28:26</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/The%20Unicorn.pdf>The Unicorn</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=35m23s">35:23</a></td> <td>Gary</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Somewhere%20Only%20We%20Know.pdf>Somewhere Only We Know</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=41m52s">41:52</a></td> <td>Brenda</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Eight%20Days%20a%20Week.pdf>Eight Days a Week</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=53m54s">53:54</a></td> <td>Vany</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Crowded%20Table.pdf>Crowded Table</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=1h00m14s">1:00:14</a></td> <td>Barbara</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Heartaches%20by%20the%20Number.pdf>Heartaches by the Number</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=1h04m14s">1:04:14</a></td> <td>Gary and Paulette</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Saint%20Teresa.pdf>Saint Teresa</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=1h10m08s">1:10:08</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Rolling%20Hills%20of%20the%20Borders.pdf>Rolling Hills of the Borders</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=1h14m09s">1:14:09</a></td> <td>Paul</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/Hurt.pdf>Hurt</a></td></tr>\
+<tr><td><a href="https://youtu.be/eGMyIv6xXDc?t=1h18m27s">1:18:27</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></tr>\
 </table>')

@@ -27,8 +27,8 @@ def dictCompare(s):
     formattedS = s
 
   # Remove punctuation
-  formattedS.replace('\'','')
-  formattedS.replace(',','')
+  formattedS = formattedS.replace('\'','')
+  formattedS = formattedS.replace(',','')
 
   return formattedS
 

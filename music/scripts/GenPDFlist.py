@@ -30,7 +30,7 @@ def dictCompare(s):
   formattedS = formattedS.replace('\'','')
   formattedS = formattedS.replace(',','')
 
-  return formattedS
+  return formattedS.lower()
 
 with open(musicFolder + "/scripts/HTMLheader.txt", "r") as headerText:
   header = headerText.readlines()
@@ -42,7 +42,7 @@ for p in Path(musicFolder).rglob('*'):
     allFiles.append(p)
 
 def findMatchingBasename(files, basename):
-  matches = [f for f in files if f[0].lower() == l(basename).lower()]
+  matches = [f for f in files if dictCompare(f[0]) == dictCompare(l(basename))]
   if matches:
     # matches should never have more than one entry, but there is no check to
     # verify that claim. The only way we intend to add a new file path to

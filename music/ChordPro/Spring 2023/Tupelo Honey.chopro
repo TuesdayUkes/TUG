@@ -23,17 +23,15 @@
 [F] She's as [Am] sweet as [Bb] Tupelo [F] honey
 [F] Just like [Am] honey [Bb] from the [F] bee
 
-{textcolour: blue}
-[F] You can't [Am] stop us on the [Bb] road to [F] freedom
-[F] You can't [Am] keep us 'cause our [Bb] eyes can [C] see
-[F] Men with [Am] insight, [Bb] men in [F] granite
-[F] Knights in [Am] armor bent on [Bb] chival[F]ry
+&blue: [F] You can't [Am] stop us on the [Bb] road to [F] freedom
+&blue: [F] You can't [Am] keep us 'cause our [Bb] eyes can [C] see
+&blue: [F] Men with [Am] insight, [Bb] men in [F] granite
+&blue: [F] Knights in [Am] armor bent on [Bb] chival[F]ry
 
-[F] You can't [Am] stop us on the [Bb] road to [F] freedom
-[F] You can't [Am] keep us 'cause our [Bb] eyes can [C] see
-[F] Men with [Am] insight, [Bb] men in [F] granite
-[F] Knights in [Am] armor bent on [Bb] chival[F]ry
-{textcolour}
+&blue: [F] You can't [Am] stop us on the [Bb] road to [F] freedom
+&blue: [F] You can't [Am] keep us 'cause our [Bb] eyes can [C] see
+&blue: [F] Men with [Am] insight, [Bb] men in [F] granite
+&blue: [F] Knights in [Am] armor bent on [Bb] chival[F]ry
 
 [F] You can't [Am] stop us on the [Bb] road to [F] freedom
 [F] You can't [Am] keep us 'cause our [Bb] eyes can [C] see
@@ -46,7 +44,7 @@
 [F] Just like [Am] honey [Bb] from the [F] bee
 
 [F] You know [Am] she's alright [Bb] she's alright with [F] me
-You know, you know, you know, she's alright she's alright with me
+[F] You know, [Am] you know, you know, [Bb] she's alright she's [F] alright with me
 
 [F] You can [Am] take [Bb] all the tea in [F] China
 [F] Put it in a [Am] big brown [Bb] bag for [C] me

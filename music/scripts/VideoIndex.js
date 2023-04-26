@@ -1,14 +1,14 @@
 document.write('\
 <table>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=23m15s">23:15</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Buffalo%20Gals.pdf>Buffalo Gals</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=30m37s">30:37</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202020-21/Yellow%20Bird.pdf>Yelow Bird</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=37m51s">37:51</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/All%20Shook%20Up.pdf>All Shook Up</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=43m35s">43:35</a></td> <td>Paul</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Vinyl%20Records.pdf>Vinyl Records</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=48m13s">48:13</a></td> <td>Brenda</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/End%20of%20the%20Line.pdf>End of the Line</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=56m08s">56:08</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Kevin\'s%20Wake%20Songs/Texas%20Cookin.pdf>Texas Cookin</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=1h04m30s">1:04:30</a></td> <td>Gary and Paulette</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/London%20Homesick%20Blues.pdf>London Homesick Blues</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=1h20m10s">1:20:10</a></td> <td>Barbara</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/California%20Stars.pdf>California Stars</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=1h25m27s">1:25:27</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Big%20in%20Japan.pdf>Big in Japan</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=1h34m43s">1:34:43</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Jambalaya.pdf>Jambalaya</a></td></tr>\
-<tr><td><a href="https://youtu.be/75Er8Y_z5Jk?t=1h39m10s">1:39:10</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=6m48s">6:48</a></td> <td>group</td> <td>Achy Breaky Heart</td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=11m25s">11:25</a></td> <td>Gary and Paulette</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202021-22/Jamaica%20Farewell.pdf>Jamaica Farewell</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=15m51s">15:51</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Chocolate%20Jesus.pdf>Choc-o-late Jesus</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=28m33s">28:33</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Carolina%20in%20the%20Pines.pdf>Carolina in the Pines</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=35m15s">35:15</a></td> <td>Vany</td> <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202022/People%20Get%20Ready.pdf>People Get Ready</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=40m32s">40:32</a></td> <td>Paul</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/Flowers.pdf>Flowers</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=47m05s">47:05</a></td> <td>Gary and Paulette</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/City%20Of%20Stars.pdf>City of Stars</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=53m03s">53:03</a></td> <td>Brenda</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/I%20Remember%20Everything.pdf>I Remember Everything</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=1h00m05s">1:00:05</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202021/Hooked%20on%20a%20Feeling.pdf>Hooked on a Feeling</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=1h06m06s">1:06:06</a></td> <td>Gary and Paulette</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/London%20Homesick%20Blues.pdf>London Homesick Blues</a></td></tr>\
+<tr><td><a href="https://youtu.be/h-48_ALWlF4?t=1h12m06s">1:12:06</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></tr>\
 </table>')

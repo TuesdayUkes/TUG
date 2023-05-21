@@ -1,5 +1,6 @@
 from pathlib import Path
 from posixpath import basename, splitext
+import sys
 import os
 import argparse
 from re import M
@@ -8,7 +9,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("musicFolder")
 args = parser.parse_args()
 
-print("Generating Music List (this takes a few seconds)")
+print("Generating Music List (this takes a few seconds)", file=sys.stderr)
 
 musicFolder = args.musicFolder
 
@@ -98,4 +99,4 @@ with open("PDFLinks.html", "w") as htmlOutput:
   htmlOutput.write("</div>\n")
   htmlOutput.write("</body>\n")
 
-print("Done!")
+print("Done!", file=sys.stderr)

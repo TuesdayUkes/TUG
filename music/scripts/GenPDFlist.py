@@ -8,6 +8,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("musicFolder")
 args = parser.parse_args()
 
+print("Generating Music List (this takes a few seconds)")
+
 musicFolder = args.musicFolder
 
 # lambda l accepts a path and returns just the filename without an extension
@@ -95,3 +97,5 @@ with open("PDFLinks.html", "w") as htmlOutput:
   htmlOutput.write("</div>\n")
   htmlOutput.write("</div>\n")
   htmlOutput.write("</body>\n")
+
+print("Done!")

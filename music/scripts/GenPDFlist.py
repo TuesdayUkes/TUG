@@ -38,6 +38,12 @@ def dictCompare(s):
 with open(musicFolder + "/scripts/HTMLheader.txt", "r") as headerText:
   header = headerText.readlines()
 
+header += """
+<h1>TUG's Music Archive</h1>
+<p>Scroll though this alphabetical list to find a song!</p>
+<p>Pro tip: use your web browser's search function! Type CTRL-F and type a portion of a song title</p>
+"""
+
 extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt"]
 allFiles = []
 for p in Path(musicFolder).rglob('*'):

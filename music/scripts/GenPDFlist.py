@@ -40,8 +40,7 @@ with open(musicFolder + "/scripts/HTMLheader.txt", "r") as headerText:
 
 header += """
 <h1>TUG's Music Archive</h1>
-<p>Scroll though this alphabetical list to find a song!</p>
-<p>Pro tip: use your web browser's search function! Type CTRL-F and type a portion of a song title.</p>
+<p>Pro tip: use your web browser's search function! Type CTRL-F (Command+F on the Mac) and type a portion of a song title.</p>
 """
 
 extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt"]

@@ -27,12 +27,10 @@
 
 *Verse 3
 (Musical verse)
-{textcolour: blue}
-[G]I've been havin' a sweet [E7]dream
-[Am]I been dreamin' since I [D7]woke up today
-[G]It's starrin' me and my [E7]sweet thing
-[Am]'Cause she's the one makes me [D7sus4]feel this [D7]way
-{textcolour}
+&blue: [G]I've been havin' a sweet [E7]dream
+&blue: [Am]I been dreamin' since I [D7]woke up today
+&blue: [G]It's starrin' me and my [E7]sweet thing
+&blue: [Am]'Cause she's the one makes me [D7sus4]feel this [D7]way
 
 *Chorus 3
 [C]And you can be [A7]sure that if you're [G]feelin' [E7]right
@@ -47,9 +45,7 @@
 [Am]Dreamin' 'bout my [D7sus4]bundle of [D7]joy
 
 *Repeat Chorus (Musical outro)
-{textcolour: blue}
-[C]And you can be [A7]sure that if you're [G]feelin' [E7]right
-[C]A daydream will [A7]last long in[G]to the [E7]night
-[C]Tomorrow at [A7]breakfast you may [G]prick up your [E7]ears
-[A7]Or you may be daydreamin' for a [D7sus4]thousand [D7]years
-{textcolour}
+&blue: [C]And you can be [A7]sure that if you're [G]feelin' [E7]right
+&blue: [C]A daydream will [A7]last long in[G]to the [E7]night
+&blue: [C]Tomorrow at [A7]breakfast you may [G]prick up your [E7]ears
+&blue: [A7]Or you may be daydreamin' for a [D7sus4]thousand [D7]years

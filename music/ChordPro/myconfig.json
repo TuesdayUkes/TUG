@@ -23,6 +23,10 @@
 		
 		"chords" : [
 			{
+			"name" : "Em7b5",
+			"frets" : [0, 2, 0, 1],
+			},
+			{
 			"name" : "Ebm(maj7)",
 			"frets" : [3, 2, 2, 2],
 			},

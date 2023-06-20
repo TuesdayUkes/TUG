@@ -23,6 +23,34 @@
 		
 		"chords" : [
 			{
+			"name" : "Ebm(maj7)",
+			"frets" : [3, 2, 2, 2],
+			},
+			{
+			"name" : "C9sus4",
+			"frets" : [0, 2, 1, 3],
+			},
+			{
+			"name" : "D/G",
+			"frets" : [0, 2, 2, 0],
+			},
+			{
+			"name" : "Bbm/Ab",
+			"frets" : [1, 1, 1, 1],
+			},
+			{
+			"name" : "F/C",
+			"frets" : [5, 5, 5, 3],
+			},
+			{
+			"name" : "A/C#",
+			"frets" : [6, 4, 5, 4],
+			},
+			{
+			"name" : "F9sus4",
+			"frets" : [0, 0, 1, 1],
+			},
+			{
 			"name" : "Am6",
 			"frets" : [2, 0, 2, 0],
 			},

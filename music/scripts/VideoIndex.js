@@ -1,14 +1,13 @@
 document.write('\
 <table>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=12m53s">12:53</a></td> <td>group</td> <td>Down in the Valley</td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=22m35s">22:35</a></td> <td>Daniel</td> <td><a href=https://tuesdayukes.org/music/ChordPro/Spring%202023/Texas%20Love%20Song.choprohttps://tuesdayukes.org/music/ChordPro/Spring%202023/Texas%20Love%20Song.chopro>Texas Love Song</a></td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=27m47s">27:47</a></td> <td>Gary and Paulette</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202020-21/Catch%20the%20Wind.pdf>Catch the Wind</a></td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=36m03s">36:03</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202022/Blue%20Moon%20of%20Kentucky.pdf>Blue Moon of Kentucky</a></td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=42m30s">42:30</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202022/Mr%20Tambourine%20Man.pdf>Mr. Tambourine Man</a></td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=51m15s">51:15</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Achy%20Breaky%20Heart.chopro>Achy Breaky Heart</a></td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=55m00s">55:00</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/Always%20On%20My%20Mind.pdf>Always On My Mind</a></td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=1h00m40s">1:00:40</a></td> <td>Deana</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202020-21/Me%20and%20Bobby%20McGee.pdf>Me and Bobby McGee</a></td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=1h06m06s">1:06:06</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202020/Bottle%20of%20Wine.pdf>Bottle of Wine</a></td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=1h09m40s">1:09:40</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202020-21/Blueberry%20Hill.pdf>Blueberry Hill</a></td></tr>\
-<tr><td><a href="https://youtu.be/ZFbVq5jiHjM?t=1h12m58s">1:12:58</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=11m06s">11:06</a></td> <td>group</td> <td>Dream Baby</td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=15m45s">15:45</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Morning%20Blues.pdf>Morning Blues</a></td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=27m42s">27:42</a></td> <td>Paul</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Don\'t%20Ask%20Me%20Why.pdf>Don\'t Ask Me</a></td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=31m55s">31:55</a></td> <td>Brenda</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Little%20Red%20Uke.pdf>Little Red Uke</a></td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=38m35s">38:35</a></td> <td>Daniel</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Daydream.pdf>Daydream</a></td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=42m54s">42:54</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202023/Night%20Rider\'s%20Lament.pdf>Night Rider\'s Lament</a></td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=47m34s">47:34</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/I%20Hear%20You%20Knocking.pdf>I Hear You Knocking</a></td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=52m15s">52:15</a></td> <td>Gary and Paulette</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/500%20Miles.pdf>500 Miles</a></td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=56m04s">56:04</a></td> <td>Paul</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202021-22/Beer%20Run.pdf>Beer Run</a></td></tr>\
+<tr><td><a href="https://youtu.be/m8kcIewiZkw?t=1h06m03s">1:06:03</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></tr>\
 </table>')

@@ -12,13 +12,13 @@
       table {
         counter-reset: rowNumber;
       }
-      table tr {
-        counter-increment: rowNumber;;
-      }
-      table tr td:first-child::before {
+
+      table tr::before {
+        display: table-cell;
+        counter-increment: rowNumber;
         content: counter(rowNumber);
-        min-width: 4em;
-        margin-right: 0.5em;
+        padding-right: 0.3em;
+        text-align: right;
       }
     </style>
 

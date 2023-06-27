@@ -432,6 +432,18 @@ table, th, td {
 	border-style: dotted;
   border-collapse: collapse;
 }
+      table {
+        counter-reset: rowNumber;
+      }
+      table tr {
+        counter-increment: rowNumber;;
+      }
+      table tr td:first-child::before {
+        content: counter(rowNumber);
+        min-width: 4em;
+        margin-right: 0.5em;
+      }
+
 </style>
 	</head>
 

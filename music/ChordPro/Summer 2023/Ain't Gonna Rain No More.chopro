@@ -3,10 +3,8 @@
 
 
 Intro:
-{textcolour: blue}
-[G] It ain't gonna rain no more no more, It ain't gonna rain no [D7] more [D7]
-How in the heck can I wash my neck, if it ain't gonna rain no [G] more
-{textcolour}
+&blue: [G] It ain't gonna rain no more no more, It ain't gonna rain no [D7] more [D7]
+&blue: How in the heck can I wash my neck, if it ain't gonna rain no [G] more
 
 [G] It ain't gonna rain no more no more, It ain't gonna rain no [D7] more [D7]
 How in the heck can I wash my neck, if it ain't gonna rain no [G] more
@@ -23,10 +21,8 @@ How in the heck can I wash my neck, if it ain't gonna rain no [G] more
 There may be flies on some of you guys, but there ain't no flies on [G] me
 
 Instrumental:
-{textcolour: blue}
-[G] There ain't no flies on me, there ain't no flies on [D7] me [D7]
-There may be flies on some of you guys, but there ain't no flies on [G] me
-{textcolour}
+&blue: [G] There ain't no flies on me, there ain't no flies on [D7] me [D7]
+&blue: There may be flies on some of you guys, but there ain't no flies on [G] me
 
 [G] We had a goat down on our farm, it ate up old tin [D7] cans
 [D7] When those little goats were born, they came in Ford [G] sedans
@@ -37,8 +33,5 @@ There may be flies on some of you guys, but there ain't no flies on [G] me
 How in the heck can I wash my neck, if it ain't gonna rain no [G] more
 
 Outro:
-{textcolour: blue}
-[G] It ain't gonna rain no more no more, It ain't gonna rain no [D7] more [D7]
-How in the heck can I wash my neck, if it ain't gonna rain no [G] more
-{textcolour}
-
+&blue: [G] It ain't gonna rain no more no more, It ain't gonna rain no [D7] more [D7]
+&blue: How in the heck can I wash my neck, if it ain't gonna rain no [G] more

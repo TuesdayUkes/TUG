@@ -1,15 +1,17 @@
 document.write('\
 <table>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=7m11s">7:11</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Buffalo%20Gals.pdf>Buffalo Gals</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=11m07s">11:07</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202022/Swinging%20on%20a%20Star.pdf>Swinging on a Star</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=14m47s">14:47</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/I\'ll%20Fly%20Away.pdf>I\'ll Fly Away</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=22m18s">22:18</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202021/Summertime.pdf>Summertime</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=20m55s">20:55</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/I\'ll%20Come%20Running.pdf>I\'ll Come Running</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=34m36s">34:36</a></td> <td>Brenda</td> <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202022/Johnny%20B%20Goode.pdf>Johnny B Goode</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=40m25s">40:25</a></td> <td>Paul</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/I\'m%20Gonna%20Be%20(500%20miles).pdf>I\'m Gonna Be</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=45m22s">45:22</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/Finger%20Poppin\'%20TIme.pdf>Finger Poppin\' Time</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=50m51s">50:51</a></td> <td>Daniel</td> <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202020/Makin%20Whoopee.pdf>Makin\' Whoopee</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=55m57s">55:57</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/Winters%20Come%20and%20Gone.pdf>Winters Come and Gone</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=59m20s">59:20</a></td> <td>Charlie</td> <td><a href=https://tuesdayukes.org/music/PDFs/Fall%202020/Mr.%20Bojangles.pdf>Mr. Bojangles</a></td></tr>\
-<tr><td><a href="https://youtu.be/MxCnzkOvwzI?t=1h06m44s">1:06:44</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=4m44s">4:44</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/Ripple.pdf>Ripple</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=11m10s">11:10</a></td> <td>Paulette and Gary</td> <td>The Heat Goes On</td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=17m10s">17:10</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/Skibbereen.pdf>Skibbereen</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=23m04s">23:04</a></td> <td>Daniel</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/I%20Left%20My%20Heart%20in%20San%20Francisco.pdf>I Left My Heart in San Francisco</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=26m30s">26:30</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Kevin\'s%20Memorial/Trouble%20in%20Mind.pdf>Trouble in Mind</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=36m18s">36:18</a></td> <td>Brenda</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/Hallelujah%20-%20Spoof.pdf>Hallelujah - Spoof</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=40m18s">40:18</a></td> <td>Charlie</td> <td><a href=https://tuesdayukes.org/music/PDFs/Spring%202021/Pancho%20and%20Lefty.pdf>Pancho and Lefty</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=46m42s">46:42</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/The%20Gambler.pdf>The Gambler</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=52m01s">52:01</a></td> <td>Paul</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/Texas%20Armadillo.pdf>Texas Armadillo</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=58m33s">58:33</a></td> <td>Gary and Paulette</td> <td><a href=https://tuesdayukes.org/music/PDFs/Winter%202022-23/Heat%20Wave.pdf>Heat Wave</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=1h03m53s">1:03:53</a></td> <td>Mary Jane</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/Bramble%20and%20the%20Rose.pdf>Bramble and the Rose</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=1h07m43s">1:07:43</a></td> <td>Walter</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202023/Only%20the%20Lonely.pdf>Only the Lonely</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=1h13m30s">1:13:30</a></td> <td>Rich</td> <td><a href=https://www.doctoruke.com/_player/thisguysinlovea.html>This Guy\'s in Love With You</a></td></tr>\
+<tr><td><a href="https://youtu.be/Rj2BOgJ9-YY?t=1h18m44s">1:18:44</a></td> <td>group</td> <td><a href=https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf>Happy Trails</a></td></tr>\
 </table>')

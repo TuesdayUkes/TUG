@@ -13,7 +13,7 @@
       // Chords inline.
       // May be a string containing pretext %s posttext.
       // Defaults to "[%s]" if true.
-      "inline-chords" : true,
+      "inline-chords" : false,
     },
 
     // Show chord diagrams.
@@ -327,11 +327,6 @@
 	    "vspace"   :  3,
   	    "vcells"   :  4,
 	    "linewidth" : 0.1,
-	},
-
-	"section" : {
-		"hello" : "comment",
-		"fallback" : "comment",
 	},
 
 	"papersize" : "a4",

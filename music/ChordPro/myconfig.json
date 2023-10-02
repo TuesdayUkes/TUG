@@ -341,17 +341,17 @@
 	    },
 	    "text" : {
 		"name" : "Helvetica",
-		"size" : 11
+		"size" : 10
 	    },
 	    "chord" : {
 		"name" : "Helvetica-bold",
 		"color" : "red",
-		"size" : 11
+		"size" : 10
 	    },
 	    "comment" : {
 		"name" : "Helvetica-bold",
 		"color" : "red",
-		"size" : 11
+		"size" : 10
 	    },
 	},
     },

@@ -318,6 +318,12 @@
 
     "pdf" : {
 
+	"margintop" : 70,
+	"marginbottom" : 0,
+	"headspace" : 60,
+	"footspace" : 10,
+	"head-first-only" : true,
+
 	// Slightly larger diagrams.
 	"diagrams" : {
 	    "show"     :  "top",
@@ -329,8 +335,8 @@
 	    "linewidth" : 0.1,
 	},
 
-//	"papersize" : "a4",
-  "papersize" : [600,1650],
+	"papersize" : "a4",
+//  "papersize" : [600,1650],
 
 	// Fonts.
 

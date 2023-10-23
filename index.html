@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" class="no-js">
 <head>
+	<?php $date = new DateTime(); $datestring = $date->format('Y-m-d H:i:s');?>
 	<meta charset="UTF-8">
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 	<meta http-equiv="Pragma" content="no-cache" />
@@ -492,8 +493,8 @@ table, th, td {
 <table>
     <tr>  <td>Paradise</td>
       <td>
-        <a href="https://tuesdayukes.org/music/ChordPro/Spring%202021/Paradise.chopro?nocache" download>.chopro</a>
-        <a href="https://tuesdayukes.org/music/PDFs/Spring%202021/Paradise.pdf?nocache">PDF</a>
+        <a href="https://tuesdayukes.org/music/ChordPro/Spring%202021/Paradise.chopro" download>.chopro</a>
+        <a href="https://tuesdayukes.org/music/PDFs/Spring%202021/Paradise.pdf?<?php echo $datestring?>">PDF</a>
       </td>
       <td>
         <a href="https://www.youtube.com/watch?v=XDUhSUT-7CI&t=4092s">video</a>

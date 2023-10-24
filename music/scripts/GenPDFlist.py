@@ -4,6 +4,7 @@ import sys
 import os
 import argparse
 from re import M
+from datetime import datetime
 
 parser = argparse.ArgumentParser()
 parser.add_argument("musicFolder")
@@ -12,6 +13,8 @@ args = parser.parse_args()
 print("Generating Music List (this takes a few seconds)", file=sys.stderr)
 
 musicFolder = args.musicFolder
+
+now = datetime.now().strftime("%Y.%m.%d.%H.%M.%S")
 
 # lambda l accepts a path and returns just the filename without an extension
 l = lambda p: str(os.path.splitext(os.path.basename(p))[0])
@@ -87,11 +90,11 @@ with open("PDFLinks.html", "w") as htmlOutput:
           with open(i, "r") as urlFile:
             label = urlFile.readline()
             address = urlFile.readline()
-          htmlOutput.write(f"<a href=\"{address}\">{label}</a>\n")
+          htmlOutput.write(f"<a href=\"{address}?v={now}\">{label}</a>\n")
         elif ext(i) in downloadExtensions:
-          htmlOutput.write(f"  <a href=\"{str(i)}\" download>{ext(i)}</a>\n")
+          htmlOutput.write(f"  <a href=\"{str(i)}?v={now}\" download>{ext(i)}</a>\n")
         else:
-          htmlOutput.write(f"  <a href=\"{str(i)}\">{ext(i)}</a>\n")
+          htmlOutput.write(f"  <a href=\"{str(i)}?v={now}\">{ext(i)}</a>\n")
 
       # close each table row (and the table data containing file links)
       htmlOutput.write("</td></tr>\n")

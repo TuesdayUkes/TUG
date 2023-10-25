@@ -13,7 +13,7 @@
       // Chords inline.
       // May be a string containing pretext %s posttext.
       // Defaults to "[%s]" if true.
-      "inline-chords" : false,
+      "inline-chords" : true,
     },
 
     // Show chord diagrams.

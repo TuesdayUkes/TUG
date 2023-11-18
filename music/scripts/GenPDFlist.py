@@ -88,9 +88,9 @@ with open("PDFLinks.html", "w") as htmlOutput:
       for i in f[1:]:
         if ext(i) == ".urltxt":
           with open(i, "r") as urlFile:
-            label = urlFile.readline()
-            address = urlFile.readline()
-          htmlOutput.write(f"<a href=\"{address}?v={now}\">{label}</a>\n")
+            label = urlFile.readline().strip()
+            address = urlFile.readline().strip()
+          htmlOutput.write(f"<a href=\"{address}\">{label}</a>\n")
         elif ext(i) in downloadExtensions:
           htmlOutput.write(f"  <a href=\"{str(i)}?v={now}\" download=\"{l(i)}{ext(i)}\">{ext(i)}</a>\n")
         else:

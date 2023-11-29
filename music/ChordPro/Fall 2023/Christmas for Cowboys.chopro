@@ -2,10 +2,10 @@
 {st: John Denver}
 
 Intro first 2 lines verse:
-{start_of_chorus}
+{textcolour: blue}
 [F]Tall in the [C]saddle, we [G]spend Christmas [Am]Day,
 [F]driving the [C]cattle over [G]snow covered [C]plains.
-{end_of_chorus}
+{textcolour}
 
 Verse 1:
 [F]Tall in the [C]saddle, we [G]spend Christmas [Am]Day,
@@ -14,9 +14,9 @@ Verse 1:
 [F]ours is the [C]sky and the [G]wide open [C]range.
 
 Break: 1 last line verse:
-{start_of_chorus}
+{textcolour: blue}
 [F]ours is the [C]sky and the [G]wide open [C]range.
-{end_of_chorus}
+{textcolour}
 
 Verse 2:
 [F]Back in the [C]cities they [G]have different [Am]ways,
@@ -25,10 +25,10 @@ Verse 2:
 It's [F]Christmas for [C]cowboys on [G]wide-open [C]plains.
 
 Break: last 2 lines verse:
-{start_of_chorus}
+{textcolour: blue}
 [F]All of the [C]good gifts [G]given to[Am]day,
 [F]ours is the [C]sky and the [G]wide open [C]range.
-{end_of_chorus}
+{textcolour}
 
 Verse 3:
 A [F]campfire for [C]warmth as we [G]stop for the [Am]night,
@@ -37,16 +37,16 @@ The [F]wind sings a [C]hymn as we [G]bow down to [Am]pray,
 It's [F]Christmas for [C]cowboys on [G]wide-open [C]plains.
 
 Break instrumental: 1st 2 lines
-{start_of_chorus}
+{textcolour: blue}
 [F]Tall in the [C]saddle, we [G]spend Christmas [Am]Day,
 [F]driving the [C]cattle over [G]snow covered [C]plains.
-{end_of_chorus}
+{textcolour}
 
 Break:  ooooo's Last 2 lines
-{start_of_chorus}
+{textcolour: blue}
 [F] oooo [C]oooo [G]oo-oo-oo [Am] oooo
 [F]oooo  [C] oooo [G] oo-oo-oo [C] oooo.
-{end_of_chorus}
+{textcolour}
 
 Verse 4:
 [F]Tall in the [C]saddle, we [G]spend Christmas [Am]Day,
@@ -58,6 +58,6 @@ Outro sung:
 It's [F]Christmas for [C]cowboys on [G]wide-open [C]plains.
 
 Instrumental Outro:
-{start_of_chorus}
+{textcolour: blue}
 It's [F]Christmas for [C]cowboys on [G]wide-open [C]plains.
-{end_of_chorus}
+{textcolour}

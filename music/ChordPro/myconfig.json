@@ -347,17 +347,17 @@
 	    },
 	    "text" : {
 		"name" : "Helvetica",
-		"size" : 13
+		"size" : 12
 	    },
 	    "chord" : {
 		"name" : "Helvetica-bold",
 		"color" : "red",
-		"size" : 13
+		"size" : 12
 	    },
 	    "comment" : {
 		"name" : "Helvetica-bold",
 		"color" : "red",
-		"size" : 13
+		"size" : 12
 	    },
 	},
     },

@@ -90,11 +90,11 @@ with open("PDFLinks.html", "w") as htmlOutput:
           with open(i, "r") as urlFile:
             label = urlFile.readline().strip()
             address = urlFile.readline().strip()
-          htmlOutput.write(f"<a href=\"{address}\">{label}</a>\n")
+          htmlOutput.write(f"<a href=\"{address}\">{label}</a><br>\n")
         elif ext(i) in downloadExtensions:
-          htmlOutput.write(f"  <a href=\"{str(i)}?v={now}\" download=\"{l(i)}{ext(i)}\">{ext(i)}</a>\n")
+          htmlOutput.write(f" <a href=\"{str(i)}?v={now}\" download=\"{l(i)}{ext(i)}\">{ext(i)}</a><br>\n")
         else:
-          htmlOutput.write(f"  <a href=\"{str(i)}?v={now}\">{ext(i)}</a>\n")
+          htmlOutput.write(f"  <a href=\"{str(i)}?v={now}\">{ext(i)}</a><br>\n")
 
       # close each table row (and the table data containing file links)
       htmlOutput.write("</td></tr>\n")

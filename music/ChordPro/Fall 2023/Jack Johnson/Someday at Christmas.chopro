@@ -1,15 +1,15 @@
 {t: Someday at Christmas}
 {st:Jack Johnson}
-{define: Cmaj9 frets 4 4 3 5}
-{define: C frets 5 4 3 3}
-{define: Am/Bb frets 3 4 5 3}
+{define: Cmaj9 base-fret 3 frets 2 2 1 3}
+{define: C base-fret 3 frets 3 2 1 1}
+{define: Am/Bb base-fret 3 frets 1 2 3 1}
 
 [C]  [Cmaj9]  [Am/Bb]  [F]
 
 [C] Someday at Christmas, [Cmaj9] men won't be boys
 [Am/Bb]Playing with bombs like [F]boys play with toys
 [Fm]One warm December, our [Em]hearts will see
-A [Dm]world where men are [G]free
+A [Dm]world where people are [G]free
 
 And [C] someday at Christmas, [Cmaj9] there'll be no wars
 [Am/Bb]When we have learned what [F]Christmas is for
@@ -17,22 +17,22 @@ And [C] someday at Christmas, [Cmaj9] there'll be no wars
 Then [Dm]there will be peace on [G]Earth
 
 [C] Someday all of our dreams will [Cmaj9] come to be
-[Am/Bb]Someday in a world where [F]men are free
+[Am/Bb]Someday in a world where [F]people are free
 [Fm]Maybe not in time for [Em]you or for me
 But [Dm]someday at Christmas [G]time
 
 And [C] someday at Christmas, [Cmaj9] there'll be no tears
-[Am/Bb]All men are equal and [F]no men have fears
+[Am/Bb]All people are equal and [F]no one has fears
 [Fm]One shining moment my [Em]heart ran away
 From the [Dm]world that we live in [G]today
 
 And [C] someday at Christmas, [Cmaj9] men will not fail
-[Am/Bb]Take all because your [F]love will prevail
+[Am/Bb]Take hope because your [F]love will prevail
 [Fm]Someday in a new world that [Em]we can only start
 With [Dm]hope in every [G]heart
 
 [C] Someday all of our dreams will [Cmaj9] come to be
-[Am/Bb]Someday in a world where [F]men are free
+[Am/Bb]Someday in a world where [F]people are free
 [Fm]Maybe not in time for [Em]you or for me
 But [Dm]someday at Christmas [G]time
 

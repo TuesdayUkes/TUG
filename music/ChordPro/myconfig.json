@@ -323,7 +323,10 @@
 	"marginbottom" : 0,
 	"headspace" : 60,
 	"footspace" : 10,
+	"marginleft" : 10,
 	"head-first-only" : true,
+
+	"even-odd-pages" : 0,
 
 	// Slightly larger diagrams.
 	"diagrams" : {
@@ -343,20 +346,20 @@
 
 	"fonts" : {
 	    "title" : {
-		"name" : "Helvetica-Bold",
+		"name" : "Courier-Bold",
 		"size" : 12
 	    },
 	    "text" : {
-		"name" : "Helvetica",
+		"name" : "Courier",
 		"size" : 12
 	    },
 	    "chord" : {
-		"name" : "Helvetica-bold",
+		"name" : "Courier-bold",
 		"color" : "red",
 		"size" : 12
 	    },
 	    "comment" : {
-		"name" : "Helvetica-bold",
+		"name" : "Courier-bold",
 		"color" : "red",
 		"size" : 12
 	    },

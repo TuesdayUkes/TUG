@@ -346,20 +346,20 @@
 
 	"fonts" : {
 	    "title" : {
-		"name" : "Courier-Bold",
+		"name" : "Helvetica-Bold",
 		"size" : 12
 	    },
 	    "text" : {
-		"name" : "Courier",
+		"name" : "Helvetica",
 		"size" : 12
 	    },
 	    "chord" : {
-		"name" : "Courier-bold",
+		"name" : "Helvetica-bold",
 		"color" : "red",
 		"size" : 12
 	    },
 	    "comment" : {
-		"name" : "Courier-bold",
+		"name" : "Helvetica-bold",
 		"color" : "red",
 		"size" : 12
 	    },

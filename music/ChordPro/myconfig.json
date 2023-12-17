@@ -313,6 +313,10 @@
 			"name" : "Am9",
 			"frets" : [2, 0, 3, 2],
 			},
+			{
+				"name" : "C5",
+				"frets" : [0, 0, 3, 3],
+			},
 		],
 
     // Layout definitions for PDF output.

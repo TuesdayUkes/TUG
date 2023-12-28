@@ -351,10 +351,10 @@
 "fontconfig" :
 	{
 	"sans" : {
-		""            : "arial.ttf",
-		"bold"        : "arialbd.ttf",
-		"italic"      : "ariali.ttf",
-		"bolditalic"  : "arialbi.ttf",
+		""            : "DejaVuSans.ttf",
+		"bold"        : "DejaVuSans-Bold.ttf",
+		"italic"      : "DejaVuSans-Oblique.ttf",
+		"bolditalic"  : "DejaVuSans-BoldOblique.ttf",
 	},
 	},
 

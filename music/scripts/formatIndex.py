@@ -35,7 +35,7 @@ with open(HtmlFilename, "w") as HtmlFile:
 
     # reshape URL for sheet music into an HTML tag using the song title as the
     # visible text
-    newL = re.sub("\(([^)]*)\) (https?:.*)", r"<td><a href=\2>\1</a></td>",newL)
+    newL = re.sub("\(([^)]*)\) (https?:.*)", r'<td><a href="\2">\1</a></td>',newL)
 
     # If song title wasn't used with a link, split it from the player name here:
     newL = re.sub("\((.*)\)$", r"<td>\1</td>", newL)

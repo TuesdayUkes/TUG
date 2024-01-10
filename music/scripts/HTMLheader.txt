@@ -2,6 +2,9 @@
 <html lang="en-US" class="no-js">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Ukulele chords, free download">
+	<meta name="keywords" content="Ukulele, PDF, songs, Chordpro, chopro">
+
 	<meta http-equiv="Cache-Control" content="no-store" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">

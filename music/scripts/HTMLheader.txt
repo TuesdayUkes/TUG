@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" class="no-js">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta name="description" content="Ukulele chords, free download">
 	<meta name="keywords" content="Ukulele, PDF, songs, Chordpro, chopro">
 

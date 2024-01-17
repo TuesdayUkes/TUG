@@ -97,7 +97,7 @@ for p in allFiles:
 
 downloadExtensions = [".cho", ".chopro"]
 sortedTitles = sorted(allTitles, key=(lambda e: dictCompare(e[0]).casefold()))
-with open("PDFLinks.html", "w") as htmlOutput:
+with open("ukulele-song-archive.html", "w") as htmlOutput:
   htmlOutput.writelines(header)
   htmlOutput.write("<table>")
   for f in sortedTitles:

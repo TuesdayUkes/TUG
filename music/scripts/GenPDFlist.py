@@ -42,8 +42,29 @@ with open(musicFolder + "/scripts/HTMLheader.txt", "r") as headerText:
   header = headerText.readlines()
 
 header += """
-<h1>TUG's Music Archive</h1>
-<p>Pro tip: use your web browser's search function! Type CTRL-F (Command+F on the Mac) and type a portion of a song title.</p>
+<h1>Tuesday Ukes' archive of ukulele songs and chords</h1>
+
+<p>Whether you're a beginner ukulele player looking for easy songs or a longtime
+player searching for fun songs, this is the resource for you. Here you will find
+ukulele chords and chord diagrams for uke players of all levels.</p>
+
+<p>This collection of the best ukulele songs has been built over time by members
+of Austin's Tuesday Ukulele Group. </p>
+
+<h2>Lots of popular songs</h2>
+<p>There's a big range: Easy ukulele songs with simple chords for beginner
+ukulele players with just 3 chords or 4 chords. You will find great songs  by
+Paul McCartney, Neil Diamond, Bob Dylan, John Denver, and Bob Marley turned into
+ukulele music. More-advanced ukulele music players can find finger-stretching
+chord changes and chord shapes applied to popular ukulele songs. </p>
+
+"""
+
+footer = """
+<p>Chord progressions and strum patterns listed are the members' interpretations
+of the original recordings, and are presented for educational purposes. Except
+as noted (a few of our members are songwriters), we make no copyright claim on
+any song.</p>
 """
 
 extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt"]
@@ -103,6 +124,7 @@ with open("PDFLinks.html", "w") as htmlOutput:
 
   #close the table etc.
   htmlOutput.write("</table>")
+  htmlOutput.write(footer)
   htmlOutput.write("</div>\n")
   htmlOutput.write("</div>\n")
   htmlOutput.write("</body>\n")

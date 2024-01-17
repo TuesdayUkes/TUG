@@ -6,7 +6,7 @@
 	<meta name="description" content="Free downloads of ukulele tabs and chords for hundreds of songs, from Tin Pan Alley to today’s most-popular hit tunes, from the Tuesday Uke Group.">
 
 	<meta charset="utf-8">
-	<link rel="canonical" href="https://tuesdayukes.org/PDFLinks.html/">
+	<link rel="canonical" href="https://tuesdayukes.org/ukulele-song-archive.html/">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">

@@ -1,5 +1,6 @@
 {t: One}
 {st: Cash}
+{define: Fmaj7 base-fret 3 frets 3 3 0 0}
 
 Intro: [Am] [Dsus2] [Fmaj7] [G]
 

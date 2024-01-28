@@ -356,6 +356,13 @@
 		"italic"      : "DejaVuSans-Oblique.ttf",
 		"bolditalic"  : "DejaVuSans-BoldOblique.ttf",
 	},
+	"mono, monospace" : {
+        ""            : "Courier",
+        "bold"        : "Courier-Bold",
+        "italic"      : "Courier-Italic",
+        "bolditalic"  : "Courier-BoldItalic",
+    },
+
 	},
 
 	// Fonts.

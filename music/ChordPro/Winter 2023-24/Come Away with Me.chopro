@@ -1,5 +1,10 @@
 {t: Come Away with Me}
 {st: Norah Jones}
+{define: C frets 5 4 3 3}
+{define: Am7 frets 2 4 3 3}
+{define: Fsus2 frets 5 5 3 3}
+{define: Em frets 4 4 3 2}
+{define: G frets 4 2 3 2}
 
 [C]    [Am7]      [C]    [Am7]
 [C]    [Am7]      [C]    [Am7]

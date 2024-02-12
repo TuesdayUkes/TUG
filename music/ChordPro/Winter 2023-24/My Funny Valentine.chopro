@@ -1,0 +1,45 @@
+{title: My Funny Valentine}
+{artist: Music by Richard Rodgers, words by Lorenz Hart} 
+
+
+{define: DbMaj7 frets 1 1 1 3 fingers 1 1 1 3}
+{define: Bbm frets 3 1 1 1 fingers 3 1 2 0}
+{define: Bbm7 frets 1 1 1 1 fingers 1 1 1 1}
+{define: Gb frets 3 1 2 1 fingers 3 1 2 1}
+{define: F7 frets 2 3 1 0  fingers 2 3 1 0}
+{define: Gbm frets 2 4 2 4 fingers 1 3 2 4}
+{define: BbmMaj7 frets 3 1 1 0 fingers 3 1 2 0}
+{define: Db frets 1 1 1 4 fingers 1 1 1 4}
+{define: Ab7 frets 1 3 2 3 fingers 1 3 2 4}
+{define: Ebm7 frets 3 3 2 4 fingers 2 3 1 4}
+{define: Bbm6 frets 0 1 1 1 fingers 0 1 1 1}
+{define: Faug7 frets 2 3 1 4 fingers 2 3 1 4}
+{define: Bbdim frets 3 1 0 1 fingers 4 1 0 2}
+{define: Gb7b5 frets 3 4 2 3 fingers 2 4 1 3}
+{define: Bb7/A frets 1 3 2 0 fingers 1 3 2 0}
+{define: Ab7 frets 1 3 2 3 fingers 1 3 2 4}
+{define: F7+5 frets 2 3 1 4 fingers 2 3 1 4}
+
+(Slowly throughout)
+
+Intro
+[Bbdim][F7]
+
+[Bbm]My funny [BbmMaj7]Valentine,  [Bbm7]sweet, comic [Bbm6]Valentine,  
+[Gb]you make me [Ebm7]smile with my [Ebm6]heart [F7][Ebm] [F7]     
+[Bbm]Your looks are [F7]laughable, [Bbm7]unphoto[Bbm6]graphable,  
+[Gb]yet you're my [Ebm7]favorite work of [Gbm6]art.  [Ab7]  
+
+Is your [Db]figure     [Ab7sus4]less     [Ab7]than   [Db]Greek?                
+[Ab7sus4]Is    [Ab7]your [Db]mouth a [Ab7sus4]lit-  [Ab7]tle [Db]weak?                
+[Ab7sus4]When [Ab7]you [Dbmaj7]open    [F7+5]it    [F7]to    [Bbm]speak, 
+are you [Gbmaj7]smart?[Ebm7] [Bbdim] 
+
+[F7]But [Bbm]don't change a [BbmMaj7]hair for me,[Bbm7] not if you[Bbm6] care for me,  
+[Gb]Stay, little [Gb7b5]Valen- [F7]tine, [Bbm]stay [Db7]      
+[Gb]Each [Gbmaj7]day is [Ebm7]Valen[Bb7/A]tine's [Db]day.  
+
+Outro
+
+(Repeat 3X)
+[Ab7sus4] [Ab7] [Db]

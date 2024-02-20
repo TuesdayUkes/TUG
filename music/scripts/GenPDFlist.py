@@ -71,7 +71,7 @@ extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt"]
 allFiles = []
 for p in Path(musicFolder).rglob('*'):
   if ext(p) in (extension.lower() for extension in extensions):
-    allFiles.append(p)
+    allFiles.append(p.as_posix())
 
 def findMatchingBasename(files, basename):
   matches = [f for f in files if dictCompare(f[0]) == dictCompare(l(basename))]

@@ -345,45 +345,41 @@
 
 	"papersize" : "a4",
 
-	//"fontdir" : [ "C:\\WIndows\\Fonts"],
+	"fontdir" : [ "C:\\WIndows\\Fonts"],
 
 //  "papersize" : [600,1650],
-//"fontconfig" :
-//	{
-//	"sans" : {
-//		""            : "DejaVuSans.ttf",
-//		"bold"        : "DejaVuSans-Bold.ttf",
-//		"italic"      : "DejaVuSans-Oblique.ttf",
-//		"bolditalic"  : "DejaVuSans-BoldOblique.ttf",
-//	},
-//	"mono, monospace" : {
-//        ""            : "Courier",
-//        "bold"        : "Courier-Bold",
-//        "italic"      : "Courier-Italic",
-//        "bolditalic"  : "Courier-BoldItalic",
-//    },
-//
-//	},
-//
-//	// Fonts.
+"fontconfig" :
+	{
+	"sans" : {
+		""            : "DejaVuSans.ttf",
+		"bold"        : "DejaVuSans-Bold.ttf",
+		"italic"      : "DejaVuSans-Oblique.ttf",
+		"bolditalic"  : "DejaVuSans-BoldOblique.ttf",
+	},
+	"mono, monospace" : {
+        ""            : "Courier",
+        "bold"        : "Courier-Bold",
+        "italic"      : "Courier-Italic",
+        "bolditalic"  : "Courier-BoldItalic",
+    },
+
+	},
+
+	// Fonts.
 	"fonts" : {
 	    "title" : {
-		"name" : "Helvetica-Bold",
-		"size" : 12
+		"description" : "sans bold 12",
 	    },
 	    "text" : {
-		"name" : "Helvetica",
-		"size" : 10
+		"description" : "sans 12",
 	    },
 	    "chord" : {
-		"name" : "Helvetica-bold",
+		"description" : "sans bold 12",
 		"color" : "red",
-		"size" : 10
 	    },
 	    "comment" : {
-		"name" : "Helvetica-bold",
+		"description" : "sans bold 12",
 		"color" : "red",
-		"size" : 10
 	    },
 	},
     },

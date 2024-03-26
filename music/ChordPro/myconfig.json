@@ -20,7 +20,7 @@
     "diagrams" : {
 	"show" : "all"
     },
-		
+
 		"chords" : [
 			{
 			"name" : "Em7b5",
@@ -48,7 +48,8 @@
 			},
 			{
 			"name" : "A/C#",
-			"frets" : [6, 4, 5, 4],
+			"base" : 4,
+			"frets" : [3, 1, 2, 1],
 			},
 			{
 			"name" : "F9sus4",
@@ -312,6 +313,10 @@
 			"name" : "Am9",
 			"frets" : [2, 0, 3, 2],
 			},
+			{
+				"name" : "C5",
+				"frets" : [0, 0, 3, 3],
+			},
 		],
 
     // Layout definitions for PDF output.
@@ -322,7 +327,10 @@
 	"marginbottom" : 0,
 	"headspace" : 60,
 	"footspace" : 10,
+	"marginleft" : 10,
 	"head-first-only" : true,
+
+	"even-odd-pages" : 0,
 
 	// Slightly larger diagrams.
 	"diagrams" : {
@@ -336,28 +344,42 @@
 	},
 
 	"papersize" : "a4",
+
+	"fontdir" : [ "C:\\WIndows\\Fonts"],
+
 //  "papersize" : [600,1650],
+"fontconfig" :
+	{
+	"sans" : {
+		""            : "DejaVuSans.ttf",
+		"bold"        : "DejaVuSans-Bold.ttf",
+		"italic"      : "DejaVuSans-Oblique.ttf",
+		"bolditalic"  : "DejaVuSans-BoldOblique.ttf",
+	},
+	"mono, monospace" : {
+        ""            : "Courier",
+        "bold"        : "Courier-Bold",
+        "italic"      : "Courier-Italic",
+        "bolditalic"  : "Courier-BoldItalic",
+    },
+
+	},
 
 	// Fonts.
-
 	"fonts" : {
 	    "title" : {
-		"name" : "Helvetica-Bold",
-		"size" : 12
+		"description" : "sans bold 12",
 	    },
 	    "text" : {
-		"name" : "Helvetica",
-		"size" : 10
+		"description" : "sans 12",
 	    },
 	    "chord" : {
-		"name" : "Helvetica-bold",
+		"description" : "sans bold 12",
 		"color" : "red",
-		"size" : 10
 	    },
 	    "comment" : {
-		"name" : "Helvetica-bold",
+		"description" : "sans bold 12",
 		"color" : "red",
-		"size" : 10
 	    },
 	},
     },

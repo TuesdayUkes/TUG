@@ -42,15 +42,36 @@ with open(musicFolder + "/scripts/HTMLheader.txt", "r") as headerText:
   header = headerText.readlines()
 
 header += """
-<h1>TUG's Music Archive</h1>
-<p>Pro tip: use your web browser's search function! Type CTRL-F (Command+F on the Mac) and type a portion of a song title.</p>
+<h1>Tuesday Ukes' archive of ukulele songs and chords</h1>
+
+<p>Whether you're a beginner ukulele player looking for easy songs or a longtime
+player searching for fun songs, this is the resource for you. Here you will find
+ukulele chords and chord diagrams for uke players of all levels.</p>
+
+<p>This collection of the best ukulele songs has been built over time by members
+of Austin's Tuesday Ukulele Group. </p>
+
+<h2>Lots of popular songs</h2>
+<p>There's a big range: Easy ukulele songs with simple chords for beginner
+ukulele players with just 3 chords or 4 chords. You will find great songs  by
+Paul McCartney, Neil Diamond, Bob Dylan, John Denver, and Bob Marley turned into
+ukulele music. More-advanced ukulele music players can find finger-stretching
+chord changes and chord shapes applied to popular ukulele songs. </p>
+
+"""
+
+footer = """
+<p>Chord progressions and strum patterns listed are the members' interpretations
+of the original recordings, and are presented for educational purposes. Except
+as noted (a few of our members are songwriters), we make no copyright claim on
+any song.</p>
 """
 
 extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt"]
 allFiles = []
 for p in Path(musicFolder).rglob('*'):
   if ext(p) in (extension.lower() for extension in extensions):
-    allFiles.append(p)
+    allFiles.append(p.as_posix())
 
 def findMatchingBasename(files, basename):
   matches = [f for f in files if dictCompare(f[0]) == dictCompare(l(basename))]
@@ -76,7 +97,7 @@ for p in allFiles:
 
 downloadExtensions = [".cho", ".chopro"]
 sortedTitles = sorted(allTitles, key=(lambda e: dictCompare(e[0]).casefold()))
-with open("PDFLinks.html", "w") as htmlOutput:
+with open("ukulele-song-archive.html", "w") as htmlOutput:
   htmlOutput.writelines(header)
   htmlOutput.write("<table>")
   for f in sortedTitles:
@@ -88,13 +109,13 @@ with open("PDFLinks.html", "w") as htmlOutput:
       for i in f[1:]:
         if ext(i) == ".urltxt":
           with open(i, "r") as urlFile:
-            label = urlFile.readline()
-            address = urlFile.readline()
-          htmlOutput.write(f"<a href=\"{address}?v={now}\">{label}</a>\n")
+            label = urlFile.readline().strip()
+            address = urlFile.readline().strip()
+          htmlOutput.write(f"<a href=\"{address}\">{label}</a><br>\n")
         elif ext(i) in downloadExtensions:
-          htmlOutput.write(f"  <a href=\"{str(i)}?v={now}\" download=\"{l(i)}{ext(i)}\">{ext(i)}</a>\n")
+          htmlOutput.write(f" <a href=\"{str(i).replace(' ','%20')}?v={now}\" download=\"{l(i)}{ext(i)}\">{ext(i)}</a><br>\n")
         else:
-          htmlOutput.write(f"  <a href=\"{str(i)}?v={now}\">{ext(i)}</a>\n")
+          htmlOutput.write(f"  <a href=\"{str(i).replace(' ','%20')}?v={now}\">{ext(i)}</a><br>\n")
 
       # close each table row (and the table data containing file links)
       htmlOutput.write("</td></tr>\n")
@@ -103,6 +124,7 @@ with open("PDFLinks.html", "w") as htmlOutput:
 
   #close the table etc.
   htmlOutput.write("</table>")
+  htmlOutput.write(footer)
   htmlOutput.write("</div>\n")
   htmlOutput.write("</div>\n")
   htmlOutput.write("</body>\n")

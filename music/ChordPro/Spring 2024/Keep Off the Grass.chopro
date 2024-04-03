@@ -1,7 +1,10 @@
 {t: Keep off the Grass}
 {st: Todd Snider}
 
-[G]  [D]  [C]  [D]  [G]
+{textcolour: blue}
+[G]It keeps on getting harder [D]to keep on keeping on
+with [C]everybody screaming [D]orders in my [G]ear.
+{textcolour}
 
 [G]It keeps on getting harder [D]to keep on keeping on
 with [C]everybody screaming [D]orders in my [G]ear.
@@ -38,7 +41,10 @@ I do fine on my [G]own.
 
 [G]
 
-[G] [D] [C] [D] [G]
+{textcolour: blue}
+[G]It keeps on getting harder [D]to keep on keeping on
+with [C]everybody screaming [D]orders in my [G]ear.
+{textcolour}
 
 So I [G]keep an open mind.  Its a [D]close minded world.
 Always [C]telling me to [D]keep of this [G]gr[C]as[G]s.[C]  [G]

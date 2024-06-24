@@ -1,8 +1,10 @@
 {t: Ride On}
 {st: AC/DC}
+{define: F5 frets x 0 1 3}
+{define: G5 frets 0 2 3 5}
 
 [Intro]
-C  F/C  x4
+[C]  [F/C]  x4
 
 [Verse 1]
 It's an[C]other lonely [F/C]evening  [C]   [F/C]
@@ -58,14 +60,9 @@ Lord I'm [F#]lonely
 [F5] One of these days
 
 [Solo 2]
-Check out "Ride On Solo v3" by suicidehummer
-for a great tab of the main solo!
-
 [C] [F/C] [C] [F/C] [C] [F/C] [C] [F/C]
-[F/C] [Bb] [F/C] [Bb] [C] [F/C] [C] [F/C]
-[C] [F/C] [C] [F/C] [C] [F/C] [C] [F/C]
-[F/C] [Bb] [F/C] [Bb] [C] [F/C] [C] [F/C]
 [F]           [F#]           [G]              [N.C.]
+
 [Chorus]
 ([F]Ride [C]on)
 ([C]Ride [G]on)

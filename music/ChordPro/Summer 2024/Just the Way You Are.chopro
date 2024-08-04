@@ -5,6 +5,7 @@
 {define: Bm6 frets 1 2 2 2}
 {define: Gm6/D frets 0 2 0 1}
 {define: G/A frets 2 2 3 2}
+{define: Am7 frets 2 4 3 3}
 
 [Gm6/D] [G] [Dsus4]
 [Gm6/D]        [G]     [Dsus4]

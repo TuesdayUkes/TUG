@@ -1,3 +1,4 @@
+from first import first
 from pathlib import Path
 from posixpath import basename, splitext
 import sys
@@ -76,10 +77,7 @@ for p in Path(musicFolder).rglob('*'):
 # return the first file that matches basename (there should be only zero or one
 # matches). Return None if no matches found.
 def findMatchingBasename(files, basename):
-  return next(
-    (f for f in files if dictCompare(f[0]) == dictCompare(l(basename))),
-    None
-  )
+  return first((f for f in files if dictCompare(f[0]) == dictCompare(l(basename))))
 
 # allTitles will be an array of arrays. Each element's [0] entry will be the
 # song title. The other entries will be file paths that contain that title.

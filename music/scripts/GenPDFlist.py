@@ -73,15 +73,13 @@ for p in Path(musicFolder).rglob('*'):
   if ext(p) in (extension.lower() for extension in extensions):
     allFiles.append(p.as_posix())
 
+# return the first file that matches basename (there should be only zero or one
+# matches). Return None if no matches found.
 def findMatchingBasename(files, basename):
-  matches = [f for f in files if dictCompare(f[0]) == dictCompare(l(basename))]
-  if matches:
-    # matches should never have more than one entry, but there is no check to
-    # verify that claim. The only way we intend to add a new file path to
-    # "files" is when no entry already has a file with the same basename.
-    return matches[0]
-  else:
-    return None
+  return next(
+    (f for f in files if dictCompare(f[0]) == dictCompare(l(basename))),
+    None
+  )
 
 # allTitles will be an array of arrays. Each element's [0] entry will be the
 # song title. The other entries will be file paths that contain that title.

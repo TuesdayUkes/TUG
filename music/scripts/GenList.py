@@ -9,11 +9,15 @@ from datetime import datetime
 
 parser = argparse.ArgumentParser()
 parser.add_argument("musicFolder")
+parser.add_argument("outputFile")
+parser.add_argument("--intro", action=argparse.BooleanOptionalAction)
 args = parser.parse_args()
 
 print("Generating Music List (this takes a few seconds)", file=sys.stderr)
 
 musicFolder = args.musicFolder
+outputFile = args.outputFile
+intro = args.intro
 
 now = datetime.now().strftime("%Y.%m.%d.%H.%M.%S")
 
@@ -42,7 +46,7 @@ def dictCompare(s):
 with open(musicFolder + "/scripts/HTMLheader.txt", "r") as headerText:
   header = headerText.readlines()
 
-header += """
+introduction = """
 <h1>Tuesday Ukes' archive of ukulele songs and chords</h1>
 
 <p>Whether you're a beginner ukulele player looking for easy songs or a longtime
@@ -93,8 +97,10 @@ for p in allFiles:
 
 downloadExtensions = [".cho", ".chopro"]
 sortedTitles = sorted(allTitles, key=(lambda e: dictCompare(e[0]).casefold()))
-with open("ukulele-song-archive.html", "w") as htmlOutput:
+with open(outputFile, "w") as htmlOutput:
   htmlOutput.writelines(header)
+  if intro:
+    htmlOutput.writelines(introduction)
   htmlOutput.write("<table>")
   for f in sortedTitles:
     try:
@@ -120,7 +126,8 @@ with open("ukulele-song-archive.html", "w") as htmlOutput:
 
   #close the table etc.
   htmlOutput.write("</table>")
-  htmlOutput.write(footer)
+  if intro:
+    htmlOutput.write(footer)
   htmlOutput.write("</div>\n")
   htmlOutput.write("</div>\n")
   htmlOutput.write("</body>\n")

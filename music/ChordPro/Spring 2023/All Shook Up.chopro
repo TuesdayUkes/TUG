@@ -2,8 +2,10 @@
 {st: By Otis Blackwell/Elvis Presley; 1957}
 
 Kazoo:
-&blue: Mmmm-mmm-[C]mmm, ooo-[D7] ooo
-&blue: Hey [G] hey!
+{textcolour: blue}
+Mmmm-mmm-[C]mmm, ooo-[D7] ooo
+Hey [G] hey!
+{textcolour}
 
 A-well-a [G] bless-a my soul, what's a-wrong with me?
 I'm [G] itchin' like a man on a fuzzy tree
@@ -32,10 +34,12 @@ I'm in love (slap uke) I'm [G] all shook up
 Mmmm-mmm-[C] mmm, ooo-[D7] ooo
 Hey [G] hey! [G7]
 
+{textcolour: blue}
 Kazoo: My [C7] tongue gets tied when I try to speak
 My [G] insides shakin' like a leaf on a tree
 The [C7] only cure for this body of mine
 Is to have [D7] (stop) this girl that I [D7] love so fine
+{textcolour}
 
 My [C7] tongue gets tied when I try to speak
 My [G] insides shakin' like a [G7] leaf on a tree

@@ -1,5 +1,5 @@
 {title:Moonshadow by Cat Stevens / Yusuf Islam}
-{st: Cynthia Lin tutorial: https://www.youtube.com/watch?v=LJgHgFtVKPk}
+{subtitle: Cynthia Lin tutorial: https://www.youtube.com/watch?v=LJgHgFtVKPk}
 {key: G}
 {define: G5 frets 0 2 3 5}
 {define: Gsus4 frets 0 2 3 3}
@@ -7,8 +7,8 @@
 
 {comment_box: INTRO - pick (134)-2 x 4 / measure }
 
-[G5]  [G5]  [G5]  [G5] [|] [Gsus4]  [Gsus4]  [G]  [G]
-[C]  [C]  [D7]  [D7] [|] [G][-][C][-][G][/]
+[G5] [G5] [G5] [G5] | [Gsus4] [Gsus4] [G] [G]
+[C] [C] [D7] [D7] | [G][-][C][-][G][/]
 
 {comment_box: CHORUS - pick (134)-2 x 4 / measure }
 
@@ -41,7 +41,7 @@ Oh [G5]I'm bein' followed by a [Gsus4]moon[G]shadow,
 {comment_box: VERSE - Strum [[]du du du du] }
 
 And [C]if I [G]ever [C]lose my [G]legs, 
-[C]I won't [C]moan, and [Am]I won't [D]beg
+[C]I won't [G]moan, and [Am]I won't [D]beg
 Yes [C]if I [G]ever [C]lose my [G]legs, 
 Oh [Am]If ........[D].......[G]........[Em]........ 
 I [Am]won't have to [D]walk no[G][/]more[C][/][G][/]
@@ -52,6 +52,7 @@ Yes [C]if I [G]ever [C]lose my [G]mouth,
 Oh [Am]If ........[D].......[G]........[Em]........
 I [Am]won't have to [D]talk [G][/][C][/][G][/]
 
+{new_page}
 {comment_box: BREAK - pick (134)-2 x 4 / measure }
 
 [G5]  [G5]  [G5]  [G5] [|] [Gsus4]  [Gsus4]  [G]  [G]

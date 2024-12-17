@@ -13,7 +13,7 @@
       // Chords inline.
       // May be a string containing pretext %s posttext.
       // Defaults to "[%s]" if true.
-      "inline-chords" : true,
+      "inline-chords" : true
     },
 
     // Show chord diagrams.
@@ -323,11 +323,12 @@
 
     "pdf" : {
 
-	"margintop" : 70,
-	"marginbottom" : 0,
-	"headspace" : 60,
-	"footspace" : 10,
-	"marginleft" : 10,
+   	"margintop"    :  70,
+  	"marginbottom" :  0,
+	"marginleft"   :  20,
+	"marginright"  :  20,
+    	"headspace"    :  50,
+    	"footspace"    :  10,
 	"head-first-only" : true,
 
 	"even-odd-pages" : 0,
@@ -343,7 +344,26 @@
 	    "linewidth" : 0.1,
 	},
 
-	"papersize" : "a4",
+  "chorus" : {
+      // Indentation of the chorus.
+      "indent"     :  0,
+      // Chorus side bar.
+      // Suppress by setting offset and/or width to zero.
+      "bar" : {
+           "offset" :  0,
+           "width"  :  0,
+           "color"  : "foreground",
+      },
+      // Recall style: Print the tag using the type.
+      // Alternatively, quote the lines of the preceding chorus.
+      "recall" : {
+           "tag"   : "Chorus",
+           "type"  : "comment",
+           "quote" : false,
+      },
+  },
+
+	"papersize" : "letter",
 
 	"fontdir" : [ "C:\\WIndows\\Fonts"],
 
@@ -368,7 +388,10 @@
 	// Fonts.
 	"fonts" : {
 	    "title" : {
-		"description" : "sans bold 12",
+		"description" : "sans bold 16",
+	    },
+ 	"subtitle" : {
+		"description" : "sans 12",
 	    },
 	    "text" : {
 		"description" : "sans 12",
@@ -378,8 +401,7 @@
 		"color" : "red",
 	    },
 	    "comment" : {
-		"description" : "sans bold 12",
-		"color" : "red",
+		"description" : "sans 12",
 	    },
 	},
     },

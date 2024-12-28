@@ -36,12 +36,18 @@ def removeHiddenFiles(allFiles):
   hideFiles = []
   for f in allFiles:
     if ext(f).lower() == ".hide":
-      # Add full path name without extension
-      hideFiles.append(os.path.splitext(f)[0])
+      # Add full path name without extension as lowercase string
+      # WARNING! This call to "lower()" (together with the call when
+      # constructing "basename" below) will cause files that differ only in case
+      # to match, even on Linux
+      hideFiles.append(str(os.path.splitext(f)[0]).lower())
 
   visibleFiles = []
   for f in allFiles:
-    basename = os.path.splitext(f)[0]
+    # WARNING! This call to "lower()" together with the same call above when
+    # appending to "hideFiles" will cause files that differ only in case to
+    # match, even on Linux.
+    basename = str(os.path.splitext(f)[0]).lower()
     if not (basename in hideFiles):
       visibleFiles.append(f)
 

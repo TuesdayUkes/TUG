@@ -27,6 +27,26 @@ l = lambda p: str(os.path.splitext(os.path.basename(p))[0])
 # lambda ext is like lambda l, except it returns the file extension
 ext = lambda p: str(os.path.splitext(os.path.basename(p))[1]).lower()
 
+# A file with the extension ".hide" will prevent other files within the same
+# folder with the same name (but all extensions) from being adding to the
+# archive table. This is a way to conceal older versions of a song, without
+# breaking old links to the older versions (the files still exist, but there
+# will be no HTML links to them in the new archive table).
+def removeHiddenFiles(allFiles):
+  hideFiles = []
+  for f in allFiles:
+    if ext(f).lower() == ".hide":
+      # Add full path name without extension
+      hideFiles.append(os.path.splitext(f)[0])
+
+  visibleFiles = []
+  for f in allFiles:
+    basename = os.path.splitext(f)[0]
+    if not (basename in hideFiles):
+      visibleFiles.append(f)
+
+  return visibleFiles
+
 # dictCompare removes articles that appear as the first word in a filename
 articles = ['a', 'an', 'the']
 def dictCompare(s):
@@ -72,11 +92,13 @@ as noted (a few of our members are songwriters), we make no copyright claim on
 any song.</p>
 """
 
-extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt"]
+extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt", ".hide"]
 allFiles = []
 for p in Path(musicFolder).rglob('*'):
   if ext(p) in (extension.lower() for extension in extensions):
     allFiles.append(p.as_posix())
+
+visibleFiles = removeHiddenFiles(allFiles)
 
 # return the first file that matches basename (there should be only zero or one
 # matches). Return None if no matches found.
@@ -86,7 +108,7 @@ def findMatchingBasename(files, basename):
 # allTitles will be an array of arrays. Each element's [0] entry will be the
 # song title. The other entries will be file paths that contain that title.
 allTitles = []
-for p in allFiles:
+for p in visibleFiles:
   matchingTitle = findMatchingBasename(allTitles, p)
   if matchingTitle:
     # add a newly found file for a previously found song

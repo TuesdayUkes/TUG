@@ -72,7 +72,7 @@ def createPDFs():
     if ext(p) in (extension.lower() for extension in extensions):
       pdfFile = str(os.path.splitext(str(p))[0]) + ".pdf"
       if not os.path.exists(pdfFile) or forceNewPDF:
-        print("did not find " + pdfFile)
+        print("Generating " + pdfFile)
         subprocess.run(chordproSettings + [str(p)])
 
 # A file with the extension ".hide" will prevent other files within the same

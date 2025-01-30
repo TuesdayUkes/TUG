@@ -31,12 +31,18 @@ l = lambda p: str(os.path.splitext(os.path.basename(p))[0])
 ext = lambda p: str(os.path.splitext(os.path.basename(p))[1]).lower()
 
 def createPDFs():
-  linuxpath = ["perl", "~paul/chordpro/script/chordpro.pl"]
-  winpath = ["chordpro"]
+  linuxpath = ["perl",
+               "~paul/chordpro/script/chordpro.pl",
+               "--config=~paul/chordpro/lib/ChordPro/res/config/ukulele.json",
+               "--config=~paul/chordpro/lib/ChordPro/res/config/ukulele-ly.json"
+               ]
+
+  winpath = ["chordpro",
+            "--config=Ukulele",
+            "--config=Ukulele-ly"
+            ]
 
   chordproSettings=[
-    "--config=Ukulele",
-    "--config=Ukulele-ly",
     "--define=pdf:diagrams:show=top",
     "--define=settings:inline-chords=true",
     "--define=pdf:margintop=70",

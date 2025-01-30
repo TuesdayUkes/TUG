@@ -1,3 +1,4 @@
+import subprocess
 from first import first
 from pathlib import Path
 from posixpath import basename, splitext
@@ -11,6 +12,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("musicFolder")
 parser.add_argument("outputFile")
 parser.add_argument("--intro", action=argparse.BooleanOptionalAction, default=True)
+parser.add_argument("--force", action=argparse.BooleanOptionalAction, default=False)
 args = parser.parse_args()
 
 print("Generating Music List (this takes a few seconds)", file=sys.stderr)
@@ -18,6 +20,7 @@ print("Generating Music List (this takes a few seconds)", file=sys.stderr)
 musicFolder = args.musicFolder
 outputFile = args.outputFile
 intro = args.intro
+forceNewPDF = args.force
 
 now = datetime.now().strftime("%Y.%m.%d.%H.%M.%S")
 
@@ -26,6 +29,45 @@ l = lambda p: str(os.path.splitext(os.path.basename(p))[0])
 
 # lambda ext is like lambda l, except it returns the file extension
 ext = lambda p: str(os.path.splitext(os.path.basename(p))[1]).lower()
+
+def createPDFs():
+  linuxpath = ["perl", "~paul/chordpro/script/chordpro.pl"]
+  winpath = ["chordpro"]
+
+  chordproSettings=[
+    "--config=Ukulele",
+    "--config=Ukulele-ly",
+    "--define=pdf:diagrams:show=top",
+    "--define=settings:inline-chords=true",
+    "--define=pdf:margintop=70",
+    "--define=pdf:marginbottom=0",
+    "--define=pdf:marginleft=20",
+    "--define=pdf:marginright=20",
+    "--define=pdf:headspace=50",
+    "--define=pdf:footspace=10",
+    "--define=pdf:head-first-only=true",
+    "--define=pdf:fonts:chord:color=red",
+    "--text-font=helvetica",
+    "--chord-font=helvetica"
+  ]
+
+  if os.name == "nt":
+    chordproSettings = winpath + chordproSettings
+  else:
+    chordproSettings = linuxpath + chordproSettings
+
+  print(chordproSettings)
+
+  # lambda ext is like lambda l, except it returns the file extension
+  ext = lambda p: str(os.path.splitext(os.path.basename(p))[1]).lower()
+
+  extensions = [".chopro", ".cho"]
+  for p in Path(musicFolder).rglob('*'):
+    if ext(p) in (extension.lower() for extension in extensions):
+      pdfFile = str(os.path.splitext(str(p))[0]) + ".pdf"
+      if not os.path.exists(pdfFile) or forceNewPDF:
+        print("did not find " + pdfFile)
+        subprocess.run(chordproSettings + [str(p)])
 
 # A file with the extension ".hide" will prevent other files within the same
 # folder with the same name (but all extensions) from being adding to the
@@ -97,6 +139,8 @@ of the original recordings, and are presented for educational purposes. Except
 as noted (a few of our members are songwriters), we make no copyright claim on
 any song.</p>
 """
+
+createPDFs()
 
 extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt", ".hide"]
 allFiles = []

@@ -32,9 +32,9 @@ ext = lambda p: str(os.path.splitext(os.path.basename(p))[1]).lower()
 
 def createPDFs():
   linuxpath = ["perl",
-               "~paul/chordpro/script/chordpro.pl",
-               "--config=~paul/chordpro/lib/ChordPro/res/config/ukulele.json",
-               "--config=~paul/chordpro/lib/ChordPro/res/config/ukulele-ly.json"
+               "/home/paul/chordpro/script/chordpro.pl",
+               "--config=/home/paul/chordpro/lib/ChordPro/res/config/ukulele.json",
+               "--config=/home/paul/chordpro/lib/ChordPro/res/config/ukulele-ly.json"
                ]
 
   winpath = ["chordpro",

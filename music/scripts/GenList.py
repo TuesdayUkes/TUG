@@ -62,11 +62,6 @@ def createPDFs():
   else:
     chordproSettings = linuxpath + chordproSettings
 
-  print(chordproSettings)
-
-  # lambda ext is like lambda l, except it returns the file extension
-  ext = lambda p: str(os.path.splitext(os.path.basename(p))[1]).lower()
-
   extensions = [".chopro", ".cho"]
   for p in Path(musicFolder).rglob('*'):
     if ext(p) in (extension.lower() for extension in extensions):

@@ -18,14 +18,15 @@ def createPDFs():
   	"chordpro",
           "--config=Ukulele",
           "--config=Ukulele-ly",
-     	"--define=pdf:diagrams:show=top",
-     	"--define=pdf:margintop=70",
-    	"--define=pdf:marginbottom=0",
-  	"--define=pdf:marginleft=20",
-  	"--define=pdf:marginright=20",
-      	"--define=pdf:headspace=50",
-      	"--define=pdf:footspace=10",
-  	"--define=pdf:head-first-only=true",
+          "--define=pdf:diagrams:show=top",
+          "--define=settings:inline-chords=true",
+          "--define=pdf:margintop=70",
+          "--define=pdf:marginbottom=0",
+          "--define=pdf:marginleft=20",
+          "--define=pdf:marginright=20",
+          "--define=pdf:headspace=50",
+          "--define=pdf:footspace=10",
+          "--define=pdf:head-first-only=true",
           "--define=pdf:fonts:chord:color=red",
           "--text-font=helvetica",
           "--chord-font=helvetica"
@@ -38,3 +39,5 @@ def createPDFs():
   for p in Path(musicFolder).rglob('*'):
     if ext(p) in (extension.lower() for extension in extensions):
       subprocess.run(chordproSettings + [str(p)])
+
+createPDFs()

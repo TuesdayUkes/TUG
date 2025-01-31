@@ -12,7 +12,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("musicFolder")
 parser.add_argument("outputFile")
 parser.add_argument("--intro", action=argparse.BooleanOptionalAction, default=True)
-parser.add_argument("--force", action=argparse.BooleanOptionalAction, default=False)
+parser.add_argument("--genPDF", action=argparse.BooleanOptionalAction, default=False)
+parser.add_argument("--forcePDF", action=argparse.BooleanOptionalAction, default=False)
 args = parser.parse_args()
 
 print("Generating Music List (this takes a few seconds)", file=sys.stderr)
@@ -20,7 +21,8 @@ print("Generating Music List (this takes a few seconds)", file=sys.stderr)
 musicFolder = args.musicFolder
 outputFile = args.outputFile
 intro = args.intro
-forceNewPDF = args.force
+forceNewPDF = args.forcePDF
+genPDF = args.genPDF
 
 now = datetime.now().strftime("%Y.%m.%d.%H.%M.%S")
 
@@ -141,7 +143,8 @@ as noted (a few of our members are songwriters), we make no copyright claim on
 any song.</p>
 """
 
-createPDFs()
+if genPDF:
+  createPDFs()
 
 extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt", ".hide"]
 allFiles = []

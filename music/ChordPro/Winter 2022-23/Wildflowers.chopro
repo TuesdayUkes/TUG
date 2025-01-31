@@ -2,8 +2,10 @@
 {st: Tom Petty  1994}
 
 Instrumental Intro:
-&blue: [C] You be-[G]-long a-[D]-mong the wild-[G]-flowers
-&blue: [C] You be-[G]-long in a [D] boat out at [G] sea
+{textcolour: blue}
+ [C] You be-[G]-long a-[D]-mong the wild-[G]-flowers
+ [C] You be-[G]-long in a [D] boat out at [G] sea
+{textcolour}
 
 [C] You be-[G]-long a-[D]-mong the wild-[G]-flowers
 [C] You be-[G]-long in a [D] boat out at [G] sea

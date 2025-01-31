@@ -2,8 +2,10 @@
 {st: Mary Jane Ford	2008}
 
 {c: Instrumental Intro: First 2 lines verse 1}
-&blue: [G] In downtown Austin, [Em] Texas there’s a [G] bat colo-[Em]-ny.
-&blue: [G] They are of the [Em] Mexican Free-[C]-tailed varie-[D]-ty.
+{textcolour: blue}
+ [G] In downtown Austin, [Em] Texas there’s a [G] bat colo-[Em]-ny.
+ [G] They are of the [Em] Mexican Free-[C]-tailed varie-[D]-ty.
+{textcolour}
 
 {c: Verse 1:}
 [G] In downtown Austin, [Em] Texas there’s a [G] bat colo-[Em]-ny.
@@ -16,8 +18,10 @@
 In [G] crevices, conceal-[C]-ed, [G] safe from [D] predator [G] foes.
 
 {c: Instrumental break:  Last 2 lines verse 1}
-&blue: [Am] They hang sus-[D]-pended by their [Am] claws and their [D] toes.
-&blue: In [G] crevices, conceal-[C]-ed, [G] safe from [D] predator [G] foes.
+{textcolour: blue}
+ [Am] They hang sus-[D]-pended by their [Am] claws and their [D] toes.
+ In [G] crevices, conceal-[C]-ed, [G] safe from [D] predator [G] foes.
+{textcolour}
 
 {c: Chorus:}
 The [G] Ann Richards [Em] Bridge at [G] Congress Ave-[Em]-nue
@@ -30,10 +34,12 @@ Is [G] home in the ¬[Em] winter [C] to a Spartan [D] few.
 [G] To the lovely val-[C]-leys, [G] caves, of [D] Mexi-[G]-co.
 
 {c: Instrumental break: First half verse 1}
-&blue: [G] In downtown Austin, [Em] Texas there’s a [G] bat colo-[Em]-ny.
-&blue: [G] They are of the [Em] Mexican Free-[C]-tailed varie-[D]-ty.
-&blue: [G] Under a [Em] bridge through the [G] day, they re-[Em]-side.
-&blue: [C] But at dusk the [D] horde flows [G] like [D] the [G] tide.
+{textcolour: blue}
+ [G] In downtown Austin, [Em] Texas there’s a [G] bat colo-[Em]-ny.
+ [G] They are of the [Em] Mexican Free-[C]-tailed varie-[D]-ty.
+ [G] Under a [Em] bridge through the [G] day, they re-[Em]-side.
+ [C] But at dusk the [D] horde flows [G] like [D] the [G] tide.
+{textcolour}
 
 {c: Verse 2:}
 Would [G] it be en-[Em]-joyable to [G] hang with the [Em] bats,
@@ -46,8 +52,10 @@ The [C] colony is [D] relishing a [G] banquet [D] on the [G] town.
 [G] They provide a ser-[C]-vice [G] to our [D] crops and vege-[G]-tation.
 
 {c: Instrumental break:  Last 2 lines verse 2}
-&blue: [Am] And, like the [D] honey bees, in-[Am]-volved in polli-[D]-nation,
-&blue: [G] They provide a ser-[C]-vice [G] to our [D] crops and vege-[G]-tation.
+{textcolour: blue}
+ [Am] And, like the [D] honey bees, in-[Am]-volved in polli-[D]-nation,
+ [G] They provide a ser-[C]-vice [G] to our [D] crops and vege-[G]-tation.
+{textcolour}
 
 {c: Chorus:}
 The [G] Ann Richards [Em] Bridge at [G] Congress Ave-[Em]-nue
@@ -60,5 +68,7 @@ Is [G] home in the ¬[Em] winter [C] to a Spartan [D] few.
 [G] To the lovely val-[C]-leys, [G] caves, of [D] Mexi-[G]-co.
 
 {c: Instrumental tag:  Last 2 lines chorus}
-&blue: [Am] To feel their [D] destiny, [Am] longing to [D] go 
-&blue: [G] To the lovely val-[C]-leys, [G] caves, of [D] Mexi-[G]-co.
+{textcolour: blue}
+ [Am] To feel their [D] destiny, [Am] longing to [D] go 
+ [G] To the lovely val-[C]-leys, [G] caves, of [D] Mexi-[G]-co.
+{textcolour}

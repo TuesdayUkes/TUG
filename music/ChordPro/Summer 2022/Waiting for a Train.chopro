@@ -2,10 +2,14 @@
 {st: Jimmie Rodgers}
 
 Instrumental Intro: last line + yodel
-&blue: [D] "Get [G] off, get off, you [D] railroad [B7] bum"
-&blue: &blue: and  he [E7] slammed the [A7]  boxcar [D] door
+{textcolour: blue}
+ [D] "Get [G] off, get off, you [D] railroad [B7] bum"
+  and  he [E7] slammed the [A7]  boxcar [D] door
+{textcolour}
 
-&blue: (yodel)  [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour: blue}
+ (yodel)  [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour}
 
 Verse 1:
 [D] All a [A7]  round the [D] water [D7]  tank, [G] waiting for a [D] train
@@ -16,7 +20,9 @@ I [D] haven't [A7]  got a [D] nickel, [D7] not a [G] penny can I [D] show
 "Get [G] off, get off, you [D] railroad [B7] bum"
 and  he [E7] slammed the [A7]  boxcar [D] door
 
-&blue: (yodel)     [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour: blue}
+ (yodel)     [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour}
 
 Verse 2:
 [D] He put me [A7]  off in [D] Texas, [D7]  a [G] state I dearly [D] love
@@ -27,14 +33,18 @@ My [D] pocket [A7]  book is [D] empty [D7]  and my [G] heart is full of [D] pain
 I'm a [G] thousand miles a [D] way from [B7] home
 just [E7] waiting  [A7]  for a [D] train
 
-&blue: (yodel)    [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour: blue}
+ (yodel)    [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour}
 
-&blue: Instrumental Break: last 5 lines verse
-&blue: No [D] body [A7] seems to [D] want me, [D7] or [G] lend me a helping [D] hand
-&blue: I'm [G] on my way from [D] Frisco, going [E7] back to Dixie [A7]  land
-&blue: My [D] pocket [A7]  book is [D] empty, [D7],  and my [G] heart is full of [D] pain
-&blue: I'm a [G] thousand miles a [D] way from [B7] home
-&blue: just [E7] waiting  [A7]  for a [D] train
+{textcolour: blue}
+ Instrumental Break: last 5 lines verse
+ No [D] body [A7] seems to [D] want me, [D7] or [G] lend me a helping [D] hand
+ I'm [G] on my way from [D] Frisco, going [E7] back to Dixie [A7]  land
+ My [D] pocket [A7]  book is [D] empty, [D7],  and my [G] heart is full of [D] pain
+ I'm a [G] thousand miles a [D] way from [B7] home
+ just [E7] waiting  [A7]  for a [D] train
+{textcolour}
 
 Repeat Verse 1 & Yodel:
     Verse 1:
@@ -46,7 +56,11 @@ I [D] haven't [A7]  got a [D] nickel, [D7] not a [G] penny can I [D] show
 "Get [G] off, get off, you [D] railroad [B7] bum"
 and  he [E7] slammed the [A7]  boxcar [D] door
 
-&blue: (yodel)    [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour: blue}
+ (yodel)    [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour}
 
-&blue: Instrumental Outro: Yodel
-&blue: (yodel)    [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour: blue}
+ Instrumental Outro: Yodel
+ (yodel)    [D] yodelehee-o, ayode [A7] lehee-o, ayode [D] lehee
+{textcolour}

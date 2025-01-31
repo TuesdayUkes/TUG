@@ -1,10 +1,12 @@
 {t: Famous Blue Raincoat }
 {st:Leonard Cohen}
 
-&blue: It's [Am] four in the morning [F] the end of December
-&blue: [Dm] I'm writing you now just to [Em7] see if you're better
-&blue: [Am] New York is cold but I [F] like where I'm living
-&blue: There's [Dm] music on Clinton street [Em7] all through the evening
+{textcolour: blue}
+ It's [Am] four in the morning [F] the end of December
+ [Dm] I'm writing you now just to [Em7] see if you're better
+ [Am] New York is cold but I [F] like where I'm living
+ There's [Dm] music on Clinton street [Em7] all through the evening
+{textcolour}
 
 It's [Am] four in the morning [F] the end of December
 [Dm] I'm writing you now just to [Em7] see if you're better
@@ -29,8 +31,10 @@ Well I [C] see you there with the rose in your [G] teeth
 One more thin gypsy [Am] thief
 Well I see Hane's a[Bm]wake [G] [F] she sends her re[Em7]gards
 
-&blue: It's [Am] four in the morning [F] the end of December
-&blue: [Dm] I'm writing you now just to [Em7] see if you're better
+{textcolour: blue}
+ It's [Am] four in the morning [F] the end of December
+ [Dm] I'm writing you now just to [Em7] see if you're better
+{textcolour}
 
 And [Am] what can I tell you my [F] brother my killer
 [Dm] What can I possibly [Em7] say?
@@ -45,5 +49,7 @@ And [C] Jane came by with a lock of your [G] hair
 She said that you gave it to [Am] her
 That night that you planned to go [Bm] clear [G] [F] sincerely L [Em7] Cohen
 
-&blue: It's [Am] four in the morning [F] the end of December
-&blue: [Dm] I'm writing you now just to [Em7] see if you're better
+{textcolour: blue}
+ It's [Am] four in the morning [F] the end of December
+ [Dm] I'm writing you now just to [Em7] see if you're better
+{textcolour}

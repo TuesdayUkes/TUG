@@ -14,8 +14,10 @@ Wooly [C7] bully, wooly [G7] bully.  Wooly [D7] bully, wooly [C7] bully, wooly [
 and learn to dance."  Wooly [C7] bully, wooly [G7] bully, wooly [D7] bully,  wooly [C7] bully, wooly [G7] bully. [D7]
 
 {c: instrumental}
-&blue: [G7] Hatty told Matty "Let's don't take no chance.  Let’s not be L-seven, come
-&blue: and learn to dance."  Wooly [C7] bully, wooly [G7] bully, wooly [D7] bully, wooly [C7] bully, wooly [G7] bully. [D7]
+{textcolour: blue}
+ [G7] Hatty told Matty "Let's don't take no chance.  Let’s not be L-seven, come
+ and learn to dance."  Wooly [C7] bully, wooly [G7] bully, wooly [D7] bully, wooly [C7] bully, wooly [G7] bully. [D7]
+{textcolour}
 
 {c: 3rd verse}
 [G7] Matty told Hatty, "That's the thing to do.  Get you someone really to pull the wool with you."

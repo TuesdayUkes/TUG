@@ -1,10 +1,12 @@
 {t: Ain't No Grave}
 {st: Performed by Johnny Cash (released posthumously 2010); written by Claude Ely, 1934}
 
-&blue: Intro: [Dm] Ain't no [G] grave
-&blue: Can [Am] hold my body [Dm] down
-&blue: [Dm] There ain't no [G] grave
-&blue: Can [Am] hold my body [Dm] down
+{textcolour: blue}
+ Intro: [Dm] Ain't no [G] grave
+ Can [Am] hold my body [Dm] down
+ [Dm] There ain't no [G] grave
+ Can [Am] hold my body [Dm] down
+{textcolour}
 
 [Dm] Ain't no [G] grave
 Can [Am] hold my body [Dm] down
@@ -30,8 +32,10 @@ Un-[Dm]til you hear from [Dsus2] me
 [Dm] Ain't no [G] grave can [Am] hold my body [Dm] down
 [Dm] There ain't no [G] grave can [Am] hold my body [Dm] down
 
-&blue: Instrumental: [Dm] [Dsus2]    x5
-&blue: [Dm] [G] [Am] [Dm]    x2
+{textcolour: blue}
+ Instrumental: [Dm] [Dsus2]    x5
+ [Dm] [G] [Am] [Dm]    x2
+{textcolour}
 
 [Dm] Well meet me, Jesus, meet [Dsus2] me
 [Dm] Meet me in the middle of the [Dsus2] air
@@ -49,6 +53,8 @@ And [Dm] Mama, you know that [Dsus2] I'll be there
 [Dm] There ain't no [G] grave can [Am] hold my body [Dm] down
 [Dm] There ain't no [G] grave can [Am] hold my body [Dm] down
 
-&blue: Outro: [Dm] Ain't no [G] grave can [Am] hold my body [Dm] down
-&blue: [Dm] There ain't no [G] grave can [Am] hold my body [Dm] down
-&blue: [Dm] There ain't no [G] grave can [Am] hold my body [Dm] down [Am] [Dm]
+{textcolour: blue}
+ Outro: [Dm] Ain't no [G] grave can [Am] hold my body [Dm] down
+ [Dm] There ain't no [G] grave can [Am] hold my body [Dm] down
+ [Dm] There ain't no [G] grave can [Am] hold my body [Dm] down [Am] [Dm]
+{textcolour}

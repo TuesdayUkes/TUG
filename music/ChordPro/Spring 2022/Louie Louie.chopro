@@ -22,8 +22,10 @@ I [C] smell the [F] rose that's [G7]in her [F] hair.
 [C] Louie Lou- [F]ie, [G7] oh [F] baby, [C] we really gotta [F] go. [G7] [F]
 
 Instrumental break:
-&blue: [C] Louie Lou- [F]ie, [G7] oh [F] baby, [C] we gotta [F] go. [G7] Yah-yah-yah-yah [F]
-&blue: [C] Louie Lou- [F]ie, [G7] oh [F] baby, [C] we really gotta [F] go. [G7] [F]
+{textcolour: blue}
+ [C] Louie Lou- [F]ie, [G7] oh [F] baby, [C] we gotta [F] go. [G7] Yah-yah-yah-yah [F]
+ [C] Louie Lou- [F]ie, [G7] oh [F] baby, [C] we really gotta [F] go. [G7] [F]
+{textcolour}
 
 I [C] see Jamai- [F] can [G7] moon a- [F] bove.
 [C] See the [F] girl I'm [G7] thinking [F] of.

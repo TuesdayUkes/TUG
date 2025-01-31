@@ -2,7 +2,9 @@
 {st: Australian Traditional recorded by the Hays County Gals}
 
 Instrumental intro:
-&blue: [D] Where the [C] wagon wheels are [G] rollin' [C] by
+{textcolour: blue}
+ [D] Where the [C] wagon wheels are [G] rollin' [C] by
+{textcolour}
 
 Verse 1:
 [C] The day is dawning on a [C7] summer morning,
@@ -59,5 +61,7 @@ Yodeh [G] Leheeo; leheeo; leheeo; leheeo;
 [C] Lehee odeh lee
 
 Instrumental outro:
-&blue: [G] Leheeo; leheeo; leheeo; leheeo;
-&blue: [C] Lehee odeh lee
+{textcolour: blue}
+ [G] Leheeo; leheeo; leheeo; leheeo;
+ [C] Lehee odeh lee
+{textcolour}

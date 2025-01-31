@@ -2,8 +2,10 @@
 {st: Traditional Scottish       Ch: MJ Ford}
 
 Instrumental First 2 Lines Verse:
-&blue: [D] I once loved a lass and I loved her so [G] well,
-&blue: That I [D] hated all others who [C] spoke of her [A] ill,
+{textcolour: blue}
+ [D] I once loved a lass and I loved her so [G] well,
+ That I [D] hated all others who [C] spoke of her [A] ill,
+{textcolour}
 
 Chorus:
 [D] I once loved a lass with eyes like the [G] sea
@@ -30,10 +32,12 @@ And I [D] drank to the [G] lass that [D] should have been mine,
 But [C] now she is wed to a [D] nother.
 
 Instrumental Verse:
-&blue: [D] I once loved a lass and I loved her so [G] well,
-&blue: That I [D] hated all others who [C] spoke of her [A] ill,
-&blue: But [D] now she's re [G] warded me [D] well for my love,
-&blue: for she's [C] gone to be wed to a [D] nother.
+{textcolour: blue}
+ [D] I once loved a lass and I loved her so [G] well,
+ That I [D] hated all others who [C] spoke of her [A] ill,
+ But [D] now she's re [G] warded me [D] well for my love,
+ for she's [C] gone to be wed to a [D] nother.
+{textcolour}
 
 Chorus:
 [D] I once loved a lass with eyes like the [G] sea
@@ -49,10 +53,12 @@ And I [D] ask of them [G] back with a [D] tear in my e'e,
 How [C] many ships sail in the [D] forest?
 
 Instrumental Verse:
-&blue: [D] I once loved a lass and I loved her so [G] well,
-&blue: That I [D] hated all others who [C] spoke of her [A] ill,
-&blue: But [D] now she's re [G] warded me [D] well for my love,
-&blue: for she's [C] gone to be wed to a [D] nother.
+{textcolour: blue}
+ [D] I once loved a lass and I loved her so [G] well,
+ That I [D] hated all others who [C] spoke of her [A] ill,
+ But [D] now she's re [G] warded me [D] well for my love,
+ for she's [C] gone to be wed to a [D] nother.
+{textcolour}
 
 Verse 5:
 [D] So dig me a grave and dig it so [G] deep,
@@ -67,5 +73,7 @@ And [D] he has turned [G] in for to [D] take a long sleep,
 And [C] maybe by now he's for [D] got her.
 
 Instrumental Outro Last 2 lines verse:
-&blue: And [D] he has turned [G] in for to [D] take a long sleep,
-&blue: And [C] maybe by now he's for [D] got her.
+{textcolour: blue}
+ And [D] he has turned [G] in for to [D] take a long sleep,
+ And [C] maybe by now he's for [D] got her.
+{textcolour}

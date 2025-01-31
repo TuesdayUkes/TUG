@@ -24,7 +24,9 @@ Won't you [Dm] let me go [D] down in my [G] dreams?
 And [F] rockabye, [G] sweet baby [C] James
 
 {c: Instrumental: last line Chorus:}
-&blue:  [F] Rockabye, [G] sweet baby [C] James
+{textcolour: blue}
+  [F] Rockabye, [G] sweet baby [C] James
+{textcolour}
 
 {c: Verse 2:}
 The [C] first of De-[G]-cember was
@@ -52,5 +54,7 @@ Won't you [Dm] let me go [D] down in my [G] dreams?
 And [F] rockabye, [G] sweet baby [C] James
 
 {c: Instrumental: last line Chorus:}
-&blue:  [F] Rockabye, [G] sweet baby [C] James
+{textcolour: blue}
+  [F] Rockabye, [G] sweet baby [C] James
+{textcolour}
 

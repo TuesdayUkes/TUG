@@ -2,9 +2,11 @@
 {st: Jimmie Rodgers & Clayton McMichen   1933}
 
 Instrumental Intro-last 2 lines Verse & Yodel:
-&blue: [C] Down in old Ala[G] bama, [E7]
-&blue: It's [Am] gal picking [D7] time to [G] me
-&blue: [G] Deyodele-hee oh  Deyode [D7]le-hee oh Deyode [G] le-hee
+{textcolour: blue}
+ [C] Down in old Ala[G] bama, [E7]
+ It's [Am] gal picking [D7] time to [G] me
+ [G] Deyodele-hee oh  Deyode [D7]le-hee oh Deyode [G] le-hee
+{textcolour}
 
 Verse 1:
 [G] When it's peach picking [D] time in [G] Georgia [G7],
@@ -33,10 +35,12 @@ Yodel:
 [G] Deyodele-hee oh Deyode [D7] le-ee oh Deyode [G] le-hee
 
 Instrumental-last 4 lines Verse:
-&blue: [G] Arkansas I [D] hear you [G] calling. [G7]
-&blue: I [C] know I'll see you [B7] soon
-&blue: [C] There is where we will do some [G] pickin’, [E7]
-&blue: [Am] underneath the [D7] Ozark [G] moon
+{textcolour: blue}
+ [G] Arkansas I [D] hear you [G] calling. [G7]
+ I [C] know I'll see you [B7] soon
+ [C] There is where we will do some [G] pickin’, [E7]
+ [Am] underneath the [D7] Ozark [G] moon
+{textcolour}
 
 Verse 3:
 [G] Now when hard times [D] over[G] take you, [G7]
@@ -65,5 +69,7 @@ Yodel:
 [G] Deyodele-hee oh Deyode [D7] le-ee oh Deyode [G] le-hee [B7]
 
 Instrumental Outro-last 2 lines Verse:
-&blue: [B7] When it's [C] peach picking time in [G] Georgia [E7]
-&blue: It's [Am] gal picking [D7] time to [G] me.
+{textcolour: blue}
+ [B7] When it's [C] peach picking time in [G] Georgia [E7]
+ It's [Am] gal picking [D7] time to [G] me.
+{textcolour}

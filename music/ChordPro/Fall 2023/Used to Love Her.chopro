@@ -17,10 +17,12 @@
 [G]  She's buried [A]right in my back[D]yard!!!
 
 (Solo)
-&blue: [D]  I used to [A]love her oo, [G]yeah, but I had to [A]kill her
-&blue: [D]  I used to [A]love her oo, [G]yeah, but I had to [A]kill her
-&blue: [G]  I knew I'd [A]miss her, [G]  so I had to [A]keep her
-&blue: [G]  She's buried [A]right in my back[D]yard!!!
+{textcolour: blue}
+ [D]  I used to [A]love her oo, [G]yeah, but I had to [A]kill her
+ [D]  I used to [A]love her oo, [G]yeah, but I had to [A]kill her
+ [G]  I knew I'd [A]miss her, [G]  so I had to [A]keep her
+ [G]  She's buried [A]right in my back[D]yard!!!
+{textcolour}
 
 (Verse)
 [D]  I used to [A]love her [G]   but I had to [A]kill her

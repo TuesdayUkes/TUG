@@ -2,7 +2,9 @@
 {st: Mary Jane Ford   2002}
 
 {c: Instrumental Intro:  1st line verse:}
-&blue: [C] In Southwestern [Am] Kenya, a [C] nomadic [Am] tribe
+{textcolour: blue}
+ [C] In Southwestern [Am] Kenya, a [C] nomadic [Am] tribe
+{textcolour}
 
 {c: Verse 1:}
 [C] In Southwestern [Am] Kenya, a [C] nomadic [Am] tribe
@@ -47,9 +49,11 @@ In New [G7] York, Nai-[C]-yomah, a native Ma-[Am]-sai,
 Was [C] witness to the [Am] fires and the [G7] smoke in the [C] sky.
 
 {c: Instrumental Break, Chorus and interlude:}
-&blue: [C] They gave fourteen [G] cows, these [C] most of all [G] cherished
-&blue: To a [C] country where [F] three thousand [G7] people have [C] perished.
-&blue: [Am]   [C]   [Am]
+{textcolour: blue}
+ [C] They gave fourteen [G] cows, these [C] most of all [G] cherished
+ To a [C] country where [F] three thousand [G7] people have [C] perished.
+ [Am]   [C]   [Am]
+{textcolour}
 
 {c: Verse 6:}
 The [C] tribe learned de-[Am]-tails and the [C] story was  [Am]real.
@@ -92,7 +96,9 @@ The [C] memory of [Am] this gift will [G7] long en-[C]-dure.
 To a [C] country where [F] three thousand [G7] people have [C] perished.
 
 {c: Instrumental tag:}
-&blue: [Am]   [C]   [Am]   [C]   [Am]   [C] 
+{textcolour: blue}
+ [Am]   [C]   [Am]   [C]   [Am]   [C] 
+{textcolour}
 
 
 

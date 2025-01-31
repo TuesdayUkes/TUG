@@ -25,10 +25,12 @@ That's the sound of the [C] men working on the [G] chain [Em] gang
 [G] That's the sound of the [C] men working on the [D] chain [G] gang
 
 {c: Instrumental break: }
-&blue: [G] You hear them moaning their [Em] lives away
-&blue: [C] then you hear [D] somebody say
-&blue: [G] That's the sound of the [C] men working on the [G] chain [Em] gang
-&blue: [G] That's the sound of the [C] men working on the [D] chain [G] gang
+{textcolour: blue}
+ [G] You hear them moaning their [Em] lives away
+ [C] then you hear [D] somebody say
+ [G] That's the sound of the [C] men working on the [G] chain [Em] gang
+ [G] That's the sound of the [C] men working on the [D] chain [G] gang
+{textcolour}
 
 (NC) Can't you hear them saying
 [G] Mmn__ [Em] I'm going home one of [C] these days
@@ -48,7 +50,9 @@ Give me [G] water, I'm [Em] thirsty
 My-[C]y-y__my [D] work is so hard [G]
 
 {c: Instrumental break:}
-&blue: [G] You hear them moaning their [Em] lives away
-&blue: [C] then you hear [D] somebody say
-&blue: [G] That's the sound of the [C] men working on the [G] chain [Em] gang
-&blue: [G] That's the sound of the [C] men working on the [D] chain [G] gang
+{textcolour: blue}
+ [G] You hear them moaning their [Em] lives away
+ [C] then you hear [D] somebody say
+ [G] That's the sound of the [C] men working on the [G] chain [Em] gang
+ [G] That's the sound of the [C] men working on the [D] chain [G] gang
+{textcolour}

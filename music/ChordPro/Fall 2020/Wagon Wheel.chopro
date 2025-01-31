@@ -2,7 +2,9 @@
 {st: Bob Dylan and Ketch Secor}
 
 {c: Instrumental Intro:  Last line Chorus  2x}
-&blue: [C] Hey, [G] mama [F] rock me.
+{textcolour: blue}
+ [C] Hey, [G] mama [F] rock me.
+{textcolour}
 
 [C] Heading down south to the [G] land of the pines,
 I'm [Am] thumbing my way into [F] North Caroline,
@@ -20,7 +22,9 @@ So [C] rock me  mama like a [G] wagon wheel.
 [C] Hey, [G] mama [F] rock me.
 
 {c: Instrumental: 1x}
-&blue:  [C] Hey, [G] mama [F] rock me.
+{textcolour: blue}
+  [C] Hey, [G] mama [F] rock me.
+{textcolour}
 
 [C] I'm running from the cold up in [G] New England;
 I was [Am] born to be a fiddler in an [F] old time string band.
@@ -38,7 +42,9 @@ So [C] rock me  mama like a [G] wagon wheel.
 [C] Hey, [G] mama [F] rock me.
 
 {c: Instrumental: 1x}
-&blue:  [C] Hey, [G] mama [F] rock me.
+{textcolour: blue}
+  [C] Hey, [G] mama [F] rock me.
+{textcolour}
 
 [C] Walkin’ to the south [G] out of Roanoke
 I caught a [Am] trucker out of Philly, had a [F] nice long toke
@@ -58,4 +64,6 @@ So [C] rock me  mama like a [G] wagon wheel.
 [C] Hey, [G] mama [F] rock me.
 
 {c: Instrumental: 1x}
-&blue:  [C] Hey, [G] mama [F] rock me.     [C]
+{textcolour: blue}
+  [C] Hey, [G] mama [F] rock me.     [C]
+{textcolour}

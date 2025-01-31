@@ -2,7 +2,9 @@
 {st: Traditional Irish}
 
 {c: Instrumental Intro 1st line:}
-&blue: Near [Am] Banbridge Town in the [F] County [G] Down
+{textcolour: blue}
+ Near [Am] Banbridge Town in the [F] County [G] Down
+{textcolour}
 
 {c: Verse 1:}
  Near [Am] Banbridge Town in the [F] County [G] Down
@@ -37,10 +39,12 @@ No [Am] maid I've seen like the [F] brown col-[G]-leen
 That I [Am] met in the [Dm] County [Am] Down.
 
 {c: Instrumental Chorus:}
-&blue: From [C] Bantry Bay up to [G] Derry Quay and
-&blue: From [Am]  Galway to Dublin [G] Town,
-&blue: No [Am] maid I've seen like the [F] brown col-[G]-leen
-&blue: That I [Am] met in the [Dm] County [Am] Down.
+{textcolour: blue}
+ From [C] Bantry Bay up to [G] Derry Quay and
+ From [Am]  Galway to Dublin [G] Town,
+ No [Am] maid I've seen like the [F] brown col-[G]-leen
+ That I [Am] met in the [Dm] County [Am] Down.
+{textcolour}
 
 {c: Verse 3:}
 At the [Am] Harvest Fair she'll be [F] surely [G] there
@@ -59,5 +63,7 @@ No [Am] maid I've seen like the [F] brown col-[G]-leen
 That I [Am] met in the [Dm] County [Am] Down.
 
 {c:  Instrumental last 2 lines Chorus:}
-&blue: No [Am] maid I've seen like the [F] brown col-[G]-leen
-&blue: That I [Am] met in the [Dm] County [Am] Down.
+{textcolour: blue}
+ No [Am] maid I've seen like the [F] brown col-[G]-leen
+ That I [Am] met in the [Dm] County [Am] Down.
+{textcolour}

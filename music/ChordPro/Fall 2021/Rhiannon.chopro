@@ -16,8 +16,10 @@ A wo-[F]-man taken by the wind
 [F] Will you ever win?
 
 {c: Instrumental Break:  4 beats per chord}
-&blue:       [Am]            [Am]
-&blue: Rhi-[F]- aaaaaa-[F] aaaaan- [Am] non!  [Am]
+{textcolour: blue}
+       [Am]            [Am]
+ Rhi-[F]- aaaaaa-[F] aaaaan- [Am] non!  [Am]
+{textcolour}
 
 {c: Verse 2:}
 [Am] She is like a cat in the dark
@@ -38,10 +40,12 @@ Rhi-[F]- aaaaaa-[F] aaaaan- [Am] non!  [Am]
 Rhi-[F]- aaaaaa-[F] aaaaan- [F] non! 
 
 {c: Instrumental Break:  1st 4 lines verse}
-&blue: [Am] She rings like a bell through the night
-&blue: And [F] wouldn't you love to love her?
-&blue: [Am] She rules her life like a bird in flight
-&blue: And [F] who will be her lover?
+{textcolour: blue}
+ [Am] She rings like a bell through the night
+ And [F] wouldn't you love to love her?
+ [Am] She rules her life like a bird in flight
+ And [F] who will be her lover?
+{textcolour}
 
 {c: Verse 3:}
 [Am] She rings like a bell through the night

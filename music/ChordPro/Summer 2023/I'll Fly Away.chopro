@@ -27,10 +27,12 @@ https://www.youtube.com/watch?v=tQ29PPC059c
 [(D)]I’ll     [A]fly a-[D]way
 
 (Kazoo solo)
-&blue:[D]Some bright morning when this life is over
-&blue:[G]I’ll fly a-[D]way
-&blue:[D]To that home on God’s celestial shore
-&blue: [(D)]I’ll     [A]fly a-[D]way
+{textcolour: blue}
+[D]Some bright morning when this life is over
+[G]I’ll fly a-[D]way
+[D]To that home on God’s celestial shore
+ [(D)]I’ll     [A]fly a-[D]way
+{textcolour}
 
 [D]Oh how glad and happy when we meet
 [G]I’ll fly a-[D]way

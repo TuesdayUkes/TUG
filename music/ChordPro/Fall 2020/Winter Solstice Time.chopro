@@ -2,7 +2,9 @@
 {st: Mary Jane Ford}
 
 {c: Instrumental 1st line:}
-&blue: [Dm] When the sun sets early, [F] darkness [A] deep [A]
+{textcolour: blue}
+ [Dm] When the sun sets early, [F] darkness [A] deep [A]
+{textcolour}
 
 {c: Verse 1:}
 [Dm] When the sun sets early, [F] darkness [A] deep; [A]

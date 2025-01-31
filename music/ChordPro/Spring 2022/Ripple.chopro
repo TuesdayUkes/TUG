@@ -2,10 +2,12 @@
 {st: Robert Hunter  1970   (recorded by Grateful Dead)}
 
 Intro:  Instrumental Verse
-&blue: [F] If my words did glow   with the gold of [Bb] sunshine
-&blue: And my [Bb] tunes were played   on the harp un-[F]-strung
-&blue: Would you hear my [F] voice   come through the [Bb] music?
-&blue: Would you [F] hold it [C] near   [Bb] as it were your [F] own?
+{textcolour: blue}
+ [F] If my words did glow   with the gold of [Bb] sunshine
+ And my [Bb] tunes were played   on the harp un-[F]-strung
+ Would you hear my [F] voice   come through the [Bb] music?
+ Would you [F] hold it [C] near   [Bb] as it were your [F] own?
+{textcolour}
 
 Verse 1:
 [F] If my words did glow   with the gold of [Bb] sunshine
@@ -25,9 +27,11 @@ When there [F] is no pebble [Bb] tossed
 Nor [G7] wind to [C7] blow
 
 Instrumental Chorus:
-&blue: [Gm] Ripple in still [C] water
-&blue: When there [F] is no pebble [Bb] tossed
-&blue: Nor [G7] wind to [C7] blow
+{textcolour: blue}
+ [Gm] Ripple in still [C] water
+ When there [F] is no pebble [Bb] tossed
+ Nor [G7] wind to [C7] blow
+{textcolour}
 
 Verse 3:
 [F] Reach out your hand   if your cup be [Bb] empty
@@ -47,9 +51,11 @@ When there [F] is no pebble [Bb] tossed
 Nor [G7] wind to [C7] blow
 
 Instrumental Chorus:
-&blue: [Gm] Ripple in still [C] water
-&blue: When there [F] is no pebble [Bb] tossed
-&blue: Nor [G7] wind to [C7] blow
+{textcolour: blue}
+ [Gm] Ripple in still [C] water
+ When there [F] is no pebble [Bb] tossed
+ Nor [G7] wind to [C7] blow
+{textcolour}
 
 Verse 5:
 [F] You who choose   to lead must [Bb] follow

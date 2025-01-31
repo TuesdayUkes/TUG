@@ -18,14 +18,16 @@ Like a bird from prison bars has flown
 When I die, Halle-[G7] lujah bye and [C] bye
 [F] I'll [G7] fly a-[C] way
 
-&blue: [C] When the shadows of this life are gone
-&blue: [F] I'll [G7] fly a- [C] way
-&blue: Like a bird from prison bars has flown
-&blue: [F] I'll [G7] fly a-[C] way
-&blue: [C7] I'll fly away, O Glory
-&blue: [F] I'll [G7] fly a- [C]way (in the morning!)
-&blue: When I die, Halle-[G7] lujah bye and [C] bye
-&blue: [F] I'll [G7] fly a-[C] way
+{textcolour: blue}
+ [C] When the shadows of this life are gone
+ [F] I'll [G7] fly a- [C] way
+ Like a bird from prison bars has flown
+ [F] I'll [G7] fly a-[C] way
+ [C7] I'll fly away, O Glory
+ [F] I'll [G7] fly a- [C]way (in the morning!)
+ When I die, Halle-[G7] lujah bye and [C] bye
+ [F] I'll [G7] fly a-[C] way
+{textcolour}
 
 [C] Just a few more [C7] weary days and then
 [F] I'll [G7] fly a- [C] way
@@ -37,8 +39,10 @@ When I die Halle-[G7] lujah bye and [C] bye
 [F] I'll [G7] fly a-[C] way
 [F] [G7] [C]
 
-&blue: [C] I'll fly a-[C7] way O Glory
-&blue: [F] I'll [G7] fly a- [C] way (in the morning!)
-&blue: When I die Halle-[G7] lujah bye and [C] bye
-&blue: [F] I'll [G7] fly a-[C] way
-&blue: [F] [G7] [C]
+{textcolour: blue}
+ [C] I'll fly a-[C7] way O Glory
+ [F] I'll [G7] fly a- [C] way (in the morning!)
+ When I die Halle-[G7] lujah bye and [C] bye
+ [F] I'll [G7] fly a-[C] way
+ [F] [G7] [C]
+{textcolour}

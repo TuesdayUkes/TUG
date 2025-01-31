@@ -19,12 +19,14 @@ If you [A] can't pay your rent you got to live out in a tent
 Because it's [A7] moo-ha-hoo-ha-hoovin' [D] day
 
 {c: INSTRUMENTAL:}
-&blue: [D] Movin' day, [G] movin' day
-&blue: [A] Rip the carpet right off the floor
-&blue: [D] Get on your overcoat; get [A7] out the door
-&blue: [D] It's movin' day, [G] pack up your bags and [E7] get away
-&blue: If you [A] can't pay your rent you got to live out in a tent
-&blue: Because it's [A7] moo-ha-hoo-ha-hoovin' [D] day
+{textcolour: blue}
+ [D] Movin' day, [G] movin' day
+ [A] Rip the carpet right off the floor
+ [D] Get on your overcoat; get [A7] out the door
+ [D] It's movin' day, [G] pack up your bags and [E7] get away
+ If you [A] can't pay your rent you got to live out in a tent
+ Because it's [A7] moo-ha-hoo-ha-hoovin' [D] day
+{textcolour}
 
 [D] Bill came in all covered with snow
 [G] I said hello, [D] gimme some dough

@@ -2,9 +2,11 @@
 {st: Traditional * adapted from Dave van Ronk}
 
 Kazoo intro:
-&blue: I [G] hate to hear that K.C. when she [G7] moan
-&blue: Yes I [C] hate to hear that K C when she [G] moan
-&blue: She [D] moan just like my [C] woman when she's [D] all a- [G] lone
+{textcolour: blue}
+ I [G] hate to hear that K.C. when she [G7] moan
+ Yes I [C] hate to hear that K C when she [G] moan
+ She [D] moan just like my [C] woman when she's [D] all a- [G] lone
+{textcolour}
 
 I [G] hate to hear that K.C. when she [G7] moan
 Yes I [C] hate to hear that K C when she [G] moan
@@ -27,10 +29,12 @@ When [C] I get back on that KC [G] road
 Gonna [D] love my woman like I [C] never [D] loved be- [G] fore
 
 Kazoo interlude:
-&blue: I [G] hate to hear that K.C. when she [G7] moan
-&blue: Yes I [C] hate to hear that [G] K C when she moan
-&blue: She [D] moan just like my [C] woman when she's [D] all a- [G] lone
-&blue: She [D] moan just like my [C] woman when she's all a- [G] lone
+{textcolour: blue}
+ I [G] hate to hear that K.C. when she [G7] moan
+ Yes I [C] hate to hear that [G] K C when she moan
+ She [D] moan just like my [C] woman when she's [D] all a- [G] lone
+ She [D] moan just like my [C] woman when she's all a- [G] lone
+{textcolour}
 
 I [G] hate to hear that K.C. when she [G7] moan
 Yes I [C] hate to hear that [G] K C when she moan
@@ -38,4 +42,6 @@ She [D] moan just like my [C] woman when she's [D] all a- [G] lone
 She [D] moan just like my [C] woman when she's all a- [G] lone
 
 Outro:
-&blue: She [D] moan just like my [C] woman when she's all a- [G] lone
+{textcolour: blue}
+ She [D] moan just like my [C] woman when she's all a- [G] lone
+{textcolour}

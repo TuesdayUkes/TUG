@@ -2,8 +2,10 @@
 {st: Mary Jane Ford 2012}
 
 Instrumental Intro: last 2 lines Chorus
-&blue: [Am] Rain and [E] drought, [Am] rain and [E] drought;
-&blue: [Am] Will the [E] water sup[Am]ply run [E] out?
+{textcolour: blue}
+ [Am] Rain and [E] drought, [Am] rain and [E] drought;
+ [Am] Will the [E] water sup[Am]ply run [E] out?
+{textcolour}
 
 Verse 1:
 [Am] The grass is parched and [E7] breaking on the [Am] ground.
@@ -30,8 +32,10 @@ Chorus 1:
 [Am] Will the [E] water sup[Am]ply run [E] out?
 
 Instrumental break: last 2 lines Chorus
-&blue: [Am] Rain and [E] drought, [Am] rain and [E] drought;
-&blue: [Am] Will the [E] water sup[Am]ply run [E] out?
+{textcolour: blue}
+ [Am] Rain and [E] drought, [Am] rain and [E] drought;
+ [Am] Will the [E] water sup[Am]ply run [E] out?
+{textcolour}
 
 Verse 3:
 [Am] Yet, buried in the [E7] soil remains the [Am] seed

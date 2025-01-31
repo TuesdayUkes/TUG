@@ -2,7 +2,9 @@
 {st: by Mance Lipscomb }
 
 Instrumental Intro=last line verse:
-&blue: [F] Oh my [Dm]  Lord, Oh my [C] God, what shall I  [F] do!   [F]
+{textcolour: blue}
+ [F] Oh my [Dm]  Lord, Oh my [C] God, what shall I  [F] do!   [F]
+{textcolour}
 
  Verse 1:
 [F] What, you gonna' [C6] do, when [Bbmaj7] death come a-creeping in your [F] room?
@@ -17,8 +19,10 @@ Verse  2:
 Oh my [Dm] Lord, Oh my  [C] God, what shall I [F] do!
 
 Instrumental Break for 2nd half verse:
-&blue: [F] You better run, sinner, [C6] run, and [Bbmaj7] hunt you a hiding [F] place.
-&blue: Oh my [Dm] Lord, Oh my  [C] God, what shall I [F] do!
+{textcolour: blue}
+ [F] You better run, sinner, [C6] run, and [Bbmaj7] hunt you a hiding [F] place.
+ Oh my [Dm] Lord, Oh my  [C] God, what shall I [F] do!
+{textcolour}
 
 Verse 3:
 [F] I'm goin' in the [C6] valley, [Bbmaj7] fall on my knees and [F] pray.
@@ -33,8 +37,10 @@ Verse 4:
 Oh my [Dm] Lord, Oh my [C] God, what shall I [F] do!
 
 Instrumental Break for 2nd half verse:
-&blue: [F] If I was a [C6] gambler, I would [Bbmaj7] throw my cards [F] away.
-&blue: Oh my [Dm] Lord, Oh my [C] God, what shall I [F] do!
+{textcolour: blue}
+ [F] If I was a [C6] gambler, I would [Bbmaj7] throw my cards [F] away.
+ Oh my [Dm] Lord, Oh my [C] God, what shall I [F] do!
+{textcolour}
 
 Verse 5:
 [F] God told Nico [C6] demus, that he [Bbmaj7] must be born [F] again.
@@ -49,4 +55,6 @@ Repeat Verse 1:
 Oh my [Dm] Lord, Oh my [C] God, what shall I [F] do!
 
 Instrumental Break for Last Line:
-&blue: [F] Oh my [Dm]  Lord, Oh my [C] God, what shall I  [F] do!   [F]
+{textcolour: blue}
+ [F] Oh my [Dm]  Lord, Oh my [C] God, what shall I  [F] do!   [F]
+{textcolour}

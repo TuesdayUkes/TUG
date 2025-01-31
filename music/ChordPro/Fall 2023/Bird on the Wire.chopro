@@ -1,9 +1,11 @@
 {t: Bird on the Wire}
 {st: Leonard Cohen, released 1969}
 
-&blue: Like a [C] bird on the [G7] wire
-&blue: Like a [C] drunk in a [C7] midnight [F] choir [G7]
-&blue: I have [C] tried, in my [G7] way, to be [C] free [F] [C] 
+{textcolour: blue}
+ Like a [C] bird on the [G7] wire
+ Like a [C] drunk in a [C7] midnight [F] choir [G7]
+ I have [C] tried, in my [G7] way, to be [C] free [F] [C] 
+{textcolour}
 
 Like a [C] bird, on the [G7] wire
 Like a [C] drunk in a [C7] midnight [F] choir 
@@ -31,9 +33,11 @@ He [F] said to me, [G7] "you must not ask for so [C] much" [C7]
 And [F] a pretty woman [G7] leaning in her darkened [C] door [A7]
 She [D7] cried to me, "Hey, why not ask for [G7] more" [F] [G7]
 
-&blue: Like a [C] bird on the [G7] wire
-&blue: Like a [C] drunk in a [C7] midnight [F] choir [G7]
-&blue: I have [C] tried, in my [G7] way, to be [C] free [F] [C] 
+{textcolour: blue}
+ Like a [C] bird on the [G7] wire
+ Like a [C] drunk in a [C7] midnight [F] choir [G7]
+ I have [C] tried, in my [G7] way, to be [C] free [F] [C] 
+{textcolour}
 
 Like a [C] bird on the [G7] wire
 Like a [C] drunk in a [C7] midnight [F] choir [G7]

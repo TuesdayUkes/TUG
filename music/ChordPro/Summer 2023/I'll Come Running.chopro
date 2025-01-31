@@ -21,11 +21,13 @@ Ah [C] hah, you'll see, one day these dreams will pull you through my [G] door
 [NC] I'll come running to tie your [G] shoes
 
 Solo:
-&blue: [G] I want to be the wandering [F] sailor
-&blue: [D] We're silhouettes by the light of the [G] moon
-&blue: [G] I sit playing solitaire by the [F] window
-&blue: [D] Just waiting, seasons change,
-&blue: Ah [C] hah, you'll see, one day these dreams will pull you through my [G] door
+{textcolour: blue}
+ [G] I want to be the wandering [F] sailor
+ [D] We're silhouettes by the light of the [G] moon
+ [G] I sit playing solitaire by the [F] window
+ [D] Just waiting, seasons change,
+ Ah [C] hah, you'll see, one day these dreams will pull you through my [G] door
+{textcolour}
 
 [G] I'll come running to tie your [F] shoes
 [D] I'll come running to tie your [G] shoes

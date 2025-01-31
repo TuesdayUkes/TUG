@@ -24,8 +24,10 @@ Is a [A7] rainbow to [D7] me.
 [G] I can yodel opera[C] [G] even while I [Edim] scrub;
 [E7] Everybody's [A7] happy [D7] while [G] singing in the tub. [C] [G]
 
-&blue: [G] I can yodel opera[C] [G] even while I [Edim] scrub;
-&blue: [E7] Everybody's [A7] happy [D7] while [G] singing in the tub. [C] [G]
+{textcolour: blue}
+ [G] I can yodel opera[C] [G] even while I [Edim] scrub;
+ [E7] Everybody's [A7] happy [D7] while [G] singing in the tub. [C] [G]
+{textcolour}
 
 [G] Never take a [C] shower [G]; it's an awful [Edim] pain;
 [E7] Singing in the [A7] shower's[D7] like [G][C] singing in the [G] rain.
@@ -38,8 +40,10 @@ While the [E7] body's washed and polished
 [G] Reaching for a [C] towel[G], happy once a- [Edim]gain;
 [E7] Watching all my [A7] troubles [D7] go swirling down the [G] drain [C].[G]
 
-&blue: [G] Reaching for a [C] towel[G], happy once a- [Edim]gain;
-&blue: [E7] Watching all my [A7] troubles [D7] go swirling down the [G] drain [C].[G]
-&blue: Outro: [C] [G] [C] [G] [C] [G] [C] [G]
-&blue: [D7] [G] [C] [G]
+{textcolour: blue}
+ [G] Reaching for a [C] towel[G], happy once a- [Edim]gain;
+ [E7] Watching all my [A7] troubles [D7] go swirling down the [G] drain [C].[G]
+ Outro: [C] [G] [C] [G] [C] [G] [C] [G]
+ [D7] [G] [C] [G]
+{textcolour}
 

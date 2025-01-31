@@ -29,7 +29,9 @@ While [G] other poor [C] fellows go [G] dirty and [Em] mean
 And [G] sup on thin gruel in the [D] mor-[G]-ning."
 
 {c: Instrumental:}
-&blue: And [G] sup on thin gruel in the [D] mor-[G]-ning."
+{textcolour: blue}
+ And [G] sup on thin gruel in the [D] mor-[G]-ning."
+{textcolour}
 
 "But", says [G] Arthur, "I [D] wouldn't be [G] proud of your clothes
 For you've [C] only the [G] lend of them [Am] as I sup-[C]-pose
@@ -50,10 +52,12 @@ For [G] if you in-[C]-sult me with [G] one other [Em] word
 I'll [G] cut off your heads in the [D] mor-[G]-ning"
 
 {c: Instrumental:}
-&blue: "Oh [G] now!", says the sergeant "I'll [Em] have no such chat
-&blue: And I [C] neither will [G] take it from [Am] spalpeen or [C] brat
-&blue: For [G] if you in-[C]-sult me with [G] one other [Em] word
-&blue: I'll [G] cut off your heads in the [D] mor-[G]-ning"
+{textcolour: blue}
+ "Oh [G] now!", says the sergeant "I'll [Em] have no such chat
+ And I [C] neither will [G] take it from [Am] spalpeen or [C] brat
+ For [G] if you in-[C]-sult me with [G] one other [Em] word
+ I'll [G] cut off your heads in the [D] mor-[G]-ning"
+{textcolour}
 
 And then [G] Arthur and [D] I, we [G] took on the odds
 And we [C] scarce gave them [G] time for to [Am] draw their own [C] blades
@@ -83,6 +87,8 @@ Now [G] mark what [C] followed and [G] what did be-[Em]-tide
 For it [G] being on Christmas [D] mor-[G]-ning
 
 {c: Instrumental tag:}
-&blue: Now [G] mark what [C] followed and [G] what did be-[Em]-tide
-&blue: For it [G] being on Christmas [D] mor-[G]-ning
+{textcolour: blue}
+ Now [G] mark what [C] followed and [G] what did be-[Em]-tide
+ For it [G] being on Christmas [D] mor-[G]-ning
+{textcolour}
 

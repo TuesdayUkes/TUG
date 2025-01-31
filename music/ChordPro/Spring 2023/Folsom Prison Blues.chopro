@@ -20,10 +20,12 @@ when I [D7]hear that whistle blowin' I hang my head and [G]cry  (2,3,4)
 
 (Kazoo Solo)
 
-/&blue:I [G]hear the train a-coming, it's rolling round the bend
-/&blue: and I ain't seen the sunshine since [G7]I don't know when
-/&blue:I'm [C]stuck in Folsom Prison, and time keeps draggin' [G]on (2,3,4,1,2,3)
-/&blue:But that [D7]train keeps a-rollin' on down to San An[G]tone  (2,3,4)
+{textcolour: blue}
+/I [G]hear the train a-coming, it's rolling round the bend
+/ and I ain't seen the sunshine since [G7]I don't know when
+/I'm [C]stuck in Folsom Prison, and time keeps draggin' [G]on (2,3,4,1,2,3)
+/But that [D7]train keeps a-rollin' on down to San An[G]tone  (2,3,4)
+{textcolour}
 
 (Verse 3)
 I [G]bet there's rich folks eatin' in a fancy dining car
@@ -33,10 +35,12 @@ But those [D7]people keep a moving, and that's what tortures [G]me  (2,3,4)
 
 (Kazoo Solo)
 
-/&blue:I [G]hear the train a-coming, it's rolling round the bend
-/&blue: and I ain't seen the sunshine since [G7]I don't know when
-/&blue:I'm [C]stuck in Folsom Prison, and time keeps draggin' [G]on  (2,3,4,1,2,3)
-/&blue:But that [D7]train keeps a-rollin' on down to San An[G]tone  (2,3,4)
+{textcolour: blue}
+/I [G]hear the train a-coming, it's rolling round the bend
+/ and I ain't seen the sunshine since [G7]I don't know when
+/I'm [C]stuck in Folsom Prison, and time keeps draggin' [G]on  (2,3,4,1,2,3)
+/But that [D7]train keeps a-rollin' on down to San An[G]tone  (2,3,4)
+{textcolour}
 
 
 (Verse 4)

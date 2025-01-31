@@ -32,10 +32,12 @@ Our trip it was a [F] pleasant one, as we [Em] hit the westward [Am] road,
 Until we reached Old Boggy [F] Creek, in [G] old New Mexi-[Am]-co.
 
 {c: Instrumental  Verse:}
-&blue: [Am] Well with all his flattering talk-[F]-ing, he [G] signed up quite a [Am] train,
-&blue: Some 10 or 12 in [F] number, some [Em] able bodied [Am] men.
-&blue: Our trip it was a [F] pleasant one, as we [Em] hit the westward [Am] road,
-&blue: Until we reached Old Boggy [F] Creek, in [G] old New Mexi-[Am]-co.
+{textcolour: blue}
+ [Am] Well with all his flattering talk-[F]-ing, he [G] signed up quite a [Am] train,
+ Some 10 or 12 in [F] number, some [Em] able bodied [Am] men.
+ Our trip it was a [F] pleasant one, as we [Em] hit the westward [Am] road,
+ Until we reached Old Boggy [F] Creek, in [G] old New Mexi-[Am]-co.
+{textcolour}
 
 {c: Verse 6:}
 [Am] It was there our pleasures end-[F] -ed, and our [G] troubles all be-[Am]-gun.
@@ -51,5 +53,7 @@ So we left that drover's bones to [F] bleach on the [G] plains of the buffa-[Am]
 So we left that drover's bones to [F] bleach on the [G] plains of the buffa-[Am]-lo.
 
 {c: Instrumental tag: last line}
-&blue: [Am] So we left that drover's bones to [F] bleach on the [G] plains of the buffa-[Am]-lo.
+{textcolour: blue}
+ [Am] So we left that drover's bones to [F] bleach on the [G] plains of the buffa-[Am]-lo.
+{textcolour}
 

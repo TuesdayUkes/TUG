@@ -45,9 +45,11 @@ The friendliest [C] people and the prettiest [D] women you’ve ever [G] seen.
 
 (Lead Break)
  
-/&blue:I wanna go [C] home with the [Em] armadillo [Am]
-/&blue:Good country [C] music from Ama-[D]rillo and Abi-[G]lene
-/&blue:The friendliest [C] people and the prettiest [D] women you’ve ever [G] seen. 
+{textcolour: blue}
+/I wanna go [C] home with the [Em] armadillo [Am]
+/Good country [C] music from Ama-[D]rillo and Abi-[G]lene
+/The friendliest [C] people and the prettiest [D] women you’ve ever [G] seen. 
+{textcolour}
 
 
 (Verse 3)

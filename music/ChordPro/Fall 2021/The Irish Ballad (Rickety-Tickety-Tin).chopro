@@ -34,12 +34,14 @@ And oc-[Am]-casional [G] pieces of [Am] skin,
 Of [G] skin, oc-[Am]-casional [G] pieces of [Am] skin
 
 {c: Instrumental - Verse}
-&blue: [Am] She weighted her brother down with stones, Sing [Dm] rickety tickety [Am] tin
-&blue: She weighted her brother [Dm] down with stones,
-&blue: and [Am] sent him off to Davey [G] Jones
-&blue: And [Am] all they [Dm] ever [Am] found were some [Dm] bones,
-&blue: And oc-[Am]-casional [G] pieces of [Am] skin,
-&blue: Of skin, oc-[Am]-casional [G] pieces of [Am] skin
+{textcolour: blue}
+ [Am] She weighted her brother down with stones, Sing [Dm] rickety tickety [Am] tin
+ She weighted her brother [Dm] down with stones,
+ and [Am] sent him off to Davey [G] Jones
+ And [Am] all they [Dm] ever [Am] found were some [Dm] bones,
+ And oc-[Am]-casional [G] pieces of [Am] skin,
+ Of skin, oc-[Am]-casional [G] pieces of [Am] skin
+{textcolour}
 
 {c: Verse 5:}
 [Am] She set her sister's hair on fire, Sing [Dm] rickety tickety [Am] tin
@@ -75,7 +77,9 @@ You should [Am] never have [G] let me be-[Am]-gin,
 Be-[G]-gin, you should [Am] never have [G] let me be-[Am]-gin
 
 {c: Instrumental – last 2 lines:}
-&blue: [Am] You should never have [G] let me be-[Am]-gin,
-&blue: Be-[G]-gin, you should [Am] never have [G] let me be-[Am]-gin
+{textcolour: blue}
+ [Am] You should never have [G] let me be-[Am]-gin,
+ Be-[G]-gin, you should [Am] never have [G] let me be-[Am]-gin
+{textcolour}
 
 

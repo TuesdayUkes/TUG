@@ -17,10 +17,12 @@ But love grows [Em][G] old and waxes [Am][Em] cold, [F][Dm]
 and fades a[C][G]way [G][Em] like the morning [C][G] dew.
 
 {c: instrumental}
-&blue: [C][G] The water is wide,  [F][Dm]  I can't cross [C][G] o'er,
-&blue: nor do I [Am][Em] have [F][Dm] light wings to [G][Em] fly.
-&blue: Build me a [Em][G] boat that can carry [Am][Em] two, [F][Dm]
-&blue: and both shall [C][G] row,  [G][Em] my love and [C][G] I.
+{textcolour: blue}
+ [C][G] The water is wide,  [F][Dm]  I can't cross [C][G] o'er,
+ nor do I [Am][Em] have [F][Dm] light wings to [G][Em] fly.
+ Build me a [Em][G] boat that can carry [Am][Em] two, [F][Dm]
+ and both shall [C][G] row,  [G][Em] my love and [C][G] I.
+{textcolour}
 
 [C][G] The water is wide,  [F][Dm]  I can't cross [C][G] o'er,
 nor do I [Am][Em] have [F][Dm] light wings to [G][Em] fly.

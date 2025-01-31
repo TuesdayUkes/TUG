@@ -2,7 +2,9 @@
 {st: Marijohn Wilkin and Danny Dill  1959}
 
 Instrumental Intro last line Verse:
-&blue: [D] That the [A] slayer who ran looked a [G] lot like [D] me.
+{textcolour: blue}
+ [D] That the [A] slayer who ran looked a [G] lot like [D] me.
+{textcolour}
 
 Verse 1
 [D] Ten years ago on a cold dark night
@@ -23,10 +25,12 @@ She [G] walks these [D] hills in a [G] long black [D] vei ei-ei- ei-eil;
 [G]  Nobody [A] knows but [D] me-e-e.
 
 Instrumental Verse:
-&blue: [D] The judge said, "Son, what is your alibi?
-&blue: If you were [A] somewhere else then [G] you won't have to [D] die"
-&blue: I [D] spoke not a word, though it meant my life
-&blue: For I had [A] been in the arms of my [G] best friend's [D] wife
+{textcolour: blue}
+ [D] The judge said, "Son, what is your alibi?
+ If you were [A] somewhere else then [G] you won't have to [D] die"
+ I [D] spoke not a word, though it meant my life
+ For I had [A] been in the arms of my [G] best friend's [D] wife
+{textcolour}
 
 Verse 3
 The [D] scaffold was high, eternity near.
@@ -41,5 +45,7 @@ She [G] walks these [D] hills in a [G] long black [D] vei ei-ei- ei-eil;
 [G]  Nobody [A] knows but [D] me-e-e.
 
 Instrumental last 2 lines Chorus:
-&blue: [D]  Nobody knows; [G] nobody [D] sees;
-&blue: [G]  Nobody [A] knows but [D] me-e-e.
+{textcolour: blue}
+ [D]  Nobody knows; [G] nobody [D] sees;
+ [G]  Nobody [A] knows but [D] me-e-e.
+{textcolour}

@@ -16,10 +16,12 @@ Where those [C7] fishing boats with their sails afloat if [F] I could only [Fm] 
 That fa- [C]miliar sunrise through [G7] sleepy eyes how happy [C] I'd be [G7]
 
 {c: Break:}
-&blue: I'm going [C] back someday come what may to Blue [G7] Bayou
-&blue: Where you sleep all day and the catfish play on [C] Blue Bayou [G7]
-&blue: Where those [C7] fishing boats with their sails afloat if [F] I could only [Fm] see
-&blue: That fa- [C]miliar sunrise through [G7] sleepy eyes how happy [C] I'd be [G7]
+{textcolour: blue}
+ I'm going [C] back someday come what may to Blue [G7] Bayou
+ Where you sleep all day and the catfish play on [C] Blue Bayou [G7]
+ Where those [C7] fishing boats with their sails afloat if [F] I could only [Fm] see
+ That fa- [C]miliar sunrise through [G7] sleepy eyes how happy [C] I'd be [G7]
+{textcolour}
 
 [C] Gonna see my baby again
 [G7] Gonna be with some of my friends

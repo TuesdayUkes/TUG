@@ -2,7 +2,9 @@
 {st: Tommy Makem}
 
 {c: Instrumental Intro, 1st line Verse:}
-&blue: As [Dm] I went a [C] walking way [Dm] down by the [Am] green wood,
+{textcolour: blue}
+ As [Dm] I went a [C] walking way [Dm] down by the [Am] green wood,
+{textcolour}
 
 {c: Verse 1:}
 As [Dm] I went a [C] walking way [Dm] down by the [Am] green wood,
@@ -17,7 +19,9 @@ He [Dm] mourned for his [Am] true love as I mourned for [Dm] mine,
 My [Dm] true love has [Am] changed, But there's no change in [Dm] me.
 
 {c: Instrumental last line Chorus:}
-&blue: My [Dm] true love has [Am] changed, But there's no change in [Dm] me.
+{textcolour: blue}
+ My [Dm] true love has [Am] changed, But there's no change in [Dm] me.
+{textcolour}
 
 {c: Verse 2:}
 I [Dm] brought my love [C] flowers all [Dm] tied up with [Am] ribbons
@@ -32,7 +36,9 @@ Which [Dm] leaves me a-[Am]-lone here to pine and to [Dm] mourn.
 My [Dm] true love has [Am] changed, But there's no change in [Dm] me.
 
 {c: Instrumental last line Chorus:}
-&blue: My [Dm] true love has [Am] changed, But there's no change in [Dm] me.
+{textcolour: blue}
+ My [Dm] true love has [Am] changed, But there's no change in [Dm] me.
+{textcolour}
 
 {c: Verse 3:}
 My [Dm] constant com-[C]-panions are [Dm] sadness and [Am] sorrow;
@@ -47,4 +53,6 @@ The [Dm] love of my [Am] soul I will never for-[Dm]-get.
 My [Dm] true love has [Am] changed, But there's no change in [Dm] me.
 
 {c: Instrumental last line Chorus:}
-&blue: My [Dm] true love has [Am] changed, But there's no change in [Dm] me.
+{textcolour: blue}
+ My [Dm] true love has [Am] changed, But there's no change in [Dm] me.
+{textcolour}

@@ -47,10 +47,12 @@ So it [A]  wouldn’t end up as catfish steak,
 And the [E7] Parks and Wildlife Department came.
 
 {c: Break, Kazoo Chorus}
-&blue: There’s [D] anglers and hook [A] danglers and there’s 
-&blue: [E7] Cody Mullen- [A] -nix.
-&blue: He [D] made a new world [A]  record for the 
-&blue: [E7] largest blue cat- [A] -fish.
+{textcolour: blue}
+ There’s [D] anglers and hook [A] danglers and there’s 
+ [E7] Cody Mullen- [A] -nix.
+ He [D] made a new world [A]  record for the 
+ [E7] largest blue cat- [A] -fish.
+{textcolour}
 
 {c: Verse 4}
 [A] The monster catfish was so big,

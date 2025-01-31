@@ -2,8 +2,10 @@
 {st: (Robert Hargreaves, Stanley J. Damerell & Tolchard Evans, 1932)}
 
 Kazoo:
-&blue: Take your [D7] time from the birds; now you [G]all know the [E7]words:
-&blue: [A7] Tweet tweet [D7] tweet tweet [G] tweet
+{textcolour: blue}
+ Take your [D7] time from the birds; now you [G]all know the [E7]words:
+ [A7] Tweet tweet [D7] tweet tweet [G] tweet
+{textcolour}
 
  [G]Let's all sing like the birdies sing
 Tweet tweet tweet tweet [D7] tweet
@@ -22,14 +24,16 @@ Some folks sing [G] flat [G7]
 [E7] I think we [A7] ought to try [D7]and sing like [G]these, [D7] ohhh…
 
 Kazoo:
-&blue: [G] Let's all sing like the birdies sing
-&blue: Tweet tweet tweet tweet [D7] tweet
-&blue: Let's all sing like the birdies sing
-&blue: Sweet sweet sweet sweet [G]sweet [D7]
-&blue: [G]Let's all warble like [G7] nightingales;
-&blue: [E7] Give your throat a [A7]treat
-&blue: Take your [D7] time from the birds; now you [G]all know the [E7] words:
-&blue: [A7] Tweet tweet [D7] tweet tweet [G] tweet
+{textcolour: blue}
+ [G] Let's all sing like the birdies sing
+ Tweet tweet tweet tweet [D7] tweet
+ Let's all sing like the birdies sing
+ Sweet sweet sweet sweet [G]sweet [D7]
+ [G]Let's all warble like [G7] nightingales;
+ [E7] Give your throat a [A7]treat
+ Take your [D7] time from the birds; now you [G]all know the [E7] words:
+ [A7] Tweet tweet [D7] tweet tweet [G] tweet
+{textcolour}
 
 [G] Let's all sing like the birdies sing
 Tweet tweet tweet tweet [D7] tweet

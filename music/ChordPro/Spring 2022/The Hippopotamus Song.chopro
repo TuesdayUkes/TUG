@@ -21,7 +21,9 @@ So [F] follow me [F7] follow, [C] down to the [G7] hollow
 And [Gm] there let us [F] wallow in [C7] glorious [F] mud
 
 {c: Instrumental see 1st line Chorus:}
-&blue: &blue: [F] mud, [Dm] mud, [Gm7]   glorious  [C] mud
+{textcolour: blue}
+  [F] mud, [Dm] mud, [Gm7]   glorious  [C] mud
+{textcolour}
 
 {c: Verse 2:}
 The [F] fair hippo-[Dm]-potama he [Gm7] aimed to en-[A7]-tice
@@ -40,7 +42,9 @@ So [F] follow me [F7] follow, [C] down to the [G7] hollow
 And [Gm] there let us [F] wallow in [C7] glorious [F] mud
 
 {c: Instrumental see 1st line Chorus:}
-&blue: &blue: [F] mud, [Dm] mud, [Gm7]   glorious  [C] mud
+{textcolour: blue}
+  [F] mud, [Dm] mud, [Gm7]   glorious  [C] mud
+{textcolour}
 
 {c: Verse 3:}
 Then [F] more hippo-[Dm]-potami be-[Gm7]-gan to con-[A7]-vene
@@ -59,5 +63,7 @@ So [F] follow me [F7] follow, [C] down to the [G7] hollow
 And [Gm] there let us [F] wallow in [C7] glorious [F] mud
 
 {c: Instrumental Outro:}
-&blue: &blue: And [Gm] there let us [F] wallow in [C7] glorious [F] mud
+{textcolour: blue}
+  And [Gm] there let us [F] wallow in [C7] glorious [F] mud
+{textcolour}
 

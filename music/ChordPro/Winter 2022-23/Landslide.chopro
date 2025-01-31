@@ -2,8 +2,10 @@
 {st: Fleetwood Mac- written by Stevie Nicks}
 
 Instrumental Intro, 1st 2 lines Verse 1:
-&blue: [C] I took my [G] love, I took it [Am] down [G]
-&blue: &blue: [C] Climbed a [G] mountain and I turned a-[Am]-round [G]
+{textcolour: blue}
+ [C] I took my [G] love, I took it [Am] down [G]
+  [C] Climbed a [G] mountain and I turned a-[Am]-round [G]
+{textcolour}
 
 Verse 1
 [C]   I took my [G] love, I took it [Am] down [G]
@@ -12,7 +14,9 @@ And I [C] saw my re-[G]-flection in the [Am] snow-covered hills
 [G]Till the [C] landslide [G] brought me [Am] down   [G]
 
 Instrumental last line verse:
-&blue: [G]Till the [C] landslide [G] brought me [Am] down   [G]
+{textcolour: blue}
+ [G]Till the [C] landslide [G] brought me [Am] down   [G]
+{textcolour}
 
 Verse 2
 [G] Oh, [C] mirror in the [G] sky, what is  [Am]  love [G]
@@ -31,10 +35,12 @@ But [G] time makes you [D7] bolder, [Em] children get older
 And [C] I'm getting [G] older [Am] too  [G]   sooo
 
  Instrumental Break, Verse 1
-&blue: [C] I took my [G] love, I took it [Am] down [G]
-&blue: [C] Climbed a [G] mountain and I turned a-[Am]-round [G]
-&blue: And I [C] saw my re-[G]-flection in the [Am] snow-covered hills
-&blue: [G]Till the [C] landslide [G] brought me [Am] down
+{textcolour: blue}
+ [C] I took my [G] love, I took it [Am] down [G]
+ [C] Climbed a [G] mountain and I turned a-[Am]-round [G]
+ And I [C] saw my re-[G]-flection in the [Am] snow-covered hills
+ [G]Till the [C] landslide [G] brought me [Am] down
+{textcolour}
 
 Chorus
 [Am] Well, [G] I've been [D7] afraid of [Em] changing 'cause I've
@@ -43,8 +49,10 @@ But [G] time makes you [D7] bolder, [Em] children get older
 And [C] I'm getting [G] older [Am] too  [G]
 
 Instrumental Break, last 2 lines Chorus:
-&blue: But [G] time makes you [D7] bolder, [Em] children get older
-&blue: And [C] I'm getting [G] older [Am] too  [C]
+{textcolour: blue}
+ But [G] time makes you [D7] bolder, [Em] children get older
+ And [C] I'm getting [G] older [Am] too  [C]
+{textcolour}
 
 Verse 3:
 [C]  Ah, take my [G] love, take it [Am] down  [G]
@@ -58,4 +66,6 @@ Outro:
 [G] Well well, the [C] landslide will [G] bring it [Am] down  [Am]  [Am]
 
 Instrumental last line Outro:
-&blue: [G] Well well, the [C] landslide will [G] bring it [Am] down  [Am]  [Am]
+{textcolour: blue}
+ [G] Well well, the [C] landslide will [G] bring it [Am] down  [Am]  [Am]
+{textcolour}

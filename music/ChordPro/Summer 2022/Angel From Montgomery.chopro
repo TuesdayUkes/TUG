@@ -2,7 +2,9 @@
 {subtitle:John Prine}
 
 Intro:
-&blue: [D]I am an old [G]woman [D]named after my [G]mother.
+{textcolour: blue}
+ [D]I am an old [G]woman [D]named after my [G]mother.
+{textcolour}
 
 Verse 1
 [D]I am an old [G]woman [D]named after my [G]mother.
@@ -29,10 +31,12 @@ Chorus
 [D]To believe in this [G]living is just a [A]hard way to [D]go [G]   [D]   [G]
 
 Instrumental Chorus
-&blue: [D]Make me an [C]angel that [G]flies from [D]Montgomery.
-&blue: [D]Make me a [C]poster of an [G]old rod[D]eo.
-&blue: [D]Just give me [C]one thing that [G]I can hold [D]on to
-&blue: [D]To believe in this [G]living is just a [A]hard way to [D]go [G]   [D]   [G]
+{textcolour: blue}
+ [D]Make me an [C]angel that [G]flies from [D]Montgomery.
+ [D]Make me a [C]poster of an [G]old rod[D]eo.
+ [D]Just give me [C]one thing that [G]I can hold [D]on to
+ [D]To believe in this [G]living is just a [A]hard way to [D]go [G]   [D]   [G]
+{textcolour}
 
 Verse 3
 [D]There's flies in the [G]kitchen[D], I can hear all their [G]buzzin'

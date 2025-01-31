@@ -3,7 +3,9 @@
 (Key C; 1st note e)
 
 {c: Instrumental Last line chorus:}
-&blue: [Dm] In this [C] place I have a [F] garden [G] of my [C] own.
+{textcolour: blue}
+ [Dm] In this [C] place I have a [F] garden [G] of my [C] own.
+{textcolour}
 
 {c: Chorus:}
 [C] There’s a place where dreams are [Em] gathered;
@@ -21,7 +23,9 @@ Time [G] was  I would work as hard as [C] flesh and bone allow
 ‘Til the [Dm] glory [Em] of the [F] harvest [G]  was re- [C] -vealed.
 
 {c: Instrumental Last line verse:}
-&blue: [C] ‘Til the [Dm] glory [Em] of the [F] harvest [G]  was re- [C] -vealed.
+{textcolour: blue}
+ [C] ‘Til the [Dm] glory [Em] of the [F] harvest [G]  was re- [C] -vealed.
+{textcolour}
 
 {c: Verse 2:}
 [C] These [G] days, I am on my knees with [C] flowers in my hands.
@@ -31,13 +35,15 @@ And the [Dm] heartland [Em] deep with- [F] -in me
 [G] under- [C] -stands.
 
 {c: Instrumental Chorus}
-&blue: [C] There’s a place where dreams are [Em] gathered;
-&blue: There’s a [F] place where seeds are [Dm] sown.
-&blue: There’s a [C] light beyond the [Em] shadows
-&blue: Where [F] truths are [G] known.
-&blue: In this [C] light I reach for [Em] heaven;
-&blue: In this [F] soil I root my [Dm] soul.
-&blue: In this [C] place I have a [F] garden [G] of my [C] own.
+{textcolour: blue}
+ [C] There’s a place where dreams are [Em] gathered;
+ There’s a [F] place where seeds are [Dm] sown.
+ There’s a [C] light beyond the [Em] shadows
+ Where [F] truths are [G] known.
+ In this [C] light I reach for [Em] heaven;
+ In this [F] soil I root my [Dm] soul.
+ In this [C] place I have a [F] garden [G] of my [C] own.
+{textcolour}
 
 {c: Verse 3:}
 [C] Who [G] knows whether time & quiet [C] faith bring something new?
@@ -55,4 +61,6 @@ In this [F] soil I root my [Dm] soul.
 In this [C] place I have a [F] garden [G] of my [C] own.
 
 {c: Instrumental Last line chorus:}
-&blue: [Dm] In this [C] place I have a [F] garden [G] of my [C] own.
+{textcolour: blue}
+ [Dm] In this [C] place I have a [F] garden [G] of my [C] own.
+{textcolour}

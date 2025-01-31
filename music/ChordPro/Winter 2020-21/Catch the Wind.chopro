@@ -2,7 +2,9 @@
 {st:	Donavan Leitch  (1965)}
 
 {c: Instrumental Intro,  last line Verse}
-&blue: [C] Ah, but I may as well [F] try and [G] catch the [C] wi-[F]-nd [C]
+{textcolour: blue}
+ [C] Ah, but I may as well [F] try and [G] catch the [C] wi-[F]-nd [C]
+{textcolour}
 
 {c: Verse 1}
 In the [C] chilly hours and [F] minutes
@@ -21,17 +23,21 @@ Would be the [C] sweetest thing, would [F] make me sing
 [C] Ah, but I may as well [F] try and [G] catch the [C] wi-[F]-nd [C].
 
 {c: Instrumental Bridge}
-&blue: [F] Dee dee dee dee, [Em] dee dee dee dee
-&blue: [Am] Dee dee dee dee, [D] dee dee dee dee
-&blue: [G] Dee dee dee dee  [G] Dee dee dee dee
+{textcolour: blue}
+ [F] Dee dee dee dee, [Em] dee dee dee dee
+ [Am] Dee dee dee dee, [D] dee dee dee dee
+ [G] Dee dee dee dee  [G] Dee dee dee dee
+{textcolour}
 
 {c: Instrumental Break, Verse 3}
-&blue: [C] When rain has hung the [F] leaves with tears
-&blue: I [C] want you near to [F] quell my fears
-&blue: To [C] help me to [F] leave all my [G] blues be-[C] hi-[G]-nd
-&blue: For [C] standing in your [F] heart
-&blue: Is where I [C] want to be; I [F] long to be
-&blue: [C] Ah, but I may as well [F] try and [G] catch the [C] wi-[F]-nd [C]
+{textcolour: blue}
+ [C] When rain has hung the [F] leaves with tears
+ I [C] want you near to [F] quell my fears
+ To [C] help me to [F] leave all my [G] blues be-[C] hi-[G]-nd
+ For [C] standing in your [F] heart
+ Is where I [C] want to be; I [F] long to be
+ [C] Ah, but I may as well [F] try and [G] catch the [C] wi-[F]-nd [C]
+{textcolour}
 
 {c: Verse 3}
 [C] When rain has hung the [F] leaves with tears
@@ -43,4 +49,6 @@ Is where I [C] want to be; I [F] long to be
 [C] Ah, but I may as well [F] try and [G] catch the [C] wi-[F]-nd [C]
 
 {c: Instrumental}
-&blue: [C] Ah, but I may as well [F] try and [G] catch the [C] wi-[F]-nd [C]
+{textcolour: blue}
+ [C] Ah, but I may as well [F] try and [G] catch the [C] wi-[F]-nd [C]
+{textcolour}

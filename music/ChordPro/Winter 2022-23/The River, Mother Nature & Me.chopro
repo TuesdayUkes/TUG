@@ -41,8 +41,10 @@ There's [F] no  place that I'd rather [C] be
 Just the [F] river, Mother [G] Nature and [C] me
 
 Instrumental Chorus:
-&blue: [F]  Sitting on rocks [C] down by the river
-&blue:  Feeling the powers that [G] be
-&blue:  You can [F] howl at the moon, [C] wade the deep [Am] water
-&blue: There's [F] no  place that I'd rather [C] be
-&blue: Just the [F] river, Mother [G] Nature and [C] me
+{textcolour: blue}
+ [F]  Sitting on rocks [C] down by the river
+  Feeling the powers that [G] be
+  You can [F] howl at the moon, [C] wade the deep [Am] water
+ There's [F] no  place that I'd rather [C] be
+ Just the [F] river, Mother [G] Nature and [C] me
+{textcolour}

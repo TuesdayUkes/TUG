@@ -2,7 +2,9 @@
 {st: Eleanor Farjeon (1881-1965), 1928. }
 
 Instrumental:
-&blue: [G] People, look [D] east. The [C] time is [G] near 
+{textcolour: blue}
+ [G] People, look [D] east. The [C] time is [G] near 
+{textcolour}
 
 Verse 1:
 [G] People, look [D] east. The [C] time is [G] near 
@@ -12,7 +14,9 @@ Trim the [Am] hearth and [Em] set the [D]  ta-[G] -ble.
 People, look east and [D7] sing to-[G] -day:
 Love, the [C] guest, is [D] on the [G] way.
 
-&blue: [G] Love, the [C] guest, is [D] on the [G] way.
+{textcolour: blue}
+ [G] Love, the [C] guest, is [D] on the [G] way.
+{textcolour}
 
 Verse 2:
 [G] Furrows, be [D] glad, though [C] earth is [G] bare,
@@ -22,10 +26,12 @@ That in [Am] course the [Em] flower may [D]  flou-[G]- rish.
 People, look east and [D7] sing to-[G]-day:
 Love, the [C] rose, is [D] on the [G] way.
 
-&blue: [G] Give up your strength the [D7] seed to [G] nourish,
-&blue: That in [Am] course the [Em] flower may [D]  flou-[G]- rish.
-&blue: People, look east and [D7] sing to-[G]-day:
-&blue: [G] Love, the [C] rose, is [D] on the [G] way.
+{textcolour: blue}
+ [G] Give up your strength the [D7] seed to [G] nourish,
+ That in [Am] course the [Em] flower may [D]  flou-[G]- rish.
+ People, look east and [D7] sing to-[G]-day:
+ [G] Love, the [C] rose, is [D] on the [G] way.
+{textcolour}
 
 Verse 3:
 [G] Stars, keep the [D] watch when [C] night is [G]  dim
@@ -35,4 +41,6 @@ Bright as [Am]  sun and [Em] moon to-[D]- ge-[G]-ther.
 People, look east and [D7] sing to-[G]- day:
 Love, the [C] star, is [D] on the [G] way.
 
-&blue: [G] Love, the [C] star, is [D] on the [G] way.
+{textcolour: blue}
+ [G] Love, the [C] star, is [D] on the [G] way.
+{textcolour}

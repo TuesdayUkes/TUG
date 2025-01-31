@@ -2,7 +2,9 @@
 {st: Townes Van Zandt}
 
 {c: Instrumental 1st line:}
-&blue: [D] When the [A7] wind don't blow in Ama-[D] -rillo
+{textcolour: blue}
+ [D] When the [A7] wind don't blow in Ama-[D] -rillo
+{textcolour}
 
 [D] When the [A7] wind don't blow in Ama-[D] -rillo
 And the [A7] moon along the Gunnison don't [D] rise,
@@ -23,8 +25,10 @@ It's [D] snowin' [G] on Ra- [D] -ton
 Come [A7] morning I'll be [G] through them hills and [D] gone
 
 {c: Instrumental chorus:}
-&blue: It's [D] snowin' [G] on Ra- [D] -ton
-&blue: Come [A7] morning I'll be [G] through them hills and [D] gone
+{textcolour: blue}
+ It's [D] snowin' [G] on Ra- [D] -ton
+ Come [A7] morning I'll be [G] through them hills and [D] gone
+{textcolour}
 
 [D] Bid the [A7] years good-bye; you cannot [D]  still them.
 You [A7] cannot turn the circles of the [D] sun.
@@ -36,8 +40,10 @@ It's [D] snowin' [G] on Ra- [D] -ton
 Come [A7] morning I'll be [G] through them hills and [D] gone
 
 {c: Instrumental chorus:}
-&blue: It's [D] snowin' [G] on Ra- [D] -ton
-&blue: Come [A7] morning I'll be [G] through them hills and [D] gone
+{textcolour: blue}
+ It's [D] snowin' [G] on Ra- [D] -ton
+ Come [A7] morning I'll be [G] through them hills and [D] gone
+{textcolour}
 
 [D] To- [A7] -morrow the mountains will be [D] sleeping,
 [A7] Silent 'neath a blanket green and [D] blue,
@@ -49,9 +55,11 @@ It's [D] snowin' [G] on Ra- [D] -ton
 Come [A7] morning I'll be [G] through them hills and [D] gone
 
 {c: Instrumental verse:}
-&blue: [D] When the [A7] wind don't blow in Ama-[D] -rillo
-&blue: And the [A7] moon along the Gunnison don't [D] rise,
-&blue: Shall I [G] cast my dreams upon your [D] love, babe,
-&blue: And lie beneath the [G] laughter of your [D] eyes?
+{textcolour: blue}
+ [D] When the [A7] wind don't blow in Ama-[D] -rillo
+ And the [A7] moon along the Gunnison don't [D] rise,
+ Shall I [G] cast my dreams upon your [D] love, babe,
+ And lie beneath the [G] laughter of your [D] eyes?
+{textcolour}
 
 

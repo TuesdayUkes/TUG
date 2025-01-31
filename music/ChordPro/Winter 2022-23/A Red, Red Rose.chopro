@@ -2,8 +2,10 @@
 {st: Robert Burns   1794}
 
 Intro:  1st 2 lines
-&blue: Oh, [G] my love is like a [C] red, red rose
-&blue: That's [Am7] newly sprung in [D] June:
+{textcolour: blue}
+ Oh, [G] my love is like a [C] red, red rose
+ That's [Am7] newly sprung in [D] June:
+{textcolour}
 
 Verse 1:
 Oh, [G] my love is like a [C] red, red rose
@@ -16,10 +18,12 @@ Till all the seas gang [Em] dry, my dear; Till [Am7] all the seas gang [D] dry.
 And [G] I will love thee [Em] still, my dear, Till [Am7] all the seas [D] gang [G] dry.
 
 Instrumental Break, 1st 4 lines verse:
-&blue: Oh, [G] my love is like a [C] red, red rose
-&blue: That's [Am7] newly sprung in [D] June.
-&blue: Oh, [G] my love's like the [C] melo [Am7] dy
-&blue: That's [C] sweetly [D7] played in [G] tune.
+{textcolour: blue}
+ Oh, [G] my love is like a [C] red, red rose
+ That's [Am7] newly sprung in [D] June.
+ Oh, [G] my love's like the [C] melo [Am7] dy
+ That's [C] sweetly [D7] played in [G] tune.
+{textcolour}
 
 Verse 2:
 Till [G] all the seas gang [C] dry, my dear,
@@ -32,7 +36,9 @@ Tho'[G]'twere ten thousand [Em] mile, my love, Tho'[Am7]'twere ten thousand [D] 
 And [G] I will come a[Em] gain, my love, Tho' [Am7] 'twere ten thou[D] sand [G] mile,
 
 Outro:  last 4 lines verse:
-&blue: [G] As fair art thou, my [C] bonnie [G] lad, So [D] deep in love am I; [D7]
-&blue: And [G] I will love thee [C] still, my [G] dear, Till [D7] all the seas gang [G] dry.
-&blue: Till all the seas gang [Em] dry, my dear; Till [Am7] all the seas gang [D] dry.
-&blue: And [G] I will love thee [Em] still, my dear, Till [Am7] all the seas [D] gang [G] dry.
+{textcolour: blue}
+ [G] As fair art thou, my [C] bonnie [G] lad, So [D] deep in love am I; [D7]
+ And [G] I will love thee [C] still, my [G] dear, Till [D7] all the seas gang [G] dry.
+ Till all the seas gang [Em] dry, my dear; Till [Am7] all the seas gang [D] dry.
+ And [G] I will love thee [Em] still, my dear, Till [Am7] all the seas [D] gang [G] dry.
+{textcolour}

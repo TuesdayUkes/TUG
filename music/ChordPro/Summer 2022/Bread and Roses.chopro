@@ -2,8 +2,10 @@
 {st: w. James Oppenheim    m. Caroline Kohsleet}
 
 {c: Instrumental Intro 1st 2 lines:}
-&blue: [C] As we go marching, march-[G]-ing
-&blue: in the beauty of the [C] day
+{textcolour: blue}
+ [C] As we go marching, march-[G]-ing
+ in the beauty of the [C] day
+{textcolour}
 
 {c: Verse 1:}
 [C] As we go marching, march-[G]-ing
@@ -26,10 +28,12 @@ from [F] birth until life clo-[C]-ses
 Give [G] us bread, but give us ro-[C]-ses
 
 {c: Instrumental last 4 lines verse:}
-&blue: [Am] Our lives shall not be swea-[G]-ted
-&blue: from [F] birth until life clo-[C]-ses
-&blue: Hearts [F] starve as well as [C] bodies.
-&blue: Give [G] us bread, but give us ro-[C]-ses
+{textcolour: blue}
+ [Am] Our lives shall not be swea-[G]-ted
+ from [F] birth until life clo-[C]-ses
+ Hearts [F] starve as well as [C] bodies.
+ Give [G] us bread, but give us ro-[C]-ses
+{textcolour}
 
 {c: Verse 3:}
 [C] As we go marching, march-[G]-ing,
@@ -52,7 +56,9 @@ Ten that [F] toil where one repo-[C]-ses,
 Bread [G] and roses, bread and ro-[C]-ses!
 
 {c: Instrumental last 4 lines verse:}
-&blue: [Am] Our lives shall not be swea-[G]-ted
-&blue: from [F] birth until life clo-[C]-ses
-&blue: Hearts [F] starve as well as [C] bodies.
-&blue: Give [G] us bread, but give us ro-[C]-ses
+{textcolour: blue}
+ [Am] Our lives shall not be swea-[G]-ted
+ from [F] birth until life clo-[C]-ses
+ Hearts [F] starve as well as [C] bodies.
+ Give [G] us bread, but give us ro-[C]-ses
+{textcolour}

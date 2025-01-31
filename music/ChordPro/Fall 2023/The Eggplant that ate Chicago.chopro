@@ -11,11 +11,13 @@
 [A7] He landed in Chicago. [D7] He thought Chicago was a treat
 (It was sweet, it was just like sugar)
 
-&blue: [G] You'd better watch [G7] out for the [A7] eggplant that ate Chicago
-&blue: [D] For he may eat your city [B7] soon (wacka-doo, wacka-doo, wacka doo)
-&blue: [C] You'd better watch [C7] out for the
-&blue: [G] Eggplant that [Gb] ate [F] Chi- [E7] cago;
-&blue: [A7] if he's still hungry [D7] the whole country's [G] doomed. [D7]
+{textcolour: blue}
+ [G] You'd better watch [G7] out for the [A7] eggplant that ate Chicago
+ [D] For he may eat your city [B7] soon (wacka-doo, wacka-doo, wacka doo)
+ [C] You'd better watch [C7] out for the
+ [G] Eggplant that [Gb] ate [F] Chi- [E7] cago;
+ [A7] if he's still hungry [D7] the whole country's [G] doomed. [D7]
+{textcolour}
 
 [C] He came from outer space, [G] lookin' for somethin' to [G7] eat.
 [A7] He landed in Chicago. [D7] He thought Chicago was a treat
@@ -28,6 +30,8 @@
 [A7] if he's still hungry [D7] the whole country's [G] doomed. [D7]
 [E7] It's in trouble… [A7] if he's still hungry [D7] the whole country's [G] doomed. [C] [G]
 
-&blue: [C] You'd better watch [C7] out for the
-&blue: [G] Eggplant that [Gb] ate [F] Chi- [E7] cago;
-&blue: [A7] if he's still hungry [D7] the whole country's [G] doomed. [C] [G]
+{textcolour: blue}
+ [C] You'd better watch [C7] out for the
+ [G] Eggplant that [Gb] ate [F] Chi- [E7] cago;
+ [A7] if he's still hungry [D7] the whole country's [G] doomed. [C] [G]
+{textcolour}

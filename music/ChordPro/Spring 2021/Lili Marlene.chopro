@@ -2,11 +2,13 @@
 {st: Hans Leip, Norbert Schultze}
 
 {c: Instrumental Verse:}
-&blue: [G] Outside the barracks, [D7] by the corner light
-&blue: I always stand and [D] wait for you at [G] night
-&blue: [C] We will create a [G] world for two
-&blue: I'll [D] wait for you, the [G] whole night through
-&blue: For [D] you, Lili Mar-[G]-leen, For [D7] you, Lili Mar-[G]-leen
+{textcolour: blue}
+ [G] Outside the barracks, [D7] by the corner light
+ I always stand and [D] wait for you at [G] night
+ [C] We will create a [G] world for two
+ I'll [D] wait for you, the [G] whole night through
+ For [D] you, Lili Mar-[G]-leen, For [D7] you, Lili Mar-[G]-leen
+{textcolour}
 
 {c: Verse 1:}
 [G] Outside the barracks, [D7] by the corner light
@@ -30,11 +32,13 @@ But [D] then will come a [G] love that's new
 For [D] you, Lili Mar-[G]-leen, for [D7] you, Lili Mar-[G]-leen
 
 {c: Instrumental Break, verse:}
-&blue: [G] Give me a rose to [D7] show how much you care
-&blue: Tie to the stem a [D] lock of golden [G] hair
-&blue: [C] Surely tomorrow, [G] you'll feel blue
-&blue: But [D] then will come a [G] love that's new
-&blue: For [D] you, Lili Mar-[G]-leen, for [D7] you, Lili Mar-[G]-leen
+{textcolour: blue}
+ [G] Give me a rose to [D7] show how much you care
+ Tie to the stem a [D] lock of golden [G] hair
+ [C] Surely tomorrow, [G] you'll feel blue
+ But [D] then will come a [G] love that's new
+ For [D] you, Lili Mar-[G]-leen, for [D7] you, Lili Mar-[G]-leen
+{textcolour}
 
 {c: Verse 4:}
 [G] When we are marching [D7] in the mud and cold

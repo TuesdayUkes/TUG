@@ -27,7 +27,9 @@ Does the grass never grow on your [C] gra- [G7] – ve?
 Was [C] Billy both [G7] bad, bold and [C] brave?
 
 {c: Instrum.}
-&blue: Was [C] Billy both [G7] bad, bold and [C] brave?
+{textcolour: blue}
+ Was [C] Billy both [G7] bad, bold and [C] brave?
+{textcolour}
 
 The [C] cattle war [G7] came and young [C] Bonney was game,
  ‘Til he saw his friends [G7] ambushed and [C] kil- [G7] -led.
@@ -55,7 +57,9 @@ Was Billy both [G7] bad, bold and [Am] brave?
 Was [C] Billy both [G7] bad, bold and [C] brave?
 
 {c: Instrum.}
-&blue: Was [C] Billy both [G7] bad, bold and [C] brave?
+{textcolour: blue}
+ Was [C] Billy both [G7] bad, bold and [C] brave?
+{textcolour}
 
 A [C] tormenting [G7] knave guarded [C] Bill for the day
 That the hangman would [G7] trip the trap- [C] do- [G7] -or.

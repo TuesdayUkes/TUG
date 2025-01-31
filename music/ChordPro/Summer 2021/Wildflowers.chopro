@@ -2,8 +2,10 @@
 {st: Tom Petty  1994}
 
 Instrumental Intro:
-&blue: [C] You be-[G]-long a-[D]-mong the wild-[G]-flowers
-&blue: [C] You be-[G]-long in a [D] boat out at [G] sea
+{textcolour: blue}
+ [C] You be-[G]-long a-[D]-mong the wild-[G]-flowers
+ [C] You be-[G]-long in a [D] boat out at [G] sea
+{textcolour}
 
 [C] You be-[G]-long a-[D]-mong the wild-[G]-flowers
 [C] You be-[G]-long in a [D] boat out at [G] sea
@@ -20,7 +22,9 @@ Instrumental Intro:
 [C] You be-[G]-long with your [D] love on your [G] arm
 [C] You be-[G]-long somewhere [D] you feel [G] free
 
-&blue: [C] [G] [Em] [A] [D]      [C]  [Em] [D]   2x
+{textcolour: blue}
+ [C] [G] [Em] [A] [D]      [C]  [Em] [D]   2x
+{textcolour}
 
 [C] Run a-[G]-way, go [D] find a [G] lover
 [C] Run a-[G]-way, let your [D] heart be your [G] guide
@@ -34,5 +38,7 @@ Instrumental Intro:
 
 [C] You be-[G]-long somewhere [D] you feel [G] free
 
-&blue: [C]  [G] [Em] [A] [D]     [C]  [Em] [D]   2x
+{textcolour: blue}
+ [C]  [G] [Em] [A] [D]     [C]  [Em] [D]   2x
+{textcolour}
 

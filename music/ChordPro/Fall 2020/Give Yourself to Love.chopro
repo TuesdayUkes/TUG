@@ -3,7 +3,9 @@
 {st: Kate Wolf}
 
 {c: Instrumental Intro:  Last line Chorus}
-&blue: [C] Give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
+{textcolour: blue}
+ [C] Give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
+{textcolour}
 
 {c: Verse 1}
 Kind [C] friends all gathered [Am] round, there's [F] something I would [C] say.
@@ -17,7 +19,9 @@ Open up your [Am] heart to the [G] tears and laughter.
 And [C] give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
 
 {c: Instrumental}
-&blue: [C] Give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
+{textcolour: blue}
+ [C] Give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
+{textcolour}
 
 {c: Verse 2}
 [C] I've walked these mountains in the [Am] rain, I've [F] learned to love the [C] wind.
@@ -30,7 +34,9 @@ So [C] give your- [G]-self to [Am] love, if [F] love is [G] what you’re [C] af
 Open up your [Am] heart to the [G] tears and laughter.
 And [C] give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
 {c: Instrumental}
-&blue:  [C]  Give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
+{textcolour: blue}
+  [C]  Give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
+{textcolour}
 
 {c: Verse 3}
 [C] Love is born in [Am] fire; it’s [F] planted like a [C] seed.
@@ -43,5 +49,7 @@ So [C] give your- [G]-self to [Am] love, if [F] love is [G] what you’re [C] af
 Open up your [Am] heart to the [G] tears and laughter
 And [C] give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
 [C] Give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
-&blue: [C] Give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
+{textcolour: blue}
+ [C] Give your-[G] -self to [Am] love, [F] give your- [G] -self to [C] love.
+{textcolour}
 

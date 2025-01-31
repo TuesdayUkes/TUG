@@ -26,10 +26,12 @@ It’s [E7] round up time on the [A] station, oh, boy.
 Yode-[E7]-le heh ee, eh heh ee, [A] eh heh ee yo.
 
 {c: Instrumental Break, first 2/3 verse}
-&blue: [A] Up before dawn and [D] ride to the [A] mornin’,
-&blue: [D] Straddle your [A] saddle and [E7] whistle your dogs.
-&blue: [A] Out on the grassland the [D] cattle are [A] restin’,
-&blue: Sur-[D]-rounded by [A] darkness or [E7] hidden by [A] fog.
+{textcolour: blue}
+ [A] Up before dawn and [D] ride to the [A] mornin’,
+ [D] Straddle your [A] saddle and [E7] whistle your dogs.
+ [A] Out on the grassland the [D] cattle are [A] restin’,
+ Sur-[D]-rounded by [A] darkness or [E7] hidden by [A] fog.
+{textcolour}
 
 {c: Verse 3:}
 [A] They’re herded together, a [D] bull, cow, or a [A] heifer. 
@@ -44,10 +46,12 @@ It’s [E7] round up time on the [A] station, oh, boy.
 Yode-[E7]-le heh ee, eh heh ee, [A] eh heh ee yo.
 
 {c: Instrumental Break, first 2/3 verse}
-&blue: [A] Up before dawn and [D] ride to the [A] mornin’,
-&blue: [D] Straddle your [A] saddle and [E7] whistle your dogs.
-&blue: [A] Out on the grassland the [D] cattle are [A] restin’,
-&blue: Sur-[D]-rounded by [A] darkness or [E7] hidden by [A] fog.
+{textcolour: blue}
+ [A] Up before dawn and [D] ride to the [A] mornin’,
+ [D] Straddle your [A] saddle and [E7] whistle your dogs.
+ [A] Out on the grassland the [D] cattle are [A] restin’,
+ Sur-[D]-rounded by [A] darkness or [E7] hidden by [A] fog.
+{textcolour}
 
 {c: Verse 4:}
 [A] Down past the ranch house and [D] into the [A] gateway,

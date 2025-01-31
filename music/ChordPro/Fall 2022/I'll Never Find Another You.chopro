@@ -24,8 +24,10 @@ But if [Am] I should lose your [F] love, dear, I [G] don't know [F] what I'll [E
 [Dm] For I [C] know I'll [Am] never [Dm] find, an[G7]other [C] you [F] [G]
 
 Instrumental:
-&blue: There's a [C] new world [F] somewhere, they [D7] call the Promised [G] Land,
-&blue: And I'll [C] be there [Em] someday, if [F] you will hold my [G] hand
+{textcolour: blue}
+ There's a [C] new world [F] somewhere, they [D7] call the Promised [G] Land,
+ And I'll [C] be there [Em] someday, if [F] you will hold my [G] hand
+{textcolour}
 
 But if [Am] I should lose your [F] love, dear, I [G] don't know [F] what I'll [Em] do,
 [Dm] For I [C] know I'll [Am] never [Dm] find, an[G7]other [C] you [F] [G]

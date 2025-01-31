@@ -2,7 +2,9 @@
 {st: Nancy Thorwardson}
 
 Instrumental Intro:  Last line Chorus
-&blue:  [G7] I'm not hangin' 'round 'cause I'm paintin' up the [C] town
+{textcolour: blue}
+  [G7] I'm not hangin' 'round 'cause I'm paintin' up the [C] town
+{textcolour}
 
 Verse 1:
 I'm [C]  swingin' in the saddle under [D]  prairie skies of blue.
@@ -23,10 +25,12 @@ Yodel:
 [G7] Wheedeleh- he yo, uh yode [C] leh he yo uh yodeloo
 
 Kazoo break for chorus
-&blue: [C] I'm gonna [F]  paint the town, gonna [C]  throw my money 'round.
-&blue: The'll be [G]  dancin' and romancin' when this [C] cowgirl hits the ground.
-&blue: Might even [F]  fall in love with the [C] full moon up above.
-&blue: [G7]  I'm not hangin' round 'cause I'm paintin' up the [C] town.
+{textcolour: blue}
+ [C] I'm gonna [F]  paint the town, gonna [C]  throw my money 'round.
+ The'll be [G]  dancin' and romancin' when this [C] cowgirl hits the ground.
+ Might even [F]  fall in love with the [C] full moon up above.
+ [G7]  I'm not hangin' round 'cause I'm paintin' up the [C] town.
+{textcolour}
 
 Verse 2:
 [C] The'll be jingle bells that jangle as the  [D] lonesome coyote wails.

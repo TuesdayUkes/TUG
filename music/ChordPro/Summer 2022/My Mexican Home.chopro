@@ -2,9 +2,11 @@
 {st: John Prine}
 
 {c: Instrumental Intro:  1st half Verse}
-&blue: [A] It got so hot, last night, I swear
-&blue: You [D] couldn't hardly breathe
-&blue: Heat [A] lightning burnt the [E7] sky like alco-[A]-hol
+{textcolour: blue}
+ [A] It got so hot, last night, I swear
+ You [D] couldn't hardly breathe
+ Heat [A] lightning burnt the [E7] sky like alco-[A]-hol
+{textcolour}
 
 {c: Verse 1:}
 [A] It got so hot, last night, I swear
@@ -38,11 +40,13 @@ Not [D] ten miles away, ap-[A]-proaching
 My [E7] Mexican [A] home
 
 {c: Instrumental Interlude:  Chorus}
-&blue: [E7] Mama dear, your boy is here [A] far across the sea
-&blue: [B7] Waiting for that sacred core that [E7] burns inside of me
-&blue: And I [A] feel a storm, all wet and warm
-&blue: Not [D] ten miles away, ap-[A]-proaching
-&blue: My [E7] Mexican [A] home
+{textcolour: blue}
+ [E7] Mama dear, your boy is here [A] far across the sea
+ [B7] Waiting for that sacred core that [E7] burns inside of me
+ And I [A] feel a storm, all wet and warm
+ Not [D] ten miles away, ap-[A]-proaching
+ My [E7] Mexican [A] home
+{textcolour}
 
 {c: Verse 3:}
 My [A] father died on the porch outside
@@ -62,10 +66,12 @@ Not [D] ten miles away, ap-[A]-proaching
 My [E7] Mexican [A] home
 
 {c: Instrumental interlude: 1st half verse:}
-&blue: My [A] father died on the porch outside
-&blue: On an [D] August afternoon
-&blue: I sipped [A] bourbon and cried
-&blue: With a [E7] friend by the light of the [A] moon
+{textcolour: blue}
+ My [A] father died on the porch outside
+ On an [D] August afternoon
+ I sipped [A] bourbon and cried
+ With a [E7] friend by the light of the [A] moon
+{textcolour}
 
 [E7] Mama dear, your boy is here [A] far across the sea
 [B7] Waiting for that sacred core that [E7] burns inside of me

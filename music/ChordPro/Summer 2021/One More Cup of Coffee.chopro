@@ -2,7 +2,9 @@
 {st: Bob Dylan}
 
 {c: Instrumental Intro:}
-&blue:   [Am]   [G]   [F]   [E]    2x
+{textcolour: blue}
+   [Am]   [G]   [F]   [E]    2x
+{textcolour}
 
 [Am]   Your breath is sweet; your eyes are like
 Two [G] jewels in the sky
@@ -15,8 +17,10 @@ No [G] gratitude or love
 [F] One more cup of coffee before I [E] go
 (no chord) To the valley be-[Am]-low
 
-&blue: [G]   [F]   [E]
-&blue: [Am]  [G]   [F]   [E]
+{textcolour: blue}
+ [G]   [F]   [E]
+ [Am]  [G]   [F]   [E]
+{textcolour}
 
 [Am]   Your daddy, he's an outlaw
 And a [G] wanderer by trade
@@ -30,8 +34,10 @@ For a-[E]-nother plate of food
 [F] One more cup of coffee before I [E] go
 (no chord) To the valley be-[Am]-low
 
-&blue: [G]   [F]   [E]
-&blue: [Am]  [G]   [F]   [E]
+{textcolour: blue}
+ [G]   [F]   [E]
+ [Am]  [G]   [F]   [E]
+{textcolour}
 
 [Am]   Your sister sees the future
 Like your [G] momma and yourself
@@ -45,5 +51,7 @@ Mys-[E]-terious and dark
 [F] One more cup of coffee before I [E] go
 (no chord) To the valley be-[Am]-low
 
-&blue: [G]   [F]   [E]
-&blue: [Am]  [G]   [F]   [E]   [Am]
+{textcolour: blue}
+ [G]   [F]   [E]
+ [Am]  [G]   [F]   [E]   [Am]
+{textcolour}

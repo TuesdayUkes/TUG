@@ -2,9 +2,11 @@
 {st: Traditional Irish       Adapted by Clancy Bros./Tommy Makem }
 
 {c: Instrumental Intro: 1st 3 lines Verse:}
-&blue: [Am] Let the farmer praise his grounds,
-&blue: Let the [Dm] huntsman praise his [E7] hounds,
-&blue: Let the [Am] shepherd praise his dewy scented [E7] lawn;
+{textcolour: blue}
+ [Am] Let the farmer praise his grounds,
+ Let the [Dm] huntsman praise his [E7] hounds,
+ Let the [Am] shepherd praise his dewy scented [E7] lawn;
+{textcolour}
 
 {c: Verse 1:}
 [Am] Let the farmer praise his grounds,
@@ -24,7 +26,9 @@ Oh, [C] graw moh kree moh [G] kroosh-keen,
 [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
 
 {c: Instrumental Break, last line Chorus:}
-&blue: [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
+{textcolour: blue}
+ [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
+{textcolour}
 
 {c: Verse 2:}
 [Am] Immortal and divine, great [Dm] Bacchus, god of [E7] wine
@@ -43,7 +47,9 @@ Oh, [C] graw moh kree moh [G] kroosh-keen,
 [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
 
 {c: Instrumental Break, last line Chorus:}
-&blue: [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
+{textcolour: blue}
+ [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
+{textcolour}
 
 {c: Verse 3:}
 [Am] Oh, when cruel death appears,
@@ -63,7 +69,9 @@ Oh, [C] graw moh kree moh [G] kroosh-keen,
 [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
 
 {c: Instrumental Break, last line Chorus:}
-&blue: [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
+{textcolour: blue}
+ [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
+{textcolour}
 
 {c: Verse 4:}
 [Am] Then fill your glasses high;
@@ -83,7 +91,9 @@ Oh, [C] graw moh kree moh [G] kroosh-keen,
 [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
 
 {c: Instrumental Break, last line Chorus:}
-&blue: [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
+{textcolour: blue}
+ [Dm] Oh! [Am] graw moh kree moh [E7] kroosh-keen [Am] lawn
+{textcolour}
 
 
 Translation:

@@ -2,7 +2,9 @@
 {st: Gillian Welch}
 
 Instrumental Intro last line Chorus:
-&blue: [F#m] winter's come and gone and a [D] little bird told me [A] so
+{textcolour: blue}
+ [F#m] winter's come and gone and a [D] little bird told me [A] so
+{textcolour}
 
 Verse 1:
 [A] Oh little red bird come to my window [F#m] sill
@@ -15,8 +17,10 @@ Chorus:
 But [F#m] winter's come and gone and a [D] little bird told me [A] so
 
 Instrumental Break: Chorus
-&blue: [D] So long now I've been [A] out in the rain and snow
-&blue: But [F#m] winter's come and gone and a [D] little bird told me [A] so
+{textcolour: blue}
+ [D] So long now I've been [A] out in the rain and snow
+ But [F#m] winter's come and gone and a [D] little bird told me [A] so
+{textcolour}
 
 Verse 2:
 [A] Oh little blue bird pearly feather [F#m] breast
@@ -39,8 +43,10 @@ Chorus:
 But [F#m] winter's come and gone and a [D] little bird told me [A] so
 
 Instrumental Break: Chorus
-&blue: [D] So long now I've been [A] out in the rain and snow
-&blue: But [F#m] winter's come and gone and a [D] little bird told me [A] so
+{textcolour: blue}
+ [D] So long now I've been [A] out in the rain and snow
+ But [F#m] winter's come and gone and a [D] little bird told me [A] so
+{textcolour}
 
 Chorus:
 [D] So long now I've been [A] out in the rain and snow

@@ -2,8 +2,10 @@
 {st: Traditional Irish}
 
 {c: Instrumental last two lines Verse}
-&blue: Oh, [C] what botherations, no [G] bolt to the nations
-&blue: Can [F] bring conso-[C]-lation like [G] poteen me [C] boys.
+{textcolour: blue}
+ Oh, [C] what botherations, no [G] bolt to the nations
+ Can [F] bring conso-[C]-lation like [G] poteen me [C] boys.
+{textcolour}
 
 {c: Verse 1:}
 [C] Let your quacks and newspapers be [G] cuttin' their capers,
@@ -48,14 +50,16 @@ Oh [C] Lord, how I'd chuckle if [G] babes in their truckle
 Could [F] only be [C] suckled on [G] poteen, me [C] boys.
 
 {c: Instrumental 1st 8 lines Verse 1}
-&blue: [C] Let your quacks and newspapers be [G] cuttin' their capers,
-&blue: And [F] curing the [C] Vapours, the [G] Scratch, and the Gout.
-&blue: With their [C] medical potions, their [G] pills and their lotions.
-&blue: Up-[F]-holding their [C] notions they’re [G] mighty put [C] out.
-&blue: [C] Who can tell the true physic of [G] all things pathetic,
-&blue: And [F] pitch to the [C] Devil cramp, [G] colic, and spleen?
-&blue: Oh, you'll [C] find them I think if you [G] take a big drink
-&blue: With your [F] mouth to the [C] brink of a [G] jug of po-[C]-teen.
+{textcolour: blue}
+ [C] Let your quacks and newspapers be [G] cuttin' their capers,
+ And [F] curing the [C] Vapours, the [G] Scratch, and the Gout.
+ With their [C] medical potions, their [G] pills and their lotions.
+ Up-[F]-holding their [C] notions they’re [G] mighty put [C] out.
+ [C] Who can tell the true physic of [G] all things pathetic,
+ And [F] pitch to the [C] Devil cramp, [G] colic, and spleen?
+ Oh, you'll [C] find them I think if you [G] take a big drink
+ With your [F] mouth to the [C] brink of a [G] jug of po-[C]-teen.
+{textcolour}
 
 {c: Verse 4:}
 [C] Through youthful digressions and [G] times of depression,
@@ -86,5 +90,7 @@ Oh, [C] Lord knows I wonder if [G] lighting and thunder
 Was [F] made from the [C] plunder of [G] poteen, me [C] boys.
 
 {c: Instrumental last two lines Verse 1}
-&blue: Oh, [C] what botherations, no [G] bolt to the nations
-&blue: Can [F] bring conso-[C]-lation like [G] poteen me [C] boys.
+{textcolour: blue}
+ Oh, [C] what botherations, no [G] bolt to the nations
+ Can [F] bring conso-[C]-lation like [G] poteen me [C] boys.
+{textcolour}

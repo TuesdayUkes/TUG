@@ -20,10 +20,12 @@ Nothing can re [G] sist my Nancy
 Love but her, and [D] love for [Am7] e [G] ver
 
 Instrumental Break, Verse:
-&blue: [G] Ae fond kiss and then we [C] sever
-&blue: Ae fareweel, a [G] las forever
-&blue: [C] Deep in heart-wrung [G] tears I'll pledge thee
-&blue: Warring sighs and [D] groans I'll [Am7] wage [G] thee
+{textcolour: blue}
+ [G] Ae fond kiss and then we [C] sever
+ Ae fareweel, a [G] las forever
+ [C] Deep in heart-wrung [G] tears I'll pledge thee
+ Warring sighs and [D] groans I'll [Am7] wage [G] thee
+{textcolour}
 
 Verse 4:
 [G] Had we never loved sae [C] kindly
@@ -44,4 +46,6 @@ Ae fareweel, a [G] las forever
 Warring sighs and [D] groans I'll [Am7] wage [G] thee
 
 Instrumental Outro:
-&blue: [G] Warring sighs and [D] groans I'll [Am7] wage [G] thee
+{textcolour: blue}
+ [G] Warring sighs and [D] groans I'll [Am7] wage [G] thee
+{textcolour}

@@ -20,10 +20,12 @@ in the [F] morning when we [C] rise
 That's the [G] time; that’s the [F] time I love the [C] best
 
 {c: Instrumental break:  Verse}
-&blue: [C] Blue is the color of the [F] sky- [C]-y
-&blue: In the [F] morning when we [C] rise
-&blue: in the [F] morning when we [C] rise
-&blue: That's the [G] time; that’s the [F] time I love the [C] best
+{textcolour: blue}
+ [C] Blue is the color of the [F] sky- [C]-y
+ In the [F] morning when we [C] rise
+ in the [F] morning when we [C] rise
+ That's the [G] time; that’s the [F] time I love the [C] best
+{textcolour}
 
 {c: Verse 4:}
 [C] Mellow is the feeling [F] that I [C] get

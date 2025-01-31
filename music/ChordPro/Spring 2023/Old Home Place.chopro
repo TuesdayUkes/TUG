@@ -25,10 +25,12 @@ And worked in a [D]sawmill or [G]two
      And look for a [D]job in the [G]town?
 
 (Interlude)
-&blue: I [G]fell in [B7]love with a [C]girl from the [G]town
-&blue: I thought that she would be tr[D]ue
-&blue: I [G]ran a[B7]way to [C]Charlottes[G]ville
-&blue: And worked in a [D]sawmill or [G]two
+{textcolour: blue}
+ I [G]fell in [B7]love with a [C]girl from the [G]town
+ I thought that she would be tr[D]ue
+ I [G]ran a[B7]way to [C]Charlottes[G]ville
+ And worked in a [D]sawmill or [G]two
+{textcolour}
 
 (Verse 2)
 Well, the [G] girl ran [B7] off with [C] somebody [G]else
@@ -48,10 +50,12 @@ And now I [D] wish that I was [G] dead
      And look for a [D] job in the [G] town?
 
 (Interlude)
-&blue: I [G]fell in [B7]love with a [C]girl from the [G]town
-&blue: I thought that she would be tr[D]ue
-&blue: I [G]ran a[B7]way to [C]Charlottes[G]ville
-&blue: And worked in a [D]sawmill or [G]two
+{textcolour: blue}
+ I [G]fell in [B7]love with a [C]girl from the [G]town
+ I thought that she would be tr[D]ue
+ I [G]ran a[B7]way to [C]Charlottes[G]ville
+ And worked in a [D]sawmill or [G]two
+{textcolour}
 
 (Chorus)
      [D] What have they done to the [G] old home place?

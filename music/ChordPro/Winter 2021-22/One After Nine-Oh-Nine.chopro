@@ -28,11 +28,13 @@ I said, [C7] move over once, move over twice
 Said I'm [A] traveling on the [D] one after nine oh [G] nine
 
 {c:Break:}
-&blue: [G] Baby said she's traveling on the one after nine oh [G7] nine
-&blue: I said [C] move over honey; I'm traveling on that [G7] line
-&blue: I said [C7] move over once, move over twice
-&blue: [G7] C'mon baby don't be cold as ice
-&blue: Said I'm [A] traveling on the [D] one after nine oh [G] nine
+{textcolour: blue}
+ [G] Baby said she's traveling on the one after nine oh [G7] nine
+ I said [C] move over honey; I'm traveling on that [G7] line
+ I said [C7] move over once, move over twice
+ [G7] C'mon baby don't be cold as ice
+ Said I'm [A] traveling on the [D] one after nine oh [G] nine
+{textcolour}
 
 [C] Picked up the bags    [G] Run to the station
 [A] Rail man said   You got the [D] wrong location

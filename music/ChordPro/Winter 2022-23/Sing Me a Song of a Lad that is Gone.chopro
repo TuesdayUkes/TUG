@@ -38,7 +38,9 @@ Verse 3:
 [Am] All that was [F] me is [Am] gone [G7].
 
 Instrumental Chorus:
-&blue: [C] Sing me a [Am] song of a [G] lad that is gone,
-&blue: [C] Say, could that [F] lad be [C] I [G7]?
-&blue: [C] Merry of [Am] soul he [G] sailed on a day
-&blue: [C] Over the [F] sea to [C] Skye.
+{textcolour: blue}
+ [C] Sing me a [Am] song of a [G] lad that is gone,
+ [C] Say, could that [F] lad be [C] I [G7]?
+ [C] Merry of [Am] soul he [G] sailed on a day
+ [C] Over the [F] sea to [C] Skye.
+{textcolour}

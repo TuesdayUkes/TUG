@@ -2,8 +2,10 @@
 {st: w. Jean Ritchie (melody adapted from an old hymn)}
 
 {c: Instrumental Intro:  First 2 lines verse}
-&blue: [C] Bright is the morning and [F] brisk is the [C] weather;
-&blue: Steady the wind o'er the [D] sweet singing [G] sea.
+{textcolour: blue}
+ [C] Bright is the morning and [F] brisk is the [C] weather;
+ Steady the wind o'er the [D] sweet singing [G] sea.
+{textcolour}
 
 {c: Verse 1:}
 [C] Bright is the morning and [F] brisk is the [C] weather;
@@ -30,10 +32,12 @@ Come fare a-[D]-way with [G] me;
 Over the [G] rolling [C] sea.
 
 {c: Instrumental break, chorus:}
-&blue: [C] Marnie, [F] come fare a-[C]-way,
-&blue: Come fare a-[D]-way with [G] me;
-&blue: [C] There's an [F] island of [C] dreams
-&blue: Over the [G] rolling [C] sea.
+{textcolour: blue}
+ [C] Marnie, [F] come fare a-[C]-way,
+ Come fare a-[D]-way with [G] me;
+ [C] There's an [F] island of [C] dreams
+ Over the [G] rolling [C] sea.
+{textcolour}
 
 {c: Verse 3:}
 [C] Leave your belongings, for [F] things do but [C]  bind us;
@@ -60,5 +64,7 @@ Come fare a-[D]-way with [G] me;
 Over the [G] rolling [C] sea.
 
 {c: Instrumental tag, last 2 lines chorus:}
-&blue: [C] There's an [F] island of [C] dreams
-&blue: Over the [G] rolling [C] sea.
+{textcolour: blue}
+ [C] There's an [F] island of [C] dreams
+ Over the [G] rolling [C] sea.
+{textcolour}

@@ -4,10 +4,12 @@ key:GD,
 The Tokens: https://www.youtube.com/watch?v=8E8xMcXmI9E  Capo 5
 
 {c: Kazoo intro}
-&blue: [G] In the jungle, the [C] mighty jungle,
-&blue: The [G] lion sleeps  to-[D]night.
-&blue: [G] In the village, the [C] peaceful village,
-&blue: The [G] people sleep to-[D]night.
+{textcolour: blue}
+ [G] In the jungle, the [C] mighty jungle,
+ The [G] lion sleeps  to-[D]night.
+ [G] In the village, the [C] peaceful village,
+ The [G] people sleep to-[D]night.
+{textcolour}
 
 [G] In the jungle, the [C] mighty jungle,
 The [G] lion sleeps  to-[D]night.
@@ -25,10 +27,12 @@ The [G] lion sleeps to-[D]night.
 The [G] lion sleeps to-[D]night.
 
 {c: Kazoo chorus (soprano sax on recording)}
-&blue: a [G] weem away, aweem away,  a [C] weem away, aweem away,
-&blue: a [G] weem away,  aweem away, a [D] weem away, aweem away
-&blue: a [G] weem away, aweem away,  a [C] weem away, aweem away,
-&blue: a [G] weem away,  aweem away, a [D] weem away, aweem away
+{textcolour: blue}
+ a [G] weem away, aweem away,  a [C] weem away, aweem away,
+ a [G] weem away,  aweem away, a [D] weem away, aweem away
+ a [G] weem away, aweem away,  a [C] weem away, aweem away,
+ a [G] weem away,  aweem away, a [D] weem away, aweem away
+{textcolour}
 
 a [G] weem away, aweem away,  a [C] weem away, aweem away,
 a [G] weem away,  aweem away, a [D] weem away, aweem away

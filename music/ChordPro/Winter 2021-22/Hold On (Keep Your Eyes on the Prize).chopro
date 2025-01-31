@@ -53,16 +53,18 @@ Keep your eyes [G] on the [Am] prize
 [G] Hold [Am] on
 
 {c: Instrumental verse & chorus:}
-&blue: {c: Verse :}
-&blue: [Am] The only chain that a man can stand 
-&blue: Is that [G] chain of hand on [Am] hand
-&blue: Keep your [G] eyes on the [Am] prize 
-&blue: [G] Hold [Am] on
-&blue: 
-&blue: {c: Chorus:}
-&blue: Hold [G] on, hold [Am] on 
-&blue: Keep your eyes [G] on the [Am] prize 
-&blue: [G] Hold [Am] on
+{textcolour: blue}
+ {c: Verse :}
+ [Am] The only chain that a man can stand 
+ Is that [G] chain of hand on [Am] hand
+ Keep your [G] eyes on the [Am] prize 
+ [G] Hold [Am] on
+ 
+ {c: Chorus:}
+ Hold [G] on, hold [Am] on 
+ Keep your eyes [G] on the [Am] prize 
+ [G] Hold [Am] on
+{textcolour}
 
 {c: Verse 7:}
 [Am] The only chain that a man can stand 
@@ -99,7 +101,9 @@ Keep your eyes [G] on the [Am] prize
 [G] Hold [Am] on
 
 {c: Instrumental tag, last 2 lines }
-&blue: {c: Chorus:}
-&blue: [Am] Keep your eyes [G] on the [Am] prize 
-&blue: [G] Hold [Am] on
+{textcolour: blue}
+ {c: Chorus:}
+ [Am] Keep your eyes [G] on the [Am] prize 
+ [G] Hold [Am] on
+{textcolour}
 

@@ -26,10 +26,12 @@ You were [Am] always [G7] on my [C] mind
 [C] Tell  [Am] me . . .[F] Tell me that your [C] sweet love hasn't [Dm] died [G]
 [C] Give [Am] me . . . [F] One more chance to keep you satis-[Dm]fied [G]/ / /
 
-&blue: [C] Maybe I didn't [G7] treat you
-&blue: [Am] Quite as [C] good as I [F] should have
-&blue: [C] Maybe I didn't [G7] love you
-&blue: [Am] Quite as [C] often as I [D7] could have
+{textcolour: blue}
+ [C] Maybe I didn't [G7] treat you
+ [Am] Quite as [C] good as I [F] should have
+ [C] Maybe I didn't [G7] love you
+ [Am] Quite as [C] often as I [D7] could have
+{textcolour}
 
 [F] Little things I should have [C] said and done
 [F] I just [C] never took the [Dm] time [G7]

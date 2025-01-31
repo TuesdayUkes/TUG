@@ -33,13 +33,15 @@ To be [F] riding down the [C] trail
 [D7] When the desert [G]sun [G7] goes [C] down
 
 {c:Kazoo break}
-&blue: [C] Riding down the [E7] canyon
-&blue: To [F] watch the sun go [C] down,
-&blue: A [D7] picture that no artist
-&blue:  e'er could [G] paint [G7]
-&blue: [C] White faced cattle [E7] lowing
-&blue: [F] On the mountain [C] side
-&blue: I [D7] hear a coyote howlin’ for its [G] mate [G7]
+{textcolour: blue}
+ [C] Riding down the [E7] canyon
+ To [F] watch the sun go [C] down,
+ A [D7] picture that no artist
+  e'er could [G] paint [G7]
+ [C] White faced cattle [E7] lowing
+ [F] On the mountain [C] side
+ I [D7] hear a coyote howlin’ for its [G] mate [G7]
+{textcolour}
 
 [C] Riding down the [E7] canyon
 To [F] watch the sun go [C] down,
@@ -56,4 +58,6 @@ So if you [C] want a glimpse of [E7] heaven
 Try [F] riding down the [C] trail
 And [D7] watch the desert [G]sun [G7]go [C]down
 {c:Instrumental Tag}
-&blue: And [D7] watch the desert [G]sun [G7]go [C]down
+{textcolour: blue}
+ And [D7] watch the desert [G]sun [G7]go [C]down
+{textcolour}

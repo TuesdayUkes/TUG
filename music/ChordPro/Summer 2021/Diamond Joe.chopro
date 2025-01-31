@@ -2,8 +2,10 @@
 {st: Baldwin “Butch” Hawes  1944}
 
 {c: Instrumental 1st 2 lines verse:}
-&blue: [C] There is a man you'll [Am] hear about
-&blue: Most [F] every place you [C] go.
+{textcolour: blue}
+ [C] There is a man you'll [Am] hear about
+ Most [F] every place you [C] go.
+{textcolour}
 
 {c: Verse 1:}
 [C] There is a man you'll [Am] hear about
@@ -26,10 +28,12 @@ And I [C] never saved a [Am] dollar
 In the [F] pay of Diamond [C] Joe.
 
 {c: Instrumental 2nd half verse:}
-&blue: I [C] nearly starved to death, [Am]  boys,
-&blue: He [F] did mistreat me [C] so,
-&blue: And I [C] never saved a [Am] dollar
-&blue: In the [F] pay of Diamond [C] Joe.
+{textcolour: blue}
+ I [C] nearly starved to death, [Am]  boys,
+ He [F] did mistreat me [C] so,
+ And I [C] never saved a [Am] dollar
+ In the [F] pay of Diamond [C] Joe.
+{textcolour}
 
 {c: Verse 3:}
 [C] His bread it was corn [Am] dodger,
@@ -42,8 +46,10 @@ That there never was a [Am] rounder
 That [F] lied like Diamond [C] Joe.
 
 {c: Instrumental last 2 lines Verse:}
-&blue: [C] there never was a [Am] rounder
-&blue: That [F] lied like Diamond [C] Joe.
+{textcolour: blue}
+ [C] there never was a [Am] rounder
+ That [F] lied like Diamond [C] Joe.
+{textcolour}
 
 {c: Verse 4:}
 [C] I tried three times to [Am] quit him
@@ -59,7 +65,9 @@ Give the [F] fleas to Diamond [C] Joe.
 Give the [F] fleas to Diamond [C] Joe.
 
 {c: Instrumental last 2 lines Verse:}
-&blue: [C] Give my blankets to my bud-[Am]-dies;
-&blue: Give the [F] fleas to Diamond [C] Joe.
+{textcolour: blue}
+ [C] Give my blankets to my bud-[Am]-dies;
+ Give the [F] fleas to Diamond [C] Joe.
+{textcolour}
 
 

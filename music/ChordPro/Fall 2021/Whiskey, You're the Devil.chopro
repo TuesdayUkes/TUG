@@ -2,7 +2,9 @@
 {st:   Traditional Irish }
 
 {c: Instrumental Intro last  line chorus:}
-&blue: Oh, [A] whiskey, you're me darlin' drunk or [E7] sooo-[A]- ber
+{textcolour: blue}
+ Oh, [A] whiskey, you're me darlin' drunk or [E7] sooo-[A]- ber
+{textcolour}
 
 {c: Chorus:}
 [A] Whiskey, you're the [A7] devil; You're [D] leadin' me a-[A]-stray
@@ -39,11 +41,13 @@ Me [D] rikes fall tour-rah [A] laddie, oh
 There's whiskey [E7] in the [A] jar, hey!
 
 {c: Instrumental 5 lines verse :}
-&blue: [A]  Now, the French are fighting boldly
-&blue: Men are [E7] dying hot and coldly
-&blue: Give [D] every man his [A] flask of powder
-&blue: His [B7] firelock on his [E7] shoulder
-&blue: [A] Love, [E7] fare thee [A] well
+{textcolour: blue}
+ [A]  Now, the French are fighting boldly
+ Men are [E7] dying hot and coldly
+ Give [D] every man his [A] flask of powder
+ His [B7] firelock on his [E7] shoulder
+ [A] Love, [E7] fare thee [A] well
+{textcolour}
 
 {c:  Chorus:}
 [A] Whiskey, you're the [A7] devil; You're [D] leadin' me a-[A]-stray
@@ -69,5 +73,7 @@ You're [A] sweeter, stronger, [A7] decenter; You're [D] spunkier than tae
 Oh, [A] whiskey, you're me darlin' drunk or [E7] sooo-[A]-ber
 
 {c: Instrumental last  line chorus:}
-&blue: Oh, [A] whiskey you're me darlin' drunk or [E7] sooo-[A]-ber
+{textcolour: blue}
+ Oh, [A] whiskey you're me darlin' drunk or [E7] sooo-[A]-ber
+{textcolour}
 

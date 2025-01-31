@@ -2,7 +2,9 @@
 {st: Bob Dylan}
 
 Intro
-&blue: [C] Hey! Mister [D] Tambourine Man, [G] play a song for [C] me
+{textcolour: blue}
+ [C] Hey! Mister [D] Tambourine Man, [G] play a song for [C] me
+{textcolour}
 
 Chorus:
 [C] Hey! Mister [D] Tambourine Man, [G] play a song for [C] me
@@ -34,10 +36,12 @@ In [G] to my own pa [C] rade cast your [G] dancing spell my [C] way
 I [Am] promise to go [D] under it
 
 Instrumental Chorus:
-&blue: [C] Hey! Mister [D] Tambourine Man, [G] play a song for [C] me
-&blue: I'm not [G] sleepy and there [C] is no [Am] place I'm [D] going to
-&blue: [C] Hey! Mister [D] Tambourine Man, [G] play a song for [C] me
-&blue: In the [G] jingle jangle [C] morning [Am] I'll come [D] following [G] you [C] [G]
+{textcolour: blue}
+ [C] Hey! Mister [D] Tambourine Man, [G] play a song for [C] me
+ I'm not [G] sleepy and there [C] is no [Am] place I'm [D] going to
+ [C] Hey! Mister [D] Tambourine Man, [G] play a song for [C] me
+ In the [G] jingle jangle [C] morning [Am] I'll come [D] following [G] you [C] [G]
+{textcolour}
 
 Verse 3:
 [C] Though you might hear laughin' [D] spinnin' swingin' [G] madly across the [C] sun

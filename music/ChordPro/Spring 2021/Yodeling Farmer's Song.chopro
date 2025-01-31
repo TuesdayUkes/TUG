@@ -37,10 +37,12 @@ Yode-[A] -lay ee ee oh; hee de-[E7]-lay ee ee ay;
 Yode-[E7]-lay ee ee; ay ee ee; [A] ay ee ee oh.
 
 {c: Instrumental, 1st ½ Verse}
-&blue: [A] Way down on the farm in the [D]early [A] morn
-&blue: When the sun begins to [E7] shine,
-&blue: I’ll [A] stroll along the [D] woodland [A] trails
-&blue: And leave all my [E7] cares be-[A] -hind.
+{textcolour: blue}
+ [A] Way down on the farm in the [D]early [A] morn
+ When the sun begins to [E7] shine,
+ I’ll [A] stroll along the [D] woodland [A] trails
+ And leave all my [E7] cares be-[A] -hind.
+{textcolour}
 
 {c: Sing , 1st ½ Verse}
 [A] Way down on the farm in the [D] early [A] morn
@@ -55,4 +57,6 @@ Yode-[A] -lay ee ee oh; hee de-[E7]-lay ee ee ay;
 [E7] Hee delay ee ee, ay ee ee, [A] ay ee ee oh;
 
 {c: Instrumental: last line chorus:}
-&blue: [A] Yode-[E7]-lay ee ee; ay ee ee; [A] ay ee ee oh.
+{textcolour: blue}
+ [A] Yode-[E7]-lay ee ee; ay ee ee; [A] ay ee ee oh.
+{textcolour}

@@ -2,7 +2,9 @@
 {st: Robert Burns  1791-1795}
 
 {c: Instrumental:}
-&blue: [C] You're welcome, Willie  [Dm] Stewart,
+{textcolour: blue}
+ [C] You're welcome, Willie  [Dm] Stewart,
+{textcolour}
 
 {c: Chorus:}
 [C] You're welcome, Willie [Dm] Stewart,
@@ -41,10 +43,12 @@ But [C] worth and truth, e-[G] -ternal youth,
 We'll [F] give to [G] Willie [C] Stewart
 
 {c: Instrumental Chorus:}
-&blue: [C] You're welcome, Willie [Dm] Stewart,
-&blue: You're [C] welcome, Willie [Dm] Stewart,
-&blue: There's [C] ne’er a flower that [Dm] blooms in May,
-&blue: That's [F] half sae [G] welcome’s [C] thou art!
+{textcolour: blue}
+ [C] You're welcome, Willie [Dm] Stewart,
+ You're [C] welcome, Willie [Dm] Stewart,
+ There's [C] ne’er a flower that [Dm] blooms in May,
+ That's [F] half sae [G] welcome’s [C] thou art!
+{textcolour}
 
 {c: Verse 4:}
 [C] May she whose arms en-[G] fold thy charms

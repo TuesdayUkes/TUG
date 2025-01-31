@@ -26,8 +26,10 @@ This protein source that the red knot ate
 Gave the [Dm] bird a boost to [E7] double its [Am] weight.
 
 {c: Instrumental Chorus:}
-&blue: The [Am] horseshoe crab [E] of the Atlantic [Am] sea,
-&blue: It is the perfect model for [E] biodiversi-[Am]-ty.
+{textcolour: blue}
+ The [Am] horseshoe crab [E] of the Atlantic [Am] sea,
+ It is the perfect model for [E] biodiversi-[Am]-ty.
+{textcolour}
 
 {c: Verse 3:}
 [Am] For most of the twentieth century
@@ -54,8 +56,10 @@ On whelk or conch, on American eel,
 And the [Dm] shore birds lost their [E7] easy [Am] meal.
 
 {c: Instrumental Chorus:}
-&blue: The [Am] horseshoe crab [E] of the Atlantic [Am] sea,
-&blue: It is the perfect model for [E] biodiversi-[Am]-ty.
+{textcolour: blue}
+ The [Am] horseshoe crab [E] of the Atlantic [Am] sea,
+ It is the perfect model for [E] biodiversi-[Am]-ty.
+{textcolour}
 
 {c: Verse 5:}
 [Am] Now fewer birds come to the Delaware Bay,

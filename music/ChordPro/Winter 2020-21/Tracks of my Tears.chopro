@@ -2,8 +2,10 @@
 {st: artist: Smokey Robinson and the Miracles writer: Smokey Robinson, Pete Moore, and Marv Tarplin 1965}
 
 Intro: [C] [Dm] [F] [G] [C] [Dm] [F] [G]
-&blue: Doo doo [C] doooo [Dm] doo, doo doo [F] doooo [G] doo,
-&blue: Doo doo [C] doooo [F] doo, doo doo doo [C] doo [G] doo [C] doo
+{textcolour: blue}
+ Doo doo [C] doooo [Dm] doo, doo doo [F] doooo [G] doo,
+ Doo doo [C] doooo [F] doo, doo doo doo [C] doo [G] doo [C] doo
+{textcolour}
 
 Doo doo [C] doooo [Dm] doo, doo doo [F] doooo [G] doo,
 Doo doo [C] doooo [F] doo, doo doo doo [C] doo [G] doo [C] doo
@@ -29,8 +31,10 @@ You'll see my [C] smile [Dm] looks out of [F] place [G]
 If you look [C] closer, it's [Dm] easy to [F] trace,
 The [G] tracks of my [C] tears [Dm] [F] [Am7] [G] [C]
 
-&blue: I need [Dm] you, need [C] you, need [F] you, need [C] you [C]
-&blue: Out[F]side, [F] I'm masquer[C]ading, [C] in[F]side, [F] my hope is [C] fading [C]
+{textcolour: blue}
+ I need [Dm] you, need [C] you, need [F] you, need [C] you [C]
+ Out[F]side, [F] I'm masquer[C]ading, [C] in[F]side, [F] my hope is [C] fading [C]
+{textcolour}
 
 I need [Dm] you, need [C] you, need [F] you, need [C] you [C]
 Out[F]side, [F] I'm masquer[C]ading, [C] in[F]side, [F] my hope is [C] fading [C]

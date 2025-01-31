@@ -19,8 +19,10 @@ Night winds [Dm] are a-[Am] humming
 This tender [E7] lulla-[Am] by  [G7]
 
 Instrumental Break:
-&blue: [Am] Night winds [Dm] are a-[Am] humming
-&blue: This tender [E7] lulla-[Am] by  [G7]
+{textcolour: blue}
+ [Am] Night winds [Dm] are a-[Am] humming
+ This tender [E7] lulla-[Am] by  [G7]
+{textcolour}
 
 Chorus 1:
 Cares of the [C] day have fled, my little [Dm] sleepyhead
@@ -61,5 +63,7 @@ Yo de [F] lehe hee  [F] ehe hee  [C]  ehe hee  [C]  yo
  [G7]   lehe hee   [G7] yehe hee  [C] yehe hee  [C]  yo
 
 Instrumental Outro:
-&blue: Yo de [F] lehe hee  [F] ehe hee  [C]  ehe hee  [C]  yo
-&blue:  [G7]  lehe hee   [G7] yehe hee  [C] yehe hee  [C]  yo
+{textcolour: blue}
+ Yo de [F] lehe hee  [F] ehe hee  [C]  ehe hee  [C]  yo
+  [G7]  lehe hee   [G7] yehe hee  [C] yehe hee  [C]  yo
+{textcolour}

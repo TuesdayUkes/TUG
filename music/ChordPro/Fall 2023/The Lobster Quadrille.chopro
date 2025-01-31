@@ -20,10 +20,12 @@
 [Em] The further off from England the nearer is to France --
 [G] Then turn not pale, beloved snail, but come and join the dance.
 
-&blue: [Em] "You can really have no notion how delightful it will be
-&blue: [G] When they take us up and throw us, with the lobsters, out to sea!"
-&blue: [Em] But the snail replied "Too far, too far!" and gave a look askance --
-&blue: [G] Said he thanked the whiting kindly, but he would not join the dance.
+{textcolour: blue}
+ [Em] "You can really have no notion how delightful it will be
+ [G] When they take us up and throw us, with the lobsters, out to sea!"
+ [Em] But the snail replied "Too far, too far!" and gave a look askance --
+ [G] Said he thanked the whiting kindly, but he would not join the dance.
+{textcolour}
 
 [Em] Will you, won't you, will you, won't you, will you [Ebm] join the [Em] dance?
 [Em] Will you, won't you, will you, won't you, won't you [Ebm] join the [Em] dance?

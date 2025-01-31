@@ -2,7 +2,9 @@
 {st: Pat Humphries 1992}
 
 {c: Instrumental Intro, 1st line Verse 1:}
-&blue: [C] In this [F] life, though the [C] sounds be strained and [F] thin
+{textcolour: blue}
+ [C] In this [F] life, though the [C] sounds be strained and [F] thin
+{textcolour}
 
 {c: Verse 1}
 [C] In this [F] life, though the [C] sounds be strained and [F] thin
@@ -27,12 +29,14 @@ That re-[Am]-fuse the lies that [F] bind us
 We are [G] worthy, we are [C] safe
 
 {c: Instrumental Break, Chorus}
-&blue: In this [Am] life I am but one of a [F] million starving [C] others
-&blue: Robbed of [Am] everything but [F] hunger
-&blue: We are prisoners to-[G]-gether
-&blue: I am [Am] one, one of [F] many single [C] voices in the [G] silence
-&blue: That re-[Am]-fuse the lies that [F] bind us
-&blue: We are [G] worthy, we are [C] safe
+{textcolour: blue}
+ In this [Am] life I am but one of a [F] million starving [C] others
+ Robbed of [Am] everything but [F] hunger
+ We are prisoners to-[G]-gether
+ I am [Am] one, one of [F] many single [C] voices in the [G] silence
+ That re-[Am]-fuse the lies that [F] bind us
+ We are [G] worthy, we are [C] safe
+{textcolour}
 
 {c: Verse 3}
 [C] In this [F] life though my [C] body's stiff and [F] heavy
@@ -50,11 +54,13 @@ That re-[Am]-fuse the lies that [F] bind us
 We are [G] worthy, we are [C] safe
 
 {c: Instrumental Break Verse 1:}
-&blue: [C] In this [F] life, though the [C] sounds be strained and [F] thin
-&blue: Let the [Bb] voice inside me rise, and the strength be beckoned [G] in
-&blue: For the [C] words with-[F]-in ring more [C] clearly on the [F] outside
-&blue: They re-[Am]-sound beyond the [F] hillside
-&blue: I am [G] worthy, I am [C] safe
+{textcolour: blue}
+ [C] In this [F] life, though the [C] sounds be strained and [F] thin
+ Let the [Bb] voice inside me rise, and the strength be beckoned [G] in
+ For the [C] words with-[F]-in ring more [C] clearly on the [F] outside
+ They re-[Am]-sound beyond the [F] hillside
+ I am [G] worthy, I am [C] safe
+{textcolour}
 
 {c: Repeat Verse 1}
 [C] In this [F] life, though the [C] sounds be strained and [F] thin

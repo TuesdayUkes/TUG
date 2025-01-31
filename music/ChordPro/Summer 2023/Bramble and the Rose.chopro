@@ -1,8 +1,10 @@
 {t: Bramble and the Rose}
 {st: Barbara Keith}
 Instrumental Intro 1st 2 lines verse:
-&blue: [G] We have been so close to [D] gether
-&blue: [C] Each a [D] candle, each a [G] flame.
+{textcolour: blue}
+ [G] We have been so close to [D] gether
+ [C] Each a [D] candle, each a [G] flame.
+{textcolour}
 
 Verse 1:
 [G] We have been so close to [D] gether
@@ -17,8 +19,10 @@ Chorus:
 [C] Round each [D] other we will [G] wind.
 
 Instrumental break  last 2 lines chorus:
-&blue: [G] Love [D] grows like a [C] bramble and a [G] rose.
-&blue: [C] Round each [D] other we will [G] wind.
+{textcolour: blue}
+ [G] Love [D] grows like a [C] bramble and a [G] rose.
+ [C] Round each [D] other we will [G] wind.
+{textcolour}
 
 Verse 2:
 [G] Now I've hurt you and it [D] hurts me
@@ -33,10 +37,12 @@ Chorus:
 [C] Round each [D] other we will [G] wind.
 
 Instrumental break  verse:
-&blue: [G] We have been so close to [D] gether
-&blue: [C] Each a [D] candle, each a [G] flame.
-&blue: [G] All our dangers were out [D] side us
-&blue: [C] And we [D] knew them all by [G] name.
+{textcolour: blue}
+ [G] We have been so close to [D] gether
+ [C] Each a [D] candle, each a [G] flame.
+ [G] All our dangers were out [D] side us
+ [C] And we [D] knew them all by [G] name.
+{textcolour}
 
 Verse 3:
 [G] So put your arms a-[D] round me
@@ -51,5 +57,7 @@ Chorus:
 [C] Round each [D] other we will [G] wind.
 
 Instrumental tag  last 2 lines chorus:
-&blue: [G] Love [D] grows like a [C] bramble and a [G] rose.
-&blue: [C] Round each [D] other we will [G] wind.
+{textcolour: blue}
+ [G] Love [D] grows like a [C] bramble and a [G] rose.
+ [C] Round each [D] other we will [G] wind.
+{textcolour}

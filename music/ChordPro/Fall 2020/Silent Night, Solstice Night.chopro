@@ -2,8 +2,10 @@
 {st: by Ellen Reed}
 
 {c: Instrumental:}
-&blue:  [G] Silent night, Solstice Night
-&blue: [D] All is calm, [G] all is bright
+{textcolour: blue}
+  [G] Silent night, Solstice Night
+ [D] All is calm, [G] all is bright
+{textcolour}
 
 [G] Silent night, Solstice Night
 [D] All is calm, [G] all is bright
@@ -13,7 +15,9 @@
 Sleeping [D] spirits grow [G] strong!
 
 {c: Instrumental:}
-&blue: [G] Sleeping [D] spirits grow [G] strong!
+{textcolour: blue}
+ [G] Sleeping [D] spirits grow [G] strong!
+{textcolour}
 
 [G] Silent Night, Solstice Night
 [D] Silver moon [G] shines so bright
@@ -23,7 +27,9 @@ Sleeping [D] spirits grow [G] strong!
 Hark, the [D]  Light is re-[G]- born!
 
 {c: Instrumental:}
-&blue: [G] Hark the [D] Light is re- [G]- born!
+{textcolour: blue}
+ [G] Hark the [D] Light is re- [G]- born!
+{textcolour}
 
 [G] Silent Night, Solstice Night
 [D] Quiet rest [G] till the Light
@@ -33,7 +39,9 @@ Hark, the [D]  Light is re-[G]- born!
 Rest your [D] spirit in [G] peace!
 
 {c: Instrumental:}
-&blue: [G] Rest your [D] spirit in [G] peace!
+{textcolour: blue}
+ [G] Rest your [D] spirit in [G] peace!
+{textcolour}
 
 
 

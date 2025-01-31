@@ -2,7 +2,9 @@
 {st: Silly Wizard version (Trad. Scottish)}
 
 {c: Intro:  1st Line verse:}
-&blue: [Am] I am a young [Em] sailor, my [G] story is [Am] sad
+{textcolour: blue}
+ [Am] I am a young [Em] sailor, my [G] story is [Am] sad
+{textcolour}
 
 {c: Verse 1:}
 [Am] I am a young [Em] sailor, my [G] story is [Am] sad,
@@ -35,10 +37,12 @@ I returned and I [Em] told her my [G] love was still [Am] warm
 But she turned away [Em] lightly and [G] great was her [Am] scorn.
 
 {c: Instrumental Break Chorus:}
-&blue: [Am] Oh, if I was a [Em] blackbird, could [G] whistle and [Am] sing,
-&blue: I'd follow the [Em] vessel my [G] true love sails [Am] in,
-&blue: And in the top [Em] riggin’ I would [G] there build my [Am] nest,
-&blue: And I’d flutter my [Em] wings o’er her [G] lily-white [Am] breast.
+{textcolour: blue}
+ [Am] Oh, if I was a [Em] blackbird, could [G] whistle and [Am] sing,
+ I'd follow the [Em] vessel my [G] true love sails [Am] in,
+ And in the top [Em] riggin’ I would [G] there build my [Am] nest,
+ And I’d flutter my [Em] wings o’er her [G] lily-white [Am] breast.
+{textcolour}
 
 {c: Verse 4:}
 [Am] I offered to [Em] take her to [G] Donnybrook [Am] Fair
@@ -65,7 +69,9 @@ And in the top [Em] riggin’ I would [G] there build my [Am] nest,
 And I’d flutter my [Em] wings o’er her [G] lily-white [Am] breast.
 
 {c: Instrumental Chorus:}
-&blue: [Am] Oh, if I was a [Em] blackbird, could [G] whistle and [Am] sing,
-&blue: I'd follow the [Em] vessel my [G] true love sails [Am] in,
-&blue: And in the top [Em] riggin’ I would [G] there build my [Am] nest,
-&blue: And I’d flutter my [Em] wings o’er her [G] lily-white [Am] breast.
+{textcolour: blue}
+ [Am] Oh, if I was a [Em] blackbird, could [G] whistle and [Am] sing,
+ I'd follow the [Em] vessel my [G] true love sails [Am] in,
+ And in the top [Em] riggin’ I would [G] there build my [Am] nest,
+ And I’d flutter my [Em] wings o’er her [G] lily-white [Am] breast.
+{textcolour}

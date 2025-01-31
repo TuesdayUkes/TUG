@@ -1,7 +1,9 @@
 {t: Hold on, I’m coming}
 {st: Isaac Hayes and David Porter, 1966}
 
-&blue: Intro: [A] [C] [D] [A] (x2)
+{textcolour: blue}
+ Intro: [A] [C] [D] [A] (x2)
+{textcolour}
 
 Don't you [A] ever be sad. Lean on me when times are bad
 When the [D7] day comes, and you're down, in a river of trouble, and about to drown
@@ -13,11 +15,15 @@ Hold [A] on, 'cause I'm [C] comin', hold [D]on, ‘cause I'm [A] comin'. Lookee 
 Reach [D] out to me for satis- [A] faction, yeah
 Just call my [C] name, for quick re-[D] action, [E7] yeah, yeah, yeah, yeah
 
-&blue: Kazoo Interlude: [A] [G] [C] [D] [A] [C] [D] [A]
+{textcolour: blue}
+ Kazoo Interlude: [A] [G] [C] [D] [A] [C] [D] [A]
+{textcolour}
 
 Now, don't you [A] ever be sad. Lean on me when the times are bad
 When the [D7] day comes, and you're down, baby, in a river of trouble, and about to drown
 Hold [A] on, I'm [C] comin’, hold [D] on, I'm [A] comin’ (X2)
 
-&blue: Outro: [A] [C] [D] [A] (x2) [A]
+{textcolour: blue}
+ Outro: [A] [C] [D] [A] (x2) [A]
+{textcolour}
 

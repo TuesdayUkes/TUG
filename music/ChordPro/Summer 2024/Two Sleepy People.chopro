@@ -40,11 +40,13 @@ Verse 3:
 [Cmaj7]Two sleepy [A7]people who [Dm]know very [Fm]well
 They’re [C]too much in [D7]love to [G7]break the [C]spell.
 
-&blue:Instrumental verse:
-&blue:[C]Here we [Cdim7]are, [Dm7]crazy in the [G7]head.
-&blue:[C]Gee your eyes are gorgeous, [Dm7]even when they’re red[Dm6]
-&blue:[Cmaj7]Two sleepy [A7]people who [Dm]know very [Fm]well
-&blue:They’re [C]too much in [D7]love to [G7]break the [C]spell.
+{textcolour: blue}
+Instrumental verse:
+[C]Here we [Cdim7]are, [Dm7]crazy in the [G7]head.
+[C]Gee your eyes are gorgeous, [Dm7]even when they’re red[Dm6]
+[Cmaj7]Two sleepy [A7]people who [Dm]know very [Fm]well
+They’re [C]too much in [D7]love to [G7]break the [C]spell.
+{textcolour}
 
 Chorus 2:
 [C7]Do you re[F]member the [G7]nights we used to [C]cuddle [G7]in the [C]car?

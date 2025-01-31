@@ -1,9 +1,11 @@
 {t: Way Out There}
 {st: By Bob Nolan}
 
-&blue: Instrumental Intro:  Last 2 lines verse
-&blue: When a [C] man came along , made me [F] hush my song
-&blue: kicked me [C] off a-[G7]-way out [C] there.
+{textcolour: blue}
+ Instrumental Intro:  Last 2 lines verse
+ When a [C] man came along , made me [F] hush my song
+ kicked me [C] off a-[G7]-way out [C] there.
+{textcolour}
 
 Verse 1:
 [C] A lonely spot I know where no [G7] man may go

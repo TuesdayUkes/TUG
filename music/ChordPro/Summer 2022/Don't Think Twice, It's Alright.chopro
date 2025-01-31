@@ -21,14 +21,16 @@ To [G] try and make me change my [E7] mind and stay
 [D] So don’t think [A] twice, its all [D] right.
 
 {c: instrumental}
-&blue: [D] It ain’t no use in [A] turnin’ on your [Bm] light, babe
-&blue: [G] A light I never [D] knowed [A]
-&blue: [D] An’ it ain’t no use in [A] turnin’ on your [Bm] light, babe
-&blue: [E7] I’m on the dark side of the [A] road [A7]
-&blue: But I [D] wish there was somethin’ you would [D7] do or say
-&blue: To [G] try and make me change my [E7] mind and stay
-&blue: [D] We never [A] did too much [Bm] talkin’ any-[G]way
-&blue: [D] So don’t think [A] twice, its all [D] right.
+{textcolour: blue}
+ [D] It ain’t no use in [A] turnin’ on your [Bm] light, babe
+ [G] A light I never [D] knowed [A]
+ [D] An’ it ain’t no use in [A] turnin’ on your [Bm] light, babe
+ [E7] I’m on the dark side of the [A] road [A7]
+ But I [D] wish there was somethin’ you would [D7] do or say
+ To [G] try and make me change my [E7] mind and stay
+ [D] We never [A] did too much [Bm] talkin’ any-[G]way
+ [D] So don’t think [A] twice, its all [D] right.
+{textcolour}
 
 [D] So it ain’t no use in [A] callin’ out my [Bm] name, gal
 [G] Like you never did be-[A7]fore

@@ -17,9 +17,11 @@ The [C] morning came; the [G] morning went
 [G] Oh-oh are [Am] we gonna fly [C] down in the easy [G] chair
 
 Instrumental
-&blue: [G] I don't care how many [Am] letters they sent
-&blue: The [C] morning came; the [G] morning went
-&blue: [G] Pack up your money [Am] pick up your tent [C] you ain't going no- [G] where
+{textcolour: blue}
+ [G] I don't care how many [Am] letters they sent
+ The [C] morning came; the [G] morning went
+ [G] Pack up your money [Am] pick up your tent [C] you ain't going no- [G] where
+{textcolour}
 
 [G] Ooh-wee [Am] ride me high to- [C] morrow's the day my [G] bride's gonna come
 [G] Oh-oh are [Am] we gonna fly [C] down in the easy [G] chair
@@ -40,5 +42,7 @@ We'll climb that hill no [Am] matter how steep [C] when we get up to [G] it
 [G] Oh-oh are [Am] we gonna fly [C] down in the easy [G] chair
 
 Outro
-&blue: [G] Ooh-wee [Am] ride me high to- [C] morrow's the day my [G] bride's gonna come
-&blue: [G] Oh-oh are [Am] we gonna fly [C] down in the easy [G] chair [C] [G]
+{textcolour: blue}
+ [G] Ooh-wee [Am] ride me high to- [C] morrow's the day my [G] bride's gonna come
+ [G] Oh-oh are [Am] we gonna fly [C] down in the easy [G] chair [C] [G]
+{textcolour}

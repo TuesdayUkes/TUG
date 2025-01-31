@@ -2,10 +2,12 @@
 {st: Matt McGinn  1967}
 
 Intro, Instrumental Chorus
-&blue: [C] When I die, [F] bury me [C] low
-&blue: Where I can hear the [D7] bonny Tweed [G] flow
-&blue: A [Am] sweeter place I [F] never did [C] know:
-&blue: The rolling hills of the [G] Bor [C] ders
+{textcolour: blue}
+ [C] When I die, [F] bury me [C] low
+ Where I can hear the [D7] bonny Tweed [G] flow
+ A [Am] sweeter place I [F] never did [C] know:
+ The rolling hills of the [G] Bor [C] ders
+{textcolour}
 
 Chorus (Sing):
 [C] When I die, [F] bury me [C] low
@@ -32,10 +34,12 @@ But [Am] all its beauty [F] fades a [C] way
 Among the hills of the [G] Bor [C] ders
 
 Instrumental Break Chorus
-&blue: [C] When I die, [F] bury me [C] low
-&blue: Where I can hear the [D7] bonny Tweed [G] flow
-&blue: A [Am] sweeter place I [F] never did [C] know:
-&blue: The rolling hills of the [G] Bor [C] ders
+{textcolour: blue}
+ [C] When I die, [F] bury me [C] low
+ Where I can hear the [D7] bonny Tweed [G] flow
+ A [Am] sweeter place I [F] never did [C] know:
+ The rolling hills of the [G] Bor [C] ders
+{textcolour}
 
 Chorus (Sing):
 [C] When I die, [F] bury me [C] low
@@ -56,4 +60,6 @@ A [Am] sweeter place I [F] never did [C] know:
 The rolling hills of the [G] Bor [C] ders
 
 Instrumental Outro: last line Chorus
-&blue: [C] The rolling hills of the [G] Bor [C] ders
+{textcolour: blue}
+ [C] The rolling hills of the [G] Bor [C] ders
+{textcolour}

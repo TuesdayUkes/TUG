@@ -2,8 +2,10 @@
 {st: Fleetwood Mac- written by Stevie Nicks}
 
 {c: Instrumental Intro, 1st 2 lines Verse 1:}
-&blue: [F] I took my [C] love, I took it [Dm] down [C]
-&blue: [F] Climbed a [C] mountain and I turned a-[Dm]-round [C]
+{textcolour: blue}
+ [F] I took my [C] love, I took it [Dm] down [C]
+ [F] Climbed a [C] mountain and I turned a-[Dm]-round [C]
+{textcolour}
 
 {c: Verse 1}
 [F]   I took my [C] love, I took it [Dm] down [C]
@@ -28,10 +30,12 @@ But [C] time makes you [G7] bolder, [Am] children get older
 And [F] I'm getting [C] older [Dm] too  [C]   sooo
 
 {c:  Instrumental Break, Verse 1}
-&blue: [F] I took my [C] love, I took it [Dm] down [C]
-&blue: [F] Climbed a [C] mountain and I turned a-[Dm]-round [C]
-&blue: And I [F] saw my re-[C]-flection in the [Dm] snow-covered [C] hills
-&blue: Till the [F] landslide [C] brought me [Dm] down [C]
+{textcolour: blue}
+ [F] I took my [C] love, I took it [Dm] down [C]
+ [F] Climbed a [C] mountain and I turned a-[Dm]-round [C]
+ And I [F] saw my re-[C]-flection in the [Dm] snow-covered [C] hills
+ Till the [F] landslide [C] brought me [Dm] down [C]
+{textcolour}
 
 {c: Chorus}
 [C] Well, I've been [G7] afraid of [Am] changing 'cause I've

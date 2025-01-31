@@ -19,11 +19,15 @@ They've finally come [Dm] true [F]
 [C] And through the smokescreen of the [F] crowded restau-[Am]rants It's [Gm] love
 [C] Yes, all we're looking for is [F] love from [Am] someone [Cm] else A [Gm] rush, a glance, a [A] touch, a dance 
 
-&blue: (simplified instrumental)
+{textcolour: blue}
+ (simplified instrumental)
+{textcolour}
  
-&blue:[Gm] City of stars
-&blue:[C] Are you shining just for [Dm] me? [Gm] City of stars
-&blue:[C] There's so much that I can't [F] see Who [Gm] knows? 
+{textcolour: blue}
+[Gm] City of stars
+[C] Are you shining just for [Dm] me? [Gm] City of stars
+[C] There's so much that I can't [F] see Who [Gm] knows? 
+{textcolour}
 
 A [Bb] look in somebody's [C] eyes
 To light up the [A] skies

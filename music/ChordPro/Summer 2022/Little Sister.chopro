@@ -27,10 +27,12 @@ And say it's very nice and then you [A7] run
 [E7] Little sister don't you [F] do what your [E7] big sister [A7] done
 
 Instrumental:
-&blue: [A7] Little sister don't you…[A7] little sister don't you…
-&blue: [A7] Little sister don't you [D7] kiss me once or twice
-&blue: And say it's very nice and then you [A7] run
-&blue: [E7] Little sister don't you [F] do what your [E7] big sister [A7] done
+{textcolour: blue}
+ [A7] Little sister don't you…[A7] little sister don't you…
+ [A7] Little sister don't you [D7] kiss me once or twice
+ And say it's very nice and then you [A7] run
+ [E7] Little sister don't you [F] do what your [E7] big sister [A7] done
+{textcolour}
 
 [A7] Well I used to pull your pigtails [A7] and pinch your turned up nose
 [A7] But you've been growin' [A7] and baby it's been showin'
@@ -44,4 +46,6 @@ And say it's very nice and then you [A7] run
 [E7] Little sister don't you [F] do what your [E7] big sister [A7] done
 
 Outro:
-&blue: [E7] Little sister don't you [F] do what your [E7] big sister [A7] done
+{textcolour: blue}
+ [E7] Little sister don't you [F] do what your [E7] big sister [A7] done
+{textcolour}

@@ -20,10 +20,12 @@ Holler 'bout the bundle of [A] clothes
 When [E7] I got there she was [D7] lying on the cooling [A] board
 
 {c: Instrumental Verse:}
-&blue: [A] So I packed up my suitcase, bundled up my [A7] clothes
-&blue: [D] Hey lordy mama mama, hey lordy papa papa
-&blue: Holler 'bout the bundle of [A] clothes
-&blue: When [E7] I got there she was [D7] lying on the cooling [A] board
+{textcolour: blue}
+ [A] So I packed up my suitcase, bundled up my [A7] clothes
+ [D] Hey lordy mama mama, hey lordy papa papa
+ Holler 'bout the bundle of [A] clothes
+ When [E7] I got there she was [D7] lying on the cooling [A] board
+{textcolour}
 
 {c:  Verse 4}
 [A] They took my honey baby to the burying [A7] ground
@@ -44,10 +46,12 @@ Holler 'bout  bury’in’ at [A] all
 Just [E7] pickle your daddy's [D7] bones in alco-[A]-hol
 
 {c: Instrumental Verse:}
-&blue: [A] Now when I die, don't bury your daddy at [A7] all
-&blue: [D] Hey lordy mama mama, hey lordy papa papa
-&blue: Holler 'bout  bury’in’ at [A] all
-&blue: Just [E7] pickle your daddy's [D7] bones in alco-[A]-hol
+{textcolour: blue}
+ [A] Now when I die, don't bury your daddy at [A7] all
+ [D] Hey lordy mama mama, hey lordy papa papa
+ Holler 'bout  bury’in’ at [A] all
+ Just [E7] pickle your daddy's [D7] bones in alco-[A]-hol
+{textcolour}
 
 {c: Verse 7}
 [A] Now when I die, put your daddy's picture in a [A7] frame
@@ -68,4 +72,6 @@ Holler 'bout the Mobile [A] line
 It's the [E7] road to ride to [D7] ease your troubling [A] mind
 
 {c: Instrumental last line:}
-&blue: It's the [E7] road to ride to [D7] ease your troubling [A] mind
+{textcolour: blue}
+ It's the [E7] road to ride to [D7] ease your troubling [A] mind
+{textcolour}

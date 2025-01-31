@@ -5,10 +5,12 @@ Key of F major
 First note: C
 
 {c: Instrumental}
-&blue: | [F] [Bb] | [F] [Bb] |
-&blue: | [F] [Bb] | [F] [F7] |
-&blue: | [Cdim7] | [Gm] |
-&blue: | [G7] [C7] | [F] [C7] |
+{textcolour: blue}
+ | [F] [Bb] | [F] [Bb] |
+ | [F] [Bb] | [F] [F7] |
+ | [Cdim7] | [Gm] |
+ | [G7] [C7] | [F] [C7] |
+{textcolour}
 
 [F] Lazy [Bb] bones, [F] sleepin’ in the [Bb] sun,
 [F] How you ‘spec to [Bb] get your [F] day’s work [F7] done?

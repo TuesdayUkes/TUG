@@ -2,10 +2,12 @@
 {st: Shel Silverstein}
 
 Instrumental Intro (verse 1):
-&blue: [A] A long time ago when the [Bm] Earth was green
-&blue: And there was [E7] more kinds of animals than [A] you've ever seen
-&blue: They [A] ran around [A7] free while the [D] Earth was being born
-&blue: But the [A] loveliest of all was the [E7] uni [A] corn.
+{textcolour: blue}
+ [A] A long time ago when the [Bm] Earth was green
+ And there was [E7] more kinds of animals than [A] you've ever seen
+ They [A] ran around [A7] free while the [D] Earth was being born
+ But the [A] loveliest of all was the [E7] uni [A] corn.
+{textcolour}
 
 Verse 1:
 [A] A long time ago when the [Bm] Earth was green
@@ -68,4 +70,6 @@ Some [A] cats and rats and [A7] elephants, but [D] sure as you're born
 You're [A] never gonna see a [E7] uni [A] corn.
 
 Instrumental Outro (last line chorus):
-&blue: You're [A] never gonna see a [E7] uni [A] corn.
+{textcolour: blue}
+ You're [A] never gonna see a [E7] uni [A] corn.
+{textcolour}

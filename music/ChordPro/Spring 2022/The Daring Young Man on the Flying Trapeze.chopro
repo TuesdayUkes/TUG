@@ -62,10 +62,12 @@ His [C] movements are graceful; all the [A7] girls he does [D7] please,
 And my [G7] love he has stolen a- [C] way.
 
 {c: Kazoo:}
-&blue: [G7] Oh, he [C] flies thro’ the [A7] air with the [F] greatest of [D7] ease,
-&blue: [G7] The daring young man on the [C] flying tra- [G7] peze.
-&blue: His [C] movements are graceful; all the [A7] girls he does [D7] please,
-&blue: And my [G7] love he has stolen a- [C] way.
+{textcolour: blue}
+ [G7] Oh, he [C] flies thro’ the [A7] air with the [F] greatest of [D7] ease,
+ [G7] The daring young man on the [C] flying tra- [G7] peze.
+ His [C] movements are graceful; all the [A7] girls he does [D7] please,
+ And my [G7] love he has stolen a- [C] way.
+{textcolour}
 
 Some [Am] months after [E7] that I went [Am] into a hall;
 To my [Am] surprise I found [E7] there on the [Am] wall

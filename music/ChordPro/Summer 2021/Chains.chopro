@@ -21,10 +21,12 @@ And they ain't the [D7] kind that you can [A] see.
 Whoa, oh, these [E7] chains of love [D7] got a hold on [A] me, [A7] yeah
 
 Kazoo:
-&blue: [D] Please believe me when I tell you,
-&blue: [A] Your lips are [A7] sweet.
-&blue: [D] I'd like to kiss them,
-&blue: [E7] But I can't break away from all of these...
+{textcolour: blue}
+ [D] Please believe me when I tell you,
+ [A] Your lips are [A7] sweet.
+ [D] I'd like to kiss them,
+ [E7] But I can't break away from all of these...
+{textcolour}
 
 [D] Please believe me when I tell you,
 [A] Your lips are [A7] sweet.

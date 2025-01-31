@@ -2,8 +2,10 @@
 {st: Lucinda Williams}
 
 {c: Instrumental intro:  First 2 lines Chorus:}
-&blue: [A] Tous les temps en [Em] temps; that's what we [A] say.
-&blue: We used to [Em] dance the night a-[A]-way.
+{textcolour: blue}
+ [A] Tous les temps en [Em] temps; that's what we [A] say.
+ We used to [Em] dance the night a-[A]-way.
+{textcolour}
 
 {c: Verse 1:}
 [A] Everybody's [D] had a few
@@ -37,13 +39,15 @@ Me and my [Em] sister,    me and my bro-[A]-ther,
 We used to [Em] walk    down by the [A] river.
 
 {c: Instrumental Verse :}
-&blue: [A] Mama lives in [D] Mandeville.  I can hardly [A] wait until
-&blue: I can hear my [Bm] Zydeco
-&blue: And lais-[G]-sez les bons temps rou-[A]-ler
-&blue: And take rides in [D] open cars
-&blue: My brother knows where the [A] best bars are
-&blue: Let's see how these [Bm] blues'll do
-&blue: In the [G] town where the good times [A] stay
+{textcolour: blue}
+ [A] Mama lives in [D] Mandeville.  I can hardly [A] wait until
+ I can hear my [Bm] Zydeco
+ And lais-[G]-sez les bons temps rou-[A]-ler
+ And take rides in [D] open cars
+ My brother knows where the [A] best bars are
+ Let's see how these [Bm] blues'll do
+ In the [G] town where the good times [A] stay
+{textcolour}
 
 {c: Chorus:}
 [A] Tous les temps en [Em] temps; that's what we [A] say.

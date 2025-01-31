@@ -2,10 +2,12 @@
 {st: Willie Dixon / Bo Diddley}
 
 {c: Instrumental intro:}
-&blue: [D] I got a girl in [G] Diddy [C] Wah [D] Diddy
-&blue: [D] Ain't no town and it [G] ain't [C] no [D] city
-&blue: [D] She loves her man [G] ‘til [C] it's a [D] pity
-&blue: [D] Crazy 'bout my [A]girl in Diddy [C] Wah [D] Diddy
+{textcolour: blue}
+ [D] I got a girl in [G] Diddy [C] Wah [D] Diddy
+ [D] Ain't no town and it [G] ain't [C] no [D] city
+ [D] She loves her man [G] ‘til [C] it's a [D] pity
+ [D] Crazy 'bout my [A]girl in Diddy [C] Wah [D] Diddy
+{textcolour}
 
 [D] I got a girl in [G] Diddy [C] Wah [D] Diddy
 [D] Ain't no town and it [G] ain't [C] no [D] city
@@ -41,8 +43,10 @@ She [D] lives way down in [A] Diddy [C] Wah [D] Diddy
 [D] Any day she [G] say [C] she's [D] ready
 [D] I’ll get right back to [A] Diddy [C] Wah [D] Diddy
 
-&blue: [G] Diddy Womp [C] [G]
-&blue: [D] Diddy Womp [C] [D]
-&blue: [G] Diddy Womp [C]  [G]
-&blue: [D] Diddy Womp [C]  [D]
-&blue: [D] Diddy Womp [C] [D]
+{textcolour: blue}
+ [G] Diddy Womp [C] [G]
+ [D] Diddy Womp [C] [D]
+ [G] Diddy Womp [C]  [G]
+ [D] Diddy Womp [C]  [D]
+ [D] Diddy Womp [C] [D]
+{textcolour}

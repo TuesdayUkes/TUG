@@ -43,12 +43,14 @@ And I [G] swore I would be [Em7] true to [G]  her,
 Ten [D] thousand miles a-[G]-way."
 
 {c: Instrumental Chorus:}
-&blue: [G] So blow ye winds, Heigh-ho; An’ a-roving I will [Am] go,
-&blue: I'll [G] stay no more on [Em7] England's shore,
-&blue: to [Am] hear sweet music [G] play-[D7]-ay-ay!
-&blue: For I'm [G] on the morning train, and I won’t be back a-[C]-gain
-&blue: For I'm [G] on the move to me [Em7] own true [Am] love,
-&blue: Ten  thousand [G] miles [D] a-[G]-way.
+{textcolour: blue}
+ [G] So blow ye winds, Heigh-ho; An’ a-roving I will [Am] go,
+ I'll [G] stay no more on [Em7] England's shore,
+ to [Am] hear sweet music [G] play-[D7]-ay-ay!
+ For I'm [G] on the morning train, and I won’t be back a-[C]-gain
+ For I'm [G] on the move to me [Em7] own true [Am] love,
+ Ten  thousand [G] miles [D] a-[G]-way.
+{textcolour}
 
 {c: Verse 4:}
 [D] Oh! if [G] I could be but a boson bold, Or even a bomba-[C]-dier,

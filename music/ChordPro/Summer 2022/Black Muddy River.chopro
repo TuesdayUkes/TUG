@@ -34,10 +34,12 @@ I don't [G] care how deep or [C] wide [G] if you've got another [C] side
 [F] Black muddy [G] river, [C] roll
 
 Instrumental Break:  Verse
-&blue: When the [C] last bolt of [Dm] sunshine hits the [F] moun [C] tain
-&blue: And the [C] stars start to [Dm] splatter in the [F] sky
-&blue: When the [C] moon splits the [Dm] southwest ho [F] ri [C] zon
-&blue: With the [Am] scream of an [G] eagle on the [F] fly
+{textcolour: blue}
+ When the [C] last bolt of [Dm] sunshine hits the [F] moun [C] tain
+ And the [C] stars start to [Dm] splatter in the [F] sky
+ When the [C] moon splits the [Dm] southwest ho [F] ri [C] zon
+ With the [Am] scream of an [G] eagle on the [F] fly
+{textcolour}
 
 Bridge:
 [Dm] Black muddy [G] river, [C] roll on for [Am] ever
@@ -59,5 +61,7 @@ And [Am] sing me a [G] song of my [F] own
 And [Am] sing me a [G] song of my [F] own
 
 Instrumental Outro:
-&blue: [C] Lone by the [F] black muddy [C] river and
-&blue: [Am] Sing me a [G] song of my [F] own          [C]
+{textcolour: blue}
+ [C] Lone by the [F] black muddy [C] river and
+ [Am] Sing me a [G] song of my [F] own          [C]
+{textcolour}

@@ -3,10 +3,12 @@
 Three chord groove [D] [C] [A] repeated throughout the song
 
 Kazoo:
-&blue: [D] Went to the [C] fortune [A] teller
-&blue: [D] Had my [C] fortune [A] read
-&blue: I [D] didn't know [C] what to [A] tell her
-&blue: I had a [D] dizzy feeling [C] in my [A] head
+{textcolour: blue}
+ [D] Went to the [C] fortune [A] teller
+ [D] Had my [C] fortune [A] read
+ I [D] didn't know [C] what to [A] tell her
+ I had a [D] dizzy feeling [C] in my [A] head
+{textcolour}
 
 [D] Went to the [C] fortune [A] teller
 [D] Had my [C] fortune [A] read
@@ -44,10 +46,12 @@ We're [D] happy as [C] we can [A] be
 (spoken) Now I [D] get my fortune [C] told for [A] free
 
 Kazoo:
-&blue: [D] Went to the [C] fortune [A] teller
-&blue: [D] Had my [C] fortune [A] read
-&blue: I [D] didn't know [C] what to [A] tell her
-&blue: I had a [D] dizzy feeling [C] in my [A] head
+{textcolour: blue}
+ [D] Went to the [C] fortune [A] teller
+ [D] Had my [C] fortune [A] read
+ I [D] didn't know [C] what to [A] tell her
+ I had a [D] dizzy feeling [C] in my [A] head
+{textcolour}
 
 [D] Now I'm a [C] happy [A] fellow
 'Cause I'm [D] married to the [C] fortune [A] teller

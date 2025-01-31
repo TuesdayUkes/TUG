@@ -20,10 +20,12 @@ Shinin’ [G]ring (shinin’ ring)  now at [C]last it’s found a home.
 Only love can make the [G] golden wedding [C] ring.
 
 {c: Instrumental break}
-&blue: In a [C] little wedding chapel, later on that afternoon,
-&blue: An [G] old upright piano played the [F] lone familiar [C] tune.
-&blue: Tears rolled down her cheeks and happy thoughts ran through her head.
-&blue: Is it better, Lord, with [G] this ring I be [C] wed?
+{textcolour: blue}
+ In a [C] little wedding chapel, later on that afternoon,
+ An [G] old upright piano played the [F] lone familiar [C] tune.
+ Tears rolled down her cheeks and happy thoughts ran through her head.
+ Is it better, Lord, with [G] this ring I be [C] wed?
+{textcolour}
 
 In a  [C] small two room apartment as they fight the final round,
 And he [G] said, “You won’t admit it, but I [F] know you’re leaving [C] town.”

@@ -57,5 +57,7 @@ And a [Dm] mother can't  [Am] feed her [C] fa-  [G] -mi- [Am]  -ly   [Asus2]  [A
 With- [D] out a little [C] bar- [G] -ley [Am] corn.
 
 Repeat last 2 lines instrumental
-&blue: And a [Dm] mother can't  [Am] feed her [C] fa-  [G] -mi- [Am]  -ly   [Asus2]  [Am]
-&blue: With- [D] out a little [C] bar- [G] -ley [Am] corn.
+{textcolour: blue}
+ And a [Dm] mother can't  [Am] feed her [C] fa-  [G] -mi- [Am]  -ly   [Asus2]  [Am]
+ With- [D] out a little [C] bar- [G] -ley [Am] corn.
+{textcolour}

@@ -2,8 +2,10 @@
 {st: Pat Humphries   2001}
 
 Intro:
-&blue: In [C] Montgomery and in Selma and the [G] streets of Birmingham
-&blue: The [Dm] people sent a [Em] message to the [F] leaders of the [G] land
+{textcolour: blue}
+ In [C] Montgomery and in Selma and the [G] streets of Birmingham
+ The [Dm] people sent a [Em] message to the [F] leaders of the [G] land
+{textcolour}
 
 Verse 1:
 In [C] Montgomery and in Selma and the [G] streets of Birmingham
@@ -59,8 +61,10 @@ And our [Dm] children [Em] will be [F] free to
 [Em] lead the [F] world and [G] carry [C] on   [C]
 
 Instrumental Outro:
-&blue: And our [Dm] children [Em] will be [F] free to
-&blue: [Em] lead the [F] world and [G] carry [C] on
+{textcolour: blue}
+ And our [Dm] children [Em] will be [F] free to
+ [Em] lead the [F] world and [G] carry [C] on
+{textcolour}
 
 
 

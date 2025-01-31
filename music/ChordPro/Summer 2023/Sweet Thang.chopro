@@ -22,14 +22,16 @@ You'd better [D] take my advice and if you [A] blink more than twice
 You'd better [E7] have somethin' in your [A] eye."
 
 Instrumental Break, Verse:
-&blue: [A] I snuck out of the house about sundown
-&blue: While [D] Mama was a-washin' her [A] hair.
-&blue: You can bet your bottom dollar she'll come lookin' for me
-&blue: When she [B] finds out I'm not [E7] there.
-&blue: If she [A] catches her sweet thang runnin' around
-&blue: You know [D] it'll be the devil to [A] pay.
-&blue: She'll come [D] blowin' like a cyclone right [A] through that door
-&blue: And here's ex [E7] actly what she'll [A] say:
+{textcolour: blue}
+ [A] I snuck out of the house about sundown
+ While [D] Mama was a-washin' her [A] hair.
+ You can bet your bottom dollar she'll come lookin' for me
+ When she [B] finds out I'm not [E7] there.
+ If she [A] catches her sweet thang runnin' around
+ You know [D] it'll be the devil to [A] pay.
+ She'll come [D] blowin' like a cyclone right [A] through that door
+ And here's ex [E7] actly what she'll [A] say:
+{textcolour}
 
 Verse 2:
 [A] I gave my baby all my money on payday
@@ -56,5 +58,7 @@ Vocal Tag:
 You'd better [E7] have somethin' in your [A] eye."
 
 Instrumental Tag:
-&blue: [A] You'd better [D] take my advice and if you [A] blink more than twice
-&blue: You'd better [E7] have somethin' in your [A] eye."
+{textcolour: blue}
+ [A] You'd better [D] take my advice and if you [A] blink more than twice
+ You'd better [E7] have somethin' in your [A] eye."
+{textcolour}

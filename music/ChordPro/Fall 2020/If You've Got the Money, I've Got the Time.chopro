@@ -2,7 +2,9 @@
 {st: Lefty Frizzell- 1950}
 
 {c: Instrumental intro (like last line verse)}
-&blue: If [A7] you got the money, Honey, I’ve got the [D] time.
+{textcolour: blue}
+ If [A7] you got the money, Honey, I’ve got the [D] time.
+{textcolour}
 
 {c: Verse 1}
 If [D] you got the money, Honey, I’ve got the  time
@@ -10,7 +12,9 @@ If [D] you got the money, Honey, I’ve got the  time
 [A7] We’ll make all the night spots, dance to the music, fine.
 If [A7] you got the money, Honey, I’ve got the [D] time.
 {c: Instrum:}
-&blue: If [A7] you got the money, Honey, I’ve got the [D] time.
+{textcolour: blue}
+ If [A7] you got the money, Honey, I’ve got the [D] time.
+{textcolour}
 
 {c: Verse 2:}
 Well, there [D] ain’t no use to tarry, so let’s start out tonight.
@@ -19,10 +23,12 @@ Well, there [D] ain’t no use to tarry, so let’s start out tonight.
 If [A7] you got the money, Honey, I’ve got the [D] time.
 
 {c: Instrum. Break, Verse:}
-&blue: If [D] you got the money, Honey, I’ve got the time.
-&blue: [D] We’ll go honky-tonkin’, and we’re gonna have a [G] time
-&blue: [A7] We’ll make all the night spots, dance to the music, fine.
-&blue: If [A7] you got the money, Honey, I’ve got the [D] time.
+{textcolour: blue}
+ If [D] you got the money, Honey, I’ve got the time.
+ [D] We’ll go honky-tonkin’, and we’re gonna have a [G] time
+ [A7] We’ll make all the night spots, dance to the music, fine.
+ If [A7] you got the money, Honey, I’ve got the [D] time.
+{textcolour}
 
 {c: Verse 3:}
 If [D] you got the money, Honey, I’ve got the  time.
@@ -44,5 +50,7 @@ If [D] you got the money, Honey, I’ve got the  time
 If [A7] you got the money, Honey, I’ve got the [D] time.
 
 {c: Instrum:}
-&blue: If [A7] you got the money, Honey, I’ve got the [D] time.
-&blue: [G] [D]  [G] [D]  [G] [D]
+{textcolour: blue}
+ If [A7] you got the money, Honey, I’ve got the [D] time.
+ [G] [D]  [G] [D]  [G] [D]
+{textcolour}

@@ -2,7 +2,9 @@
 {st: by Ian Tyson }
 
 Instrumental first line:
-&blue: [F] There's a young man [Dm] that I know his [Bb] age is twenty [F] one
+{textcolour: blue}
+ [F] There's a young man [Dm] that I know his [Bb] age is twenty [F] one
+{textcolour}
 
 Verse 1:
 [F] There's a young man [Dm] that I know his [Bb] age is twenty [F] one
@@ -21,10 +23,12 @@ But [C] when he comes to call, my pa ain't [Bb] got a good word to [F] say
 [Dm] Guess it's 'cause he's just as wild [G7] in his younger [C7] days
 
 Instrumental Break for Verse :
-&blue: So [F] blow, you old Blue [Dm] Norther, [Bb] blow my love to [F] me
-&blue: He's [Am] drivin' in tonight from Cali [Bb] forn [C7] ia
-&blue: He [F] loves his damned old [Dm] rodeo as [Bb] much as he loves [F] me
-&blue: Someday [Gm7] soon, I’m goin' [C7] with him someday [F] soon
+{textcolour: blue}
+ So [F] blow, you old Blue [Dm] Norther, [Bb] blow my love to [F] me
+ He's [Am] drivin' in tonight from Cali [Bb] forn [C7] ia
+ He [F] loves his damned old [Dm] rodeo as [Bb] much as he loves [F] me
+ Someday [Gm7] soon, I’m goin' [C7] with him someday [F] soon
+{textcolour}
 
 Bridge:
 But [C] when he comes to call, my pa ain't [Bb] got a good word to [F] say

@@ -22,10 +22,12 @@ Finger [C] poppin,' poppin' [G] time.
 I feel so [D] good [C] and that's a real good [G] sign.
 
 {c: Kazoo instrumental}
-&blue: [G] Hey now, hey now, hey now, hey now,
-&blue: It's finger pop, poppin' [G7] time.
-&blue: Finger [C] poppin,' poppin' [G] time.
-&blue: I feel so [D] good [C] and that's a real good [G] sign.
+{textcolour: blue}
+ [G] Hey now, hey now, hey now, hey now,
+ It's finger pop, poppin' [G7] time.
+ Finger [C] poppin,' poppin' [G] time.
+ I feel so [D] good [C] and that's a real good [G] sign.
+{textcolour}
 
 [G] Here comes Mary, here comes Sue,
 Here comes Johnny and [G7] Bobby,too.

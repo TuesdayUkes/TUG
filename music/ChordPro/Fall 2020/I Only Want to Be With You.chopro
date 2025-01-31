@@ -18,12 +18,14 @@ It's [C] crazy but it's [D7] true
 I [C] only want to be with [G] you [C] [G]
 
 {c: Kazoo}
-&blue: It [G] doesn't matter where you go or [Em] what you do
-&blue: I [G] wanna spend each moment of the [Em] day with you
-&blue: [C] Look what has [D7] happened with [C] just one [D7] kiss
-&blue: I [G] never knew that I could be in [Em] love like this
-&blue: It's [C] crazy but it's [D7] true
-&blue: I [C] only want [D7] to be with [G] you [C] [G]
+{textcolour: blue}
+ It [G] doesn't matter where you go or [Em] what you do
+ I [G] wanna spend each moment of the [Em] day with you
+ [C] Look what has [D7] happened with [C] just one [D7] kiss
+ I [G] never knew that I could be in [Em] love like this
+ It's [C] crazy but it's [D7] true
+ I [C] only want [D7] to be with [G] you [C] [G]
+{textcolour}
 
 [Eb] You stopped and you smiled at me,
 [G] asked me if I'd [C] care to dance  [G]

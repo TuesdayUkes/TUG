@@ -2,10 +2,12 @@
 {st: Performed by Johnny Cash (posthumously 2010), written by Claude Ely, 1934}
 
 Intro:
-&blue: [Dm] Ain't no [G] grave
-&blue: Can [Am] hold my body [Dm] down
-&blue: [Dm] There ain't no [G] grave
-&blue: Can [Am] hold my body [Dm] down
+{textcolour: blue}
+ [Dm] Ain't no [G] grave
+ Can [Am] hold my body [Dm] down
+ [Dm] There ain't no [G] grave
+ Can [Am] hold my body [Dm] down
+{textcolour}
 
 [Dm] Ain't no [G] grave
 Can [Am] hold my body [Dm] down

@@ -30,8 +30,10 @@ Singing, [C] blow, ye winds in the morning; blow, ye winds, high-ho!
 One [F] half the watch is [C] sick on deck, the [D] other half be-[G]-low.
 
 {c: Instrumental Chorus:}
-&blue: [G] Singing, [C] blow, ye winds in the morning; blow, ye winds, high-ho!
-&blue: [F] Clear away your [C] running gear, And [G] blow, boys, [C] blow!
+{textcolour: blue}
+ [G] Singing, [C] blow, ye winds in the morning; blow, ye winds, high-ho!
+ [F] Clear away your [C] running gear, And [G] blow, boys, [C] blow!
+{textcolour}
 
 {c: Verse 5:}
 [C] But as for the provisions, we don't get half enough;
@@ -62,8 +64,10 @@ Singing, [C] blow, ye winds in the morning; blow, ye winds, high-ho!
 But [F] if you get too [C] near his fluke, he'll [D] kick you to the [G] devil!"
 
 {c: Instrumental Chorus:}
-&blue: [G] Singing, [C] blow, ye winds in the morning; blow, ye winds, high-ho!
-&blue: [F] Clear away your [C] running gear, And [G] blow, boys, [C] blow!
+{textcolour: blue}
+ [G] Singing, [C] blow, ye winds in the morning; blow, ye winds, high-ho!
+ [F] Clear away your [C] running gear, And [G] blow, boys, [C] blow!
+{textcolour}
 
 {c: Verse 9:}
 [C] Now we have got him turned up, we tow him alongside;
@@ -90,6 +94,8 @@ Singing, [C] blow, ye winds in the morning; blow, ye winds, high-ho!
 [F] Clear away your [C] running gear, And [G] blow, boys, [C] blow!
 
 {c: Instrumental tag:}
-&blue:  [F] Clear away your [C] running gear, And [G] blow, boys, [C] blow!
+{textcolour: blue}
+  [F] Clear away your [C] running gear, And [G] blow, boys, [C] blow!
+{textcolour}
 
 

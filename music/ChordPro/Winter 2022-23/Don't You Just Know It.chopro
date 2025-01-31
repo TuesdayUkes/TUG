@@ -45,17 +45,21 @@ Intro strumming [G] ////
 [D] Ay-ay-[G] oh (ay-ay-oh)
 
 (Kazoo Verse + Chorus)
-&blue: [G] Baby, baby, you're my blue heaven
-&blue: [G] (Don't you just know it?)
-&blue: [G] You got me pushin' when I oughta be shovin'
-&blue: [G] (Don't you just know it?)
+{textcolour: blue}
+ [G] Baby, baby, you're my blue heaven
+ [G] (Don't you just know it?)
+ [G] You got me pushin' when I oughta be shovin'
+ [G] (Don't you just know it?)
+{textcolour}
 
-&blue: [NC] Ah-ha-ha-[G]ha (ah-ha-ha-ha)
-&blue: [G] Ay-ay-oh (ay-ay-oh)
-&blue: [G] Gooba-gooba-gooba-[C] gooba (gooba-gooba-gooba-gooba)
-&blue: [C] Ah-ha-ha-[G] ha (ah-ha-ha-ha)
-&blue: [G] Ah-ha-ha-[D] ha (ah-ha-ha-ha)
-&blue: [D] Ay-ay-[G] oh (ay-ay-oh)
+{textcolour: blue}
+ [NC] Ah-ha-ha-[G]ha (ah-ha-ha-ha)
+ [G] Ay-ay-oh (ay-ay-oh)
+ [G] Gooba-gooba-gooba-[C] gooba (gooba-gooba-gooba-gooba)
+ [C] Ah-ha-ha-[G] ha (ah-ha-ha-ha)
+ [G] Ah-ha-ha-[D] ha (ah-ha-ha-ha)
+ [D] Ay-ay-[G] oh (ay-ay-oh)
+{textcolour}
 
 (Verse 4)
 [G] Heart of mine is cool as a breeze

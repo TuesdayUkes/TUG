@@ -2,10 +2,12 @@
 {st: Jimmie Rodgers, 1928 (recorded by Tim Blake Nelson for "O Brother, Where Art Thou?") }
 
 Kazoo intro:
-&blue: He's in the jailhouse [G] now [G7]
-&blue: He's in the jailhouse [C] now [C7]
-&blue: Well I [D] told him once or twice
-&blue: To stop [D] playin' cards and a-shootin' dice [D7] He's in the jailhouse [G] now
+{textcolour: blue}
+ He's in the jailhouse [G] now [G7]
+ He's in the jailhouse [C] now [C7]
+ Well I [D] told him once or twice
+ To stop [D] playin' cards and a-shootin' dice [D7] He's in the jailhouse [G] now
+{textcolour}
 
 [G] I had a friend named Ramb-a-lin' Bob
 [G] He used to steal, gamble, and rob
@@ -26,11 +28,13 @@ Well [D] he got throwed in jail, with no-[D]body to go his bail
 The [A7] judge done said that he refused the [D] fine [D7]
 
 Kazoo:
-&blue: [G] Bob liked to play his poker
-&blue: [G] Pinochle, whist and eucre,
-&blue: But [G] shootin' dice [G7] was his favorite [C] game [C7]
-&blue: Well [D] he got throwed in jail, with no-[D]body to go his bail
-&blue: The [A7] judge done said that he refused the [D] fine [D7]
+{textcolour: blue}
+ [G] Bob liked to play his poker
+ [G] Pinochle, whist and eucre,
+ But [G] shootin' dice [G7] was his favorite [C] game [C7]
+ Well [D] he got throwed in jail, with no-[D]body to go his bail
+ The [A7] judge done said that he refused the [D] fine [D7]
+{textcolour}
 
 CHORUS:
 He's in the jailhouse [G] now [G7]

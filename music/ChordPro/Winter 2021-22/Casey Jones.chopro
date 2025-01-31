@@ -24,10 +24,12 @@ Casey Jones broke his [G7] blooming [C] spine;
 He took a trip to heaven on the [C] S. P. [F] line.
 
 {c: Instrumental Break:  Chorus}
-&blue: [F] Casey Jones hit the river bottom;
-&blue: Casey Jones broke his [G7] blooming [C] spine;
-&blue: [F] Casey Jones was an Angelino,
-&blue: He took a trip to heaven on the [C] S. P. [F] line.
+{textcolour: blue}
+ [F] Casey Jones hit the river bottom;
+ Casey Jones broke his [G7] blooming [C] spine;
+ [F] Casey Jones was an Angelino,
+ He took a trip to heaven on the [C] S. P. [F] line.
+{textcolour}
 
 [F] When Casey Jones got up to heaven, to the Pearly Gate,
 He said: "I'm Casey Jones, the guy that [G7] pulled the S. P. [C] freight."
@@ -52,7 +54,9 @@ And they promptly fired Casey down the [C] Golden [F] Stair.
 That's what you get for scabbing on the [C] S. P. [F] Line."
 
 {c: Instrumental Tag:  Chorus}
-&blue: [F] Casey Jones hit the river bottom;
-&blue: Casey Jones broke his [G7] blooming [C] spine;
-&blue: [F] Casey Jones was an Angelino,
-&blue: He took a trip to heaven on the [C] S. P. [F] line.
+{textcolour: blue}
+ [F] Casey Jones hit the river bottom;
+ Casey Jones broke his [G7] blooming [C] spine;
+ [F] Casey Jones was an Angelino,
+ He took a trip to heaven on the [C] S. P. [F] line.
+{textcolour}

@@ -2,7 +2,9 @@
 {st:Woody Guthrie }
 
 Instrumental Intro:
-&blue: [Gm] Come all you old time cow-[Eb]-boys, and [F] listen to my [Gm] song.
+{textcolour: blue}
+ [Gm] Come all you old time cow-[Eb]-boys, and [F] listen to my [Gm] song.
+{textcolour}
 
 Verse 1:
 [Gm] Come all you old time cow-[Eb]-boys, and [F] listen to my [Gm] song.
@@ -35,10 +37,12 @@ Our trip it was a [Eb]  pleasant one, as we [Dm] hit the westward [Gm] road,
 Until we reached Old Boggy [Eb] Creek, in [F] old New Mexi-[Gm]-co.
 
 Instrumental  Verse:
-&blue: [Gm] Well with all his flattering talk-[Eb]-ing, he [F] signed up quite a [Gm] train,
-&blue: Some 10 or 12 in [Eb] number, some [Dm] able bodied [Gm] men.
-&blue: Our trip it was a [Eb] pleasant one, as we [Dm] hit the westward [Gm] road,
-&blue: Until we reached Old Boggy [Eb] Creek, in [F] old New Mexi-[Gm]-co.
+{textcolour: blue}
+ [Gm] Well with all his flattering talk-[Eb]-ing, he [F] signed up quite a [Gm] train,
+ Some 10 or 12 in [Eb] number, some [Dm] able bodied [Gm] men.
+ Our trip it was a [Eb] pleasant one, as we [Dm] hit the westward [Gm] road,
+ Until we reached Old Boggy [Eb] Creek, in [F] old New Mexi-[Gm]-co.
+{textcolour}
 
 Verse 6:
 [Gm] It was there our pleasures end-[Eb]-ed, and our [F] troubles all be-[Gm]-gun.
@@ -54,5 +58,7 @@ So we left that drover's bones to [Eb] bleach on the [F] plains of the buffa-[Gm
 We left that drover's bones to [Eb] bleach on the [F] plains of the buffa-[Gm]-lo.
 
 Instrumental tag: last line
-&blue: [Gm] So we left that drover's bones to [Eb] bleach on the [F] plains of the buffa-[Gm]-lo.
+{textcolour: blue}
+ [Gm] So we left that drover's bones to [Eb] bleach on the [F] plains of the buffa-[Gm]-lo.
+{textcolour}
 

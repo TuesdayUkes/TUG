@@ -50,10 +50,12 @@ Yeah gimme a ride to heaven boy
 My [E7] name is Jesus [A] Christ"
 
 {c: Instrumental Chorus:}
-&blue: [A] He said "Gimme a ride to heaven boy
-&blue: I'll [D] Show you para-[A]-dise
-&blue: Yeah gimme a ride to heaven boy
-&blue: My [E7] name is Jesus [A] Christ"
+{textcolour: blue}
+ [A] He said "Gimme a ride to heaven boy
+ I'll [D] Show you para-[A]-dise
+ Yeah gimme a ride to heaven boy
+ My [E7] name is Jesus [A] Christ"
+{textcolour}
 
 {c: Verse 4}
 [A] Well I saw good news in his baby blues
@@ -82,7 +84,9 @@ Yeah gimme a ride to heaven boy
 My [E7] name is Jesus [A] Christ"
 
 {c: Instrumental Chorus:}
-&blue: [A] He said "Gimme a ride to heaven boy
-&blue: I'll [D] Show you para-[A]-dise
-&blue: Yeah gimme a ride to heaven boy
-&blue: My [E7] name is Jesus [A] Christ"
+{textcolour: blue}
+ [A] He said "Gimme a ride to heaven boy
+ I'll [D] Show you para-[A]-dise
+ Yeah gimme a ride to heaven boy
+ My [E7] name is Jesus [A] Christ"
+{textcolour}

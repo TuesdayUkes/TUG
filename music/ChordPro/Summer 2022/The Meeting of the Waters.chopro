@@ -2,7 +2,9 @@
 {st: Thomas Moore  (1779-1852)}
 
 Instrumental Intro, 1st line:
-&blue: [C] There is not in the [F] wide world a [G7] valley so [C] sweet
+{textcolour: blue}
+ [C] There is not in the [F] wide world a [G7] valley so [C] sweet
+{textcolour}
 
 Verse 1:
 [C] There is not in the [F] wide world a [G7] valley so [C] sweet
@@ -26,11 +28,13 @@ Oh, [C] no, -- it was [F] something more [G7] exqui [F] site [G7] still.
 Oh, [C] no, -- it was [F] something more [G7] exqui [F] site [C] still.
 
 Instrumental Break, Chorus:
-&blue: [C] Sweet Vale of A [F] voca! how [G7] calm could I [C]  rest
-&blue: In thy [F] shade where I [C] sit with the friends I love [G7] best,
-&blue: Where the [F] storms that we feel [C] in this cold world should [G7] cease,
-&blue: And our [C] hearts, like thy [F] waters, be [G7] mingled [F] in [G7] peace.
-&blue: And our [C] hearts, like thy [F] waters, be [G7] mingled [F] in [C] peace.
+{textcolour: blue}
+ [C] Sweet Vale of A [F] voca! how [G7] calm could I [C]  rest
+ In thy [F] shade where I [C] sit with the friends I love [G7] best,
+ Where the [F] storms that we feel [C] in this cold world should [G7] cease,
+ And our [C] hearts, like thy [F] waters, be [G7] mingled [F] in [G7] peace.
+ And our [C] hearts, like thy [F] waters, be [G7] mingled [F] in [C] peace.
+{textcolour}
 
 Verse 3:
 [C] 'Twas that intimate [F] friends, so be [G7] loved,  were [C] near,

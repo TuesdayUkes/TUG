@@ -27,10 +27,12 @@ And if  [A]  moonshine don’t kill me, I’ll live ‘til I [D]  die.
 And I  [A] love none so well as I love the moon-  [D]  shine.
 
 {c: Instrumental Chorus Break:}
-&blue: [D]  I’m a rambler; I’m a gambler; I’m a  [G]  long way from home	.
-&blue: And  [A]  if you don’t like me, well  [D] leave  me alone.
-&blue: [D]  I’ll eat when I’m hungry and  I’ll [G] drink when I’m dry,
-&blue: And if  [A]  moonshine don’t kill me, I’ll live ‘til I [D]  die.
+{textcolour: blue}
+ [D]  I’m a rambler; I’m a gambler; I’m a  [G]  long way from home	.
+ And  [A]  if you don’t like me, well  [D] leave  me alone.
+ [D]  I’ll eat when I’m hungry and  I’ll [G] drink when I’m dry,
+ And if  [A]  moonshine don’t kill me, I’ll live ‘til I [D]  die.
+{textcolour}
 
 {c: Verse 3:}
 [D]  Oh, Moonshine, dear Moonshine, oh [G]  how I love thee.
@@ -45,5 +47,7 @@ And  [A]  if you don’t like me, well  [D] leave  me alone.
 And if  [A]  moonshine don’t kill me, I’ll live ‘til I [D]  die.
 
 {c: Instrumental Outro: last 2 lines Chorus}
-&blue: [D]  I’ll eat when I’m hungry and  I’ll [G] drink when I’m dry,
-&blue: And if  [A]  moonshine don’t kill me, I’ll live ‘til I [D]  die.
+{textcolour: blue}
+ [D]  I’ll eat when I’m hungry and  I’ll [G] drink when I’m dry,
+ And if  [A]  moonshine don’t kill me, I’ll live ‘til I [D]  die.
+{textcolour}

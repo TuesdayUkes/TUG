@@ -14,9 +14,11 @@ But it never hurt a [C] hair [D] upon my [G] head. [C] [G]
 [G] Oh, [C] [G]me, [D] oh [C] Lordy [G] my, it never hurt a [D] hair [C] upon my [G] head. [C] [G]
 
 {c: INSTRUMENTAL:}
-&blue: Ol’ [G] Reuben [C] had a [G] wreck, and it [D] broke ol’ [C] Reuben’s [G] neck,
-&blue: But it never hurt a [D] hair [C] upon my [G] head. [C] [G]
-&blue: [G] Oh, [C] [G]me, [D] oh [C] Lordy [G] my, it never hurt a [D] hair [C] upon my [G] head. [C] [G]
+{textcolour: blue}
+ Ol’ [G] Reuben [C] had a [G] wreck, and it [D] broke ol’ [C] Reuben’s [G] neck,
+ But it never hurt a [D] hair [C] upon my [G] head. [C] [G]
+ [G] Oh, [C] [G]me, [D] oh [C] Lordy [G] my, it never hurt a [D] hair [C] upon my [G] head. [C] [G]
+{textcolour}
 
 [G] You [C] should’ve been in [G] town when [D] Reuben’s [C] train went [D] down;
 You could [G] hear that [D] whistle [C] blow [G] 100 miles. [C] [G]
@@ -35,9 +37,11 @@ You can [G] hear the [D] whistle blow [C] 100 miles. [C] [G]
 [G] Oh [C] me, [G] oh [D] Lordy [C] my, you can [G] hear the [D] whistle blow [C] 100 [G] miles.
 
 {c: INSTRUMENTAL:}
-&blue: [G] Oh the train that I [G] ride is [D] 100 [C] coaches long,
-&blue: You can [G] hear the [D] whistle [C] blow 100 [C] miles.
-&blue: [G] Oh [C] me, [G] oh [D] Lordy [C] my, you can [G] hear the [D] whistle blow [C] 100 [G] miles.
+{textcolour: blue}
+ [G] Oh the train that I [G] ride is [D] 100 [C] coaches long,
+ You can [G] hear the [D] whistle [C] blow 100 [C] miles.
+ [G] Oh [C] me, [G] oh [D] Lordy [C] my, you can [G] hear the [D] whistle blow [C] 100 [G] miles.
+{textcolour}
 
 I’m a-[G] going [C] down the [G] track; I ain’t [D] never [C] coming [D] back,
 I’m a [G] thousand miles [D] away from my home.

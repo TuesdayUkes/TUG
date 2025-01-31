@@ -2,7 +2,9 @@
 {st: Jane Bowers}
 
 Instrumental Intro:
-&blue: [C] A hundred and [G] eighty were [C] challenged by [G] Travis to [C] die
+{textcolour: blue}
+ [C] A hundred and [G] eighty were [C] challenged by [G] Travis to [C] die
+{textcolour}
 
 Verse 1:
 [C] A hundred and [G] eighty were [C] challenged by [G] Travis to [C] die
@@ -27,11 +29,13 @@ Chorus:
 That [G7] men wherever they [C] go [G] will remember the [C] Alamo
 
 Instrumental Break, Verse:
-&blue: [C] Though Bowie lay [G] dyin', his [C] powder was [G] ready and [C] dry
-&blue: From flat on his [G] back Bowie [C] killed him a [G] few in re-[C]-ply
-&blue: And [F] brave Davy Crockett was [C] singin' and laughin'
-&blue:     with [G7] gallantry fierce in his [C] eye
-&blue: For God and for [G] freedom a [C] man more than [G] willin' to [C] die
+{textcolour: blue}
+ [C] Though Bowie lay [G] dyin', his [C] powder was [G] ready and [C] dry
+ From flat on his [G] back Bowie [C] killed him a [G] few in re-[C]-ply
+ And [F] brave Davy Crockett was [C] singin' and laughin'
+     with [G7] gallantry fierce in his [C] eye
+ For God and for [G] freedom a [C] man more than [G] willin' to [C] die
+{textcolour}
 
 Verse 3:
 [C] They sent a young [G] scout from the [C] battlements [G] bloody and [C] loud
@@ -45,8 +49,10 @@ Chorus:
 That [G7] men wherever they [C] go [G] will remember the [C] Alamo
 
 Instrumental Chorus:
-&blue: [F] Aye-yip Santa Anna, we're killin' your soldiers be-[C]-low
-&blue: That [G7] men wherever they [C] go [G] will remember the [C] Alamo
+{textcolour: blue}
+ [F] Aye-yip Santa Anna, we're killin' your soldiers be-[C]-low
+ That [G7] men wherever they [C] go [G] will remember the [C] Alamo
+{textcolour}
 
 (Transcribed from the Tex Ritter
 recording by Mel Priddle - Sept 2010)

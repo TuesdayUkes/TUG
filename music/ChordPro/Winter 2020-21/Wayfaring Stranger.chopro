@@ -25,10 +25,12 @@ I'm just [Am]going over Jordan
 I'm just [Dm]going [E]over [Am]home
 
 {c: Instrumental}
-&blue: I know dark [Am]clouds will gather 'round me
-&blue: I know my [Dm]way is rough and [Am]steep
-&blue: But golden fields lie dressed before me
-&blue: Where weary [Dm]eyes, [E]no more will [Am]weep
+{textcolour: blue}
+ I know dark [Am]clouds will gather 'round me
+ I know my [Dm]way is rough and [Am]steep
+ But golden fields lie dressed before me
+ Where weary [Dm]eyes, [E]no more will [Am]weep
+{textcolour}
 
 I'll soon be [Am]free from every trial
 this form shall [Dm]rest beneath the [Am]sun

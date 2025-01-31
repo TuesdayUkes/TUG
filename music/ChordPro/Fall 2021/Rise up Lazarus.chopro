@@ -2,8 +2,10 @@
 {st: Emory Gordy Jr. / Patty Loveless}
 
 {c: Instrumental 1st 2 lines chorus:}
-&blue: [C] Rise up Lazarus;  rise up [F] from the [C] dust.
-&blue: [F] If in Jesus [C] you believe, you [D7] shall be re-[C]-leased.
+{textcolour: blue}
+ [C] Rise up Lazarus;  rise up [F] from the [C] dust.
+ [F] If in Jesus [C] you believe, you [D7] shall be re-[C]-leased.
+{textcolour}
 
 {c: Chorus:}
 [C] Rise up Lazarus;  rise up [F] from the [C] dust.
@@ -43,11 +45,13 @@ Go forth John and Paul. Spread the Gospel [F] to them [C] all.
 And they [D7] shall be re-[C]-leased.
 
 {c: Instrumental chorus:}
-&blue: [C] Rise up Lazarus;  rise up [F] from the [C] dust.
-&blue: [F] If in Jesus [C] you believe, you [D7] shall be re-[C]-leased.
-&blue: Go forth John and Paul. Spread the Gospel [F] to them [C] all.
-&blue: [F] Give them courage [C] to believe,
-&blue: And they [D7] shall be re-[C]-leased.
+{textcolour: blue}
+ [C] Rise up Lazarus;  rise up [F] from the [C] dust.
+ [F] If in Jesus [C] you believe, you [D7] shall be re-[C]-leased.
+ Go forth John and Paul. Spread the Gospel [F] to them [C] all.
+ [F] Give them courage [C] to believe,
+ And they [D7] shall be re-[C]-leased.
+{textcolour}
 
 {c: Verse 3:}
 [C] Now all us children [F] here on [C] Earth
@@ -65,6 +69,8 @@ Go forth John and Paul. Spread the Gospel [F] to them [C] all.
 And they [D7] shall be re-[C]-leased.
 
 {c: Instrumental 1st half chorus:}
-&blue: [C] Rise up Lazarus;  rise up [F] from the [C] dust.
-&blue: [F] If in Jesus [C] you believe, you [D7] shall be re-[C]-leased.
+{textcolour: blue}
+ [C] Rise up Lazarus;  rise up [F] from the [C] dust.
+ [F] If in Jesus [C] you believe, you [D7] shall be re-[C]-leased.
+{textcolour}
 

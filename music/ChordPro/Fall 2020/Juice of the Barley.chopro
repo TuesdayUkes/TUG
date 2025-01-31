@@ -22,12 +22,14 @@ Singing [A] “Ban-ye na mo is an [D] gow-[E7]-na
 And the [A] juice of the [E7] barley for [A] me.”
 
 {c: Instrumental break:}
-&blue: [E7] In the [A] sweet country Limerick one [E7] cold winter’s night
-&blue: All the [A] turf fires were burning when [E7] I saw the light,
-&blue: And a [A] drunken old midwife went [D] tipsy with joy
-&blue: As she [C#m] danced round the floor with her [D] slip of a [E7] boy,
-&blue: Singing [A] “Ban-ye na mo is an [D] gow-[E7]-na
-&blue: And the [A] juice of the [E7] barley for [A] me.”
+{textcolour: blue}
+ [E7] In the [A] sweet country Limerick one [E7] cold winter’s night
+ All the [A] turf fires were burning when [E7] I saw the light,
+ And a [A] drunken old midwife went [D] tipsy with joy
+ As she [C#m] danced round the floor with her [D] slip of a [E7] boy,
+ Singing [A] “Ban-ye na mo is an [D] gow-[E7]-na
+ And the [A] juice of the [E7] barley for [A] me.”
+{textcolour}
 
 One [A] Sunday the priest read me [E7] out from the altar
 Saying [A] “You’ll end up your days with your [E7] neck in a halter
@@ -51,6 +53,8 @@ Singing [A] “Ban-ye na mo is an [D] gow-[E7]-na
 And the [A] juice of the [E7] barley for [A] me.”
 
 {c: Instrumental:}
-&blue: Singing [A] “Ban-ye na mo is an [D] gow-[E7]-na
-&blue: And the [A] juice of the [E7] barley for [A] me.”
+{textcolour: blue}
+ Singing [A] “Ban-ye na mo is an [D] gow-[E7]-na
+ And the [A] juice of the [E7] barley for [A] me.”
+{textcolour}
 

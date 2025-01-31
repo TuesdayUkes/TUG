@@ -2,8 +2,10 @@
 {st: Gordon Bok}
 
 Intro 1st & last lines Verse:
-&blue: [Am] I go down to the [Em] brandy tree
-&blue: [F] Never come [G] back no [Am] more
+{textcolour: blue}
+ [Am] I go down to the [Em] brandy tree
+ [F] Never come [G] back no [Am] more
+{textcolour}
 
 Verse 1:
 [Am] I go down to the [Em] brandy tree
@@ -24,10 +26,12 @@ Tumble the [Am] tangle [Em] by my side
 And [F] slide in the [G] summer [Am] rain
 
 Instrumental Chorus 1:
-&blue: [C] Sun come follow my [G] happy way
-&blue: [C] Wind come walk be[G] side me
-&blue: [Am] Moon on the mountain [Em] go with me
-&blue: A [F] wondrous [G] way I [Am] know
+{textcolour: blue}
+ [C] Sun come follow my [G] happy way
+ [C] Wind come walk be[G] side me
+ [Am] Moon on the mountain [Em] go with me
+ A [F] wondrous [G] way I [Am] know
+{textcolour}
 
 Verse 3:
 [Am] I go down by the [Em] windy sea
@@ -42,10 +46,12 @@ Chorus 2:
 And he [F] knows that [G] I have [Am] too
 
 Instrumental Chorus 2:
-&blue: [C] But the seal doesn't try to [G] tell me how
-&blue: [C] To fish in the windy [G] blue
-&blue: [Am] Seal's been fishing for a [Em] thousand years
-&blue: And he [F] knows that [G] I have [Am] too
+{textcolour: blue}
+ [C] But the seal doesn't try to [G] tell me how
+ [C] To fish in the windy [G] blue
+ [Am] Seal's been fishing for a [Em] thousand years
+ And he [F] knows that [G] I have [Am] too
+{textcolour}
 
 Verse 4:
 [Am] When the frog goes down to the [Em] mud to sleep
@@ -60,8 +66,10 @@ Chorus 1:
 A [F] wondrous [G] way I [Am] know
 
 Instrumental 1st & last lines Chorus 1:
-&blue: [C] Sun come follow my [G] happy way
-&blue: A [F] wondrous [G] way I [Am] know
+{textcolour: blue}
+ [C] Sun come follow my [G] happy way
+ A [F] wondrous [G] way I [Am] know
+{textcolour}
 
 Verse 5:
 [Am] Some day down by the [Em] brandy tree

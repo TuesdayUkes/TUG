@@ -41,12 +41,14 @@ A mile in the [Em] air went [C] big Jim [E] Goff.
     And [Am] drill ye [G] tarriers, [Am] drill. And blast, and fire.
 
 {c: Instrumental verse & first line Chorus:}
-&blue: The [Am] next time payday came around,
-&blue: Jim [E] Goff a dollar short was found.
-&blue: When he [Am] asked what for came this reply,
-&blue: "You were docked for the [Em] time
-&blue:    you were [C] up in the [E] sky."
-&blue:     And [Am] drill ye [G] tarriers, [Am] drill,
+{textcolour: blue}
+ The [Am] next time payday came around,
+ Jim [E] Goff a dollar short was found.
+ When he [Am] asked what for came this reply,
+ "You were docked for the [Em] time
+    you were [C] up in the [E] sky."
+     And [Am] drill ye [G] tarriers, [Am] drill,
+{textcolour}
 
 {c: Verse 4:}
 The [Am] next time payday came around,

@@ -1,8 +1,10 @@
 {t: Rose of Allendale}
 
 Intro last line Chorus 1:
-&blue: One [G] maiden's form with-[D]-stood the storm,
-&blue: 'twas the [G] Rose of [A7] Allen-[D]-dale.
+{textcolour: blue}
+ One [G] maiden's form with-[D]-stood the storm,
+ 'twas the [G] Rose of [A7] Allen-[D]-dale.
+{textcolour}
 
 Chorus 1:
 [D] Oh, Rose of Allen-[G]-dale,
@@ -43,14 +45,16 @@ One [G] maiden's form with-[D]-stood the storm,
 t'was the [G] Rose of [A7] Allen-[D]-dale.
 
 Instrumental verse:
-&blue: Where [D] e'er I wandered [G] east or [D] west,
-&blue: though fate begins to [A] lour,
-&blue: A [D] solace still to [G] me is [D] she,
-&blue: in [G] sorrow's [A] lonely [D] hour.
-&blue: When [A] tempests lashed our [D] gallant barque
-&blue: and [G] rent her [D] shivering [A] sails,
-&blue: One [D] maiden's form with-[G]-stood the [D] storm,
-&blue:  'twas the [G] Rose of [A7] Allen-[D]-dale.
+{textcolour: blue}
+ Where [D] e'er I wandered [G] east or [D] west,
+ though fate begins to [A] lour,
+ A [D] solace still to [G] me is [D] she,
+ in [G] sorrow's [A] lonely [D] hour.
+ When [A] tempests lashed our [D] gallant barque
+ and [G] rent her [D] shivering [A] sails,
+ One [D] maiden's form with-[G]-stood the [D] storm,
+  'twas the [G] Rose of [A7] Allen-[D]-dale.
+{textcolour}
 
 Verse 3:
 [D] And when my fevered [G] lips were [D] parched

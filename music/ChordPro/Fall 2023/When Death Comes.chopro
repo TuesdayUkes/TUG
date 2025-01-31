@@ -1,8 +1,10 @@
 {t: When Death Comes}
 {st: Traditional}
 
-&blue: Instrumental Intro:  Last line Verse:
-&blue: Oh my [Dm] lord, oh my [C] lord, what shall I [F] do? [F]
+{textcolour: blue}
+ Instrumental Intro:  Last line Verse:
+ Oh my [Dm] lord, oh my [C] lord, what shall I [F] do? [F]
+{textcolour}
 
 Verse 1:
 [F] What you gonna [C6] do when [Bbmaj7] death come a-creepin' in your [F] room?
@@ -17,8 +19,10 @@ Verse 2:
 Oh my [Dm] lord, oh my [C] lord, what shall I [F] do?
  
 Instrumental last 2 lines Verse:
-&blue: [F] What you gonna [C6] do when [Bbmaj7] death come a-creepin' in your [F] room?
-&blue: Oh my [Dm] lord, oh my [C] lord, what shall I [F] do?
+{textcolour: blue}
+ [F] What you gonna [C6] do when [Bbmaj7] death come a-creepin' in your [F] room?
+ Oh my [Dm] lord, oh my [C] lord, what shall I [F] do?
+{textcolour}
 
 Verse 3:
 [F] I'm goin' in the [C6] valley, [Bbmaj7] fall on my knees and [F] pray
@@ -33,8 +37,10 @@ Verse 4:
 Oh my [Dm] lord, oh my [C] lord, what shall I [F] do?
 
 Instrumental last 2 lines Verse:
-&blue: [F] What you gonna [C6] do when [Bbmaj7] death come a-creepin' in your [F] room?
-&blue: Oh my [Dm] lord, oh my [C] lord, what shall I [F] do?
+{textcolour: blue}
+ [F] What you gonna [C6] do when [Bbmaj7] death come a-creepin' in your [F] room?
+ Oh my [Dm] lord, oh my [C] lord, what shall I [F] do?
+{textcolour}
 
 Verse 5:
 [F] God, won't you [C6] tell me if I  [Bbmaj7] must be born a [F] gain?
@@ -49,4 +55,6 @@ Repeat Verse 1:
 Oh my [Dm] lord, oh my [C] lord, what shall I [F] do?
 
 Instrumental Outro:  Last line Verse:
-&blue: Oh my [Dm] lord, oh my [C] lord, what shall I [F] do? [F]
+{textcolour: blue}
+ Oh my [Dm] lord, oh my [C] lord, what shall I [F] do? [F]
+{textcolour}

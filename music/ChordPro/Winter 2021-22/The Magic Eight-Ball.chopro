@@ -22,10 +22,12 @@ It said, [F]”Concen-[G7]trate and [E7]ask a-[A7]gain.”
 It said, [D7]”Can-not pre-[G]dict [C] now”
 
 {c: Kazoo—first verse chords: x2}
-&blue: [C] I have a critical [G7] question, and
-&blue: [C] I really need an [A7] answer.
-&blue: I’ll [F] ask the Magic [G7] 8-ball,
-&blue: That [F] notable [G7] brain en-[C]hancer.
+{textcolour: blue}
+ [C] I have a critical [G7] question, and
+ [C] I really need an [A7] answer.
+ I’ll [F] ask the Magic [G7] 8-ball,
+ That [F] notable [G7] brain en-[C]hancer.
+{textcolour}
 
 It [Cm] told me, “Can-not pre-dict [G] now”
 It [Cm]told me, “Most [G] likely”
@@ -46,9 +48,11 @@ I’ll [F] ask the Magic [E7] 8-ball, [A7]
 That [D7] notable [G7] brain en-[C]hancer.
 
 {c:Kazoo—first verse chords}
-&blue: [C] I have a critical [G7] question, and
-&blue: [C] I really need an [A7] answer.
-&blue: I’ll [F] ask the Magic [E7] 8-ball, [A7]
-&blue: That [D7] notable [G7]brain en-[C]hancer.
-&blue: Final time: [G7] [C]
+{textcolour: blue}
+ [C] I have a critical [G7] question, and
+ [C] I really need an [A7] answer.
+ I’ll [F] ask the Magic [E7] 8-ball, [A7]
+ That [D7] notable [G7]brain en-[C]hancer.
+ Final time: [G7] [C]
+{textcolour}
 

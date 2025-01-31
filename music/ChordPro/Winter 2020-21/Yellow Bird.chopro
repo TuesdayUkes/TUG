@@ -2,9 +2,11 @@
 {st: Alan & Marilyn Bergman (w); Norman Luboff (m) = Haitian melody}
 
 {c: Instrumental first 3 lines Chorus:}
-&blue: [D] Yel- [Ddim]- low  [D] Bird, up
-&blue: [A] high in ba-[A7] -nana -[D]tree.  [D]
-&blue: [D] Yel- [Ddim]- low [D]  Bird,  you [A] sit all a-[A7]-lone like [D] me.
+{textcolour: blue}
+ [D] Yel- [Ddim]- low  [D] Bird, up
+ [A] high in ba-[A7] -nana -[D]tree.  [D]
+ [D] Yel- [Ddim]- low [D]  Bird,  you [A] sit all a-[A7]-lone like [D] me.
+{textcolour}
 
 {c: Chorus 1:}
 [D] Yel- [Ddim]- low  [D] Bird, up
@@ -21,9 +23,11 @@ You more lucky dan [D] me!
 [A7] make dem de nest,  [A] (stop) den dey fly a-[D]-way!
 
 {c: Instrumental verse:}
-&blue: [D] I also have a [Em7] pretty gal;  [A7]She not with me to-[D] day.
-&blue: [D] Dey all the same, de [Em7] pretty gal;
-&blue: [A7] make dem de nest,  [A] (stop) den dey fly a-[D]-way!
+{textcolour: blue}
+ [D] I also have a [Em7] pretty gal;  [A7]She not with me to-[D] day.
+ [D] Dey all the same, de [Em7] pretty gal;
+ [A7] make dem de nest,  [A] (stop) den dey fly a-[D]-way!
+{textcolour}
 
 {c: Chorus 2:}
 [D] Yel- [Ddim]- low  [D] Bird, up
@@ -49,5 +53,7 @@ Dey might pick you some [D] day!
 You more lucky dan [D] me!
 
 {c: Instrumental Tag last 2 lines Chorus:}
-&blue: [G] You can fly away,  [D]  in the sky away.    [A] (stop)
-&blue: You more lucky dan [D] me!
+{textcolour: blue}
+ [G] You can fly away,  [D]  in the sky away.    [A] (stop)
+ You more lucky dan [D] me!
+{textcolour}

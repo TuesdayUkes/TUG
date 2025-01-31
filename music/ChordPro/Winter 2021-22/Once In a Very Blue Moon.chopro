@@ -13,7 +13,9 @@ Just [Bb] once [C] in a [A7] very blue [Dm] moon
 And I [Bb] feel one [C] coming on [F] soon
 
 {c: Instrumental last line Chorus:}
-&blue: And I [Bb] feel one [C] coming on [F] soon
+{textcolour: blue}
+ And I [Bb] feel one [C] coming on [F] soon
+{textcolour}
 
 {c: Verse 2:}
 No need to [Am] tell me if you’d [Bb] like to be friends
@@ -33,10 +35,12 @@ Such a [Dm] blue moon [A7] shin-[Dm]-ing
 Does it [Bb] ever shine [Gm7] down on [C7] you [F]
 
 {c: Instrumental Bridge Break:}
-&blue: There’s a [Dm] blue moon [A7] shin-[Dm]-ing
-&blue: When [F] I am reminded of [Gm7] all we’ve been [F] through
-&blue: Such a [Dm] blue moon [A7] shin-[Dm]-ing
-&blue: Does it [Bb] ever shine [Gm7] down on [C7] you [F]
+{textcolour: blue}
+ There’s a [Dm] blue moon [A7] shin-[Dm]-ing
+ When [F] I am reminded of [Gm7] all we’ve been [F] through
+ Such a [Dm] blue moon [A7] shin-[Dm]-ing
+ Does it [Bb] ever shine [Gm7] down on [C7] you [F]
+{textcolour}
 
 {c: Verse 3:}
 You act as [Am] if it never [Bb] hurt you at all
@@ -53,4 +57,6 @@ And I [Bb] feel one [C] coming on [F] soon
 Just [Bb] once [C] in a [A7] very blue [Dm] moon
 
 {c: Instrumental Outro:}
-&blue: Just [Bb] once [C] in a [A7] very blue [Dm] moon
+{textcolour: blue}
+ Just [Bb] once [C] in a [A7] very blue [Dm] moon
+{textcolour}

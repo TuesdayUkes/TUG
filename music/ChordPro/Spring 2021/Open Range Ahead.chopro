@@ -2,7 +2,9 @@
 {st: Bob Nolan}
 
 {c: Instrumental Intro:  last line verse}
-&blue: [E] There’s an open  [B7] range a-[E]-head.
+{textcolour: blue}
+ [E] There’s an open  [B7] range a-[E]-head.
+{textcolour}
 
 {c: Verse 1:}
 If you [E] like a lot of room around to roam in,
@@ -11,7 +13,9 @@ If you like to see a campfire in the gloaming,
 [E] There’s an open  [B7] range a-[E]-head.
 
 {c: Instrumental:  last line verse}
-&blue: [E] There’s an open  [B7] range a-[E]-head.
+{textcolour: blue}
+ [E] There’s an open  [B7] range a-[E]-head.
+{textcolour}
 
 {c: Verse 2:}
 If you [E] like the sounds of lazy cattle lowing,
@@ -26,10 +30,12 @@ Here in your [A] heart there will be no more [E] pining
 For [F#] somewhere else to [B7] go.
 
 {c: Instrumental: bridge 1}
-&blue: [E] Up in the [A]  sky keep a bright sun [E] shining.
-&blue: Out in the [A] west, let a clean wind [E] blow.
-&blue: Here in your [A] heart there will be no more [E] pining
-&blue: For [F#] somewhere else to [B7] go.
+{textcolour: blue}
+ [E] Up in the [A]  sky keep a bright sun [E] shining.
+ Out in the [A] west, let a clean wind [E] blow.
+ Here in your [A] heart there will be no more [E] pining
+ For [F#] somewhere else to [B7] go.
+{textcolour}
 
 {c: Verse 3:}
 If you [E] like to hear the prairie wind a’wailing,
@@ -44,10 +50,12 @@ For [Am] something that’s always been waiting,
 [F#] Waiting for them right [B7].
 
 {c: Instrumental: bridge 2}
-&blue: [Am] Some folks will spend a lifetime
-&blue: Searching far and [Dm] near
-&blue: For [Am] something that’s always been waiting,
-&blue: [F#] Waiting for them right [B7].
+{textcolour: blue}
+ [Am] Some folks will spend a lifetime
+ Searching far and [Dm] near
+ For [Am] something that’s always been waiting,
+ [F#] Waiting for them right [B7].
+{textcolour}
 
 {c: Repeat Verse 1:}
 If you [E] like a lot of room around to roam in,
@@ -56,4 +64,6 @@ If you like to see a campfire in the gloaming,
 [E] There’s an open  [B7] range a-[E]-head.
 
 {c: Instrumental:  last line verse}
-&blue: [E] There’s an open  [B7] range a-[E]-head.
+{textcolour: blue}
+ [E] There’s an open  [B7] range a-[E]-head.
+{textcolour}

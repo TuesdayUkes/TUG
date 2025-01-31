@@ -22,10 +22,12 @@ But there [C] ain't no [G] need for me to [C] work too [G] hard
 'Cause I can [C] live off the [G] chickens in the [D7] neighbors' [G] yard [Gdim7] [G]
 
 Kazoo:
-&blue: [C] Been in [G] business and I've [C] been in [G] love
-&blue: I [C] used to fly [G] high like a [D7] turtle [G] dove
-&blue: [C] Had the [G] blues [C] many a [G] time
-&blue: [C] Just a [G] girl on a [D7] poor boy's [G] mind
+{textcolour: blue}
+ [C] Been in [G] business and I've [C] been in [G] love
+ I [C] used to fly [G] high like a [D7] turtle [G] dove
+ [C] Had the [G] blues [C] many a [G] time
+ [C] Just a [G] girl on a [D7] poor boy's [G] mind
+{textcolour}
 
 I got the [G] morning blues [Gdim7] [G]
 Oh so bad [Gdim7] [G]
@@ -47,5 +49,7 @@ Aw, [Eb] Honey come and [D] kiss me
 They're the [D7] worst I've ever [G] had [Gdim7] [G]
 
 Kazoo outro:
-&blue: Aw, [Eb] Honey come and [D] kiss me
-&blue: They're the [D7] worst I've ever [G] had [Gdim7] [G]
+{textcolour: blue}
+ Aw, [Eb] Honey come and [D] kiss me
+ They're the [D7] worst I've ever [G] had [Gdim7] [G]
+{textcolour}

@@ -4,8 +4,10 @@
 First Sung Note: D 
 
 (Intro - Instrumental)
-/&blue:[G] Angeline the Baker, lives on the village [C] green;
-/&blue: And [G] the way that I love Angeline, beats all I've [C] ever [G] seen.
+{textcolour: blue}
+/[G] Angeline the Baker, lives on the village [C] green;
+/ And [G] the way that I love Angeline, beats all I've [C] ever [G] seen.
+{textcolour}
 
 (Verse-1)
 [G] Angeline the Baker, lives on the village [C] green;
@@ -33,15 +35,19 @@ I [G] fed her sugar candy, still won't [C] marry [G] me.
 
 
 (Instrumental Break)
-/&blue:[G] Angeline the Baker, lives on the village [C] green;
-/&blue: And [G] the way that I love Angeline, beats all I've [C] ever [G] seen.
-/&blue:[G] Angeline the Baker, Angeline I [C] know,
-/&blue: I [G] should've married Angeline twenty [C] years [G] ago.
+{textcolour: blue}
+/[G] Angeline the Baker, lives on the village [C] green;
+/ And [G] the way that I love Angeline, beats all I've [C] ever [G] seen.
+/[G] Angeline the Baker, Angeline I [C] know,
+/ I [G] should've married Angeline twenty [C] years [G] ago.
+{textcolour}
 
-/&blue:[G] Angeline the Baker, age of forty-[C] three
-/&blue:[G] Fed her sugar candy, still won't [C] marry [G] me.
-/&blue:[G] Angeline the Baker, Angeline I [C] know,
-/&blue:[G] Should've married Angeline twenty [C] years [G] ago.
+{textcolour: blue}
+/[G] Angeline the Baker, age of forty-[C] three
+/[G] Fed her sugar candy, still won't [C] marry [G] me.
+/[G] Angeline the Baker, Angeline I [C] know,
+/[G] Should've married Angeline twenty [C] years [G] ago.
+{textcolour}
 
 
 (Verse-3)

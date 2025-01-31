@@ -19,10 +19,12 @@ God [F] speed your love [G] to [C] me [C7]
 [F] I'll be coming [G] home; wait for [C] me" [C7]
 
 Kazoo break:
-&blue: [F] Lonely rivers [G] flow to the [F] sea, to the [Eb] sea;
-&blue: [F] To the open [G] arms of the [C] sea [C7]
-&blue: [F] Lonely rivers [G] sigh, "wait for [F] me, wait for [Eb] me;
-&blue: [F] I'll be coming [G] home; wait for [C] me" [F] [G7]
+{textcolour: blue}
+ [F] Lonely rivers [G] flow to the [F] sea, to the [Eb] sea;
+ [F] To the open [G] arms of the [C] sea [C7]
+ [F] Lonely rivers [G] sigh, "wait for [F] me, wait for [Eb] me;
+ [F] I'll be coming [G] home; wait for [C] me" [F] [G7]
+{textcolour}
 
 [C] Oh, my [Am] love, my [F] darling
 I've [G] hungered; hungered [C] for your touch

@@ -2,10 +2,12 @@
 {st: Robert Hunter  1970   (recorded by Grateful Dead)}
 
 Intro: Instrumental Verse
-&blue: [G] If my words did glow with the gold of [C] sunshine
-&blue: And my [C] tunes were played on the uke un-[G]-strung
-&blue: Would you hear my [G] voice come through the [C] music?
-&blue: Would you [G] hold it [D] near [C] as it were your [G] own?
+{textcolour: blue}
+ [G] If my words did glow with the gold of [C] sunshine
+ And my [C] tunes were played on the uke un-[G]-strung
+ Would you hear my [G] voice come through the [C] music?
+ Would you [G] hold it [D] near [C] as it were your [G] own?
+{textcolour}
 
 Verse 1:
 [G] If my words did glow with the gold of [C] sunshine
@@ -25,9 +27,11 @@ When there [G] is no pebble [C] tossed
 Nor [A7] wind to [D7] blow
 
 Instrumental Chorus:
-&blue: [Am] Ripple in still [D] water
-&blue: When there [G] is no pebble [C] tossed
-&blue: Nor [A7] wind to [D7] blow
+{textcolour: blue}
+ [Am] Ripple in still [D] water
+ When there [G] is no pebble [C] tossed
+ Nor [A7] wind to [D7] blow
+{textcolour}
 
 Verse 3:
 [G] Reach out your hand if your cup be [C] empty
@@ -47,9 +51,11 @@ When there [G] is no pebble [C] tossed
 Nor [A7] wind to [D7] blow
 
 Instrumental Chorus:
-&blue: [Am] Ripple in still [D] water
-&blue: When there [G] is no pebble [C] tossed
-&blue: Nor [A7] wind to [D7] blow
+{textcolour: blue}
+ [Am] Ripple in still [D] water
+ When there [G] is no pebble [C] tossed
+ Nor [A7] wind to [D7] blow
+{textcolour}
 
 Verse 5:
 [G] You who choose to lead must [C] follow

@@ -31,11 +31,13 @@ I [D] miss my baby and-a [G] good [D] fun
 [D] I fought the law and the [A] law [D] won
 
 {c: Kazoo:}
-&blue: I [G] left my baby and I feel so sad
-&blue: I [D] guess my race is [D7] run
-&blue: Well, [G] she's the best girl I've ever had
-&blue: [D] I fought the law and the [G] law [D] won
-&blue: [D] I fought the law and the [A] law [D] won
+{textcolour: blue}
+ I [G] left my baby and I feel so sad
+ I [D] guess my race is [D7] run
+ Well, [G] she's the best girl I've ever had
+ [D] I fought the law and the [G] law [D] won
+ [D] I fought the law and the [A] law [D] won
+{textcolour}
 
 I [G] left my baby and I feel so sad
 I [D] guess my race is [D7] run

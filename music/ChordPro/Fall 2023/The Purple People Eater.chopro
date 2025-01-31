@@ -28,10 +28,12 @@ It was a [D] one-eyed, one-horned, flying purple people-eater
 [G] Sure looks [A7] strange to [D] me!
 
 Kazoo:
-&blue: It was a [D] one-eyed, one-horned, flying purple people-eater
-&blue: [A7] One-eyed, one-horned, flying purple people-eater
-&blue: [D] One-eyed, one-horned, [G] flying purple people-eater
-&blue: [A7] Sure looks strange to [D] me!
+{textcolour: blue}
+ It was a [D] one-eyed, one-horned, flying purple people-eater
+ [A7] One-eyed, one-horned, flying purple people-eater
+ [D] One-eyed, one-horned, [G] flying purple people-eater
+ [A7] Sure looks strange to [D] me!
+{textcolour}
 
 Verse 3
 I said, [D] "Mr. Purple People-Eater, what's your line?"
@@ -58,7 +60,9 @@ He was [D] blowing it out, really [G] knocking 'em dead,
 Playing [A7] rock 'n' roll music through the [D] horn in his head
 
 Instrumental (with "spacy" solo)
-&blue: It was a [D] one-eyed, one-horned, flying purple people-eater
-&blue: [A7] One-eyed, one-horned, flying purple people-eater
-&blue: [D] One-eyed, one-horned, [G] flying purple people-eater
-&blue: [A7] Sure looks strange to [D] me!
+{textcolour: blue}
+ It was a [D] one-eyed, one-horned, flying purple people-eater
+ [A7] One-eyed, one-horned, flying purple people-eater
+ [D] One-eyed, one-horned, [G] flying purple people-eater
+ [A7] Sure looks strange to [D] me!
+{textcolour}

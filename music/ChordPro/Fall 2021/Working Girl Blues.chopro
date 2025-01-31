@@ -36,10 +36,12 @@ While they can [D] live  in any old pent - house they [A] choose
 And all that [E7] I’ve got     is the workin’ girl [A] blues
 
 {c: Instrumental Break, 2nd ½ chorus:}
-&blue: [A] Ah-dee-yode-[D]-lay-hee,   workin’ girl [A] blues
-&blue: And I can’t [E7] even afford    a new pair of [A] shoes
-&blue: While they can [D] live  in any old pent - house they [A] choose
-&blue: And all that [E7] I’ve got     is the workin’ girl [A] blues
+{textcolour: blue}
+ [A] Ah-dee-yode-[D]-lay-hee,   workin’ girl [A] blues
+ And I can’t [E7] even afford    a new pair of [A] shoes
+ While they can [D] live  in any old pent - house they [A] choose
+ And all that [E7] I’ve got     is the workin’ girl [A] blues
+{textcolour}
 
 {c: Verse 3:}
 [A] Well my rent was raised again just the other [E7] day,
@@ -59,4 +61,6 @@ While they can [D] live  in any old pent - house they [A] choose
 And all that [E7] I’ve got     is the workin’ girl [A] blues
 
 {c: nInstrumental tag: Last line chorus:}
-&blue: And all that [E7] I’ve got     is the workin’ girl [A] blues
+{textcolour: blue}
+ And all that [E7] I’ve got     is the workin’ girl [A] blues
+{textcolour}

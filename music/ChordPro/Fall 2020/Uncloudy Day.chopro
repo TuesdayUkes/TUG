@@ -14,10 +14,12 @@ Yes they [C]  tell me of a [C7]place where no [F]storm clouds [C]rise
 [C]Oh they tell me of an [G7]uncloudy [C]day
 
 {c: Instrumental}
-&blue: ([C]They tell me of a place far be-[F]-yond the [C]skys)
-&blue: ([C]They tell me of a home far a- [G]- way)
-&blue: (Yes they [C] tell me of a [C7] land where no [F]storm clouds [C]rise)
-&blue: ([C]Oh they tell me of an [G7]uncloudy [C]day)
+{textcolour: blue}
+ ([C]They tell me of a place far be-[F]-yond the [C]skys)
+ ([C]They tell me of a home far a- [G]- way)
+ (Yes they [C] tell me of a [C7] land where no [F]storm clouds [C]rise)
+ ([C]Oh they tell me of an [G7]uncloudy [C]day)
+{textcolour}
 
 [C]They tell me of a land where my [F]friends have [C]gone
 [C]and they tell me that my eyes [C]shall be-[G]-hold
@@ -30,10 +32,12 @@ Yes they [C]  tell me of a [C7]place where no [F]storm clouds [C]rise
 [C]Oh they tell me of an [G7]uncloudy [C]day
 
 {c: Instrumental}
-&blue: ([C]They tell me of a place far be-[F]-yond the [C]skys)
-&blue: ([C]They tell me of a home far a-[G]- way)
-&blue: (Yes they [C]  tell me of a [C7]  land where no [F]storm clouds [C]rise)
-&blue: ([C]Oh they tell me of an [G7]uncloudy [C]day)
+{textcolour: blue}
+ ([C]They tell me of a place far be-[F]-yond the [C]skys)
+ ([C]They tell me of a home far a-[G]- way)
+ (Yes they [C]  tell me of a [C7]  land where no [F]storm clouds [C]rise)
+ ([C]Oh they tell me of an [G7]uncloudy [C]day)
+{textcolour}
 
 [C]They tell me that he [C7]smiles on his [F]children [C]there
 [C]And his smiles drive their sorrows all a-[G]-way

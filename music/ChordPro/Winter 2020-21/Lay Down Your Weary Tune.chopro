@@ -33,11 +33,13 @@ And asked for [Am] no [F] ap-[C]-plause.
 [F]/  [C] [F]/  [C] [F]/  [C]
 
 {c: Instrumental Chorus:}
-&blue: [C] Lay down your weary [F] tune, lay [C] down,
-&blue: Lay down the [Am] song you [G] strum,
-&blue: And [F] rest yourself 'neath the [C] strength of strings
-&blue: No voice can [Am] hope [F] to [C] hum.
-&blue: [F]/  [C] [F]/  [C] [F]/  [C]
+{textcolour: blue}
+ [C] Lay down your weary [F] tune, lay [C] down,
+ Lay down the [Am] song you [G] strum,
+ And [F] rest yourself 'neath the [C] strength of strings
+ No voice can [Am] hope [F] to [C] hum.
+ [F]/  [C] [F]/  [C] [F]/  [C]
+{textcolour}
 
 {c: Verse 4:}
 [C] The last of leaves fell [F] from the [C] trees

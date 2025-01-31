@@ -26,12 +26,14 @@
 	[G] She goes out with other guys
 
 {c: Instrumental break:}
-&blue: [C] Her amazing lips and the smile from her face [G7]
-&blue: 	[Am] The touch of her hand and this girl's warm embrace
-&blue: [F] So if you don't want to cry like I do
-&blue: 	[G] Keep away from Runaround Sue.
-&blue: [C] Hey, hey, um-da-da-da-di-di [G7] [Am] Hey, hey, um-da-da-da-di-di
-&blue: 	[F] Hey, hey, um-da-da-da-di-di [G7] Hey, hey, oooooooooohhhhh
+{textcolour: blue}
+ [C] Her amazing lips and the smile from her face [G7]
+ 	[Am] The touch of her hand and this girl's warm embrace
+ [F] So if you don't want to cry like I do
+ 	[G] Keep away from Runaround Sue.
+ [C] Hey, hey, um-da-da-da-di-di [G7] [Am] Hey, hey, um-da-da-da-di-di
+ 	[F] Hey, hey, um-da-da-da-di-di [G7] Hey, hey, oooooooooohhhhh
+{textcolour}
 
 [C] And the moral of the story from the guy who knows [G7]
 	[Am] I've been in love and my love still grows

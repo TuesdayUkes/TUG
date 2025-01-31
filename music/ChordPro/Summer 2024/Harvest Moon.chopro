@@ -38,11 +38,13 @@ I wanna see you dance a-[A7sus4]gain
 Because I'm still in love with [A] you
 On this harvest [D] moon [D6] [Dmaj7] [D] [D6] [Dmaj7]
  
-*&blue:Solo:
-&blue:| [Em7] | [Em7] | [Em7] | [Em7] |
-&blue: |[D] [D6] |[Dmaj7] | [D] [D6] | [Dmaj7]|
-&blue: | [Em7] | [Em7] | [Em7] | [Em7] |
-&blue: |[D] [D6] |[Dmaj7] | [D] [D6] | [Dmaj7]|
+{textcolour: blue}
+*Solo:
+| [Em7] | [Em7] | [Em7] | [Em7] |
+ |[D] [D6] |[Dmaj7] | [D] [D6] | [Dmaj7]|
+ | [Em7] | [Em7] | [Em7] | [Em7] |
+ |[D] [D6] |[Dmaj7] | [D] [D6] | [Dmaj7]|
+{textcolour}
 
 *Chorus:      
 [A7sus4] Because I'm still in love with [A7] you

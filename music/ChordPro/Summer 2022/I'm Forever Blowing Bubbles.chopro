@@ -19,14 +19,16 @@ Chorus:
 Pretty [A7] bubbles [D7] in the [G] air. [C] [G]
 
 Instrumental:
-&blue: [G] I'm forever [D7] blowing [G] bubbles, [G7]
-&blue: [C] Pretty bubbles in the [G] air,
-&blue: [C] They fly so [G] high, [C] nearly reach the [G] sky,
-&blue: [A7] Then like my dreams they [D7] fade [Eb7] and [D7] die.
-&blue: [G] Fortune's always [B7] hiding,
-&blue: [Em] I've looked every- [D7]where,
-&blue: [G] I'm forever [D7] blowing [G] bubbles, [E7]
-&blue: Pretty [A7] bubbles [D7] in the [G] air. [C] [G]
+{textcolour: blue}
+ [G] I'm forever [D7] blowing [G] bubbles, [G7]
+ [C] Pretty bubbles in the [G] air,
+ [C] They fly so [G] high, [C] nearly reach the [G] sky,
+ [A7] Then like my dreams they [D7] fade [Eb7] and [D7] die.
+ [G] Fortune's always [B7] hiding,
+ [Em] I've looked every- [D7]where,
+ [G] I'm forever [D7] blowing [G] bubbles, [E7]
+ Pretty [A7] bubbles [D7] in the [G] air. [C] [G]
+{textcolour}
 
 Verse 2:
 [G] When shadows [D7] creep,
@@ -47,5 +49,7 @@ CHORUS X 2
 Pretty [A7] bubbles [D7] in the [G] air. [E7]
 Pretty [A7] bubbles [D7] in the [G] air. [C] [G]
 
-&blue: [G] I'm forever [D7] blowing [G] bubbles, [E7]
-&blue: Pretty [A7] bubbles [D7] in the [G] air. [C] [G]
+{textcolour: blue}
+ [G] I'm forever [D7] blowing [G] bubbles, [E7]
+ Pretty [A7] bubbles [D7] in the [G] air. [C] [G]
+{textcolour}

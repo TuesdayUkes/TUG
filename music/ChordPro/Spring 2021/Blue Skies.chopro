@@ -2,8 +2,10 @@
 {st: w. & m. Irving Berlin}
 
 {c: Instrumental last line chorus:}
-&blue: [Am] Blue da-[AmMaj7]-ys,  all of them [Am7] go-[D7]-ne,
-&blue: Nothing but [C] blue ski-[G7]-es, from now [C] on.
+{textcolour: blue}
+ [Am] Blue da-[AmMaj7]-ys,  all of them [Am7] go-[D7]-ne,
+ Nothing but [C] blue ski-[G7]-es, from now [C] on.
+{textcolour}
 
 {c: Verse 1:}
 [C] I was blue, just as [G7] blue as I could [C] be.
@@ -24,10 +26,12 @@ Nothing but [C] blue bir-[G7]-ds,  all day [C] long.
 Nothing but [C] blue ski-[G7]-es, from now [C] on.
 
 {c: Instrumental Verse:}
-&blue: [C] I was blue, just as [G7] blue as I could [C] be.
-&blue: [C] Every day was a [G7] cloudy day for [C] me.
-&blue: [Em] Then good luck came a-[B7]-knockin’ at my [G] door.
-&blue: [C] Skies were gray but they’re [G7] not gray any-[C]-more.
+{textcolour: blue}
+ [C] I was blue, just as [G7] blue as I could [C] be.
+ [C] Every day was a [G7] cloudy day for [C] me.
+ [Em] Then good luck came a-[B7]-knockin’ at my [G] door.
+ [C] Skies were gray but they’re [G7] not gray any-[C]-more.
+{textcolour}
 
 {c: Verse 2:}
 [C]  I should care if the [G7] wind blows east or [C] west.
@@ -48,5 +52,7 @@ Nothing but [C] blue bir-[G7]-ds,  all day [C] long.
 Nothing but [C] blue ski-[G7]-es, from now [C] on.
 
 {c: Instrumental last line chorus:}
-&blue: [Am] Blue da-[AmMaj7]-ys,  all of them [Am7] go-[D7]-ne,
-&blue: Nothing but [C] blue ski-[G7]-es, from now [C] on.
+{textcolour: blue}
+ [Am] Blue da-[AmMaj7]-ys,  all of them [Am7] go-[D7]-ne,
+ Nothing but [C] blue ski-[G7]-es, from now [C] on.
+{textcolour}

@@ -26,10 +26,12 @@ Verse 2:
 [Am] Watch by your [F] weary [Am] head. [G7]
 
 Instrumental Chorus:
-&blue: [C] Speed, bonnie [Am] boat, like a [G] bird on the wing,
-&blue: [C] Onward! the [F] sailors [C] cry; [G7]
-&blue: [C] Carry the [Am] lad that's [G] born to be king
-&blue: [C] Over the [F] sea to [C] Skye. [G7]
+{textcolour: blue}
+ [C] Speed, bonnie [Am] boat, like a [G] bird on the wing,
+ [C] Onward! the [F] sailors [C] cry; [G7]
+ [C] Carry the [Am] lad that's [G] born to be king
+ [C] Over the [F] sea to [C] Skye. [G7]
+{textcolour}
 
 Sing Chorus:
 [C] Speed, bonnie [Am] boat, like a [G] bird on the wing,
@@ -50,10 +52,12 @@ Sing Chorus:
 [C] Over the [F] sea to [C] Skye.
 
 Instrumental Verse:
-&blue: [Am] Many's the lad, [Dm] fought on that day
-&blue: [Am] Well the clay-[F]-more did [Am] wield;
-&blue: [Am] When the night came, [Dm] silently lay
-&blue: [Am] Dead on Cul-[F]-loden's [Am] field.
+{textcolour: blue}
+ [Am] Many's the lad, [Dm] fought on that day
+ [Am] Well the clay-[F]-more did [Am] wield;
+ [Am] When the night came, [Dm] silently lay
+ [Am] Dead on Cul-[F]-loden's [Am] field.
+{textcolour}
 
 Verse 4:
 [Am] Burned are their homes, [Dm] exile and death
@@ -68,5 +72,7 @@ Sing Chorus:
 [C] Over the [F] sea to [C] Skye.
 
 Instrumental last 2 lines Chorus:
-&blue: [C] Carry the [Am] lad that's [G] born to be king
-&blue: [C] Over the [F] sea to [C] Skye.
+{textcolour: blue}
+ [C] Carry the [Am] lad that's [G] born to be king
+ [C] Over the [F] sea to [C] Skye.
+{textcolour}

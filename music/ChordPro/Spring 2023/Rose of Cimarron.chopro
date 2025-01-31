@@ -2,7 +2,9 @@
 {st:    1976    Rusty Young}
 
 Instrumental Intro, 1st line chorus:
-&blue: [G]Ro-ll along, roll [D]o-n, [C]Ro-se of Cima[G]rron
+{textcolour: blue}
+ [G]Ro-ll along, roll [D]o-n, [C]Ro-se of Cima[G]rron
+{textcolour}
 
 Chorus sing:
 [G]Ro-ll along, roll [D]o-n, [C]Ro-se of Cima[G]rron
@@ -45,8 +47,10 @@ Chorus:
 [G]Du-sty days are [D]go-ne, [C]Ro-se of Cima[G]rron
 
 Instrumental break  Chorus
-&blue: [G]Ro-ll along, roll [D]o-n, [C]Ro-se of Cima[G]rron
-&blue: [G]Du-sty days are [D]go-ne, [C]Ro-se of Cima[G]rron
+{textcolour: blue}
+ [G]Ro-ll along, roll [D]o-n, [C]Ro-se of Cima[G]rron
+ [G]Du-sty days are [D]go-ne, [C]Ro-se of Cima[G]rron
+{textcolour}
 
 Chorus sing:
 [G]Ro-ll along, roll [D]o-n, [C]Ro-se of Cima[G]rron
@@ -57,8 +61,10 @@ Alternate Chorus sing:
 [G] Wra-pped up in a [D] so-ng, [C] Ro-se of Cima[G]rron
 
 Instrumental Outro  Chorus
-&blue: [G]Ro-ll along, roll [D]o-n, [C]Ro-se of Cima[G]rron
-&blue: [G]Du-sty days are [D]go-ne, [C]Ro-se of Cima[G]rron
+{textcolour: blue}
+ [G]Ro-ll along, roll [D]o-n, [C]Ro-se of Cima[G]rron
+ [G]Du-sty days are [D]go-ne, [C]Ro-se of Cima[G]rron
+{textcolour}
 
 (The story learned in Oklahoma, of a woman who took in outlaws in the 1800's;
 fed them, mended their wounds and sent them on their way.)

@@ -11,10 +11,12 @@ When [D] time goes [Dmaj7] crawling [Am7] by [D7]
 The [G] moon just [D] went behind the [Bm] clouds
 To [D] hide its [A7] face and [D] cry [A7]
 
-&blue: [D] I've never [Dmaj7] seen a [D6] night so [Dmaj7] long
-&blue: When [D] time goes [Dmaj7] crawling [Am7] by [D7]
-&blue: The [G] moon just [D] went behind the [Bm] clouds
-&blue: To [D] hide its [A7] face and [D] cry [A7]
+{textcolour: blue}
+ [D] I've never [Dmaj7] seen a [D6] night so [Dmaj7] long
+ When [D] time goes [Dmaj7] crawling [Am7] by [D7]
+ The [G] moon just [D] went behind the [Bm] clouds
+ To [D] hide its [A7] face and [D] cry [A7]
+{textcolour}
 
 Did you [D] ever [Dmaj7] hear a [D6] robin [Dmaj7] weep
 When [D] leaves be- [Dmaj7] gin to [Am7] die? [D7]

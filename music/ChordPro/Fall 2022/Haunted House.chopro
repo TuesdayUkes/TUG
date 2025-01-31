@@ -1,10 +1,12 @@
 {t: Haunted House}
 {st: Gene Simmons. Charted as a novelty song in 1958.}
 
-&blue: Intro: Say, [A] "Yes, I'll be here when the morning comes.
-&blue: I'll be right here, and I ain't gonna [D] run.
-&blue: I bought this house, now you know I'm [E7] boss,
-&blue: Ain't no haint's gonna run me [A] off." (x2)
+{textcolour: blue}
+ Intro: Say, [A] "Yes, I'll be here when the morning comes.
+ I'll be right here, and I ain't gonna [D] run.
+ I bought this house, now you know I'm [E7] boss,
+ Ain't no haint's gonna run me [A] off." (x2)
+{textcolour}
 
 [A] I just moved into my new house today.
 Moving was rough but I got squared a- [D] way.
@@ -41,10 +43,12 @@ Drank the hot grease from the frying [D] pan.
 And he said to me, [Spoken] "You better [E7] run, and don't be here
 When the morning [A] comes."
 
-&blue: Interlude: Say, [A] "Yes, I'll be here when the morning comes.
-&blue: I'll be right here, and I ain't gonna [D] run.
-&blue: I bought this house, now you know I'm [E7] boss,
-&blue: Ain't no haint's gonna run me [A] off." [D] [A]
+{textcolour: blue}
+ Interlude: Say, [A] "Yes, I'll be here when the morning comes.
+ I'll be right here, and I ain't gonna [D] run.
+ I bought this house, now you know I'm [E7] boss,
+ Ain't no haint's gonna run me [A] off." [D] [A]
+{textcolour}
 
 Say, [A] "Yes, I'll be here when the morning comes.
 I'll be right here, and I ain't gonna [D] run.

@@ -2,12 +2,14 @@
 {st: Robert Burns 1791, Chords by The Corries}
 
 Instrumental Chorus:
-&blue: Ye [Am] Jacobites by name, lend an [C] ear, lend an [G] ear!
-&blue: Ye [Am]Jacobites by name, [Em] lend an [Am] ear,
-&blue: Ye [C] Jacobites by name, your [G] faults I will proclaim,
-&blue: Your [Am] doctrines I must blame -
-&blue: You shall [C] hear, you shall [G] hear!
-&blue: Your [Am] doctrines I must blame - [Em] you shall [Am] hear!
+{textcolour: blue}
+ Ye [Am] Jacobites by name, lend an [C] ear, lend an [G] ear!
+ Ye [Am]Jacobites by name, [Em] lend an [Am] ear,
+ Ye [C] Jacobites by name, your [G] faults I will proclaim,
+ Your [Am] doctrines I must blame -
+ You shall [C] hear, you shall [G] hear!
+ Your [Am] doctrines I must blame - [Em] you shall [Am] hear!
+{textcolour}
 
 Chorus:
 Ye [Am] Jacobites by name, lend an [C] ear, lend an [G] ear!
@@ -49,12 +51,14 @@ You shall [C] hear, you shall [G] hear!
 Your [Am] doctrines I must blame - [Em] you shall [Am] hear!
 
 Instrumental Chorus:
-&blue: Ye [Am] Jacobites by name, lend an [C] ear, lend an [G] ear!
-&blue: Ye [Am] Jacobites by name, [Em] lend an [Am] ear,
-&blue: Ye [C] Jacobites by name, your [G] faults I will proclaim,
-&blue: Your [Am] doctrines I must blame -
-&blue: You shall [C] hear, you shall [G] hear!
-&blue: Your [Am] doctrines I must blame - [Em] you shall [Am] hear!
+{textcolour: blue}
+ Ye [Am] Jacobites by name, lend an [C] ear, lend an [G] ear!
+ Ye [Am] Jacobites by name, [Em] lend an [Am] ear,
+ Ye [C] Jacobites by name, your [G] faults I will proclaim,
+ Your [Am] doctrines I must blame -
+ You shall [C] hear, you shall [G] hear!
+ Your [Am] doctrines I must blame - [Em] you shall [Am] hear!
+{textcolour}
 
 Verse 3:
 Then [Am] let your schemes alone, in the [C] State, in the [G] State!

@@ -1,8 +1,10 @@
 {t:My Sweet Wyoming Home}
 {st: Bill Staines}
 
-&blue:  Instrumental intro (last line Verse1):
-&blue: [Dm] Will take me [Gm7] home to my [C7] sweet Wyoming [F] home
+{textcolour: blue}
+  Instrumental intro (last line Verse1):
+ [Dm] Will take me [Gm7] home to my [C7] sweet Wyoming [F] home
+{textcolour}
 
 {c: Verse 1:}
 [F] There's a silence on the prairie
@@ -28,8 +30,10 @@ And hum a [C7] tune, a prairie [Bb] lulla-[F]-bye,
 A peaceful [F] wind, an old co- [Bb] -yo-[Am] -tes [Gm] cry,
 A song of [C7] home, my sweet Wyoming [F] home.
 
-&blue:  Instrumental last line chorus:
-&blue: [Gm] A song of [C7] home, my sweet Wyoming [F] home
+{textcolour: blue}
+  Instrumental last line chorus:
+ [Gm] A song of [C7] home, my sweet Wyoming [F] home
+{textcolour}
 
 {c: Bridge:}
 Well, the [Bb] rounders they all wish you luck
@@ -52,8 +56,10 @@ And hum a [C7] tune, a prairie [Bb] lulla-[F]-bye
 A peaceful [F] wind, an old co- [Bb] -yo-[Am] -tes [Gm] cry
 A song of [C7] home, my sweet Wyoming [F] home
 
-&blue:  Instrumental last line chorus:
-&blue: [Gm] A song of [C7] home, my sweet Wyoming [F] home
+{textcolour: blue}
+  Instrumental last line chorus:
+ [Gm] A song of [C7] home, my sweet Wyoming [F] home
+{textcolour}
 
 {c: Verse 4}
 Now I've [F] always loved the ridin';
@@ -70,5 +76,7 @@ And hum a [C7] tune, a prairie [Bb] lulla-[F]-bye,
 A peaceful [F] wind, an old co- [Bb] -yo-[Am] -tes [Gm] cry,
 A song of [C7] home, my sweet Wyoming [F] home.
 
-&blue:  Instrumental last line chorus:
-&blue: [Gm] A song of [C7] home, my sweet Wyoming [F] home
+{textcolour: blue}
+  Instrumental last line chorus:
+ [Gm] A song of [C7] home, my sweet Wyoming [F] home
+{textcolour}

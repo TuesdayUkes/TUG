@@ -2,7 +2,9 @@
 {st: Hugin the Bard}
 
 Instrumental first line verse:
-&blue: [C] Leaves in [Dm] color come a [Am7] tumbling down
+{textcolour: blue}
+ [C] Leaves in [Dm] color come a [Am7] tumbling down
+{textcolour}
 
 Verse 1 :
 [C] Leaves in [Dm] color come a [Am7] tumbling down
@@ -11,7 +13,9 @@ Because the [C] harvest is in; now there's [Am7] joy to be found
 Before [F] winter [G] winds blow a [C] gain.
 
 Instrumental last line verse:
-&blue: [Am7] Before [F] winter [G] winds blow a [C] gain.
+{textcolour: blue}
+ [Am7] Before [F] winter [G] winds blow a [C] gain.
+{textcolour}
 
 Verse 2 :
 [C] See the [Dm] table laid with [Am7] acorns and grain.
@@ -26,7 +30,9 @@ Although we [F] know,  [C] He doesn't [Dm] really die.
 [G] 'Til He [F] starts re [G] turning a [C] gain.
 
 Instrumental last line Chorus:
-&blue: [G] 'Til He [F] starts re [G] turning a [C] gain.
+{textcolour: blue}
+ [G] 'Til He [F] starts re [G] turning a [C] gain.
+{textcolour}
 
 Verse 3 :
 [C] Bring the [Dm] cauldron and the [Am7] sacred wood.
@@ -50,7 +56,9 @@ Although we [F] know,  [C] He doesn't [Dm] really die.
 [G] 'Til He [F] starts re [G] turning a [C] gain.
 
 Instrumental last line Chorus:
-&blue: [G] 'Til He [F] starts re [G] turning a [C] gain.
+{textcolour: blue}
+ [G] 'Til He [F] starts re [G] turning a [C] gain.
+{textcolour}
 
 Verse 1 :
 [C] Leaves in [Dm] color come a [Am7] tumbling down
@@ -59,4 +67,6 @@ Because the [C] harvest is in; now there's [Am7] joy to be found
 Before [F] winter [G] winds blow a [C] gain.
 
 Instrumental last line verse:
-&blue: [Am7] Before [F] winter [G] winds blow a [C] gain.
+{textcolour: blue}
+ [Am7] Before [F] winter [G] winds blow a [C] gain.
+{textcolour}

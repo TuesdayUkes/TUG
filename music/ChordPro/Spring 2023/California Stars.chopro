@@ -1,20 +1,24 @@
 {t: California Stars}
 {st: Wilco}
 
-&blue: [A] I'd like to rest my heavy head tonight
-&blue: [E] On a bed of California stars
-&blue: [D] I'd like to lay my weary bones tonight
-&blue: [A] On a bed of California stars
+{textcolour: blue}
+ [A] I'd like to rest my heavy head tonight
+ [E] On a bed of California stars
+ [D] I'd like to lay my weary bones tonight
+ [A] On a bed of California stars
+{textcolour}
 
 [A] I'd like to rest my heavy head tonight
 [E] On a bed of California stars
 [D] I'd like to lay my weary bones tonight
 [A] On a bed of California stars
 
-&blue: [A] I'd like to rest my heavy head tonight
-&blue: [E] On a bed of California stars
-&blue: [D] I'd like to lay my weary bones tonight
-&blue: [A] On a bed of California stars
+{textcolour: blue}
+ [A] I'd like to rest my heavy head tonight
+ [E] On a bed of California stars
+ [D] I'd like to lay my weary bones tonight
+ [A] On a bed of California stars
+{textcolour}
 
 [A] I'd love to feel your hand touching mine
 [E] And tell me why I must keep working on
@@ -31,10 +35,12 @@
 [D] So, I'd give this world just to dream a dream with you
 [A] On our bed of California stars
 
-&blue: [A] I'd like to rest my heavy head tonight
-&blue: [E] On a bed of California stars
-&blue: [D] I'd like to lay my weary bones tonight
-&blue: [A] On a bed of California stars
+{textcolour: blue}
+ [A] I'd like to rest my heavy head tonight
+ [E] On a bed of California stars
+ [D] I'd like to lay my weary bones tonight
+ [A] On a bed of California stars
+{textcolour}
 
 [A] I'd like to rest my heavy head tonight
 [E] On a bed of California stars
@@ -46,10 +52,12 @@
 [D] Yes, I'd give my life to lay my head tonight
 [A] On a bed of California stars
 
-&blue: [A] I'd like to rest my heavy head tonight
-&blue: [E] On a bed of California stars
-&blue: [D] I'd like to lay my weary bones tonight
-&blue: [A] On a bed of California stars
+{textcolour: blue}
+ [A] I'd like to rest my heavy head tonight
+ [E] On a bed of California stars
+ [D] I'd like to lay my weary bones tonight
+ [A] On a bed of California stars
+{textcolour}
 
 [A] I'd like to dream my troubles are away
 [E] On a bed of California stars
@@ -61,7 +69,9 @@
 [D] So, I'd give this world just to dream a dream with you
 [A] On our bed of California stars
 
-&blue: [A] I'd like to rest my heavy head tonight
-&blue: [E] On a bed of California stars
-&blue: [D] I'd like to lay my weary bones tonight
-&blue: [A] On a bed of California stars
+{textcolour: blue}
+ [A] I'd like to rest my heavy head tonight
+ [E] On a bed of California stars
+ [D] I'd like to lay my weary bones tonight
+ [A] On a bed of California stars
+{textcolour}

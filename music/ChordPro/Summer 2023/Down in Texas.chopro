@@ -2,8 +2,10 @@
 {st: w. Elmer Fisk  1917 , m. Trad. Irish:  Whiskey You're the Devil}
 
 Intro 1st 2 lines:
-&blue: [A] We're down here in old [A7] Texas,
-&blue: Where you [D] never have the [A] blues,
+{textcolour: blue}
+ [A] We're down here in old [A7] Texas,
+ Where you [D] never have the [A] blues,
+{textcolour}
 
 Verse 1:
 [A] We're down here in old [A7] Texas,
@@ -26,14 +28,16 @@ If you [A] call a man a liar, you
 Get [E7] home the best you [A] can
 
 Instrumental break- verse:
-&blue: [A] Where the stickup men are [A7] wary
-&blue: And the [D] bullets fall like [A] hail;
-&blue: Where each [D] pocket has a [A] pistol
-&blue: And each [B7] pistol's good for [E7] jail;
-&blue: Where they [A] always hang the [A7] jury,
-&blue: Where they [D] never hang a man
-&blue: If you [A] call a man a liar, you
-&blue: Get [E7] home the best you [A] can
+{textcolour: blue}
+ [A] Where the stickup men are [A7] wary
+ And the [D] bullets fall like [A] hail;
+ Where each [D] pocket has a [A] pistol
+ And each [B7] pistol's good for [E7] jail;
+ Where they [A] always hang the [A7] jury,
+ Where they [D] never hang a man
+ If you [A] call a man a liar, you
+ Get [E7] home the best you [A] can
+{textcolour}
 
 Verse 3:
 [A] Where you get up in the [A7] morning,
@@ -56,10 +60,12 @@ Say [A] 'Howdy' to some fellow who
 Shoots [E7] big holes in your [A] pants;
 
 Instrumental break- 1st ½ verse:
-&blue: [A] Where the bulldogs all have [A7] rabies,
-&blue: And the [D] rabbits they have [A] fleas;
-&blue: Where the [D] big girls, like the [A] wee ones,
-&blue: Wear their [B7] dresses to their [E7] knees;
+{textcolour: blue}
+ [A] Where the bulldogs all have [A7] rabies,
+ And the [D] rabbits they have [A] fleas;
+ Where the [D] big girls, like the [A] wee ones,
+ Wear their [B7] dresses to their [E7] knees;
+{textcolour}
 
 Verse 5 - 2nd half:
 [A] Where wise owls are a[A7] fraid to hoot
@@ -68,5 +74,7 @@ For it's [A] hell down here in Texas,
 Where they [E7] all shoot on the [A] wing.
 
 Outro  last 2 lines verse:
-&blue: For it's [A] hell down here in Texas,
-&blue: Where they [E7] all shoot on the [A] wing.
+{textcolour: blue}
+ For it's [A] hell down here in Texas,
+ Where they [E7] all shoot on the [A] wing.
+{textcolour}

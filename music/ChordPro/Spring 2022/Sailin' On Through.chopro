@@ -25,10 +25,12 @@ Chorus3:
 [C] sailing on through [F] sailing on through [G] sailing on through [C]
 
 instrumental Verse
-&blue: [C] everytime the phone rings [F] seems some friend is gone
-&blue: [G] lost from the world to ashes dust and [C] song
-&blue: [C] so everytime there’s bad news [F] you run through the yard
-&blue: [G] go hide with the radio [G] inside your [C] car
+{textcolour: blue}
+ [C] everytime the phone rings [F] seems some friend is gone
+ [G] lost from the world to ashes dust and [C] song
+ [C] so everytime there’s bad news [F] you run through the yard
+ [G] go hide with the radio [G] inside your [C] car
+{textcolour}
 
 Verse 3:
 [C] go wander the east coast [F] go wander the west
@@ -54,5 +56,7 @@ Chorus3:
 [C] sailing on through [F] sailing on through [G] sailing on through [C]
 
 Outro Repeat Chorus3 & fade out:
-&blue: [C] sailing on through [F] sailing on through [G] sailing on through [C]
+{textcolour: blue}
+ [C] sailing on through [F] sailing on through [G] sailing on through [C]
+{textcolour}
 

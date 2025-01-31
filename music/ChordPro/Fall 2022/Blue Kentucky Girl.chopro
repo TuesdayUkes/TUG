@@ -14,10 +14,12 @@ Some [D] morning when you [G] wake up all a [D] lone
 [D] Just come on [E7] home to your [A7] blue Kentucky [D] girl
 
 Instrumental Break, Chorus:
-&blue: [D] I swear, I [G] love you by the moon a [D] bove you
-&blue: How [E7] bright is it shinin' in your [A7] world?
-&blue: Some [D] morning when you [G] wake up all a [D] lone
-&blue: [D] Just come on [E7] home to your [A7] blue Kentucky [D] girl
+{textcolour: blue}
+ [D] I swear, I [G] love you by the moon a [D] bove you
+ How [E7] bright is it shinin' in your [A7] world?
+ Some [D] morning when you [G] wake up all a [D] lone
+ [D] Just come on [E7] home to your [A7] blue Kentucky [D] girl
+{textcolour}
 
 Verse 2:
 [D] Don't wait to bring great [G] riches home to [D] me
@@ -32,10 +34,12 @@ Some [D] morning when you [G] wake up all a [D] lone
 [D] Just come on [E7] home to your [A7] blue Kentucky [D] girl
 
 Instrumental Break, Verse:
-&blue: [D] Don't wait to bring great [G] riches home to [D] me
-&blue: I don't [E7] need no diamond ring or fancy [A7] pearls
-&blue: Just [D] bring yourself, you're [G] all I'll ever [D] need
-&blue: [D] That's good e [E7] nough for this [A7] blue Kentucky [D] girl
+{textcolour: blue}
+ [D] Don't wait to bring great [G] riches home to [D] me
+ I don't [E7] need no diamond ring or fancy [A7] pearls
+ Just [D] bring yourself, you're [G] all I'll ever [D] need
+ [D] That's good e [E7] nough for this [A7] blue Kentucky [D] girl
+{textcolour}
 
 Chorus 1:
 [D] I swear, I [G] love you by the moon a [D] bove you

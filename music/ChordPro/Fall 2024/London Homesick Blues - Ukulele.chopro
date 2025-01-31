@@ -39,9 +39,11 @@ Good country  [C]music from Ama-[D]rillo and Abi-[G]lene
 The friendliest  [C]people and the prettiest  [D]women you’ve ever  [G]seen.(2,3,4,1,2,3)
 
 (Lead Break) 
-/&blue:I wa[C]nna go  home wi[Em]th the  arm[Am]a-dillo
-/&blue:Good country  [C]music from Ama-[D]rillo and Abi-[G]lene
-/&blue:The frien[C]dliest  people and the pre[D]ttiest  women you’v[G]e ever  seen.(2,3,4,1,2,3)
+{textcolour: blue}
+/I wa[C]nna go  home wi[Em]th the  arm[Am]a-dillo
+/Good country  [C]music from Ama-[D]rillo and Abi-[G]lene
+/The frien[C]dliest  people and the pre[D]ttiest  women you’v[G]e ever  seen.(2,3,4,1,2,3)
+{textcolour}
 
 (Verse 3)
 [G]Well, I decided that I’d get my cowboy hat

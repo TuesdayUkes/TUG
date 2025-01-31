@@ -2,8 +2,10 @@
 {st: Mary Jane Ford         2006}
 
 {c: Instrumental intro:}
-&blue: [C]  [C]  [C]  [F]  [G7]  [G7]
-&blue: [C]  [C]  [C]  [F]  [G7]  [G7]
+{textcolour: blue}
+ [C]  [C]  [C]  [F]  [G7]  [G7]
+ [C]  [C]  [C]  [F]  [G7]  [G7]
+{textcolour}
 
 {c: Chorus:}
 [C] We care for our planet be-[Am]-cause it’s our [C] home.
@@ -12,8 +14,10 @@ It’s all the same planet where-[F]-ever you [G] roam.
 We [C] can’t get another when [G7] this one has [C] died.
 
 {c: Instrumental interlude:}
-&blue: [C]  [C]  [F]  [G7]  [G7]
-&blue: [C]  [C]  [C]  [F]  [G7]  [G7]
+{textcolour: blue}
+ [C]  [C]  [F]  [G7]  [G7]
+ [C]  [C]  [C]  [F]  [G7]  [G7]
+{textcolour}
 
 {c: Verse 1:}
 [C] We need all the species e-[Am]-volved on the [C] earth:
@@ -36,12 +40,14 @@ To [C] keep the sea quiet and [F] safe for the [G] whales.
 Keep the [C] fishing well managed; let [G7] dolphins pre-[C]-vail.
 
 {c: Instrumental break: Chorus:}
-&blue: [C] We care for our planet be-[Am]-cause it’s our [C] home.
-&blue: It’s all the same planet where-[F]-ever you [G] roam.
-&blue: [C] There’s only one planet, the [F] place we re-[G]-side.
-&blue: We [C] can’t get another when [G7] this one has [C] died.
-&blue: Interlude: 	[C]  [C]  [F]  [G7]  [G7]
-&blue: [C]  [C]  [C]  [F]  [G7]  [G7]
+{textcolour: blue}
+ [C] We care for our planet be-[Am]-cause it’s our [C] home.
+ It’s all the same planet where-[F]-ever you [G] roam.
+ [C] There’s only one planet, the [F] place we re-[G]-side.
+ We [C] can’t get another when [G7] this one has [C] died.
+ Interlude: 	[C]  [C]  [F]  [G7]  [G7]
+ [C]  [C]  [C]  [F]  [G7]  [G7]
+{textcolour}
 
 {c: Verse 3:}
 [C] We all want a planet with [Am] air pure and [C] clean,
@@ -56,5 +62,7 @@ It’s all the same planet where-[F]-ever you [G] roam.
 We [C] can’t get another when [G7] this one has [C] died.
 
 {c: Instrumental tag:}
-&blue: [C]  [C]  [F]  [G7]  [G7]
-&blue: [C]  [C]  [C]  [F]  [G]
+{textcolour: blue}
+ [C]  [C]  [F]  [G7]  [G7]
+ [C]  [C]  [C]  [F]  [G]
+{textcolour}

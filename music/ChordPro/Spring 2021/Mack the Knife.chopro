@@ -2,10 +2,12 @@
 {st: Brecht/Weill, 1928; Performed by Bobby Darin, 1959}
 
 {c: Intro:}
-&blue: When that [C6] shark bites with his [Dm] teeth, dear
-&blue: Scarlet [G7] billows start to [C6] spread
-&blue: Fancy [Am] gloves, though, wears Mac-[Dm]Heath, dear
-&blue: So there's [G7] never, never a trace of [C6] red [G7]
+{textcolour: blue}
+ When that [C6] shark bites with his [Dm] teeth, dear
+ Scarlet [G7] billows start to [C6] spread
+ Fancy [Am] gloves, though, wears Mac-[Dm]Heath, dear
+ So there's [G7] never, never a trace of [C6] red [G7]
+{textcolour}
 
 Oh, the [C6] shark has pretty [Dm] teeth, dear
 And he [G7] shows them pearly [C6] white
@@ -28,10 +30,12 @@ Oh, that ce-[Am]ment's just there for the [Dm] weight, dear
 Looks like [G7] Macky's back in [C6] town [G7]
 
 {c: Instrumental interlude:}
-&blue: When that [C6] shark bites with his [Dm] teeth, dear
-&blue: Scarlet [G7] billows start to [C6] spread
-&blue: Fancy [Am] gloves, though, wears Mac-[Dm]Heath, dear
-&blue: So there's [G7] never, never a trace of [C6] red [G7]
+{textcolour: blue}
+ When that [C6] shark bites with his [Dm] teeth, dear
+ Scarlet [G7] billows start to [C6] spread
+ Fancy [Am] gloves, though, wears Mac-[Dm]Heath, dear
+ So there's [G7] never, never a trace of [C6] red [G7]
+{textcolour}
 
 Now d'ja [C6] hear 'bout Louie [Dm] Miller?
 He disap[G7]peared, after drawin' out his [C6] cash
@@ -46,7 +50,9 @@ Now that [G7] Macky's back in [C6] town
 [C6] Oh, look out, [G7] old Macky's [C6] back! [G7]
 
 {c: Outro:}
-&blue: Now Jenny [C6] Diver, Sukey [Dm] Tawdry
-&blue: Miss Lotte [G7] Lenya and Lucy [C6] Brown
-&blue: Oh, the [Am] line forms on the [Dm] right, babe
-&blue: Now that [G7] Macky's back in [C6] town [G7]
+{textcolour: blue}
+ Now Jenny [C6] Diver, Sukey [Dm] Tawdry
+ Miss Lotte [G7] Lenya and Lucy [C6] Brown
+ Oh, the [Am] line forms on the [Dm] right, babe
+ Now that [G7] Macky's back in [C6] town [G7]
+{textcolour}

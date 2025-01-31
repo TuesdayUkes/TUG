@@ -2,7 +2,9 @@
 {st: (Wilbert Harrison, 1970)}
 
 Kazoo:
-&blue: Because to- [D] gether we will stand, every [C] boy, girl, woman and [G] man
+{textcolour: blue}
+ Because to- [D] gether we will stand, every [C] boy, girl, woman and [G] man
+{textcolour}
 
 [G] Together we'll stand, divided we'll fall
 [G7] Come on now people, let's get on the ball
@@ -22,12 +24,14 @@ Because together we will [D] stand, every [C] boy, girl, woman and [G] man [G] (
 Well now [D] together we will stand (pause) every [C] boy, girl, woman and [G] man [G] Ahhh, come on now
 
 Kazoo break:
-&blue: Well now, [G] make someone happy
-&blue: [G] Make someone smile
-&blue: [G] Let's all work together and make life worthwhile
-&blue: And work [C] to- [C7] gether, come on, come on let's work to- [G] gether
-&blue: [G] (Now now people)
-&blue: Because together we will [D] stand, every [C] boy, girl woman and [G] man
+{textcolour: blue}
+ Well now, [G] make someone happy
+ [G] Make someone smile
+ [G] Let's all work together and make life worthwhile
+ And work [C] to- [C7] gether, come on, come on let's work to- [G] gether
+ [G] (Now now people)
+ Because together we will [D] stand, every [C] boy, girl woman and [G] man
+{textcolour}
 
 Well now, [G] make someone happy
 [G] Make someone smile
@@ -44,4 +48,6 @@ Well now [D] together we will stand, every [C] boy, girl, woman and [G] man
 Well now [D] together we will stand (pause) every [C] boy, girl, woman and [G] man
 
 Outro:
-&blue: Well now [D] together we will stand (pause) every [C] boy, girl, woman and [G] man
+{textcolour: blue}
+ Well now [D] together we will stand (pause) every [C] boy, girl, woman and [G] man
+{textcolour}

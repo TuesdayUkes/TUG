@@ -20,8 +20,10 @@ C     Am    F     G   F   Em  Dm
 
 
 (Instrumental solo)
-/&blue:[C] Rockin' around the Christmas tree; let the[G7] Christmas spirit ring.
-/&blue:[Dm7] Later we'll[G7] have some[Dm7] pumpkin[G7] pie, and we'll[Dm7] do some[G7] caro[C]-ling.
+{textcolour: blue}
+/[C] Rockin' around the Christmas tree; let the[G7] Christmas spirit ring.
+/[Dm7] Later we'll[G7] have some[Dm7] pumpkin[G7] pie, and we'll[Dm7] do some[G7] caro[C]-ling.
+{textcolour}
 
 [F]You will get a sentimental [Em]feeling, when you hear;
 [Am]Voices singing,"[C]let's be jolly; [D7(stop)]deck the halls with [G7(stop)]boughs of holly.”

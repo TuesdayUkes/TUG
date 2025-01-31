@@ -26,13 +26,17 @@
 [A]There's a [G]bad moon on the [D]rise
 
 (Break)
-/&blue:[D] I see the [A]bad [G] moon [D] rising
-/&blue:[D]I see [A]trouble [G]on the [D]way
-/&blue:[D]I see [A]earth[G]quakes and [D]lightning 
-/&blue:[D]I see [A]bad [G]times [D]today
+{textcolour: blue}
+/[D] I see the [A]bad [G] moon [D] rising
+/[D]I see [A]trouble [G]on the [D]way
+/[D]I see [A]earth[G]quakes and [D]lightning 
+/[D]I see [A]bad [G]times [D]today
+{textcolour}
 
-/&blue:[G]Don't go around tonight, Well it's [D]bound to take your life
-/&blue:[A]There's a [G]bad moon on the [D]rise
+{textcolour: blue}
+/[G]Don't go around tonight, Well it's [D]bound to take your life
+/[A]There's a [G]bad moon on the [D]rise
+{textcolour}
 
 (Verse 3)
 [D]Hope you [A]got your [G]things [D]together

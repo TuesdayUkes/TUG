@@ -1,8 +1,10 @@
 {t: Heartaches By The Number }
 {st:Ray Price}
 
-&blue: [G] Now I've got heartaches by the number  [C] troubles by the score
-&blue: [D7] Everyday you love me less each day I love you [G] more
+{textcolour: blue}
+ [G] Now I've got heartaches by the number  [C] troubles by the score
+ [D7] Everyday you love me less each day I love you [G] more
+{textcolour}
 
 [G] Heartache number one was when you [C] left me
 [D7] I never knew that I'd could hurt this [G] way
@@ -15,10 +17,12 @@
 But the [D7] day that I stop counting,
 that's the day my world will [G] end.
 
-&blue: [G] Heartache number one was when you [C] left me
-&blue: [D7] I never knew that I'd could hurt this [G] way
-&blue: [G] And heartache number two was when you [C] came back again
-&blue: [D7] You came back but never meant to [G] stay
+{textcolour: blue}
+ [G] Heartache number one was when you [C] left me
+ [D7] I never knew that I'd could hurt this [G] way
+ [G] And heartache number two was when you [C] came back again
+ [D7] You came back but never meant to [G] stay
+{textcolour}
 
 Heartache number  three was when you [C] called me
 [D7] And said that you were coming back to [G] stay

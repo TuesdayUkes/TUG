@@ -3,10 +3,12 @@
 (also sung by Peter Gabriel  and in the 2004 Movie "Shall We Dance")
 
 {c: Instrumental verse:	}
-&blue: [G] The book of [C] love is [D] long and [G] boring
-&blue: [G] No one can [C] lift the [D] damn [G] thing
-&blue: [G] It's full of [C] charts and [D] facts and [G] figures
-&blue: [G] And in- [C] -structions for [D] dan- [G]- cing
+{textcolour: blue}
+ [G] The book of [C] love is [D] long and [G] boring
+ [G] No one can [C] lift the [D] damn [G] thing
+ [G] It's full of [C] charts and [D] facts and [G] figures
+ [G] And in- [C] -structions for [D] dan- [G]- cing
+{textcolour}
 
 {c: Verse 1:}
 [G] The book of [C] love is [D] long and [G] boring
@@ -33,10 +35,12 @@
 [Em]  You can [C] sing me [D] any-[G] -thing
 
 {c: Instrumental Chorus:}
-&blue: [G] And  I - [C] I- [D] I- [G] I-
-&blue: [G] I love it [C] when you [D] sing to [G] me
-&blue: [G] And you –[C] oo- [D] oo- [Em]  oo-
-&blue: [Em] You can [C] sing me [D] any- [G] thing.
+{textcolour: blue}
+ [G] And  I - [C] I- [D] I- [G] I-
+ [G] I love it [C] when you [D] sing to [G] me
+ [G] And you –[C] oo- [D] oo- [Em]  oo-
+ [Em] You can [C] sing me [D] any- [G] thing.
+{textcolour}
 
 {c: Verse 3:}
 [G] The book of [C] love is [D] long and [G] boring
@@ -56,6 +60,8 @@
 [Em] You ought to [C] give me [D] wedding [G] rings
 
 {c: Instrumental last line chorus:}
-&blue: [Em] You ought to [C] give me [D] wedding [G] rings
+{textcolour: blue}
+ [Em] You ought to [C] give me [D] wedding [G] rings
+{textcolour}
 
 

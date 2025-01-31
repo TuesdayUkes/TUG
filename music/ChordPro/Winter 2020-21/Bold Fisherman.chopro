@@ -2,14 +2,16 @@
 {st: Traditional}
 
 {c: Instrumental verse:}
-&blue: [A] There was a bold fisherman 
-&blue: Who [E7] sailed out from [A] Pimlico
-&blue: To slay the wild codfish 
-&blue: And the  [E7] bold macke-[A]-rel.
-&blue: [D] Two miles out from [A] Pimlico 
-&blue: The [E7] stormy winds be-[A]-gan to blow,
-&blue: And his [D] little boat went [A] wibble-wobble 
-&blue: And [E7] overboard went [A] he.
+{textcolour: blue}
+ [A] There was a bold fisherman 
+ Who [E7] sailed out from [A] Pimlico
+ To slay the wild codfish 
+ And the  [E7] bold macke-[A]-rel.
+ [D] Two miles out from [A] Pimlico 
+ The [E7] stormy winds be-[A]-gan to blow,
+ And his [D] little boat went [A] wibble-wobble 
+ And [E7] overboard went [A] he.
+{textcolour}
 
 {c: Verse 1:}
 [A] There was a bold fisherman 
@@ -60,9 +62,11 @@ And she [E7] went raving [A] mad.
 Oh, my [E7] bold fisher-[A]-man!
 
 {c: Instrumental Chorus:}
-&blue: [A] Singing, "Twinkie doodle dum, twinkie doodle dum,"
-&blue: 'Twas the [E7] highly interesting [A] song she sung.
-&blue: "Twinkie doodle dum, twinkie doodle dum,"
-&blue: Oh, my [E7] bold fisher-[A]-man!
+{textcolour: blue}
+ [A] Singing, "Twinkie doodle dum, twinkie doodle dum,"
+ 'Twas the [E7] highly interesting [A] song she sung.
+ "Twinkie doodle dum, twinkie doodle dum,"
+ Oh, my [E7] bold fisher-[A]-man!
+{textcolour}
 
 

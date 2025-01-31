@@ -2,10 +2,12 @@
 {st: Bill Staines  1991}
 
 {c: Instrumental Chorus:}
-&blue: [C] We are crossing the water our [F] whole [G] life [C] through
-&blue: We are [F] making a [C] passage that is [Dm] straight and [G] true
-&blue: Every [C] heart is a vessel; Every [F] dream [G] is a [C] light
-&blue: [F] Shining through the [C] darkness of the [G] blackest [C] night
+{textcolour: blue}
+ [C] We are crossing the water our [F] whole [G] life [C] through
+ We are [F] making a [C] passage that is [Dm] straight and [G] true
+ Every [C] heart is a vessel; Every [F] dream [G] is a [C] light
+ [F] Shining through the [C] darkness of the [G] blackest [C] night
+{textcolour}
 
 [C] We are crossing the water our [F] whole [G] life [C] through
 We are [F] making a [C] passage that is [Dm] straight and [G] true
@@ -44,10 +46,12 @@ Every [C] heart is a vessel; Every [F] dream [G] is a [C] light
 [F] Shining through the [C] darkness of the [G] blackest [C] night
 
 {c: Instrumental chorus:}
-&blue: [C] We are crossing the water our [F] whole [G] life [C] through
-&blue: We are [F] making a [C] passage that is [Dm] straight and [G] true
-&blue: Every [C] heart is a vessel; Every [F] dream [G] is a [C] light
-&blue: [F] Shining through the [C] darkness of the [G] blackest [C] night
+{textcolour: blue}
+ [C] We are crossing the water our [F] whole [G] life [C] through
+ We are [F] making a [C] passage that is [Dm] straight and [G] true
+ Every [C] heart is a vessel; Every [F] dream [G] is a [C] light
+ [F] Shining through the [C] darkness of the [G] blackest [C] night
+{textcolour}
 
 {c: Verse 3:}
 Oh there [G]  is no other journey
@@ -65,7 +69,9 @@ Every [C] heart is a vessel; Every [F] dream [G] is a [C] light
 [F] Shining through the [C] darkness of the [G] blackest [C] night
 
 {c: Instrumental last line chorus:}
-&blue: [F] Shining through the [C] darkness of the [G] blackest [C] night
+{textcolour: blue}
+ [F] Shining through the [C] darkness of the [G] blackest [C] night
+{textcolour}
 
 
 

@@ -1,3 +1,4 @@
+#! python
 from pathlib import Path
 from posixpath import basename, splitext
 import os

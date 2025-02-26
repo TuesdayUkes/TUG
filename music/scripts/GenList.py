@@ -1,3 +1,4 @@
+#! python
 import subprocess
 from first import first
 from pathlib import Path

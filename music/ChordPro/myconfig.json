@@ -363,7 +363,7 @@
       },
   },
 
-	"papersize" : "letter",
+	"papersize" : "a5",
 
 	"fontdir" : [ "C:\\WIndows\\Fonts"],
 

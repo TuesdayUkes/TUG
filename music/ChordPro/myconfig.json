@@ -317,6 +317,9 @@
 				"name" : "C5",
 				"frets" : [0, 0, 3, 3],
 			},
+			{ "name": "NC", "base": 1, "frets": [-1, -1, -1, -1] },
+			{ "name": "N.C.", "copy": "NC" },
+			{ "name": "\\", "copy": "NC" },
 		],
 
     // Layout definitions for PDF output.
@@ -325,8 +328,8 @@
 
    	"margintop"    :  70,
   	"marginbottom" :  0,
-	"marginleft"   :  20,
-	"marginright"  :  20,
+	"marginleft"   :  0,
+	"marginright"  :  60,
     	"headspace"    :  50,
     	"footspace"    :  10,
 	"head-first-only" : true,
@@ -363,7 +366,7 @@
       },
   },
 
-	"papersize" : "a5",
+	"papersize" : "a6",
 
 	"fontdir" : [ "C:\\WIndows\\Fonts"],
 

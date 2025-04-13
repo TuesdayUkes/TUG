@@ -328,8 +328,8 @@
 
    	"margintop"    :  70,
   	"marginbottom" :  0,
-	"marginleft"   :  0,
-	"marginright"  :  60,
+	"marginleft"   :  10,
+	"marginright"  :  40,
     	"headspace"    :  50,
     	"footspace"    :  10,
 	"head-first-only" : true,

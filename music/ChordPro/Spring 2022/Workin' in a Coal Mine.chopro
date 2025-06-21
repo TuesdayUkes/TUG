@@ -1,10 +1,10 @@
 {t: WORKIN' IN A COAL MINE}
 {st: Allen Toussaint}
 
-Intro: 
 {textcolour: blue}
- [F7] Working in a coal mine, going down, down, down
- [F7] Working in a coal mine, Whoops! about to slip down
+Intro:
+[F7] Working in a coal mine, going down, down, down
+[F7] Working in a coal mine, Whoops! about to slip down
 {textcolour}
 
 [F7] Working in a coal mine, going down down down
@@ -15,7 +15,7 @@ Intro:
 [C] Five o'clock in the [F] morning,
 [C] I'm already up and [F] gone
 [C] Lord, I'm so [F] tired,
-How [C] long can this [C7] go on?
+How [G] long can this [G7] go on?
 
 [F7] Working in a coal mine, going down, down, down
 [F7] Working in a coal mine, Whoops! about to slip down
@@ -25,25 +25,25 @@ How [C] long can this [C7] go on?
 [C] O'course I make a little [F] money,
 [C] Haulin' coal by the [F] ton
 [C] But when Saturday rolls a- [F] round,
-[C] I'm too tired for having [C7] fun
+[G] I'm too tired for having [G7] fun
 
 [F7] Working in a coal mine, going down, down, down
 [F7] Working in a coal mine, Whoops! about to slip down
 [F7] Working in a coal mine, going down, down, down
 [F7] Working in a coal mine, Whoops! about to slip down
 
+{textcolour: blue}
 Kazoo interlude:
-{textcolour: blue}
- [F7] Working in a coal mine, going down, down, down
- [F7] Working in a coal mine, Whoops! about to slip down
- [F7] Working in a coal mine, going down, down, down
- [F7] Working in a coal mine, Whoops! about to slip down
-{textcolour}
+[F7] Working in a coal mine, going down, down, down
+[F7] Working in a coal mine, Whoops! about to slip down
+[F7] Working in a coal mine, going down, down, down
+[F7] Working in a coal mine, Whoops! about to slip down
 
 [C] Five o'clock in the [F] morning,
 [C] I'm already up and [F] gone
 [C] Lord, I'm so [F] tired,
-How [C] long can this [C7] go on?
+How [G] long can this [G7] go on?
+{textcolour}
 
 [F7] Working in a coal mine, going down down down
 [F7] Working in a coal mine, Whoops! about to slip down
@@ -53,7 +53,7 @@ How [C] long can this [C7] go on?
 [C] O'course I make a little [F] money,
 [C] Haulin' coal by the [F] ton
 [C] But when Saturday rolls a- [F] round,
-[C] I'm too tired for having [C7] fun
+[G] I'm too tired for having [G7] fun
 
 [F7] Working in a coal mine, going down, down, down
 [F7] Working in a coal mine, Whoops! about to slip down
@@ -61,10 +61,12 @@ How [C] long can this [C7] go on?
 [F7] Working in a coal mine, Whoops! about to slip down
 
 [F7] (spoken over chord) Lord, I am so tired, how long must this go on?
-Kazoo: 
+
 {textcolour: blue}
- [F7] Working in a coal mine, going down, down, down
- [F7] Working in a coal mine, Whoops! about to slip down
- [F7] Working in a coal mine, going down, down, down
- [F7] Working in a coal mine, Whoops! about to slip down
+Kazoo:
+[F7] Working in a coal mine, going down, down, down
+[F7] Working in a coal mine, Whoops! about to slip down
+[F7] Working in a coal mine, going down, down, down
+[F7] Working in a coal mine, Whoops! about to slip down
+2 WORKIN' IN A COAL MINE
 {textcolour}

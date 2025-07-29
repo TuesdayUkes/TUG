@@ -398,17 +398,17 @@
 		"description" : "sans bold 16",
 	    },
  	"subtitle" : {
-		"description" : "sans 11",
+		"description" : "sans 12",
 	    },
 	    "text" : {
-		"description" : "sans 11",
+		"description" : "sans 12",
 	    },
 	    "chord" : {
-		"description" : "sans bold 11",
+		"description" : "sans bold 12",
 		"color" : "red",
 	    },
 	    "comment" : {
-		"description" : "sans 11",
+		"description" : "sans 12",
 	    },
 	},
     },

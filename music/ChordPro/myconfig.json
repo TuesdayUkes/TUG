@@ -333,7 +333,7 @@
    	"margintop"    :  70,
   	"marginbottom" :  0,
 	"marginleft"   :  10,
-	"marginright"  :  40,
+	"marginright"  :  80,
     	"headspace"    :  50,
     	"footspace"    :  10,
 	"head-first-only" : true,

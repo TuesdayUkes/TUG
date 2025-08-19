@@ -27,13 +27,15 @@ Chorus:
 [F]plastic Jesus rides with me
 [C]bobbin' his head down the inter-[F]state.
 
-*&blue: Instrumental verse
-&blue:[F]I don't care if it rains or freezes
-&blue:[Bb]long as I got my plastic Jesus
-&blue:[F]riding on the dashboard of my [C]car.
-&blue:[F]You can buy him phosphorescent,
-&blue:[Bb]glow in the dark, pink and pleasant
-&blue:[F]take him with you [C]when you travel [F]far.
+{textcolour: blue}
+* Instrumental verse
+[F]I don't care if it rains or freezes
+[Bb]long as I got my plastic Jesus
+[F]riding on the dashboard of my [C]car.
+[F]You can buy him phosphorescent,
+[Bb]glow in the dark, pink and pleasant
+[F]take him with you [C]when you travel [F]far.
+{textcolour}
 
 *Verse 3:
 [F]When I'm in a traffic jam

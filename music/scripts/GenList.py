@@ -135,9 +135,26 @@ Paul McCartney, Neil Diamond, Bob Dylan, John Denver, and Bob Marley turned into
 ukulele music. More-advanced ukulele music players can find finger-stretching
 chord changes and chord shapes applied to popular ukulele songs. </p>
 
+    <h2>Searchable Table</h2>
+    <input type="text" id="searchInput" placeholder="Search table...">
+
 """
 
 footer = """
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const table = document.getElementById('dataTable');
+        const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+        searchInput.addEventListener('keyup', function() {
+            const filter = searchInput.value.toLowerCase();
+            for (let i = 0; i < rows.length; i++) {
+                let rowText = rows[i].textContent.toLowerCase();
+                rows[i].style.display = rowText.includes(filter) ? '' : 'none';
+            }
+        });
+    </script>
+
 <p>Chord progressions and strum patterns listed are the members' interpretations
 of the original recordings, and are presented for educational purposes. Except
 as noted (a few of our members are songwriters), we make no copyright claim on
@@ -178,7 +195,8 @@ with open(outputFile, "w") as htmlOutput:
   htmlOutput.writelines(header)
   if intro:
     htmlOutput.writelines(introduction)
-  htmlOutput.write("<table>")
+    htmlOutput.write('<table id="dataTable">')
+    htmlOutput.write("<tbody>\n")
   for f in sortedTitles:
     try:
       htmlOutput.write("<tr>")
@@ -202,6 +220,7 @@ with open(outputFile, "w") as htmlOutput:
       print(f"failed to write {f[1:]}")
 
   #close the table etc.
+  htmlOutput.write("</tbody>")
   htmlOutput.write("</table>")
   if intro:
     htmlOutput.write(footer)

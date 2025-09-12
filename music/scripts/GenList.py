@@ -196,11 +196,17 @@ with open(outputFile, "w") as htmlOutput:
   if intro:
     htmlOutput.writelines(introduction)
     htmlOutput.write('<table id="dataTable">')
+    htmlOutput.write("<thead>\n")
+    htmlOutput.write("<tr><th>#</th><th>Song Title</th><th>Downloads</th></tr>\n")
+    htmlOutput.write("</thead>\n")
     htmlOutput.write("<tbody>\n")
+  row_number = 1
   for f in sortedTitles:
     try:
       htmlOutput.write("<tr>")
-      # first table column contains the song title (f[0])
+      # first table column contains the row number
+      htmlOutput.write(f"  <td>{row_number}</td>")
+      # second table column contains the song title (f[0])
       htmlOutput.write(f"  <td>{f[0]}</td>\n<td>")
       # the remainder of f's elements are files that match the title in f[0]
       for i in f[1:]:
@@ -216,6 +222,7 @@ with open(outputFile, "w") as htmlOutput:
 
       # close each table row (and the table data containing file links)
       htmlOutput.write("</td></tr>\n")
+      row_number += 1
     except:
       print(f"failed to write {f[1:]}")
 

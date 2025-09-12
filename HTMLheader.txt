@@ -437,22 +437,6 @@ table, th, td {
 	border-style: dotted;
   border-collapse: collapse;
 }
-      table {
-        counter-reset: rowNumber;
-      }
-
-      table tr::before {
-        display: table-cell;
-        counter-increment: rowNumber;
-        content: counter(rowNumber);
-        font-family: monospace;
-        border: 1px black;
-        border-style: dotted;
-        border-collapse: collapse;
-        padding-right: 0.3em;
-        vertical-align: middle;
-        text-align: right;
-      }
 
 </style>
 	</head>

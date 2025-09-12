@@ -78,6 +78,18 @@ def createPDFs():
 # archive table. This is a way to conceal older versions of a song, without
 # breaking old links to the older versions (the files still exist, but there
 # will be no HTML links to them in the new archive table).
+
+# A file with the extension ".easy" will mark other files within the same
+# folder with the same name as "easy" songs for filtering purposes.
+def getEasySongs(allFiles):
+  easySongs = set()
+  for f in allFiles:
+    if ext(f).lower() == ".easy":
+      # Add full path name without extension as lowercase string
+      basename = str(os.path.splitext(f)[0]).lower()
+      easySongs.add(basename)
+  return easySongs
+
 def removeHiddenFiles(allFiles):
   hideFiles = []
   for f in allFiles:
@@ -137,22 +149,35 @@ chord changes and chord shapes applied to popular ukulele songs. </p>
 
     <h2>Searchable Table</h2>
     <input type="text" id="searchInput" placeholder="Search table...">
+    <br><br>
+    <label><input type="checkbox" id="easyFilter"> Show only easy songs</label>
 
 """
 
 footer = """
     <script>
         const searchInput = document.getElementById('searchInput');
+        const easyFilter = document.getElementById('easyFilter');
         const table = document.getElementById('dataTable');
         const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
 
-        searchInput.addEventListener('keyup', function() {
-            const filter = searchInput.value.toLowerCase();
+        function filterRows() {
+            const searchFilter = searchInput.value.toLowerCase();
+            const easyOnly = easyFilter.checked;
+            
             for (let i = 0; i < rows.length; i++) {
                 let rowText = rows[i].textContent.toLowerCase();
-                rows[i].style.display = rowText.includes(filter) ? '' : 'none';
+                let isEasy = rows[i].classList.contains('easy-song');
+                
+                let showBySearch = rowText.includes(searchFilter);
+                let showByEasy = !easyOnly || isEasy;
+                
+                rows[i].style.display = (showBySearch && showByEasy) ? '' : 'none';
             }
-        });
+        }
+
+        searchInput.addEventListener('keyup', filterRows);
+        easyFilter.addEventListener('change', filterRows);
     </script>
 
 <p>Chord progressions and strum patterns listed are the members' interpretations
@@ -164,13 +189,14 @@ any song.</p>
 if genPDF:
   createPDFs()
 
-extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt", ".hide"]
+extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt", ".hide", ".easy"]
 allFiles = []
 for p in Path(musicFolder).rglob('*'):
   if ext(p) in (extension.lower() for extension in extensions):
     allFiles.append(p.as_posix())
 
 visibleFiles = removeHiddenFiles(allFiles)
+easySongs = getEasySongs(allFiles)
 
 # return the first file that matches basename (there should be only zero or one
 # matches). Return None if no matches found.
@@ -203,14 +229,21 @@ with open(outputFile, "w") as htmlOutput:
   row_number = 1
   for f in sortedTitles:
     try:
-      htmlOutput.write("<tr>")
+      # Check if this song is marked as easy
+      isEasy = any(str(os.path.splitext(file)[0]).lower() in easySongs for file in f[1:])
+      easyClass = ' class="easy-song"' if isEasy else ''
+      
+      htmlOutput.write(f"<tr{easyClass}>")
       # first table column contains the row number
       htmlOutput.write(f"  <td>{row_number}</td>")
       # second table column contains the song title (f[0])
       htmlOutput.write(f"  <td>{f[0]}</td>\n<td>")
       # the remainder of f's elements are files that match the title in f[0]
       for i in f[1:]:
-        if ext(i) == ".urltxt":
+        # Skip .easy marker files - they shouldn't appear as downloads
+        if ext(i) == ".easy":
+          continue
+        elif ext(i) == ".urltxt":
           with open(i, "r") as urlFile:
             label = urlFile.readline().strip()
             address = urlFile.readline().strip()

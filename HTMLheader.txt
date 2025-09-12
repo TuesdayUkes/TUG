@@ -19,423 +19,278 @@
 <link rel="alternate" type="text/calendar" title="Tuesday Ukes &raquo; iCal Feed" href="index.php/events/index.html@ical=1" >
 
 <!--  This next section needed for page formatting  -->
-	<link rel='stylesheet' id='tribe-common-skeleton-style-css'  href='wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css@ver=4.12.10.css' media='all' >
-<link rel='stylesheet' id='tribe-tooltip-css'  href='wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css@ver=4.12.10.css' media='all' >
-<link rel='stylesheet' id='wp-block-library-css'  href='wp-content/plugins/gutenberg/build/block-library/style.css@ver=1601574891.css' media='all' >
-<link rel='stylesheet' id='wp-block-library-theme-css'  href='wp-content/plugins/gutenberg/build/block-library/theme.css@ver=1601574891.css' media='all' >
-<link rel='stylesheet' id='bex-css'  href='wp-content/plugins/blighty-explorer/style.css@ver=2.2.3.css' media='all' >
-<style id='global-styles-inline-css'>
-:root{--wp--preset--color--dark-gray:#1a1a1a;--wp--preset--color--medium-gray:#686868;--wp--preset--color--light-gray:#e5e5e5;--wp--preset--color--white:#fff;--wp--preset--color--blue-gray:#4d545c;--wp--preset--color--bright-blue:#007acc;--wp--preset--color--light-blue:#9adffd;--wp--preset--color--dark-brown:#402b30;--wp--preset--color--medium-brown:#774e24;--wp--preset--color--dark-red:#640c1f;--wp--preset--color--bright-red:#ff675f;--wp--preset--color--yellow:#ffef8e;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small:13;--wp--preset--font-size--normal:16;--wp--preset--font-size--medium:20;--wp--preset--font-size--large:36;--wp--preset--font-size--huge:42;}
-</style>
 
+<style id="custom-background-css">
 
+/* Modern Ukulele Song Archive Design */
 
+/* Clean, modern color palette */
+:root {
+  --primary-color: #2c5282;        /* Deep blue */
+  --secondary-color: #4a90a4;      /* Teal */
+  --accent-color: #f6ad55;         /* Warm orange (ukulele wood) */
+  --background: #f7fafc;           /* Light gray-blue */
+  --surface: #ffffff;              /* Pure white */
+  --text-primary: #2d3748;         /* Dark gray */
+  --text-secondary: #4a5568;       /* Medium gray */
+  --border-light: #e2e8f0;        /* Light border */
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --radius: 8px;
+}
 
+/* Modern body styling */
+body.custom-background { 
+  background: linear-gradient(135deg, var(--background) 0%, #edf2f7 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
 
-<link rel='stylesheet' id='twentysixteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext&#038;display=fallback' media='all' >
-<link rel='stylesheet' id='genericons-css'  href='wp-content/themes/twentysixteen/genericons/genericons.css@ver=3.4.1.css' media='all' >
-<link rel='stylesheet' id='twentysixteen-style-css'  href='wp-content/themes/twentysixteen/style.css@ver=20230627.css' media='all' >
-<style id='twentysixteen-style-inline-css'>
-	/* Color Scheme */
+/* Container with max-width for better readability */
+.site-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
-	/* Background Color */
-	body {
-		background-color: #3b3721;
-	}
+/* Modern heading styles */
+h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
-	/* Page Background Color */
-	.site {
-		background-color: #ffef8e;
-	}
+h2 {
+  color: var(--secondary-color);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
 
-	mark,
-	ins,
-	button,
-	button[disabled]:hover,
-	button[disabled]:focus,
-	input[type="button"],
-	input[type="button"][disabled]:hover,
-	input[type="button"][disabled]:focus,
-	input[type="reset"],
-	input[type="reset"][disabled]:hover,
-	input[type="reset"][disabled]:focus,
-	input[type="submit"],
-	input[type="submit"][disabled]:hover,
-	input[type="submit"][disabled]:focus,
-	.menu-toggle.toggled-on,
-	.menu-toggle.toggled-on:hover,
-	.menu-toggle.toggled-on:focus,
-	.pagination .prev,
-	.pagination .next,
-	.pagination .prev:hover,
-	.pagination .prev:focus,
-	.pagination .next:hover,
-	.pagination .next:focus,
-	.pagination .nav-links:before,
-	.pagination .nav-links:after,
-	.widget_calendar tbody a,
-	.widget_calendar tbody a:hover,
-	.widget_calendar tbody a:focus,
-	.page-links a,
-	.page-links a:hover,
-	.page-links a:focus {
-		color: #ffef8e;
-	}
+/* Search controls container */
+.search-controls {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin: 2rem 0;
+  border: 1px solid var(--border-light);
+}
 
-	/* Link Color */
-	.menu-toggle:hover,
-	.menu-toggle:focus,
-	a,
-	.main-navigation a:hover,
-	.main-navigation a:focus,
-	.dropdown-toggle:hover,
-	.dropdown-toggle:focus,
-	.social-navigation a:hover:before,
-	.social-navigation a:focus:before,
-	.post-navigation a:hover .post-title,
-	.post-navigation a:focus .post-title,
-	.tagcloud a:hover,
-	.tagcloud a:focus,
-	.site-branding .site-title a:hover,
-	.site-branding .site-title a:focus,
-	.entry-title a:hover,
-	.entry-title a:focus,
-	.entry-footer a:hover,
-	.entry-footer a:focus,
-	.comment-metadata a:hover,
-	.comment-metadata a:focus,
-	.pingback .comment-edit-link:hover,
-	.pingback .comment-edit-link:focus,
-	.comment-reply-link,
-	.comment-reply-link:hover,
-	.comment-reply-link:focus,
-	.required,
-	.site-info a:hover,
-	.site-info a:focus {
-		color: #774e24;
-	}
+/* Modern search input */
+#searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+  background: white;
+}
 
-	mark,
-	ins,
-	button:hover,
-	button:focus,
-	input[type="button"]:hover,
-	input[type="button"]:focus,
-	input[type="reset"]:hover,
-	input[type="reset"]:focus,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
-	.pagination .prev:hover,
-	.pagination .prev:focus,
-	.pagination .next:hover,
-	.pagination .next:focus,
-	.widget_calendar tbody a,
-	.page-links a:hover,
-	.page-links a:focus {
-		background-color: #774e24;
-	}
+#searchInput:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+}
 
-	input[type="date"]:focus,
-	input[type="time"]:focus,
-	input[type="datetime-local"]:focus,
-	input[type="week"]:focus,
-	input[type="month"]:focus,
-	input[type="text"]:focus,
-	input[type="email"]:focus,
-	input[type="url"]:focus,
-	input[type="password"]:focus,
-	input[type="search"]:focus,
-	input[type="tel"]:focus,
-	input[type="number"]:focus,
-	textarea:focus,
-	.tagcloud a:hover,
-	.tagcloud a:focus,
-	.menu-toggle:hover,
-	.menu-toggle:focus {
-		border-color: #774e24;
-	}
+/* Modern checkbox styling */
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
 
-	/* Main Text Color */
-	body,
-	blockquote cite,
-	blockquote small,
-	.main-navigation a,
-	.menu-toggle,
-	.dropdown-toggle,
-	.social-navigation a,
-	.post-navigation a,
-	.pagination a:hover,
-	.pagination a:focus,
-	.widget-title a,
-	.site-branding .site-title a,
-	.entry-title a,
-	.page-links > .page-links-title,
-	.comment-author,
-	.comment-reply-title small a:hover,
-	.comment-reply-title small a:focus {
-		color: #3b3721;
-	}
+#easyFilter {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent-color);
+  cursor: pointer;
+}
 
-	blockquote,
-	.menu-toggle.toggled-on,
-	.menu-toggle.toggled-on:hover,
-	.menu-toggle.toggled-on:focus,
-	.post-navigation,
-	.post-navigation div + div,
-	.pagination,
-	.widget,
-	.page-header,
-	.page-links a,
-	.comments-title,
-	.comment-reply-title {
-		border-color: #3b3721;
-	}
+/* Modern table styling */
+#dataTable {
+  width: 100%;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-light);
+  margin: 2rem 0;
+}
 
-	button,
-	button[disabled]:hover,
-	button[disabled]:focus,
-	input[type="button"],
-	input[type="button"][disabled]:hover,
-	input[type="button"][disabled]:focus,
-	input[type="reset"],
-	input[type="reset"][disabled]:hover,
-	input[type="reset"][disabled]:focus,
-	input[type="submit"],
-	input[type="submit"][disabled]:hover,
-	input[type="submit"][disabled]:focus,
-	.menu-toggle.toggled-on,
-	.menu-toggle.toggled-on:hover,
-	.menu-toggle.toggled-on:focus,
-	.pagination:before,
-	.pagination:after,
-	.pagination .prev,
-	.pagination .next,
-	.page-links a {
-		background-color: #3b3721;
-	}
+/* Table header */
+#dataTable thead {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+}
 
-	/* Secondary Text Color */
+#dataTable th {
+  padding: 1rem;
+  font-weight: 600;
+  text-align: left;
+  font-size: 16px;
+  border: none;
+}
 
-	/**
-	 * IE8 and earlier will drop any block with CSS3 selectors.
-	 * Do not combine these styles with the next block.
-	 */
-	body:not(.search-results) .entry-summary {
-		color: #5b4d3e;
-	}
+/* Table rows */
+#dataTable tbody tr {
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color 0.2s ease;
+}
 
-	blockquote,
-	.post-password-form label,
-	a:hover,
-	a:focus,
-	a:active,
-	.post-navigation .meta-nav,
-	.image-navigation,
-	.comment-navigation,
-	.widget_recent_entries .post-date,
-	.widget_rss .rss-date,
-	.widget_rss cite,
-	.site-description,
-	.author-bio,
-	.entry-footer,
-	.entry-footer a,
-	.sticky-post,
-	.taxonomy-description,
-	.entry-caption,
-	.comment-metadata,
-	.pingback .edit-link,
-	.comment-metadata a,
-	.pingback .comment-edit-link,
-	.comment-form label,
-	.comment-notes,
-	.comment-awaiting-moderation,
-	.logged-in-as,
-	.form-allowed-tags,
-	.site-info,
-	.site-info a,
-	.wp-caption .wp-caption-text,
-	.gallery-caption,
-	.widecolumn label,
-	.widecolumn .mu_register label {
-		color: #5b4d3e;
-	}
+#dataTable tbody tr:hover {
+  background-color: #f8fafc;
+}
 
-	.widget_calendar tbody a:hover,
-	.widget_calendar tbody a:focus {
-		background-color: #5b4d3e;
-	}
+/* Easy song highlighting */
+#dataTable tbody tr.easy-song {
+  background-color: rgba(246, 173, 85, 0.1);
+  border-left: 4px solid var(--accent-color);
+}
 
-	/* Border Color */
-	fieldset,
-	pre,
-	abbr,
-	acronym,
-	table,
-	th,
-	td,
-	input[type="date"],
-	input[type="time"],
-	input[type="datetime-local"],
-	input[type="week"],
-	input[type="month"],
-	input[type="text"],
-	input[type="email"],
-	input[type="url"],
-	input[type="password"],
-	input[type="search"],
-	input[type="tel"],
-	input[type="number"],
-	textarea,
-	.main-navigation li,
-	.main-navigation .primary-menu,
-	.menu-toggle,
-	.dropdown-toggle:after,
-	.social-navigation a,
-	.image-navigation,
-	.comment-navigation,
-	.tagcloud a,
-	.entry-content,
-	.entry-summary,
-	.page-links a,
-	.page-links > span,
-	.comment-list article,
-	.comment-list .pingback,
-	.comment-list .trackback,
-	.comment-reply-link,
-	.no-comments,
-	.widecolumn .mu_register .mu_alert {
-		border-color: #3b3721; /* Fallback for IE7 and IE8 */
-		border-color: rgba( 59, 55, 33, 0.2);
-	}
+#dataTable tbody tr.easy-song:hover {
+  background-color: rgba(246, 173, 85, 0.15);
+}
 
-	hr,
-	code {
-		background-color: #3b3721; /* Fallback for IE7 and IE8 */
-		background-color: rgba( 59, 55, 33, 0.2);
-	}
+/* Table cells */
+#dataTable td {
+  padding: 1rem;
+  border: none;
+  vertical-align: top;
+}
 
-	@media screen and (min-width: 56.875em) {
-		.main-navigation li:hover > a,
-		.main-navigation li.focus > a {
-			color: #774e24;
-		}
+/* Row number styling */
+#dataTable td:first-child {
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-family: 'Monaco', 'Consolas', monospace;
+  width: 80px;
+  text-align: center;
+  background: rgba(44, 82, 130, 0.05);
+}
 
-		.main-navigation ul ul,
-		.main-navigation ul ul li {
-			border-color: rgba( 59, 55, 33, 0.2);
-		}
+/* Song title styling */
+#dataTable td:nth-child(2) {
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 250px;
+}
 
-		.main-navigation ul ul:before {
-			border-top-color: rgba( 59, 55, 33, 0.2);
-			border-bottom-color: rgba( 59, 55, 33, 0.2);
-		}
+/* Download links styling */
+#dataTable td:last-child {
+  min-width: 200px;
+}
 
-		.main-navigation ul ul li {
-			background-color: #ffef8e;
-		}
+#dataTable a {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 2px 4px 2px 0;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
 
-		.main-navigation ul ul:after {
-			border-top-color: #ffef8e;
-			border-bottom-color: #ffef8e;
-		}
-	}
+#dataTable a:hover {
+  background: var(--secondary-color);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
 
+/* Special styling for PDF links */
+#dataTable a[href$=".pdf"] {
+  background: #dc2626;
+}
 
-		/* Custom Page Background Color */
-		.site {
-			background-color: #ddc38b;
-		}
+#dataTable a[href$=".pdf"]:hover {
+  background: #b91c1c;
+}
 
-		mark,
-		ins,
-		button,
-		button[disabled]:hover,
-		button[disabled]:focus,
-		input[type="button"],
-		input[type="button"][disabled]:hover,
-		input[type="button"][disabled]:focus,
-		input[type="reset"],
-		input[type="reset"][disabled]:hover,
-		input[type="reset"][disabled]:focus,
-		input[type="submit"],
-		input[type="submit"][disabled]:hover,
-		input[type="submit"][disabled]:focus,
-		.menu-toggle.toggled-on,
-		.menu-toggle.toggled-on:hover,
-		.menu-toggle.toggled-on:focus,
-		.pagination .prev,
-		.pagination .next,
-		.pagination .prev:hover,
-		.pagination .prev:focus,
-		.pagination .next:hover,
-		.pagination .next:focus,
-		.pagination .nav-links:before,
-		.pagination .nav-links:after,
-		.widget_calendar tbody a,
-		.widget_calendar tbody a:hover,
-		.widget_calendar tbody a:focus,
-		.page-links a,
-		.page-links a:hover,
-		.page-links a:focus {
-			color: #ddc38b;
-		}
+/* External links (like Doctor Uke) */
+#dataTable a[target="_blank"]:not([download]) {
+  background: var(--accent-color);
+  color: var(--text-primary);
+}
 
-		@media screen and (min-width: 56.875em) {
-			.main-navigation ul ul li {
-				background-color: #ddc38b;
-			}
+#dataTable a[target="_blank"]:not([download]):hover {
+  background: #ed8936;
+}
 
-			.main-navigation ul ul:after {
-				border-top-color: #ddc38b;
-				border-bottom-color: #ddc38b;
-			}
-		}
+/* Responsive design */
+@media (max-width: 768px) {
+  .site-inner {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .search-controls {
+    padding: 1.5rem;
+  }
+  
+  #searchInput {
+    max-width: 100%;
+  }
+  
+  #dataTable {
+    font-size: 14px;
+  }
+  
+  #dataTable td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  #dataTable td:first-child {
+    width: 60px;
+  }
+  
+  #dataTable td:nth-child(2) {
+    min-width: 200px;
+  }
+}
 
-</style>
+/* Loading state for when table is filtering */
+.table-loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
 
+/* Easy song badge */
+.easy-badge {
+  display: inline-block;
+  background: var(--accent-color);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 8px;
+}
 
-
-
-
-<link rel='stylesheet' id='twentysixteen-block-style-css'  href='wp-content/themes/twentysixteen/css/blocks.css@ver=20230627.css' media='all' >
-<!--[if lt IE 10]>
-<link rel='stylesheet' id='twentysixteen-ie-css'  href='http://tuesdayukes.org/wp-content/themes/twentysixteen/css/ie.css?ver=20170530' media='all' >
-<![endif]-->
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='twentysixteen-ie8-css'  href='http://tuesdayukes.org/wp-content/themes/twentysixteen/css/ie8.css?ver=20170530' media='all' >
-<![endif]-->
-<!--[if lt IE 8]>
-<link rel='stylesheet' id='twentysixteen-ie7-css'  href='http://tuesdayukes.org/wp-content/themes/twentysixteen/css/ie7.css?ver=20170530' media='all' >
-<![endif]-->
-<link rel='stylesheet' id='tablepress-default-css'  href='wp-content/tablepress-combined.min.css@ver=13.css' media='all' >
-<script src='wp-includes/js/jquery/jquery.js@ver=1.12.4-wp'></script>
-<script src='wp-includes/js/jquery/jquery-migrate.min.js@ver=1.4.1'></script>
-<script src='wp-includes/js/jquery/jquery.form.js@ver=5.4.10'></script>
-<!--[if lt IE 9]>
-<script src='http://tuesdayukes.org/wp-content/themes/twentysixteen/js/html5.js?ver=3.7.3'></script>
-<![endif]-->
-<link rel='https://api.w.org/' href='index.php/wp-json/index.html' >
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" >
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" >
-<meta name="generator" content="WordPress 5.4.10" >
-<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="http://tuesdayukes.org"><link rel="https://theeventscalendar.com/" href="index.php/wp-json/tribe/events/v1/index.html" >		<style id="twentysixteen-header-css">
-		.site-branding {
-			margin: 0 auto 0 0;
-		}
-
-		.site-branding .site-title,
-		.site-description {
-			clip: rect(1px, 1px, 1px, 1px);
-			position: absolute;
-		}
-		</style>
-		<style id="custom-background-css">
-body.custom-background { background-color: #ededb6; }
-table, th, td {
-  font-size: large;
-  border: 1px solid black;
-	border-style: dotted;
-  border-collapse: collapse;
+/* Search stats */
+.search-stats {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(44, 82, 130, 0.05);
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-align: center;
 }
 
 </style>

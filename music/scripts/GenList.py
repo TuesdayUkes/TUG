@@ -131,7 +131,7 @@ with open("HTMLheader.txt", "r") as headerText:
   header = headerText.readlines()
 
 introduction = """
-<h1>Tuesday Ukes' archive of ukulele songs and chords</h1>
+<h1>Tuesday Ukes' Archive of Ukulele Songs and Chords</h1>
 
 <p>Whether you're a beginner ukulele player looking for easy songs or a longtime
 player searching for fun songs, this is the resource for you. Here you will find
@@ -140,51 +140,83 @@ ukulele chords and chord diagrams for uke players of all levels.</p>
 <p>This collection of the best ukulele songs has been built over time by members
 of Austin's Tuesday Ukulele Group. </p>
 
-<h2>Lots of popular songs</h2>
+<h2>Lots of Popular Songs</h2>
 <p>There's a big range: Easy ukulele songs with simple chords for beginner
-ukulele players with just 3 chords or 4 chords. You will find great songs  by
+ukulele players with just 3 chords or 4 chords. You will find great songs by
 Paul McCartney, Neil Diamond, Bob Dylan, John Denver, and Bob Marley turned into
 ukulele music. More-advanced ukulele music players can find finger-stretching
 chord changes and chord shapes applied to popular ukulele songs. </p>
 
-    <h2>Searchable Table</h2>
-    <input type="text" id="searchInput" placeholder="Search table...">
-    <br>
-    <label style="font-size: 18px; font-weight: bold;"><input type="checkbox" id="easyFilter"> Show only easy songs</label>
-    <br><br>
-
+<div class="search-controls">
+    <h2>Search & Filter</h2>
+    <input type="text" id="searchInput" placeholder="🔍 Search songs by title, artist, or keyword...">
+    <div class="filter-checkbox">
+        <input type="checkbox" id="easyFilter">
+        <label for="easyFilter">🎵 Show only easy songs (perfect for beginners!)</label>
+    </div>
+    <div id="searchStats" class="search-stats" style="display: none;">
+        Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> songs
+    </div>
+</div>
 """
 
 footer = """
-    <script>
-        const searchInput = document.getElementById('searchInput');
-        const easyFilter = document.getElementById('easyFilter');
-        const table = document.getElementById('dataTable');
-        const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const easyFilter = document.getElementById('easyFilter');
+    const table = document.getElementById('dataTable');
+    const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+    const searchStats = document.getElementById('searchStats');
+    const visibleCountSpan = document.getElementById('visibleCount');
+    const totalCountSpan = document.getElementById('totalCount');
 
-        function filterRows() {
-            const searchFilter = searchInput.value.toLowerCase();
-            const easyOnly = easyFilter.checked;
-            
+    // Set total count
+    totalCountSpan.textContent = rows.length;
+
+    function updateSearchStats(visibleCount) {
+        visibleCountSpan.textContent = visibleCount;
+        searchStats.style.display = (searchInput.value || easyFilter.checked) ? 'block' : 'none';
+    }
+
+    function filterRows() {
+        const searchFilter = searchInput.value.toLowerCase();
+        const easyOnly = easyFilter.checked;
+        let visibleCount = 0;
+
+        // Add loading effect
+        table.classList.add('table-loading');
+
+        setTimeout(() => {
             for (let i = 0; i < rows.length; i++) {
                 let rowText = rows[i].textContent.toLowerCase();
                 let isEasy = rows[i].classList.contains('easy-song');
-                
-                let showBySearch = rowText.includes(searchFilter);
+
+                let showBySearch = !searchFilter || rowText.includes(searchFilter);
                 let showByEasy = !easyOnly || isEasy;
-                
-                rows[i].style.display = (showBySearch && showByEasy) ? '' : 'none';
+
+                const shouldShow = showBySearch && showByEasy;
+                rows[i].style.display = shouldShow ? '' : 'none';
+
+                if (shouldShow) visibleCount++;
             }
-        }
 
-        searchInput.addEventListener('keyup', filterRows);
-        easyFilter.addEventListener('change', filterRows);
-    </script>
+            updateSearchStats(visibleCount);
+            table.classList.remove('table-loading');
+        }, 50);
+    }
 
-<p>Chord progressions and strum patterns listed are the members' interpretations
-of the original recordings, and are presented for educational purposes. Except
-as noted (a few of our members are songwriters), we make no copyright claim on
-any song.</p>
+    // Enhanced input with debouncing
+    let searchTimeout;
+    searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(filterRows, 300);
+    });
+
+    easyFilter.addEventListener('change', filterRows);
+
+    // Initialize
+    updateSearchStats(rows.length);
+</script>
 """
 
 if genPDF:
@@ -218,7 +250,7 @@ for p in visibleFiles:
 
 downloadExtensions = [".cho", ".chopro"]
 sortedTitles = sorted(allTitles, key=(lambda e: dictCompare(e[0]).casefold()))
-with open(outputFile, "w") as htmlOutput:
+with open(outputFile, "w", encoding='utf-8') as htmlOutput:
   htmlOutput.writelines(header)
   if intro:
     htmlOutput.writelines(introduction)
@@ -233,7 +265,7 @@ with open(outputFile, "w") as htmlOutput:
       # Check if this song is marked as easy
       isEasy = any(str(os.path.splitext(file)[0]).lower() in easySongs for file in f[1:])
       easyClass = ' class="easy-song"' if isEasy else ''
-      
+
       htmlOutput.write(f"<tr{easyClass}>")
       # first table column contains the row number
       htmlOutput.write(f"  <td>{row_number}</td>")

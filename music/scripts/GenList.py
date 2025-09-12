@@ -149,7 +149,7 @@ chord changes and chord shapes applied to popular ukulele songs. </p>
 
 <div class="search-controls">
     <h2>Search & Filter</h2>
-    <input type="text" id="searchInput" placeholder="🔍 Search songs by title, artist, or keyword...">
+    <input type="text" id="searchInput" placeholder="🔍 Search songs by title...">
     <div class="filter-checkbox">
         <input type="checkbox" id="easyFilter">
         <label for="easyFilter">🎵 Show only easy songs (perfect for beginners!)</label>

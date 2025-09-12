@@ -149,8 +149,9 @@ chord changes and chord shapes applied to popular ukulele songs. </p>
 
     <h2>Searchable Table</h2>
     <input type="text" id="searchInput" placeholder="Search table...">
+    <br>
+    <label style="font-size: 18px; font-weight: bold;"><input type="checkbox" id="easyFilter"> Show only easy songs</label>
     <br><br>
-    <label><input type="checkbox" id="easyFilter"> Show only easy songs</label>
 
 """
 

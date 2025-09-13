@@ -162,7 +162,7 @@ searchControls = """
 </div>
 """
 
-footer = """
+searchScript = """
 <script>
     const searchInput = document.getElementById('searchInput');
     const easyFilter = document.getElementById('easyFilter');
@@ -298,8 +298,7 @@ with open(outputFile, "w", encoding='utf-8') as htmlOutput:
   #close the table etc.
   htmlOutput.write("</tbody>")
   htmlOutput.write("</table>")
-  if intro:
-    htmlOutput.write(footer)
+  htmlOutput.write(searchScript)
   htmlOutput.write("</div>\n")
   htmlOutput.write("</div>\n")
   htmlOutput.write("</body>\n")

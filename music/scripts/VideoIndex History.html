@@ -1,14 +1,178 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js">
+<html lang="en-US">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>Tuesday Ukes &#8211; Ukes on Tuesdays in Austin, Texas</title>
-<link rel='dns-prefetch' href='http://fonts.googleapis.com/' >
-<link rel='dns-prefetch' href='http://s.w.org/' >
-<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' >
+    <title>Tuesday Ukes Video Index History</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="History of Tuesday Ukes video performances">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-color: #2c5282;        /* Deep blue */
+            --secondary-color: #4a90a4;      /* Teal */
+            --accent-color: #f6ad55;         /* Warm orange (ukulele wood) */
+            --background: #f7fafc;           /* Light gray-blue */
+            --surface: #ffffff;              /* Pure white */
+            --text-primary: #2d3748;         /* Dark gray */
+            --text-secondary: #4a5568;       /* Medium gray */
+            --border-light: #e2e8f0;         /* Light border */
+            --link-color: #2c5282;           /* Deep blue */
+            --link-hover: #4a90a4;           /* Teal */
+            --card-bg: var(--surface);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--background) 0%, #edf2f7 100%);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 3rem 0;
+            background: var(--surface);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border-light);
+            font-size: 1rem;
+        }
+
+        tr:hover {
+            background-color: var(--background);
+        }
+
+        /* Links */
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        /* Performance Timestamps */
+        td:first-child {
+            width: 100px;
+        }
+
+        /* Performer Names */
+        td:nth-child(2) {
+            width: 150px;
+            font-weight: 500;
+        }
+
+        /* Song Titles */
+        td:last-child {
+            font-size: 1rem;
+        }
+
+        /* Search Styles */
+        .search-container {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin: 1rem 0 3rem 0;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            font-size: 1.25rem;
+            border: 2px solid var(--border-light);
+            border-radius: var(--radius);
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+        }
+
+        .search-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-secondary);
+        }
+
+        .regex-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .regex-toggle input[type="checkbox"] {
+            width: 1rem;
+            height: 1rem;
+            cursor: pointer;
+        }
+
+        .search-info {
+            font-size: 0.9rem;
+        }
+
+        mark {
+            background-color: var(--accent-color);
+            padding: 0.1em 0.2em;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .search-options {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+        }
+    </style>
 <link rel="alternate" type="application/rss+xml" title="Tuesday Ukes &raquo; Feed" href="index.php/feed/index.html" >
 <link rel="alternate" type="application/rss+xml" title="Tuesday Ukes &raquo; Comments Feed" href="index.php/comments/feed/index.html" >
 <link rel="alternate" type="text/calendar" title="Tuesday Ukes &raquo; iCal Feed" href="index.php/events/index.html@ical=1" >
@@ -435,9 +599,236 @@ table, th, td {
 </style>
 	</head>
 
-<body class="home blog custom-background wp-embed-responsive tribe-no-js tribe-theme-twentysixteen group-blog hfeed">
-<div id="page" class="site">
-	<div class="site-inner"></div>
+<body>
+<div class="container">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for songs, performers, or dates..." class="search-input">
+        <div class="search-options">
+            <label class="regex-toggle">
+                <input type="checkbox" id="regexMode">
+                Regular Expression Mode
+            </label>
+            <div class="search-info">Found: <span id="matchCount">0</span> matches</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const regexMode = document.getElementById('regexMode');
+            const matchCount = document.getElementById('matchCount');
+            let timeoutId;
+
+            function escapeRegExp(string) {
+                return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            }
+
+            function isNumeric(str) {
+                return /^\d+$/.test(str);
+            }
+
+            function smartMatch(text, searchTerm, useRegex) {
+                if (useRegex) {
+                    const regex = new RegExp(searchTerm, 'i');
+                    return regex.test(text);
+                } else {
+                    text = text.toLowerCase();
+                    searchTerm = searchTerm.toLowerCase();
+                    
+                    // If search term is purely numeric, do exact number matching
+                    if (isNumeric(searchTerm)) {
+                        const regex = new RegExp(`\\b${searchTerm}\\b`, 'g');
+                        return regex.test(text);
+                    }
+                    
+                    // For non-numeric terms, do normal substring matching
+                    return text.includes(searchTerm);
+                }
+            }
+
+            function highlightText(html, searchTerm) {
+                if (!searchTerm) return html;
+                try {
+                    // Create a temporary div to parse HTML
+                    const div = document.createElement('div');
+                    div.innerHTML = html;
+                    
+                    // Function to highlight text within a node
+                    function highlightNode(node) {
+                        if (node.nodeType === 3) { // Text node
+                            const text = node.textContent;
+                            let highlighted;
+                            
+                            if (regexMode.checked) {
+                                const regex = new RegExp(searchTerm, 'gi');
+                                highlighted = text.replace(regex, match => `<mark>${match}</mark>`);
+                            } else if (isNumeric(searchTerm)) {
+                                const regex = new RegExp(`\\b${searchTerm}\\b`, 'g');
+                                highlighted = text.replace(regex, match => `<mark>${match}</mark>`);
+                            } else {
+                                const regex = new RegExp(escapeRegExp(searchTerm), 'gi');
+                                highlighted = text.replace(regex, match => `<mark>${match}</mark>`);
+                            }
+                            
+                            if (highlighted !== text) {
+                                const span = document.createElement('span');
+                                span.innerHTML = highlighted;
+                                node.parentNode.replaceChild(span, node);
+                            }
+                        } else if (node.nodeType === 1 && node.nodeName !== 'MARK') { // Element node
+                            Array.from(node.childNodes).forEach(highlightNode);
+                        }
+                    }
+                    
+                    // Process all nodes
+                    Array.from(div.childNodes).forEach(highlightNode);
+                    return div.innerHTML;
+                } catch (e) {
+                    return html; // Return original HTML if something goes wrong
+                }
+            }
+
+            function getNextSibling(elem, selector) {
+                // Get the next sibling element that matches selector
+                let sibling = elem.nextElementSibling;
+                while (sibling) {
+                    if (sibling.matches(selector)) return sibling;
+                    sibling = sibling.nextElementSibling;
+                }
+                return null;
+            }
+
+            function getElementsUntilNext(elem, endSelector) {
+                // Get all elements between this element and the next matching endSelector
+                let elements = [];
+                let current = elem.nextElementSibling;
+                while (current && !current.matches(endSelector)) {
+                    elements.push(current);
+                    current = current.nextElementSibling;
+                }
+                return elements;
+            }
+
+            function performSearch() {
+                const searchTerm = searchInput.value.trim();
+                const headers = document.querySelectorAll('h2');
+                let matches = 0;
+
+                // Process each date section
+                headers.forEach((header) => {
+                    const dateText = header.textContent.toLowerCase();
+                    let dateMatches = false;
+                    let sectionMatches = false;
+
+                    // Get all content until next h2
+                    const sectionContent = getElementsUntilNext(header, 'h2');
+                    
+                    try {
+                        dateMatches = smartMatch(dateText, searchTerm, regexMode.checked);
+                    } catch (e) {
+                        dateMatches = dateText.includes(searchTerm.toLowerCase());
+                    }
+
+                    // Store original header text if not already stored
+                    if (!header.hasAttribute('data-original')) {
+                        header.setAttribute('data-original', header.innerHTML);
+                    }
+
+                    sectionContent.forEach(element => {
+                        // Store original content
+                        if (!element.hasAttribute('data-original')) {
+                            element.setAttribute('data-original', element.innerHTML);
+                        }
+
+                        if (element.tagName === 'TABLE') {
+                            // Handle table rows
+                            const rows = element.querySelectorAll('tr');
+                            rows.forEach(row => {
+                                const cells = row.getElementsByTagName('td');
+                                if (cells.length === 0) return;
+
+                                let found = dateMatches; // Row matches if the date matches
+                                const cellContents = Array.from(cells).map(cell => {
+                                    const links = Array.from(cell.getElementsByTagName('a'));
+                                    const linkText = links.map(link => link.textContent).join(' ');
+                                    const plainText = cell.textContent;
+                                    return (linkText + ' ' + plainText).toLowerCase();
+                                });
+                                
+                                try {
+                                    found = found || cellContents.some(text => smartMatch(text, searchTerm, regexMode.checked));
+                                } catch (e) {
+                                    found = found || cellContents.some(text => text.includes(searchTerm.toLowerCase()));
+                                }
+
+                                if (found) {
+                                    matches++;
+                                    sectionMatches = true;
+                                    row.style.display = '';
+                                    Array.from(cells).forEach(cell => {
+                                        if (searchTerm) {
+                                            cell.innerHTML = highlightText(cell.getAttribute('data-original') || cell.innerHTML, searchTerm);
+                                        } else {
+                                            cell.innerHTML = cell.getAttribute('data-original');
+                                        }
+                                    });
+                                } else {
+                                    row.style.display = 'none';
+                                }
+                            });
+                        } else {
+                            // Handle non-table content
+                            const content = element.textContent.toLowerCase();
+                            let found = dateMatches;
+                            
+                            try {
+                                found = found || smartMatch(content, searchTerm, regexMode.checked);
+                            } catch (e) {
+                                found = found || content.includes(searchTerm.toLowerCase());
+                            }
+
+                            if (found) {
+                                matches++;
+                                sectionMatches = true;
+                                element.style.display = '';
+                                if (searchTerm) {
+                                    element.innerHTML = highlightText(element.getAttribute('data-original'), searchTerm);
+                                } else {
+                                    element.innerHTML = element.getAttribute('data-original');
+                                }
+                            } else {
+                                element.style.display = 'none';
+                            }
+                        }
+                    });
+
+                    // Show/hide header based on matches
+                    header.style.display = sectionMatches || dateMatches ? '' : 'none';
+
+                    // Show/hide section content
+                    sectionContent.forEach(element => {
+                        element.style.display = sectionMatches || dateMatches ? '' : 'none';
+                    });
+
+                    // Highlight the date if it matches
+                    if (searchTerm && dateMatches) {
+                        header.innerHTML = highlightText(header.getAttribute('data-original'), searchTerm);
+                    } else {
+                        header.innerHTML = header.getAttribute('data-original');
+                    }
+                });
+
+                matchCount.textContent = matches;
+            }
+
+            searchInput.addEventListener('input', () => {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(performSearch, 300);
+            });
+
+            regexMode.addEventListener('change', performSearch);
+        });
+    </script>
 
 <h2>September 9, 2025</h2>
 <table>

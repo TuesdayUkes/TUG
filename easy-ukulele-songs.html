@@ -1,98 +1,162 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js">
+<html lang="en-US">
 <head>
-<title>Easy Ukulele Songs</title>
-<meta name="description" content="These easy songs arranged for the ukulele aren't just for beginners. They're popular and fun songs for any uke player." >
+    <title>Easy Ukulele Songs - Tuesday Ukes Group</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="These easy songs arranged for the ukulele aren't just for beginners. They're popular and fun songs for any uke player.">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .song-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            counter-reset: songNumber;
+            background: var(--surface);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
 
+        .song-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border-light);
+        }
 
-	<meta charset="utf-8">
-		<style id="my-table">
-      body { background-color: #ddc38b; }
-      table, th, td {
-        font-size: large;
-        border: 1px black;
-        border-style: solid;
-        border-collapse: collapse;
-        padding: 5px;
-      }
-      table {
-        counter-reset: rowNumber;
-      }
+        .song-table tr {
+            counter-increment: songNumber;
+        }
 
-      table tr::before {
-        display: table-cell;
-        counter-increment: rowNumber;
-        content: counter(rowNumber);
-        font-family: monospace;
-        border: 1px black;
-        border-style: solid;
-        border-collapse: collapse;
-        padding-right: 0.3em;
-        vertical-align: middle;
-        text-align: right;
-      }
+        .song-table tr td:first-child::before {
+            content: counter(songNumber);
+            font-family: monospace;
+            margin-right: 1rem;
+            color: var(--text-secondary);
+            width: 2em;
+            display: inline-block;
+            text-align: right;
+        }
+
+        .song-table tr:hover {
+            background-color: var(--background);
+        }
+
+        .song-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .song-links a {
+            padding: 0.25rem 0.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .song-links a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .song-type {
+            margin-top: 3rem;
+        }
+
+        .song-type:first-of-type {
+            margin-top: 1rem;
+        }
     </style>
 </head>
-  <body>
+    <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-menu">
+                <a href="index.html">
+                    <img src="Gemini_Generated_Image_h5zhyoh5zhyoh5zh.png" alt="Tuesday Ukes Group Logo" class="header-logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="group_playalong.html">Group Play-Along</a></li>
+                    <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                    <li><a href="member_videos.html">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<h1 id="easy-ukulele-songs">Easy Ukulele Songs</h1>
-<p>At first glance, a ukulele can appear to be one of the easiest instruments. It&#39;s small. Just four strings. How hard could it be?</p>
+    <main class="container">
+        <div class="main-content">
+            <div class="content-area">
+                <div class="card">
+                    <h1>Easy Ukulele Songs</h1>
+                    <p>At first glance, a ukulele can appear to be one of the easiest instruments. It's small. Just four strings. How hard could it be?</p>
 
-<p>But anyone who has picked up a uke with dreams of sounding like the next
-Vance Joy, Bob Marley, or even Tiny Tim quickly learns it takes practice. These
-easy ukulele songs are a great place to start and we play them often at our
-<a href="https://tuesdayukes.org/">Tuesday Ukulele Group</a> meetings in Austin.
-What&#39;s more, they&#39;re great songs. Beginner ukulele players and uke
-players of all skill levels can enjoy these popular songs.</p>
+                    <p>But anyone who has picked up a uke with dreams of sounding like the next
+                    Vance Joy, Bob Marley, or even Tiny Tim quickly learns it takes practice. These
+                    easy ukulele songs are a great place to start and we play them often at our
+                    Tuesday Ukulele Group meetings in Austin.
+                    What's more, they're great songs. Beginner ukulele players and uke
+                    players of all skill levels can enjoy these popular songs.</p>
 
-<h2 id="easy-ukulele-chords">Easy ukulele chords</h2>
-<p>These easy songs use all basic chords, such as G major, F major, A minor, and
-D major. A note on abbreviations: You will see them notated in chord charts as
-G, F, Am, and D. Many of the songs also note strumming patterns, but beginners
-may want to strum each of these easy chords once, and move to the next
-chord.</p>
+                    <h2>Easy ukulele chords</h2>
+                    <p>These easy songs use all basic chords, such as G major, F major, A minor, and
+                    D major. A note on abbreviations: You will see them notated in chord charts as
+                    G, F, Am, and D. Many of the songs also note strumming patterns, but beginners
+                    may want to strum each of these easy chords once, and move to the next
+                    chord.</p>
 
-<h2 id="help-for-beginner-ukulele-players">Help for beginner ukulele players</h2>
-<p>Hey beginners: Starting with these fun songs will help you learn the basic
-chord shapes you will use often. Going back and forth between just a few easy
-chords will build finger strength and muscle memory you&#39;ll need later for
-the more-complicated songs that use more advanced chord progressions and barre
-chords.</p>
+                    <h2>Help for beginner ukulele players</h2>
+                    <p>Hey beginners: Starting with these fun songs will help you learn the basic
+                    chord shapes you will use often. Going back and forth between just a few easy
+                    chords will build finger strength and muscle memory you'll need later for
+                    the more-complicated songs that use more advanced chord progressions and barre
+                    chords.</p>
 
-<p>Even with easy songs, it will be hard at first. You&#39;re asking your
-fingers to bend and stretch in new ways, learning major chords and minor chords,
-persuading both of your hands and your voice to all work together ... it takes
-repetition and time. So take it easy on yourself and enjoy the journey. Playing
-fun ukulele songs like these should stay fun.</p>
+                    <p>Even with easy songs, it will be hard at first. You're asking your
+                    fingers to bend and stretch in new ways, learning major chords and minor chords,
+                    persuading both of your hands and your voice to all work together ... it takes
+                    repetition and time. So take it easy on yourself and enjoy the journey. Playing
+                    fun ukulele songs like these should stay fun.</p>
 
-<p>We also have some <a href="uke_camp.html">video lessons for beginners</a>! </p>
+                    <p>We also have some <a href="uke_camp.html">video lessons for beginners</a>!</p>
 
-<h2 id="simple-ukulele-songs">Simple ukulele songs</h2>
-<p>The popular ukulele songs we list here are those we&#39;ve played multiple times at our club meetings. They are divided into sections with 2 chords and 3 chords.</p>
+                    <h2>Simple ukulele songs</h2>
+                    <p>The popular ukulele songs we list here are those we've played multiple times at our club meetings. They are divided into sections with 2 chords and 3 chords.</p>
 
-<h2 id="2-chord-songs">2 chord songs</h2>
-<p>
-    <table>
+                    <div class="song-type">
+                        <h2>2 chord songs</h2>
+                        <div class="table-container">
+                            <table class="song-table">
 
-    <tr>  <td>Stay All Night</td>
-      <td>
-        <a href="music/ChordPro/Summer%202024/Stay%20All%20Night.chopro?v=2024.08.08.16.08.10" download="Stay All Night.chopro">.chopro</a>
-        <a href="music/PDFs/Summer%202024/Stay%20All%20Night.pdf?v=2024.08.08.16.08.10">.pdf</a><br>
-      </td>
-      <td>
-        <a href="https://youtu.be/wselOG5ToGc?t=58m40s">video</a>
-      </td>
-    </tr>
+                                <tr>
+                                    <td>Stay All Night</td>
+                                    <td>
+                                        <a href="music/ChordPro/Summer%202024/Stay%20All%20Night.chopro?v=2024.08.08.16.08.10" download="Stay All Night.chopro">ChordPro</a>
+                                        <a href="music/PDFs/Summer%202024/Stay%20All%20Night.pdf?v=2024.08.08.16.08.10">PDF</a>
+                                        <a href="https://youtu.be/wselOG5ToGc?t=58m40s">Video</a>
+                                    </td>
+                                </tr>
 
-    <tr>  <td>Waltz Across Texas</td>
-      <td>
-        <a href="music/ChordPro/TUG%20Archive/Waltz%20Across%20Texas.chopro" download>.chopro</a>
-        <a href="music/PDFs/TUG%20Archive/Waltz%20Across%20Texas.pdf">PDF</a>
-      </td>
-      <td>
-        <a href="https://youtu.be/hTn8F4MsCVc?t=9m37s">video</a>
-      </td>
-    </tr>
+                                <tr>
+                                    <td>Waltz Across Texas</td>
+                                    <td >
+                                        <a href="music/ChordPro/TUG%20Archive/Waltz%20Across%20Texas.chopro" download>ChordPro</a>
+                                        <a href="music/PDFs/TUG%20Archive/Waltz%20Across%20Texas.pdf">PDF</a>
+                                        <a href="https://youtu.be/hTn8F4MsCVc?t=9m37s">Video</a>
+                                    </td>
+                                </tr>
 
     <tr>  <td>Angeline The Baker</td>
     <td> <a href="music/ChordPro/Summer%202023/Angeline%20The%20Baker.chopro?v=2024.02.10.20.12.19" download="Angeline The Baker.chopro">.chopro</a>
@@ -266,18 +330,22 @@ fun ukulele songs like these should stay fun.</p>
 </p>
 
 
-<h2 id="3-chord-songs">3 chord songs</h2>
+                    </table>
+                        </div>
+                    </div>
 
-<p>
-    <table>
-<tr>  <td>What's Up</td>
-<td> <a href="music/ChordPro/Spring%202024/What's%20Up.chopro?v=2024.06.05.09.12.11" download="What's Up.chopro">.chopro</a>
-  <a href="music/PDFs/Spring%202024/What's%20Up.pdf?v=2024.06.05.09.12.11">.pdf</a>
-</td>
-<td>
-        <a href="https://www.youtube.com/watch?v=b3U9kkWgYpg&t=1538s">video</a>
-</td>
-</tr>
+                    <div class="song-type">
+                        <h2>3 chord songs</h2>
+                        <div class="table-container">
+                            <table class="song-table">
+                                <tr>
+                                    <td>What's Up</td>
+                                    <td>
+                                        <a href="music/ChordPro/Spring%202024/What's%20Up.chopro?v=2024.06.05.09.12.11" download="What's Up.chopro">ChordPro</a>
+                                        <a href="music/PDFs/Spring%202024/What's%20Up.pdf?v=2024.06.05.09.12.11">PDF</a>
+                                        <a href="https://www.youtube.com/watch?v=b3U9kkWgYpg&t=1538s">Video</a>
+                                    </td>
+                                </tr>
 
 <tr>  <td>59th Street Bridge Song (Feelin' Groovy)</td>
 <td> <a href="music/ChordPro/Fall%202022/The%2059th%20Street%20Bridge%20Song%20(Feelin'%20Groovy).chopro?v=2024.07.23.16.00.02" download="59th Street Bridge Song (Feelin' Groovy).chopro">.chopro</a>
@@ -527,12 +595,41 @@ fun ukulele songs like these should stay fun.</p>
 
 
 
-    </table>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h2>Quick Links</h2>
+                    <ul class="sidebar-menu">
+                        <li><a href="group_playalong.html">Group Play-Along</a></li>
+                        <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                        <li><a href="member_videos.html">Member Videos</a></li>
+                        <li><a href="uke_camp.html">Uke Camp</a></li>
+                        <li><a href="other_groups.html">Other Groups</a></li>
+                    </ul>
+                </div>
 
-</p>
+                <div class="sidebar-card">
+                    <h2>Learning Resources</h2>
+                    <ul class="sidebar-menu">
+                        <li><a href="uke_camp.html">Beginner Lessons</a></li>
+                        <li><a href="https://chordpro.org">ChordPro Format</a></li>
+                        <li><a href="member_videos.html">Practice Videos</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
 
-
-
-
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">© 2025 Tuesday Ukes Group. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

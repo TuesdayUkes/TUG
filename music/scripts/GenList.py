@@ -146,7 +146,9 @@ ukulele players with just 3 chords or 4 chords. You will find great songs by
 Paul McCartney, Neil Diamond, Bob Dylan, John Denver, and Bob Marley turned into
 ukulele music. More-advanced ukulele music players can find finger-stretching
 chord changes and chord shapes applied to popular ukulele songs. </p>
+"""
 
+searchControls = """
 <div class="search-controls">
     <h2>Search & Filter</h2>
     <input type="text" id="searchInput" placeholder="🔍 Search songs by title...">
@@ -254,11 +256,12 @@ with open(outputFile, "w", encoding='utf-8') as htmlOutput:
   htmlOutput.writelines(header)
   if intro:
     htmlOutput.writelines(introduction)
-    htmlOutput.write('<table id="dataTable">')
-    htmlOutput.write("<thead>\n")
-    htmlOutput.write("<tr><th>#</th><th>Song Title</th><th>Downloads</th></tr>\n")
-    htmlOutput.write("</thead>\n")
-    htmlOutput.write("<tbody>\n")
+  htmlOutput.writelines(searchControls)
+  htmlOutput.write('<table id="dataTable">')
+  htmlOutput.write("<thead>\n")
+  htmlOutput.write("<tr><th>#</th><th>Song Title</th><th>Downloads</th></tr>\n")
+  htmlOutput.write("</thead>\n")
+  htmlOutput.write("<tbody>\n")
   row_number = 1
   for f in sortedTitles:
     try:

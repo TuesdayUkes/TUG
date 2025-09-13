@@ -9,35 +9,9 @@
 	<link rel="canonical" href="https://tuesdayukes.org/ukulele-song-archive.html/">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<link rel='dns-prefetch' href='http://fonts.googleapis.com/' >
-<link rel='dns-prefetch' href='http://s.w.org/' >
-<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' >
-<link rel="alternate" type="application/rss+xml" title="Tuesday Ukes &raquo; Feed" href="index.php/feed/index.html" >
-<link rel="alternate" type="application/rss+xml" title="Tuesday Ukes &raquo; Comments Feed" href="index.php/comments/feed/index.html" >
-<link rel="alternate" type="text/calendar" title="Tuesday Ukes &raquo; iCal Feed" href="index.php/events/index.html@ical=1" >
 
-<!--  This next section needed for page formatting  -->
-
-<style id="custom-background-css">
-
-/* Modern Ukulele Song Archive Design */
-
-/* Clean, modern color palette */
-:root {
-  --primary-color: #2c5282;        /* Deep blue */
-  --secondary-color: #4a90a4;      /* Teal */
-  --accent-color: #f6ad55;         /* Warm orange (ukulele wood) */
-  --background: #f7fafc;           /* Light gray-blue */
-  --surface: #ffffff;              /* Pure white */
-  --text-primary: #2d3748;         /* Dark gray */
-  --text-secondary: #4a5568;       /* Medium gray */
-  --border-light: #e2e8f0;        /* Light border */
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --radius: 8px;
-}
-
+  <link rel="stylesheet" href="styles/main.css">
+<style>
 /* Modern body styling */
 body.custom-background { 
   background: linear-gradient(135deg, var(--background) 0%, #edf2f7 100%);
@@ -296,6 +270,3 @@ h2 {
 </style>
 	</head>
 
-<body class="home blog custom-background wp-embed-responsive tribe-no-js tribe-theme-twentysixteen group-blog hfeed">
-<div id="page" class="site">
-	<div class="site-inner">

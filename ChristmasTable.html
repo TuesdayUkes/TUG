@@ -1,33 +1,95 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-
-        <style>
-
-table, th, td {
-  font-size: normal;
-  border: 1px black;
-	border-style: dashed;
-  border-collapse: collapse;
-}
-
-        </style>
+    <title>Christmas Songs - Tuesday Ukes Group</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .song-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: var(--surface);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .song-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .song-table tr:hover {
+            background-color: var(--background);
+        }
+
+        .song-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .song-links a {
+            padding: 0.25rem 0.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .song-links a:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
 </head>
-
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-menu">
+                <a href="index.html">
+                    <img src="Gemini_Generated_Image_h5zhyoh5zhyoh5zh.png" alt="Tuesday Ukes Group Logo" class="header-logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                    <li><a href="member_videos.html">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<h3>Christmas Songs</h3>
-<table style="font-family: Arial, Helvetica, sans-serif; font-size: large;">
-
-	<tr>  <td>The Chanukah Song</td>
-	<td>
-	<a href="music/PDFs/Fall%202024/The%20Chanukah%20Song.pdf?v=2024.12.17.13.19.53">.pdf</a><br>
-	</td></tr>
-
-	<tr>  <td>Fat Bottom Elves</td>
-	<td>  <a href="music/PDFs/Fall%202024/Fat%20Bottom%20Elves.pdf?v=2024.12.17.13.19.53">.pdf</a><br>
-	</td></tr>
+    <main class="container">
+        <div class="main-content">
+            <div class="content-area">
+                <div class="card">
+                    <h1>Christmas Songs</h1>
+                    <div class="table-container">
+                        <table class="song-table">
+                            <tr>
+                                <td>The Chanukah Song</td>
+                                <td class="song-links">
+                                    <a href="music/PDFs/Fall%202024/The%20Chanukah%20Song.pdf?v=2024.12.17.13.19.53">PDF</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fat Bottom Elves</td>
+                                <td class="song-links">
+                                    <a href="music/PDFs/Fall%202024/Fat%20Bottom%20Elves.pdf?v=2024.12.17.13.19.53">PDF</a>
+                                </td>
+                            </tr>
 
 	<tr>  <td>Stretchy Pants</td>
 	<td>
@@ -270,8 +332,39 @@ table, th, td {
 	<a href="https://youtu.be/TX3qjnbWLEo">Video</a>
 	</td></tr>
 
-</table>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h2>Quick Links</h2>
+                    <ul class="sidebar-menu">
+                        <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                        <li><a href="member_videos.html">Member Videos</a></li>
+                        <li><a href="uke_camp.html">Uke Camp</a></li>
+                        <li><a href="other_groups.html">Other Groups</a></li>
+                    </ul>
+                </div>
 
+                <div class="sidebar-card">
+                    <h2>Holiday Resources</h2>
+                    <ul class="sidebar-menu">
+                        <li><a href="https://www.doctoruke.com/christmas.html">Doctor Uke Christmas</a></li>
+                        <li><a href="performance_videos.html">Holiday Performances</a></li>
+                        <li><a href="https://ukutabs.com/genre/christmas/">UkuTabs Christmas</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">© 2025 Tuesday Ukes Group. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>

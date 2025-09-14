@@ -133,6 +133,9 @@ with open("HTMLheader.txt", "r") as headerText:
 introduction = """
 <h1>Tuesday Ukes' Archive of Ukulele Songs and Chords</h1>
 
+<section class="archive card">
+<div class="archive-intro card">
+
 <p>Whether you're a beginner ukulele player looking for easy songs or a longtime
 player searching for fun songs, this is the resource for you. Here you will find
 ukulele chords and chord diagrams for uke players of all levels.</p>
@@ -163,6 +166,8 @@ searchControls = """
 """
 
 searchScript = """
+</div>
+</section>
 <script>
     const searchInput = document.getElementById('searchInput');
     const easyFilter = document.getElementById('easyFilter');

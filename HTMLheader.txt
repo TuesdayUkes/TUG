@@ -141,6 +141,7 @@ h2 {
   padding: 1rem;
   border: none;
   vertical-align: top;
+  overflow-wrap:anywhere;
 }
 
 /* Row number styling */
@@ -157,12 +158,12 @@ h2 {
 #dataTable td:nth-child(2) {
   font-weight: 600;
   color: var(--text-primary);
-  min-width: 250px;
+  min-width: 0px;
 }
 
 /* Download links styling */
 #dataTable td:last-child {
-  min-width: 200px;
+  min-width: 0px;
 }
 
 #dataTable a {
@@ -231,10 +232,6 @@ h2 {
   
   #dataTable td:first-child {
     width: 60px;
-  }
-  
-  #dataTable td:nth-child(2) {
-    min-width: 200px;
   }
 }
 

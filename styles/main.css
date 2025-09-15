@@ -69,7 +69,7 @@ body {
 .card {
     background: var(--surface);
     border-radius: var(--radius);
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 2rem;
     box-shadow: var(--shadow);
     border: 1px solid var(--border-light);

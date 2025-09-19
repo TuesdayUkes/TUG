@@ -138,7 +138,7 @@ h2 {
 
 /* Table cells */
 #dataTable td {
-  padding: 1rem;
+  padding: 0.5rem;
   border: none;
   vertical-align: top;
   overflow-wrap:anywhere;

@@ -412,23 +412,32 @@
         /* About Section */
         .about-content {
             display: grid;
-            grid-template-columns: 150px 1fr;
+            grid-template-columns: 25% 75%;
             gap: 2rem;
             align-items: start;
         }
 
         .about-image {
             border-radius: 8px;
+            width: 100%;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         @media (max-width: 600px) {
             .about-content {
-                grid-template-columns: 1fr;
+                grid-template-columns: 2fr;
             }
             .about-image {
                 margin: 0 auto 1rem;
             }
+        }
+
+        .meadow-image {
+            display:block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         /* Contact Info */
@@ -655,7 +664,7 @@
                 <section class="about-section card">
                     <h2>About Our Meetings</h2>
                     <div class="about-content">
-                        <img class="about-image" src="wp-content/uploads/2018/05/IMG_1271-150x150.jpg" alt="TUG Meeting" width="150" height="150">
+                        <img class="about-image" src="Uke Meadow.png" alt="TUG Meeting">
                         <div class="about-text">
                             <p>We average 10 to 12 people in person at the Hancock Recreation Center and 3 to 4 people online via Zoom. We welcome players of all skill levels, and beginners are always welcome! Our meetings follow an open mic format, but everyone is free to play along.</p>
                             <p>Members can submit songs a few days before the meeting to share with the group. Songs are formatted for both in-person projection and Zoom viewing. While submitting songs isn't required, it's a great way to participate!</p>

@@ -280,7 +280,9 @@ with open(outputFile, "w", encoding='utf-8') as htmlOutput:
       # second table column contains the song title (f[0])
       htmlOutput.write(f"  <td>{f[0]}</td>\n<td>")
       # the remainder of f's elements are files that match the title in f[0]
-      for i in f[1:]:
+      # Sort the files to ensure consistent ordering across operating systems
+      sorted_files = sorted(f[1:], key=lambda x: (ext(x), os.path.basename(x).lower()))
+      for i in sorted_files:
         # Skip .easy marker files - they shouldn't appear as downloads
         if ext(i) == ".easy":
           continue

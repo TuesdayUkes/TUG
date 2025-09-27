@@ -25,7 +25,7 @@ def extract_practice_songs(soup):
     """Extract songs from the practice-songs-table"""
     songs = []
     practice_table = soup.find('table', id='practice-songs-table')
-    
+
     if practice_table:
         rows = practice_table.find_all('tr')[1:]  # Skip header row
         for row in rows:
@@ -39,14 +39,14 @@ def extract_practice_songs(soup):
                         'title': title,
                         'url': pdf_url
                     })
-    
+
     return songs
 
 def extract_submitted_songs(soup):
     """Extract songs from the submitted-songs-table"""
     songs = []
     submitted_table = soup.find('table', id='submitted-songs-table')
-    
+
     if submitted_table:
         rows = submitted_table.find_all('tr')[1:]  # Skip header row
         for row in rows:
@@ -61,7 +61,7 @@ def extract_submitted_songs(soup):
                         'title': title,
                         'url': pdf_url
                     })
-    
+
     return songs
 
 def format_song_entry(song, timestamp="0:00"):
@@ -79,28 +79,28 @@ def main():
     except Exception as e:
         print(f"Error reading index.html: {e}")
         return
-    
+
     # Parse HTML
     soup = BeautifulSoup(html_content, 'html.parser')
-    
+
     # Extract songs from both tables
     practice_songs = extract_practice_songs(soup)
     submitted_songs = extract_submitted_songs(soup)
-    
+
     # Combine all songs
     all_songs = practice_songs + submitted_songs
-    
+
     if not all_songs:
         print("No songs found in the HTML tables")
         return
-    
+
     # Generate output
     print("Extracted song data in Music Links.txt format:")
     print("=" * 60)
-    
+
     for song in all_songs:
         print(format_song_entry(song))
-    
+
     # Also save to file
     output_filename = "extracted_music_links.txt"
     try:
@@ -110,7 +110,7 @@ def main():
         print(f"\nOutput also saved to: {output_filename}")
     except Exception as e:
         print(f"Error saving to file: {e}")
-    
+
     print(f"\nTotal songs extracted: {len(all_songs)}")
     print(f"Practice songs: {len(practice_songs)}")
     print(f"Submitted songs: {len(submitted_songs)}")

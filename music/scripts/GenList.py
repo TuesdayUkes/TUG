@@ -82,50 +82,39 @@ def createPDFs():
 # A file with the extension ".easy" will mark other files within the same
 # folder with the same name as "easy" songs for filtering purposes.
 def getEasySongs(allFiles):
-  easySongs = set()
-  for f in allFiles:
-    if ext(f).lower() == ".easy":
-      # Add full path name without extension as lowercase string
-      basename = str(os.path.splitext(f)[0]).lower()
-      easySongs.add(basename)
-  return easySongs
+  # Use set comprehension for better performance
+  return {str(os.path.splitext(f)[0]).lower() 
+          for f in allFiles if ext(f).lower() == ".easy"}
 
 def removeHiddenFiles(allFiles):
-  hideFiles = []
+  # Use set for O(1) lookup instead of list with O(n) lookup
+  hideFiles = set()
+  visibleFiles = []
+  
+  # Single pass to collect hide files
   for f in allFiles:
     if ext(f).lower() == ".hide":
-      # Add full path name without extension as lowercase string
-      # WARNING! This call to "lower()" (together with the call when
-      # constructing "basename" below) will cause files that differ only in case
-      # to match, even on Linux
-      hideFiles.append(str(os.path.splitext(f)[0]).lower())
-
-  visibleFiles = []
+      hideFiles.add(str(os.path.splitext(f)[0]).lower())
+  
+  # Second pass to filter visible files
   for f in allFiles:
-    # WARNING! This call to "lower()" together with the same call above when
-    # appending to "hideFiles" will cause files that differ only in case to
-    # match, even on Linux.
     basename = str(os.path.splitext(f)[0]).lower()
-    if not (basename in hideFiles):
+    if basename not in hideFiles:
       visibleFiles.append(f)
 
   return visibleFiles
 
 # dictCompare removes articles that appear as the first word in a filename
-articles = ['a', 'an', 'the']
+articles = {'a', 'an', 'the'}  # Use set for faster lookup
 def dictCompare(s):
-  formattedS = ''
   sWords = s.split()
-  if sWords[0].lower() in articles:
+  if sWords and sWords[0].lower() in articles:
     formattedS = ' '.join(sWords[1:])
   else:
     formattedS = s
 
-  # Remove punctuation
-  formattedS = formattedS.replace('\'','')
-  formattedS = formattedS.replace(',','')
-
-  return formattedS.lower()
+  # Remove punctuation in one pass using translate
+  return formattedS.translate(str.maketrans('', '', '\',\'')).lower()
 
 with open("HTMLheader.txt", "r") as headerText:
   header = headerText.readlines()
@@ -229,10 +218,12 @@ searchScript = """
 if genPDF:
   createPDFs()
 
-extensions = [".PDF", ".chopro", ".cho", ".mscz", ".urltxt", ".hide", ".easy"]
+# Pre-convert extensions to lowercase for faster comparison
+extensions = {".pdf", ".chopro", ".cho", ".mscz", ".urltxt", ".hide", ".easy"}
 allFiles = []
+# Use a single rglob call and filter more efficiently
 for p in Path(musicFolder).rglob('*'):
-  if ext(p) in (extension.lower() for extension in extensions):
+  if p.suffix.lower() in extensions:
     allFiles.append(p.as_posix())
 
 visibleFiles = removeHiddenFiles(allFiles)
@@ -245,15 +236,17 @@ def findMatchingBasename(files, basename):
 
 # allTitles will be an array of arrays. Each element's [0] entry will be the
 # song title. The other entries will be file paths that contain that title.
-allTitles = []
+# Use dictionary for faster lookup, then convert to list
+titleDict = {}
 for p in visibleFiles:
-  matchingTitle = findMatchingBasename(allTitles, p)
-  if matchingTitle:
-    # add a newly found file for a previously found song
-    matchingTitle.append(str(p))
+  title = l(p)
+  titleKey = dictCompare(title)
+  if titleKey in titleDict:
+    titleDict[titleKey].append(str(p))
   else:
-    # found a song for the first time. Add the title and the filename
-    allTitles.append([l(p), str(p)])
+    titleDict[titleKey] = [title, str(p)]
+
+allTitles = list(titleDict.values())
 
 downloadExtensions = [".cho", ".chopro"]
 sortedTitles = sorted(allTitles, key=(lambda e: dictCompare(e[0]).casefold()))

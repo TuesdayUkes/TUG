@@ -281,7 +281,8 @@ with open(outputFile, "w", encoding='utf-8') as htmlOutput:
       htmlOutput.write(f"  <td>{f[0]}</td>\n<td>")
       # the remainder of f's elements are files that match the title in f[0]
       # Sort the files to ensure consistent ordering across operating systems
-      sorted_files = sorted(f[1:], key=lambda x: (ext(x), os.path.basename(x).lower()))
+      # Sort by extension first, then by the complete normalized path
+      sorted_files = sorted(f[1:], key=lambda x: (ext(x), x.lower().replace('\\', '/')))
       for i in sorted_files:
         # Skip .easy marker files - they shouldn't appear as downloads
         if ext(i) == ".easy":

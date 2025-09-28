@@ -17,16 +17,19 @@ echo ""
 
 # ChordPro command arguments (matching GenList.py settings)
 CHORDPRO_ARGS=(
+    "--config=Ukulele",
+    "--config=Ukulele-ly",
     "--define=pdf:diagrams:show=top"
     "--define=settings:inline-chords=true"
     "--define=pdf:margintop=70"
     "--define=pdf:marginbottom=0"
-    "--define=pdf:marginleft=20"
+    "--define=pdf:marginleft=10"
     "--define=pdf:marginright=20"
     "--define=pdf:headspace=50"
     "--define=pdf:footspace=10"
     "--define=pdf:head-first-only=true"
     "--define=pdf:fonts:chord:color=red"
+    "--define=pdf:papersize=a5"
     "--text-font=helvetica"
     "--chord-font=helvetica"
 )
@@ -62,20 +65,20 @@ while IFS= read -r chopro_file; do
     if [ -z "$chopro_file" ]; then
         continue
     fi
-    
+
     # Generate PDF path
     pdf_file="${chopro_file%.*}.pdf"
-    
+
     # Check if PDF needs to be generated
     if [ "$FORCE_REGENERATE" = "true" ] || [ ! -f "$pdf_file" ] || [ "$chopro_file" -nt "$pdf_file" ]; then
         echo "📄 Processing: $(basename "$chopro_file")"
-        
+
         # Create output directory if needed
         mkdir -p "$(dirname "$pdf_file")"
-        
+
         # Generate PDF (ignore exit codes)
         chordpro "${CHORDPRO_ARGS[@]}" --output="$pdf_file" "$chopro_file" 2>/dev/null || true
-        
+
         # Check if PDF was actually created
         if [ -f "$pdf_file" ]; then
             echo "  ✓ Generated: $(basename "$pdf_file")"
@@ -88,7 +91,7 @@ while IFS= read -r chopro_file; do
         echo "⏩ Skipping: $(basename "$chopro_file") (PDF up to date)"
         SKIPPED=$((SKIPPED + 1))
     fi
-    
+
     PROCESSED=$((PROCESSED + 1))
 done <<< "$CHOPRO_FILES"
 

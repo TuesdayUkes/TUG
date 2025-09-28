@@ -164,7 +164,7 @@ jobs:
       if: steps.check-pdfs.outputs.pdfs-generated == 'true'
       run: |
         echo "Running GenList.py from root directory to generate ukulele-song-archive.html..."
-        python music/scripts/GenList.py music ukulele-song-archive.html --intro --genPDF=False
+        python music/scripts/GenList.py music ukulele-song-archive.html --intro --no-genPDF
         echo "Generated ukulele-song-archive.html"
         ls -la ukulele-song-archive.html
     

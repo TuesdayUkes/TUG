@@ -53,17 +53,17 @@ jobs:
         # Check if this is a manual trigger with regenerate_all option
         if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.regenerate_all }}" = "true" ]; then
           echo "🔄 Manual trigger - regenerating all PDFs"
-          ./.github/scripts/generate-pdfs.sh music true
+          ./.github/scripts/generate-pdfs.sh music true || echo "Script completed with some errors, continuing..."
           echo "regenerated-all=true" >> $GITHUB_OUTPUT
         # Check if myconfig.json changed - if so, regenerate all PDFs
         elif git diff --name-only HEAD^ HEAD | grep -q "music/ChordPro/myconfig.json"; then
           echo "🔄 myconfig.json changed - regenerating all PDFs"
-          ./.github/scripts/generate-pdfs.sh music true
+          ./.github/scripts/generate-pdfs.sh music true || echo "Script completed with some errors, continuing..."
           echo "regenerated-all=true" >> $GITHUB_OUTPUT
         # Check if this is a manual trigger without regenerate_all option
         elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
           echo "🔄 Manual trigger - processing all ChordPro files"
-          ./.github/scripts/generate-pdfs.sh music false
+          ./.github/scripts/generate-pdfs.sh music false || echo "Script completed with some errors, continuing..."
           echo "regenerated-all=false" >> $GITHUB_OUTPUT
         else
           # Only process changed ChordPro files

@@ -2,7 +2,7 @@
 # Helper script for generating ChordPro PDFs
 # This script replicates the logic from GenList.py's createPDFs() function
 
-set -e  # Exit on error
+# Note: Removed 'set -e' to allow graceful error handling
 
 MUSIC_FOLDER="${1:-music}"
 FORCE_REGENERATE="${2:-false}"
@@ -74,25 +74,22 @@ while IFS= read -r chopro_file; do
         mkdir -p "$(dirname "$pdf_file")"
         
         # Generate PDF (ignore exit codes)
-        if chordpro "${CHORDPRO_ARGS[@]}" --output="$pdf_file" "$chopro_file" 2>/dev/null || true; then
-            # Check if PDF was actually created
-            if [ -f "$pdf_file" ]; then
-                echo "  ✓ Generated: $(basename "$pdf_file")"
-                ((GENERATED++))
-            else
-                echo "  ⚠ Failed: $(basename "$pdf_file") (no output file)"
-                ((ERRORS++))
-            fi
+        chordpro "${CHORDPRO_ARGS[@]}" --output="$pdf_file" "$chopro_file" 2>/dev/null || true
+        
+        # Check if PDF was actually created
+        if [ -f "$pdf_file" ]; then
+            echo "  ✓ Generated: $(basename "$pdf_file")"
+            GENERATED=$((GENERATED + 1))
         else
-            echo "  ⚠ Failed: $(basename "$pdf_file") (continuing...)"
-            ((ERRORS++))
+            echo "  ⚠ Failed: $(basename "$pdf_file") (no output file)"
+            ERRORS=$((ERRORS + 1))
         fi
     else
         echo "⏩ Skipping: $(basename "$chopro_file") (PDF up to date)"
-        ((SKIPPED++))
+        SKIPPED=$((SKIPPED + 1))
     fi
     
-    ((PROCESSED++))
+    PROCESSED=$((PROCESSED + 1))
 done <<< "$CHOPRO_FILES"
 
 echo ""

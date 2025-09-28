@@ -161,15 +161,13 @@ jobs:
         pip install first
     
     - name: Generate ukulele-song-archive.html
-      if: steps.check-pdfs.outputs.pdfs-generated == 'true'
       run: |
         echo "Running GenList.py from root directory to generate ukulele-song-archive.html..."
         python music/scripts/GenList.py music ukulele-song-archive.html --intro --no-genPDF
         echo "Generated ukulele-song-archive.html"
-        ls -la ukulele-song-archive.html
+        ls -la ukulele-song-archive.html || echo "Archive file not found"
     
     - name: Deploy PDFs and Archive to GitHub Pages
-      if: steps.check-pdfs.outputs.pdfs-generated == 'true'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

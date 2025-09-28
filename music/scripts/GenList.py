@@ -27,10 +27,10 @@ genPDF = args.genPDF
 
 now = datetime.now().strftime("%Y.%m.%d.%H.%M.%S")
 
-# lambda l accepts a path and returns just the filename without an extension
-l = lambda p: str(os.path.splitext(os.path.basename(p))[0])
+# lambda filename accepts a path and returns just the filename without an extension
+filename = lambda p: str(os.path.splitext(os.path.basename(p))[0])
 
-# lambda ext is like lambda l, except it returns the file extension
+# lambda ext is like lambda filename, except it returns the file extension
 ext = lambda p: str(os.path.splitext(os.path.basename(p))[1]).lower()
 
 def createPDFs():
@@ -232,14 +232,14 @@ easySongs = getEasySongs(allFiles)
 # return the first file that matches basename (there should be only zero or one
 # matches). Return None if no matches found.
 def findMatchingBasename(files, basename):
-  return first((f for f in files if dictCompare(f[0]) == dictCompare(l(basename))))
+  return first((f for f in files if dictCompare(f[0]) == dictCompare(filename(basename))))
 
 # allTitles will be an array of arrays. Each element's [0] entry will be the
 # song title. The other entries will be file paths that contain that title.
 # Use dictionary for faster lookup, then convert to list
 titleDict = {}
 for p in visibleFiles:
-  title = l(p)
+  title = filename(p)
   titleKey = dictCompare(title)
   if titleKey in titleDict:
     titleDict[titleKey].append(str(p))
@@ -286,7 +286,7 @@ with open(outputFile, "w", encoding='utf-8') as htmlOutput:
             address = urlFile.readline().strip()
           htmlOutput.write(f"<a href=\"{address}\" target=\"_blank\">{label}</a><br>\n")
         elif ext(i) in downloadExtensions:
-          htmlOutput.write(f" <a href=\"{str(i).replace(' ','%20')}?v={now}\" download=\"{l(i)}{ext(i)}\" target=\"_blank\">{ext(i)}</a><br>\n")
+          htmlOutput.write(f" <a href=\"{str(i).replace(' ','%20')}?v={now}\" download=\"{filename(i)}{ext(i)}\" target=\"_blank\">{ext(i)}</a><br>\n")
         else:
           htmlOutput.write(f"  <a href=\"{str(i).replace(' ','%20')}?v={now}\" target=\"_blank\">{ext(i)}</a><br>\n")
 

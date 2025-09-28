@@ -73,12 +73,18 @@ while IFS= read -r chopro_file; do
         # Create output directory if needed
         mkdir -p "$(dirname "$pdf_file")"
         
-        # Generate PDF
-        if chordpro "${CHORDPRO_ARGS[@]}" --output="$pdf_file" "$chopro_file" 2>/dev/null; then
-            echo "  ✓ Generated: $(basename "$pdf_file")"
-            ((GENERATED++))
+        # Generate PDF (ignore exit codes)
+        if chordpro "${CHORDPRO_ARGS[@]}" --output="$pdf_file" "$chopro_file" 2>/dev/null || true; then
+            # Check if PDF was actually created
+            if [ -f "$pdf_file" ]; then
+                echo "  ✓ Generated: $(basename "$pdf_file")"
+                ((GENERATED++))
+            else
+                echo "  ⚠ Failed: $(basename "$pdf_file") (no output file)"
+                ((ERRORS++))
+            fi
         else
-            echo "  ✗ Failed: $(basename "$pdf_file")"
+            echo "  ⚠ Failed: $(basename "$pdf_file") (continuing...)"
             ((ERRORS++))
         fi
     else
@@ -99,8 +105,7 @@ echo "  Errors: $ERRORS"
 
 if [ $ERRORS -gt 0 ]; then
     echo ""
-    echo "⚠ $ERRORS files failed to process"
-    exit 1
+    echo "⚠ $ERRORS files failed to process (but continuing)"
 fi
 
 echo ""

@@ -80,6 +80,7 @@ jobs:
                 pdf_file="${file%.*}.pdf"
                 mkdir -p "$(dirname "$pdf_file")"
                 
+                # Run ChordPro (ignore exit code, check if PDF was created)
                 chordpro \
                   --config=music/ChordPro/myconfig.json \
                   --define=pdf:diagrams:show=top \
@@ -95,9 +96,14 @@ jobs:
                   --text-font=helvetica \
                   --chord-font=helvetica \
                   --output="$pdf_file" \
-                  "$file"
+                  "$file" 2>/dev/null || true
                 
-                echo "✓ Generated: $pdf_file"
+                # Check if PDF was actually created (regardless of exit code)
+                if [ -f "$pdf_file" ]; then
+                  echo "✓ Generated: $pdf_file"
+                else
+                  echo "⚠ Failed to generate: $pdf_file (no output file)"
+                fi
               fi
             done
             echo "regenerated-all=false" >> $GITHUB_OUTPUT

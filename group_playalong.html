@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Group Play-Along - Tuesday Ukes Group</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css?v=1.0">
+    <style>
+        .event-info {
+            background: var(--surface-alt);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+        }
+
+        .event-info h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .event-details {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.5rem 1rem;
+            margin: 1rem 0;
+        }
+
+        .event-details dt {
+            font-weight: bold;
+            color: var(--text-secondary);
+        }
+
+        .event-links {
+            margin-top: 1rem;
+        }
+
+        .event-links a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius);
+            margin-right: 1rem;
+            margin-bottom: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .event-links a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .song-list li {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .song-list li:last-child {
+            border-bottom: none;
+        }
+
+        .song-list a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .song-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-menu">
+                <a href="index.html">
+                    <img src="TuesdayUkesLogo.png" alt="Tuesday Ukes Group Logo" class="header-logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                    <li><a href="member_videos.html">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <div class="content-area">
+                <div class="card">
+                    <h1>Group Play-Along</h1>
+
+                    <div class="event-info">
+                        <h2>Join Our Weekly Sessions</h2>
+                        <div class="event-details">
+                            <dt>When</dt>
+                            <dd>Every Tuesday from 1:00 PM to 3:00 PM</dd>
+                            
+                            <dt>Where</dt>
+                            <dd>Hancock Recreation Center, Austin, TX</dd>
+                            
+                            <dt>Zoom</dt>
+                            <dd>Available for remote participants</dd>
+                        </div>
+                        <div class="event-links">
+                            <a href="https://us02web.zoom.us/j/84955941265?pwd=NGJnSFB0NTFQeFVXaEpKUnFlWmJQUT09">Join Zoom Meeting</a>
+                            <a href="Zoom audio instructions.pdf">Audio Setup Guide</a>
+                        </div>
+                    </div>
+
+                    <h2>Today's Songs</h2>
+                    <div class="song-section">
+                        <ul class="song-list">
+                            <li>
+                                <a href="music/PDFs/Spring%202024/What's%20Up.pdf">What's Up</a>
+                                - <a href="https://www.youtube.com/watch?v=b3U9kkWgYpg&t=1538s">Practice Video</a>
+                            </li>
+                            <li>
+                                <a href="music/PDFs/Spring%202024/Stay%20All%20Night.pdf">Stay All Night</a>
+                                - <a href="https://youtu.be/wselOG5ToGc?t=58m40s">Practice Video</a>
+                            </li>
+                            <!-- Add more songs here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h2>Quick Links</h2>
+                    <ul class="sidebar-menu">
+                        <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                        <li><a href="member_videos.html">Member Videos</a></li>
+                        <li><a href="uke_camp.html">Uke Camp</a></li>
+                        <li><a href="other_groups.html">Other Groups</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h2>Resources</h2>
+                    <ul class="sidebar-menu">
+                        <li><a href="Checklist.html">Meeting Checklist</a></li>
+                        <li><a href="easy-ukulele-songs.html">Easy Songs</a></li>
+                        <li><a href="Favorite Songs.html">All Songs</a></li>
+                        <li><a href="member_videos.html">Practice Videos</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">© 2025 Tuesday Ukes Group. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

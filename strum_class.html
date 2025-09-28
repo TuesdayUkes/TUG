@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TUG Strum Class - Tuesday Ukes</title>
+    <link rel="stylesheet" href="styles/main.css?v=1.0">
+    <style>
+        .strum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .strum-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .strum-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #f0f0f0;
+        }
+        
+        .video-thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .strum-info {
+            padding: 1.5rem;
+        }
+        
+        .strum-info h3 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+        
+        .strum-info p {
+            margin: 0 0 1rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .resource-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.2s ease-in-out;
+        }
+        
+        .resource-link:hover {
+            background: #2980b9;
+        }
+        
+        .video-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .video-link:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>TUG Strum Class</h1>
+            <p>Learn different ukulele strumming patterns with our video tutorials</p>
+        </header>
+
+        <main class="strum-grid">
+            <div class="strum-card">
+                <a href="https://youtu.be/0h9NGSEFM8s" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/0h9NGSEFM8s/hqdefault.jpg" alt="Train Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Train Strum</h3>
+                        <a href="https://www.dropbox.com/s/vl9c3xvoq5n10qf/Train%20Strum%20-%20Breakdown.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download PDF Guide</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/GFAbwph7WQw" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/GFAbwph7WQw/hqdefault.jpg" alt="Slide Ukulele">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Slide Ukulele</h3>
+                        <p>Tutorial by Paul</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/cMjDM0Zwd9Y" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/cMjDM0Zwd9Y/hqdefault.jpg" alt="Arpeggio Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Arpeggio Strum</h3>
+                        <a href="https://www.dropbox.com/s/erdixbo38vovor2/Arpeggio.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download PDF Guide</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/eW46bHycqUU" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/eW46bHycqUU/hqdefault.jpg" alt="Swing/Shuffle Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Swing/Shuffle Strum</h3>
+                        <p>Demo with "Trouble in Mind"</p>
+                        <a href="https://www.dropbox.com/s/wt1p06buq6xqsyz/Trouble%20In%20Mind.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download Songsheet</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/O6cTYZc4rjg" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/O6cTYZc4rjg/hqdefault.jpg" alt="Swing Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Swing Strum</h3>
+                        <a href="https://www.dropbox.com/s/pl7d822a553qcyk/Swing%20Strum.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download PDF Guide</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/iR9TdYwNzuM" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/iR9TdYwNzuM/hqdefault.jpg" alt="Roll Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Roll Strum</h3>
+                        <a href="https://www.dropbox.com/s/olwnzotof6c6w0o/Roll%20Strum.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download Instructions</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/QpRZvzdQzf4" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/QpRZvzdQzf4/hqdefault.jpg" alt="Triplet Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Triplet Strum</h3>
+                        <a href="https://www.dropbox.com/s/rxkpkksa0paxmyw/Triplet%20strum.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download PDF Guide</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/YD3YhdsUcyI" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/YD3YhdsUcyI/hqdefault.jpg" alt="Travis Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Travis Strum</h3>
+                        <p>Please Don't Bury Me (Spring 2020 Songbook)</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/RZUIW-vqbsk" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/RZUIW-vqbsk/hqdefault.jpg" alt="Back Beat Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Back Beat Strum</h3>
+                        <a href="https://www.dropbox.com/s/6lh4d61mj771lkj/Backbeat%20Strum.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download PDF Guide</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/_w58zjNpcVw" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/_w58zjNpcVw/hqdefault.jpg" alt="2/4 Country Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>2/4 Country Strum</h3>
+                        <a href="https://www.dropbox.com/s/n2oo4lngdwsceuu/CountryStrum1.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download PDF Guide</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/Kghmxbl9RU0" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/Kghmxbl9RU0/hqdefault.jpg" alt="Waltz Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Waltz Strum</h3>
+                        <a href="https://www.dropbox.com/s/0n7walq0wvpun1l/Waltz%20strum.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download PDF Guide</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/S9gFOz-Tzzo" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/S9gFOz-Tzzo/hqdefault.jpg" alt="Life of Illusion Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>Life of Illusion Strum</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://youtu.be/O9YZAB1RXD8" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/O9YZAB1RXD8/hqdefault.jpg" alt="Island Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>The Island Strum</h3>
+                        <a href="https://www.dropbox.com/s/ecnadmw1xtcextz/Island%20Strum.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download PDF Guide</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="strum-card">
+                <a href="https://www.youtube.com/watch?v=WcrN7PbvtW8" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/WcrN7PbvtW8/hqdefault.jpg" alt="Train Chunk Strum">
+                    </div>
+                    <div class="strum-info">
+                        <h3>The Train Chunk Strum</h3>
+                        <a href="https://www.dropbox.com/s/rh4l54dcjqgu6oo/Train%20Chunk%20Strum.pdf?dl=0" class="resource-link" target="_blank" rel="noopener noreferrer">Download PDF Guide</a>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Looking for more strumming patterns? Check out our weekly classes!</p>
+        </footer>
+    </div>
+</body>
+</html>

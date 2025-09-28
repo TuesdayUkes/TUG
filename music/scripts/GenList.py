@@ -1,0 +1,307 @@
+#! python
+import subprocess
+from first import first
+from pathlib import Path
+from posixpath import basename, splitext
+import sys
+import os
+import argparse
+from re import M
+from datetime import datetime
+
+parser = argparse.ArgumentParser()
+parser.add_argument("musicFolder")
+parser.add_argument("outputFile")
+parser.add_argument("--intro", action=argparse.BooleanOptionalAction, default=True)
+parser.add_argument("--genPDF", action=argparse.BooleanOptionalAction, default=False)
+parser.add_argument("--forcePDF", action=argparse.BooleanOptionalAction, default=False)
+args = parser.parse_args()
+
+print("Generating Music List (this takes a few seconds)", file=sys.stderr)
+
+musicFolder = args.musicFolder
+outputFile = args.outputFile
+intro = args.intro
+forceNewPDF = args.forcePDF
+genPDF = args.genPDF
+
+now = datetime.now().strftime("%Y.%m.%d.%H.%M.%S")
+
+# lambda filename accepts a path and returns just the filename without an extension
+filename = lambda p: str(os.path.splitext(os.path.basename(p))[0])
+
+# lambda ext is like lambda filename, except it returns the file extension
+ext = lambda p: str(os.path.splitext(os.path.basename(p))[1]).lower()
+
+def createPDFs():
+  linuxpath = ["perl",
+               "/home/paul/chordpro/script/chordpro.pl",
+               "--config=/home/paul/chordpro/lib/ChordPro/res/config/ukulele.json",
+               "--config=/home/paul/chordpro/lib/ChordPro/res/config/ukulele-ly.json"
+               ]
+
+  winpath = ["chordpro",
+            "--config=Ukulele",
+            "--config=Ukulele-ly"
+            ]
+
+  chordproSettings=[
+    "--define=pdf:diagrams:show=top",
+    "--define=settings:inline-chords=true",
+    "--define=pdf:margintop=70",
+    "--define=pdf:marginbottom=0",
+    "--define=pdf:marginleft=20",
+    "--define=pdf:marginright=20",
+    "--define=pdf:headspace=50",
+    "--define=pdf:footspace=10",
+    "--define=pdf:head-first-only=true",
+    "--define=pdf:fonts:chord:color=red",
+    "--text-font=helvetica",
+    "--chord-font=helvetica"
+  ]
+
+  if os.name == "nt":
+    chordproSettings = winpath + chordproSettings
+  else:
+    chordproSettings = linuxpath + chordproSettings
+
+  extensions = [".chopro", ".cho"]
+  for p in Path(musicFolder).rglob('*'):
+    if ext(p) in (extension.lower() for extension in extensions):
+      pdfFile = str(os.path.splitext(str(p))[0]) + ".pdf"
+      if not os.path.exists(pdfFile) or forceNewPDF:
+        print("Generating " + pdfFile)
+        subprocess.run(chordproSettings + [str(p)])
+
+# A file with the extension ".hide" will prevent other files within the same
+# folder with the same name (but all extensions) from being adding to the
+# archive table. This is a way to conceal older versions of a song, without
+# breaking old links to the older versions (the files still exist, but there
+# will be no HTML links to them in the new archive table).
+
+# A file with the extension ".easy" will mark other files within the same
+# folder with the same name as "easy" songs for filtering purposes.
+def getEasySongs(allFiles):
+  # Use set comprehension for better performance
+  return {str(os.path.splitext(f)[0]).lower() 
+          for f in allFiles if ext(f).lower() == ".easy"}
+
+def removeHiddenFiles(allFiles):
+  # Use set for O(1) lookup instead of list with O(n) lookup
+  hideFiles = set()
+  visibleFiles = []
+  
+  # Single pass to collect hide files
+  for f in allFiles:
+    if ext(f).lower() == ".hide":
+      hideFiles.add(str(os.path.splitext(f)[0]).lower())
+  
+  # Second pass to filter visible files
+  for f in allFiles:
+    basename = str(os.path.splitext(f)[0]).lower()
+    if basename not in hideFiles:
+      visibleFiles.append(f)
+
+  return visibleFiles
+
+# dictCompare removes articles that appear as the first word in a filename
+articles = {'a', 'an', 'the'}  # Use set for faster lookup
+def dictCompare(s):
+  sWords = s.split()
+  if sWords and sWords[0].lower() in articles:
+    formattedS = ' '.join(sWords[1:])
+  else:
+    formattedS = s
+
+  # Remove punctuation in one pass using translate
+  return formattedS.translate(str.maketrans('', '', '\',\'')).lower()
+
+with open("HTMLheader.txt", "r") as headerText:
+  header = headerText.readlines()
+
+introduction = """
+<h1>Tuesday Ukes' Archive of Ukulele Songs and Chords</h1>
+
+<section class="archive card">
+<div class="archive-intro card">
+
+<p>Whether you're a beginner ukulele player looking for easy songs or a longtime
+player searching for fun songs, this is the resource for you. Here you will find
+ukulele chords and chord diagrams for uke players of all levels.</p>
+
+<p>This collection of the best ukulele songs has been built over time by members
+of Austin's Tuesday Ukulele Group. </p>
+
+<h2>Lots of Popular Songs</h2>
+<p>There's a big range: Easy ukulele songs with simple chords for beginner
+ukulele players with just 3 chords or 4 chords. You will find great songs by
+Paul McCartney, Neil Diamond, Bob Dylan, John Denver, and Bob Marley turned into
+ukulele music. More-advanced ukulele music players can find finger-stretching
+chord changes and chord shapes applied to popular ukulele songs. </p>
+"""
+
+searchControls = """
+<div class="search-controls">
+    <h2>Search & Filter</h2>
+    <input type="text" id="searchInput" placeholder="🔍 Search songs by title...">
+    <div class="filter-checkbox">
+        <input type="checkbox" id="easyFilter">
+        <label for="easyFilter">🎵 Show only easy songs (perfect for beginners!)</label>
+    </div>
+    <div id="searchStats" class="search-stats" style="display: none;">
+        Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> songs
+    </div>
+</div>
+"""
+
+searchScript = """
+</div>
+</section>
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const easyFilter = document.getElementById('easyFilter');
+    const table = document.getElementById('dataTable');
+    const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+    const searchStats = document.getElementById('searchStats');
+    const visibleCountSpan = document.getElementById('visibleCount');
+    const totalCountSpan = document.getElementById('totalCount');
+
+    // Set total count
+    totalCountSpan.textContent = rows.length;
+
+    function updateSearchStats(visibleCount) {
+        visibleCountSpan.textContent = visibleCount;
+        searchStats.style.display = (searchInput.value || easyFilter.checked) ? 'block' : 'none';
+    }
+
+    function filterRows() {
+        const searchFilter = searchInput.value.toLowerCase();
+        const easyOnly = easyFilter.checked;
+        let visibleCount = 0;
+
+        // Add loading effect
+        table.classList.add('table-loading');
+
+        setTimeout(() => {
+            for (let i = 0; i < rows.length; i++) {
+                let rowText = rows[i].textContent.toLowerCase();
+                let isEasy = rows[i].classList.contains('easy-song');
+
+                let showBySearch = !searchFilter || rowText.includes(searchFilter);
+                let showByEasy = !easyOnly || isEasy;
+
+                const shouldShow = showBySearch && showByEasy;
+                rows[i].style.display = shouldShow ? '' : 'none';
+
+                if (shouldShow) visibleCount++;
+            }
+
+            updateSearchStats(visibleCount);
+            table.classList.remove('table-loading');
+        }, 50);
+    }
+
+    // Enhanced input with debouncing
+    let searchTimeout;
+    searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(filterRows, 300);
+    });
+
+    easyFilter.addEventListener('change', filterRows);
+
+    // Initialize
+    updateSearchStats(rows.length);
+</script>
+"""
+
+if genPDF:
+  createPDFs()
+
+# Pre-convert extensions to lowercase for faster comparison
+extensions = {".pdf", ".chopro", ".cho", ".mscz", ".urltxt", ".hide", ".easy"}
+allFiles = []
+# Use a single rglob call and filter more efficiently
+for p in Path(musicFolder).rglob('*'):
+  if p.suffix.lower() in extensions:
+    allFiles.append(p.as_posix())
+
+visibleFiles = removeHiddenFiles(allFiles)
+easySongs = getEasySongs(allFiles)
+
+# return the first file that matches basename (there should be only zero or one
+# matches). Return None if no matches found.
+def findMatchingBasename(files, basename):
+  return first((f for f in files if dictCompare(f[0]) == dictCompare(filename(basename))))
+
+# allTitles will be an array of arrays. Each element's [0] entry will be the
+# song title. The other entries will be file paths that contain that title.
+# Use dictionary for faster lookup, then convert to list
+titleDict = {}
+for p in visibleFiles:
+  title = filename(p)
+  titleKey = dictCompare(title)
+  if titleKey in titleDict:
+    titleDict[titleKey].append(str(p))
+  else:
+    titleDict[titleKey] = [title, str(p)]
+
+allTitles = list(titleDict.values())
+
+downloadExtensions = [".cho", ".chopro"]
+sortedTitles = sorted(allTitles, key=(lambda e: dictCompare(e[0]).casefold()))
+with open(outputFile, "w", encoding='utf-8') as htmlOutput:
+  htmlOutput.writelines(header)
+  if intro:
+    htmlOutput.writelines(introduction)
+  htmlOutput.writelines(searchControls)
+  htmlOutput.write('<table id="dataTable">')
+  htmlOutput.write("<thead>\n")
+  htmlOutput.write("<tr><th>#</th><th>Song Title</th><th>Downloads</th></tr>\n")
+  htmlOutput.write("</thead>\n")
+  htmlOutput.write("<tbody>\n")
+  row_number = 1
+  for f in sortedTitles:
+    try:
+      # Check if this song is marked as easy
+      isEasy = any(str(os.path.splitext(file)[0]).lower() in easySongs for file in f[1:])
+      easyClass = ' class="easy-song"' if isEasy else ''
+
+      htmlOutput.write(f"<tr{easyClass}>")
+      # first table column contains the row number
+      htmlOutput.write(f"  <td>{row_number}</td>")
+      # second table column contains the song title (f[0])
+      htmlOutput.write(f"  <td>{f[0]}</td>\n<td>")
+      # the remainder of f's elements are files that match the title in f[0]
+      # Sort the files to ensure consistent ordering across operating systems
+      # Sort by extension first, then by the complete normalized path
+      sorted_files = sorted(f[1:], key=lambda x: (ext(x), x.lower().replace('\\', '/')))
+      for i in sorted_files:
+        # Skip .easy marker files - they shouldn't appear as downloads
+        if ext(i) == ".easy":
+          continue
+        elif ext(i) == ".urltxt":
+          with open(i, "r") as urlFile:
+            label = urlFile.readline().strip()
+            address = urlFile.readline().strip()
+          htmlOutput.write(f"<a href=\"{address}\" target=\"_blank\">{label}</a><br>\n")
+        elif ext(i) in downloadExtensions:
+          htmlOutput.write(f" <a href=\"{str(i).replace(' ','%20')}?v={now}\" download=\"{filename(i)}{ext(i)}\" target=\"_blank\">{ext(i)}</a><br>\n")
+        else:
+          htmlOutput.write(f"  <a href=\"{str(i).replace(' ','%20')}?v={now}\" target=\"_blank\">{ext(i)}</a><br>\n")
+
+      # close each table row (and the table data containing file links)
+      htmlOutput.write("</td></tr>\n")
+      row_number += 1
+    except:
+      print(f"failed to write {f[1:]}")
+
+  #close the table etc.
+  htmlOutput.write("</tbody>")
+  htmlOutput.write("</table>")
+  htmlOutput.write(searchScript)
+  htmlOutput.write("</div>\n")
+  htmlOutput.write("</div>\n")
+  htmlOutput.write("</body>\n")
+
+print("Done!", file=sys.stderr)

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TUG Performance Videos - Tuesday Ukes</title>
+    <link rel="stylesheet" href="styles/main.css?v=1.0">
+    <style>
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .video-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #f0f0f0;
+        }
+        
+        .video-thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .video-info {
+            padding: 1.5rem;
+        }
+        
+        .video-info h3 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+        
+        .video-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .video-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .video-link:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>TUG Performance Videos</h1>
+            <p>Watch performances from our talented ukulele community</p>
+        </header>
+
+        <main class="video-grid">
+            <div class="video-card">
+                <a href="https://youtu.be/OKNBdf3h5FE" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/OKNBdf3h5FE/hqdefault.jpg" alt="Performance Video">
+                    </div>
+                    <div class="video-info">
+                        <h3>Austin Ukulele Society Open Mic</h3>
+                        <p>February 22, 2020</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/_-xrAWF-VOg" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/_-xrAWF-VOg/hqdefault.jpg" alt="Performance Video">
+                    </div>
+                    <div class="video-info">
+                        <h3>Austin Ukulele Society Open Mic</h3>
+                        <p>February 22, 2020</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/_X0-m8ovBow" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/_X0-m8ovBow/hqdefault.jpg" alt="Performance Video">
+                    </div>
+                    <div class="video-info">
+                        <h3>Austin Ukulele Society Open Mic</h3>
+                        <p>February 22, 2020</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/U90NClw5qY8" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/U90NClw5qY8/hqdefault.jpg" alt="Performance Video">
+                    </div>
+                    <div class="video-info">
+                        <h3>TUG Uke Along</h3>
+                        <p>October 1, 2019</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/UBSv3VWVDFA" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/UBSv3VWVDFA/hqdefault.jpg" alt="Performance Video">
+                    </div>
+                    <div class="video-info">
+                        <h3>Austin Ukulele Society Open Mic</h3>
+                        <p>August 17, 2019</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/nmYUQ_eQs64" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/nmYUQ_eQs64/hqdefault.jpg" alt="Performance Video">
+                    </div>
+                    <div class="video-info">
+                        <h3>Austin Ukulele Society Open Mic</h3>
+                        <p>August 17, 2019</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/AmIc7wn5osk" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/AmIc7wn5osk/hqdefault.jpg" alt="Performance Video">
+                    </div>
+                    <div class="video-info">
+                        <h3>Austin Ukulele Society Open Mic</h3>
+                        <p>February 16, 2019</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/rwngVphuHZk" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/rwngVphuHZk/hqdefault.jpg" alt="Performance Video">
+                    </div>
+                    <div class="video-info">
+                        <h3>Austin Ukulele Society</h3>
+                        <p>May 2018</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Subscribe to our YouTube channel for more performances!</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,944 @@
+	<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Tuesday Ukes Group: Ukulele club that meets weekly in Austin, Texas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tuesday Ukes meets weekly in Austin, Texas, to play songs and sing, welcoming players players of all skill levels. Come in person or join us via Zoom.">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css?v=1.0">
+    <style>
+        /* Custom overrides if needed */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--background) 0%, #edf2f7 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-png {
+            height: auto;
+            max-width: 80%;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        /* Card Styles */
+        .card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-light);
+        }
+
+        /* Typography */
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: var(--surface);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        td {
+            padding: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        tr:hover {
+            background-color: var(--background);
+        }
+
+        /* Buttons and Links */
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        button:hover,
+        input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        .button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow);
+            color: white;
+        }
+
+        .button + .button {
+            margin-left: 1rem;
+        }
+
+        /* Form Elements */
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="number"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: 2px solid var(--border-light);
+            border-radius: var(--radius);
+            transition: all 0.3s ease;
+            background: var(--surface);
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--secondary-color), #fff);
+            margin-bottom: 2rem;
+        }
+
+        .hero .lead {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Song Grid */
+        .song-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .song-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .song-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .song-links {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        /* Meeting Info */
+        .meeting-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .meeting-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .meeting-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .zoom-details {
+            margin-top: 1rem;
+        }
+
+        /* Sidebar */
+        .sidebar-card {
+            margin-bottom: 2rem;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .sidebar-card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            list-style: none;
+        }
+
+        .resource-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .resource-section h3 {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .resource-section .menu-item {
+            position: relative;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .resource-section .menu-item small {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+            margin-left: 2.25rem;
+        }
+
+        .resource-section .menu-item:hover small {
+            color: var(--primary-color);
+        }
+
+        .song-resources {
+            margin-top: 1rem;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            border-radius: 4px;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background-color: var(--light-bg);
+            color: var(--primary-color);
+        }
+
+        .menu-item .icon {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+        }
+
+        /* Theme Styles */
+        body {
+            background-color: #3b3721;
+        }
+
+        .site {
+            background-color: #ddc38b;
+        }
+
+        /* Links and Navigation */
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+        }
+
+        /* Meeting Cards */
+        .meeting-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Sidebar */
+        .sidebar-menu {
+            list-style: none;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background-color: var(--light-bg);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 25% 75%;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .about-image {
+            border-radius: 8px;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 600px) {
+            .about-content {
+                grid-template-columns: 2fr;
+            }
+            .about-image {
+                margin: 0 auto 1rem;
+            }
+        }
+
+        .meadow-image {
+            display:block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Info */
+        .contact-info {
+            padding: 1rem;
+            background: var(--light-bg);
+            border-radius: 4px;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="nav-menu">
+                    <a href="index.html" class="logo">
+                        <img src="TuesdayUkesLogo.png" alt="Tuesday Ukes" class="header-logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="Newbie%20Corner.html">Newbie Corner</a></li>
+                        <li><a href="Favorite%20Songs.html">Favorite Songs</a></li>
+                        <li><a href="ukulele-song-archive.html">Song Archive</a></li>
+                        <li><a href="https://groups.io/g/TUG" class="button">Join Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container main-content fade-in">
+            <div class="content-area">
+                <!-- Hero Section -->
+                <section class="hero card">
+                    <h1><img src="Uke with Text.png" alt="Tuesday Ukes:" class="hero-png"><br>A ukulele club that meets weekly in Austin, Texas</h1>
+                    <p class="lead">Join our vibrant community of ukulele enthusiasts! We welcome players of all skill levels.</p>
+                    <div class="cta-buttons">
+                        <a href="ukulele-song-archive.html" class="button">Explore 1000+ Songs</a>
+                        <a href="#meeting-info" class="button">Join Next Meeting</a>
+                    </div>
+                </section>
+
+                <!-- Practice Songs -->
+                <section class="practice-songs card">
+                    <h2>Practice Songs for September 30</h2>
+                    <table id="practice-songs-table">
+                        <tr>
+                            <th>Title</th>
+                            <th>Links</th>
+                        </tr>
+
+                        <tr>  <td>Achy Breaky Heart</td>
+                        <td>
+                            <a href="music/PDFs/TUG%20Archive/Achy%20Breaky%20Heart.pdf">PDF</a>
+                            <a href="https://youtu.be/h-48_ALWlF4?t=6m48s">video</a>
+                        </td>
+                        </tr>
+
+                        <tr>  <td>Jambalaya</td>
+                        <td>
+                            <a href="music/ChordPro/TUG%20Archive/Jambalaya.pdf">PDF</a>
+                            <a href="https://youtu.be/75Er8Y_z5Jk?t=1h34m43s">video</a>
+                        </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Happy Trails</td>
+                            <td>
+                                <a href="https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf?v=DanielsEdit" >.pdf</a>
+																<br>
+                                <a href="https://youtu.be/d6NbW3X2iHc?t=1h12m12s" >Watch Video</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="text-center">
+                        <a href="Favorite%20Songs.html" class="button">View All Favorite Songs</a>
+                    </p>
+                </section>
+
+                <section class="submitted-songs card">
+                    <h2>Submitted songs for September 30</h2>
+                    <table id="submitted-songs-table">
+
+                        <tr>
+                            <th>Submitter</th> <th>Title</th> <th>PDF Link</th>
+                        </tr>
+
+                        <tr> <td>Christine</td>  <td>Song of Hope</td>
+                        <td>
+                            <a href="music/ChordPro/2025/September/Song%20of%20Hope.pdf?v=2025.09.02.16.02.11" target="_blank">.pdf</a><br>
+                            <a href="https://youtu.be/R84GNvcwh5w?si=Spdw286OHugVBPor" target="_blank">Youtube</a><br>
+                        </td></tr>
+
+                        <tr class="easy-song">  <td>Brenda</td>  <td>Johnny B Goode</td>
+                        <td>  <a href="music/PDFs/Fall%202022/Johnny%20B%20Goode.pdf?v=2025.09.20.16.18.10" target="_blank">.pdf</a><br>
+                        </td></tr>
+
+                        <tr>  <td>Mary Jane</td>  <td>Roll Along Prairie Moon</td>
+                        <td>  <a href="music/PDFs/Summer%202020/Roll%20Along%20Prairie%20Moon.pdf?v=2025.09.23.11.46.49" target="_blank">.pdf</a><br>
+                        </td></tr>
+
+                        <tr>  <td>Mary Jane</td>  <td>Way Out There</td>
+                        <td>
+                        <a href="music/PDFs/Summer%202022/Way%20Out%20There.pdf?v=2025.09.23.11.46.49" target="_blank">.pdf</a><br>
+                        </td></tr>
+
+                    </table>
+                </section>
+
+                <!-- Meeting Info -->
+                <section id="meeting-info" class="meeting-info card">
+                    <h2>Join Our Weekly Meetings</h2>
+                    <p class="lead">Every Tuesday night, 7:30 PM - 8:45 PM (Austin Time)</p>
+
+                    <div class="meeting-options">
+                        <div class="meeting-card in-person">
+                            <h3>In Person</h3>
+                            <p class="venue">
+                                <strong>Hancock Recreation Center</strong><br>
+                                811 E. 41st St., Austin, TX
+                            </p>
+                            <div class="meeting-links">
+                                <a href="https://goo.gl/maps/YSkQmH8esgb2qGLc7" class="button" target="_blank">View Map</a>
+                                <a href="http://www.austintexas.gov/department/hancock-recreation-center" class="button" target="_blank">Center Website</a>
+                            </div>
+                        </div>
+
+                        <div class="meeting-card virtual">
+                            <h3>Via Zoom</h3>
+                            <p class="zoom-info">Join us from anywhere in the world!</p>
+                            <div class="zoom-details">
+                                <a href="https://us02web.zoom.us/j/84955941265?pwd=NGJnSFB0NTFQeFVXaEpKUnFlWmJQUT09" class="button" target="_blank">Join Zoom Meeting</a>
+                                <div class="meeting-credentials">
+                                    <p><strong>Meeting ID:</strong> 849 5594 1265</p>
+                                    <p><strong>Passcode:</strong> 255610</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<section id="meeting-video" class="meeting-video card">
+	<h2 class="entry-title">September 23, 2025 meeting video index</h2>
+                    <p>Click the time link to watch the video, click the song title link to see the music</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Performer</th>
+                                <th>Song</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=3m14s">3:14</a></td> <td>group</td> <td><a href="https://tuesdayukes.org/music/PDFs/Two%20Chord%20Songs/Iko%20Iko.pdf?v=2024.02.11.11.25.20">Iko Iko</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=6m30s">6:30</a></td> <td>group</td> <td><a href="https://tuesdayukes.org/music/PDFs/Two%20Chord%20Songs/The%20Beat%20Goes%20On.pdf?v=2024.02.11.11.25.20">The Beat Goes On</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=13m10s">13:10</a></td> <td>Barbara</td> <td><a href="https://www.doctoruke.com/ivebeenworkingcomb.pdf">I've Been Working On the Railroad</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=17m44s">17:44</a></td> <td>Mary Jane</td> <td><a href="https://tuesdayukes.org/music/PDFs/Summer%202022/Someday%20Soon.pdf?v=2025.09.19.10.20.51">Someday Soon</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=22m14s">22:14</a></td> <td>Ed</td> <td><a href="https://tuesdayukes.org/music/PDFs/Fall%202020/The%20Bear%20Necessities.pdf?v=2025.09.20.16.18.10">The Bear Necessities</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=26m52s">26:52</a></td> <td>Walter</td> <td><a href="https://tuesdayukes.org/music/PDFs/Winter%202023-24/Creep.pdf?v=2025.09.20.16.18.10">Creep</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=33m02s">33:02</a></td> <td>Roy</td> <td><a href="https://tuesdayukes.org/music/ChordPro/2025/September/San%20Francisco%20Bay%20Blues.pdf?v=2025.09.22.20.08.48">San Francisco Bay Blues</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=39m20s">39:20</a></td> <td>Todd</td> <td><a href="https://tuesdayukes.org/music/ChordPro/2025/September/Do%20You%20Remember.pdf?v=2025.09.23.11.46.49">Do You Remember</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=42m40s">42:40</a></td> <td>Paulette and Gary</td> <td><a href="https://tuesdayukes.org/music/PDFs/Winter%202022-23/The%20Last%20Thing%20on%20My%20Mind.pdf?v=2025.09.23.11.46.49">The Last Thing on My Mind</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=48m40s">48:40</a></td> <td>Mary Jane</td> <td><a href="https://tuesdayukes.org/music/ChordPro/2025/September/Amarillo%20By%20Morning%20-%20C.pdf?v=2025.09.20.16.18.10">Amarillo By Morning</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=55m02s">55:02</a></td> <td>Ed</td> <td><a href="https://tuesdayukes.org/music/PDFs/Winter%202022-23/Take%20It%20Easy.pdf?v=2025.09.20.16.18.10">Take It Easy</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=58m03s">58:03</a></td> <td>Walter</td> <td><a href="https://tuesdayukes.org/music/PDFs/Summer%202022/Little%20Sister.pdf?v=2025.09.20.16.18.10">Little Sister</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=1h01m45s">1:01:45</a></td> <td>Roy</td> <td><a href="https://tuesdayukes.org/music/ChordPro/2025/September/Nobody%20Knows%20You%20When%20You're%20Down%20and%20Out.pdf?v=2025.09.22.20.08.48">Nobody Knows You When You're Down and Out</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=1h05m33s">1:05:33</a></td> <td>Todd</td> <td><a href="https://tuesdayukes.org/music/ChordPro/2025/September/Pink%20Pony%20Club.pdf?v=2025.09.23.11.43.03">Pink Pony Club</a></td></tr>
+                            <tr><td><a href="https://youtu.be/EL5P0phR5Y0?t=1h09m52s">1:09:52</a></td> <td>group</td> <td><a href="https://tuesdayukes.org/https://tuesdayukes.org/music/PDFs/Summer%202022/Happy%20Trails.pdf?v=DanielsEdit">Happy Trails</a></td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+								<section id="next open mic" class="open-mic card">
+<h2>Candidates for our next performance</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Song Title</th>
+            <th>Sheet Music</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Baker Street</td><td><a href="music/ChordPro/2025/June/Baker%20Street.pdf?v=2025.06.15.21.34.33" target="_blank">PDF (Kazoo song!)</a></td></tr>
+        <tr><td>The Longest Time</td><td><a href="music/ChordPro/2025/August/The%20Longest%20Time.pdf?v=2025.08.03.22.31.58" target="_blank">PDF</a></td></tr>
+        <tr><td>In Spite of Ourselves</td><td><a href="mmusic/PDFs/Fall%202023/In%20Spite%20of%20Ourselves.pdf?v=2025.04.01.13.15.01">PDF</a></td></tr>
+        <tr><td>It's Still Rock'n'Roll to Me</td><td><a href="music/PDFs/Summer%202024/It's%20Still%20Rock%20'n'%20Roll%20to%20Me.pdf?v=2025.04.01.22.48.20" target="_blank">PDF</a></td></tr>
+        <tr><td>Slip Sliding Away</td><td><a href="music/PDFs/Winter%202023-24/Slip%20Sliding%20Away.pdf?v=2025.04.01.22.48.20" target="_blank">PDF</a></td></tr>
+        <tr><td>What's Up</td><td><a href="music/PDFs/Spring%202024/What's%20Up.pdf?v=2024.10.14.14.34.24">PDF</a></td></tr>
+        <tr><td>Beer Run</td><td><a href="music/PDFs/Winter%202021-22/Beer%20Run.pdf?v=2024.07.06.20.17.50">PDF</a></td></tr>
+        <tr><td>The Weight</td><td><a href="music/PDFs/Summer%202023/The%20Weight.pdf?v=2024.07.02.09.28.43">PDF</a></td></tr>
+        <tr><td>Cool Change</td><td><a href="music/PDFs/Fall%202023/Cool%20Change.pdf?v=2024.02.26.16.25.06">PDF</a></td></tr>
+        <tr><td>Mystery Train</td><td><a href="music/PDFs/Winter%202023-24/Mystery%20Train.pdf?v=2024.01.10.11.50.44">PDF</a></td></tr>
+        <tr><td>Long Time Gone</td><td><a href="music/PDFs/Winter%202023-24/Long%20Time%20Gone.pdf?v=2024.01.10.11.50.44">PDF</a></td></tr>
+        <tr><td>Catfish John</td><td><a href="music/PDFs/Winter%202022-23/Catfish%20John.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>Drift Away</td><td><a href="music/PDFs/Summer%202021/Drift%20Away.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>Love Stinks</td><td><a href="music/PDFs/Winter%202022-23/Love%20Stinks.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>Don't You Just Know It</td><td><a href="music/PDFs/Winter%202022-23/Don't%20You%20Just%20Know%20It.pdf?v=2024.03.01.14.29.10">PDF</a></td></tr>
+        <tr><td>Railroad Town Without a Train</td><td><a href="music/PDFs/Winter%202022-23/Railroad%20Town%20Without%20a%20Train.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>Blue Moon</td><td><a href="music/PDFs/Spring%202022/Blue%20Moon.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>St. James' Infirmary Blues</td><td><a href="music/PDFs/Winter%202023-24/St.%20James%20Infirmary%20Blues%20(Walter%20Dm).pdf?v=2024.02.04.13.50.15">PDF</a></td></tr>
+        <tr><td>Heroes</td><td><a href="music/PDFs/Winter%202021-22/Heroes.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>Hooked on a Feeling</td><td><a href="music/PDFs/Spring%202021/Hooked%20on%20a%20Feeling.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>Blue Bayou</td><td><a href="music/PDFs/Spring%202023/Blue%20Bayou.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>Different Boats</td><td><a href="music/PDFs/Spring%202023/Different%20Boats.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>Mack the Knife</td><td><a href="music/PDFs/Spring%202021/Mack%20the%20Knife.pdf">PDF</a></td></tr>
+        <tr><td>Texas Armadillo</td><td><a href="music/PDFs/Summer%202023/Texas%20Armadillo.pdf?v=2023.12.08.15.01.29">PDF</a></td></tr>
+        <tr><td>Stupid Texas Song</td><td><a href="https://tuesdayukes.org/music/PDFs/Fall%202022/Stupid%20Texas%20Song.pdf?v=2025.05.20.20.45.02">PDF</a></td></tr>
+    </tbody>
+</table>
+</section>
+
+	<h3><a href=https://tuesdayukes.org/Zoom%20audio%20instructions.pdf>Zoom Original Audio Tutorial</a></h3>
+
+
+                <!-- About Section -->
+                <section class="about-section card">
+                    <h2>About Our Meetings</h2>
+                    <div class="about-content">
+                        <img class="about-image" src="Uke Meadow.png" alt="TUG Meeting">
+                        <div class="about-text">
+                            <p>We average 10 to 12 people in person at the Hancock Recreation Center and 3 to 4 people online via Zoom. We welcome players of all skill levels, and beginners are always welcome! Our meetings follow an open mic format, but everyone is free to play along.</p>
+                            <p>Members can submit songs a few days before the meeting to share with the group. Songs are formatted for both in-person projection and Zoom viewing. While submitting songs isn't required, it's a great way to participate!</p>
+                            <p>To make playing easier for newer players, we choose favorite songs to practice each week. These are posted on the website before the meeting so you have time to practice.</p>
+                            <p>Have questions? Email us at <a href="mailto:TUG+owner@groups.io">TUG+owner@groups.io</a>. We're a friendly, informal group and would love to have you join us!</p>
+                        </div>
+                    </div>
+                </section>
+            </div><!-- End content-area -->
+
+
+</div>
+		</section>
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h2>Quick Links</h2>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="Newbie%20Corner.html" class="menu-item">
+                                <span class="icon">🎵</span>
+                                <span>Newbie Guide & Learning</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="easy-ukulele-songs.html" class="menu-item">
+                                <span class="icon">🎼</span>
+                                <span>Easy Songs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="easy-ukulele-songs.html#2-chord-songs" class="menu-item">
+                                <span class="icon">🎸</span>
+                                <span>Two Chord Songs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ukulele-song-archive.html" class="menu-item">
+                                <span class="icon">📚</span>
+                                <span>Music Archive</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h2>Watch & Learn</h2>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="music/scripts/VideoIndex%20History.html" class="menu-item">
+                                <span class="icon">🎥</span>
+                                <span>Past Meeting Videos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="member_videos.html" class="menu-item">
+                                <span class="icon">📹</span>
+                                <span>Member Videos</span>
+                            </a>
+                        </li>
+												<li>
+                            <a href="performance_videos.html" class="menu-item">
+                                <span class="icon">🎭</span>
+                                <span>Performance Videos</span>
+                            </a>
+												</li>
+                        <li>
+                            <a href="senior_singalong.html" class="menu-item">
+                                <span class="icon">🎤</span>
+                                <span>Senior Sing-Along</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="uke_camp.html" class="menu-item">
+                                <span class="icon">🏕️</span>
+                                <span>Uke Camp (Beginner Videos)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h2>Community</h2>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="https://groups.io/g/TUG" class="menu-item">
+                                <span class="icon">✉️</span>
+                                <span>Join Mailing List</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="other_groups.html" class="menu-item">
+                                <span class="icon">👥</span>
+                                <span>Other Austin Uke Groups</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h2>Song Collections</h2>
+                            <ul class="sidebar-menu">
+                                <li><a href="ukulele-song-archive.html" class="menu-item">
+                                    <span class="icon">📚</span>
+                                    <span>TUG Music Archive</span>
+                                </a></li>
+                                <li><a href="https://ozbcoz.com" class="menu-item">
+                                    <span class="icon">📖</span>
+                                    <span>Jim's Songbook</span>
+                                    <small>2000+ ChordPro songs</small>
+                                </a></li>
+                                <li><a href="https://scorpexuke.com/" class="menu-item">
+                                    <span class="icon">🎵</span>
+                                    <span>Richard G's Songbook</span>
+                                </a></li>
+                                <li><a href="http://www.bytownukulele.ca/" class="menu-item">
+                                    <span class="icon">🎸</span>
+                                    <span>Bytown Ukulele Group</span>
+                                </a></li>
+                                <li><a href="http://www.belfastukejam.com/" class="menu-item">
+                                    <span class="icon">🎼</span>
+                                    <span>Belfast Ukelele Jam</span>
+                                </a></li>
+                                <li><a href="https://sanjoseukeclub.org/" class="menu-item">
+                                    <span class="icon">🌞</span>
+                                    <span>San Jose Ukulele Club</span>
+                                </a></li>
+                                <li><a href="https://www.doctoruke.com/" class="menu-item">
+                                    <span class="icon">👨‍⚕️</span>
+                                    <span>Doctor Uke</span>
+                                </a></li>
+                                <li><a href="https://www.chordie.com" class="menu-item">
+                                    <span class="icon">🎹</span>
+                                    <span>Chordie</span>
+                                    <small>Click VIEW > CHORDPRO to get ChordPro format</small>
+                                </a></li>
+                            </ul>
+									</div>
+
+									<div class="sidebar-card">
+															<h2>ChordPro Tools</h2>
+															<ul class="sidebar-menu">
+																	<li><a href="http://ukegeeks.com" class="menu-item">
+																			<span class="icon">✏️</span>
+																			<span>Online ChordPro Editor</span>
+																	</a></li>
+																	<li><a href="http://ukegeeks.com/tools" class="menu-item">
+																			<span class="icon">🎯</span>
+																			<span>Song Formatter</span>
+																			<small>Beta version</small>
+																	</a></li>
+																	<li><a href="http://webchord.sourceforge.net" class="menu-item">
+																			<span class="icon">🌐</span>
+																			<span>Web Chord</span>
+																			<small>HTML ChordPro display</small>
+																	</a></li>
+																	<li><a href="http://linkesoft.com/songbook" class="menu-item">
+																			<span class="icon">💻</span>
+																			<span>SongBook</span>
+																			<small>Cross-platform ChordPro formatter</small>
+																	</a></li>
+																	<li><a href="https://onsongapp.com/" class="menu-item">
+																			<span class="icon">📱</span>
+																			<span>OnSong</span>
+																			<small>iOS app - used by TUG</small>
+																	</a></li>
+															</ul>
+									</div>
+
+                <div class="sidebar-card">
+                    <h2>Uke Repair</h2>
+                    <div class="contact-info">
+                        <p><strong>Elaine Filion</strong><br>
+                        Email: <a href="mailto:elfil@sbcglobal.net">elfil@sbcglobal.net</a><br>
+                        Phone: 512 443-8220</p>
+                    </div>
+									</div>
+
+            </aside>
+        </main>
+
+        <!-- Tribute Section -->
+        <section class="tribute-section">
+            <div class="container">
+                <div class="tribute-card card">
+                    <div class="tribute-content">
+                        <img src="Jolly.jpg" alt="Kevin Jolly" class="tribute-image">
+                        <div class="tribute-text">
+                            <h2>In Memory of Kevin Jolly</h2>
+                            <p class="tribute-years">1957-2020</p>
+                            <p class="tribute-subtitle">Our Founder and Inspiration</p>
+                            <a href="Kevin.html" class="button">Read More About Kevin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="text-center">© 2025 Tuesday Ukes Group - Austin, Texas</p>
+            </div>
+        </footer>
+
+        <style>
+            .tribute-section {
+                background: linear-gradient(to bottom, var(--background), var(--border-light));
+                padding: 3rem 0;
+                margin-top: 3rem;
+            }
+
+            .tribute-card {
+                max-width: 800px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .tribute-content {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                justify-content: center;
+            }
+
+            .tribute-image {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: contain;
+                background: var(--surface);
+                border: 4px solid var(--surface);
+                box-shadow: var(--shadow);
+            }
+
+            .tribute-text {
+                text-align: left;
+            }
+
+            .tribute-text h2 {
+                color: var(--primary-color);
+                margin-bottom: 0.5rem;
+                border: none;
+            }
+
+            .tribute-years {
+                font-size: 1.2rem;
+                color: var(--text-secondary);
+                margin-bottom: 0.5rem;
+            }
+
+            .tribute-subtitle {
+                font-size: 1.1rem;
+                color: var(--text-primary);
+                margin-bottom: 1.5rem;
+            }
+
+            @media (max-width: 600px) {
+                .tribute-content {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .tribute-text {
+                    text-align: center;
+                }
+
+                .tribute-image {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        </style>
+    </body>
+</html>
+

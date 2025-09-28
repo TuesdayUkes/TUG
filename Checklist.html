@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Meeting Checklist - Tuesday Ukes Group</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css?v=1.0">
+    <style>
+        .checklist-form {
+            margin: 1rem 0;
+        }
+        
+        .checklist-form div {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .checklist-form input[type="checkbox"] {
+            margin-right: 1rem;
+            width: 1.2em;
+            height: 1.2em;
+        }
+
+        .checklist-form label {
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .notes {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: var(--surface-alt);
+            border-radius: var(--radius);
+        }
+
+        .notes ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .notes li {
+            margin: 0.25rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-menu">
+                <a href="index.html">
+                    <img src="TuesdayUkesLogo.png" alt="Tuesday Ukes Group Logo" class="header-logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                    <li><a href="member_videos.html">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <div class="content-area">
+                <div class="card">
+                    <h1>Meeting Checklist</h1>
+                    
+                    <section>
+                        <h2>Packing</h2>
+                        <form class="checklist-form">
+                            <div><input type="checkbox" id="laptop" name="laptop"/><label for="laptop">Laptop</label></div>
+                            <div><input type="checkbox" id="power" name="power"/><label for="power">Laptop power supply</label></div>
+                            <div><input type="checkbox" id="mouse" name="mouse"/><label for="mouse">Mouse</label></div>
+                            <div><input type="checkbox" id="camera" name="camera"/><label for="camera">Camera</label></div>
+                            <div><input type="checkbox" id="projector" name="projector"/><label for="projector">Projector</label></div>
+                            <div><input type="checkbox" id="speaker" name="speaker"/><label for="speaker">Bluetooth speaker</label></div>
+                            <div><input type="checkbox" id="ukulele" name="ukulele"/><label for="ukulele">Ukulele!</label></div>
+                        </form>
+                    </section>
+
+                    <section>
+                        <h2>Setup</h2>
+                        <form class="checklist-form">
+                            <div><input type="checkbox" id="connect-speaker" name="connect-speaker"/><label for="connect-speaker">Connect bluetooth speaker</label></div>
+                            <div><input type="checkbox" id="hotspot" name="hotspot"/><label for="hotspot">Setup mobile hotspot</label></div>
+                            <div><input type="checkbox" id="git-pull" name="git-pull"/><label for="git-pull">Double click "git pull" icon (upper right of desktop)</label></div>
+                            <div><input type="checkbox" id="local-web" name="local-web"/><label for="local-web">Open local copy of web page (upper right of desktop)</label></div>
+                            <div><input type="checkbox" id="zoom" name="zoom"/><label for="zoom"><a href="https://us02web.zoom.us/j/84955941265?pwd=NGJnSFB0NTFQeFVXaEpKUnFlWmJQUT09" target="_blank" rel="noreferrer noopener">Click Here to Connect to Zoom</a> (Log in as c.paul.butler@gmail.com)</label></div>
+                            <div><input type="checkbox" id="orig-sound" name="orig-sound"/><label for="orig-sound">Enable Original Sound</label></div>
+                            <div><input type="checkbox" id="share" name="share"/><label for="share">Share Screen</label></div>
+                            <div><input type="checkbox" id="remind" name="remind"/><label for="remind">Remind Zoomers! Enable Original Sound</label></div>
+                        </form>
+                    </section>
+
+                    <section class="notes">
+                        <h2>Notes to operator</h2>
+                        <ul>
+                            <li>Share Screen</li>
+                            <li>PDF scrolling: <kbd>Ctrl</kbd>-L, <kbd>Ctrl</kbd>-2, <kbd>Ctrl</kbd>-<kbd>Shift</kbd>-H</li>
+                            <li>Hide Zoom Controls: <kbd>Ctrl</kbd>-<kbd>Shift</kbd>-<kbd>Alt</kbd>-H</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h2>Quick Links</h2>
+                    <ul class="sidebar-menu">
+                        <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                        <li><a href="member_videos.html">Member Videos</a></li>
+                        <li><a href="uke_camp.html">Uke Camp</a></li>
+                        <li><a href="other_groups.html">Other Groups</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h2>Meeting Resources</h2>
+                    <ul class="sidebar-menu">
+                        <li><a href="Setup Notes.txt">Setup Notes</a></li>
+                        <li><a href="Zoom audio instructions.pdf">Zoom Audio Guide</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">© 2025 Tuesday Ukes Group. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

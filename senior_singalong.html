@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Senior Sing - Singalong Videos - Tuesday Ukes</title>
+    <link rel="stylesheet" href="styles/main.css?v=1.0">
+    <style>
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .video-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #f0f0f0;
+        }
+        
+        .video-thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .video-info {
+            padding: 1.5rem;
+        }
+        
+        .video-info h3 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+        
+        .video-info p {
+            margin: 0 0 1rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .video-info ul {
+            margin: 0;
+            padding: 0 0 0 1.2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .video-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .video-link:hover {
+            text-decoration: none;
+        }
+        
+        .lyrics-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .lyrics-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Senior Sing - Singalong Videos</h1>
+            <p>Join us for fun 10-minute singalongs featuring classic songs!</p>
+        </header>
+
+        <main class="video-grid">
+            <div class="video-card">
+                <a href="https://youtu.be/Wi39lksdt_E" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/Wi39lksdt_E/hqdefault.jpg" alt="Singalong #1">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #1</h3>
+                        <ul>
+                            <li>Side by Side</li>
+                            <li>Oh Susana</li>
+                            <li>Don't Sit Under the Apple Tree</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/B9irO72pzMU" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/B9irO72pzMU/hqdefault.jpg" alt="Singalong #2">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #2</h3>
+                        <ul>
+                            <li>Oh, Boy</li>
+                            <li>Blue Suede Shoes</li>
+                            <li>In the Jailhouse Now</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/Vx2fRX9T7cA" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/Vx2fRX9T7cA/hqdefault.jpg" alt="Singalong #3">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #3</h3>
+                        <ul>
+                            <li>Ain't We Got Fun</li>
+                            <li>Daisy Bell</li>
+                            <li>Let Me Call You Sweetheart</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/GSwHPlCogYY" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/GSwHPlCogYY/hqdefault.jpg" alt="Singalong #4">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #4</h3>
+                        <ul>
+                            <li>Bill Bailey Won't You Please Come Home</li>
+                            <li>Music! Music! Music!</li>
+                            <li>Let's All Sing Like the Birdies Sing</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/HObLgnWQJ0M" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/HObLgnWQJ0M/hqdefault.jpg" alt="Singalong #5">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #5</h3>
+                        <ul>
+                            <li>How Much is that Doggie in the Window</li>
+                            <li>Swinging on a Star</li>
+                            <li>Don't Sit Under the Apple Tree</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/SCBx6R1RolM" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/SCBx6R1RolM/hqdefault.jpg" alt="Singalong #6">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #6</h3>
+                        <ul>
+                            <li>Side By Side</li>
+                            <li>High Hopes</li>
+                            <li>Oh, What a Beautiful Morning</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/qoVVPDc-Mfg" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/qoVVPDc-Mfg/hqdefault.jpg" alt="Singalong #7">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #7</h3>
+                        <ul>
+                            <li>Jambalaya</li>
+                            <li>I'm an Old Cowhand</li>
+                            <li>Jingle, Jangle, Jingle</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/gY0lBbP5xkE" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/gY0lBbP5xkE/hqdefault.jpg" alt="Singalong #8">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #8</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/oTuFmNGp_90" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/oTuFmNGp_90/hqdefault.jpg" alt="Singalong #9">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #9</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/s_DBZbPnpBQ" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/s_DBZbPnpBQ/hqdefault.jpg" alt="Singalong #10">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #10</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/eDVVYk4L06o" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/eDVVYk4L06o/hqdefault.jpg" alt="Singalong #11">
+                    </div>
+                    <div class="video-info">
+                        <h3>10 Minute Singalong #11</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/dMQ_Z3oGGPg" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/dMQ_Z3oGGPg/hqdefault.jpg" alt="Senior Sing 1">
+                    </div>
+                    <div class="video-info">
+                        <h3>Senior Sing 1</h3>
+                        <a href="https://www.dropbox.com/s/nym3sb27v3b75bm/SeniorSing_Book1_lyrics.pdf?dl=0" class="lyrics-link" target="_blank" rel="noopener noreferrer">Download Lyrics</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="https://youtu.be/tuvtxfXkvgk" class="video-link" target="_blank" rel="noopener noreferrer">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/tuvtxfXkvgk/hqdefault.jpg" alt="Senior Sing 2">
+                    </div>
+                    <div class="video-info">
+                        <h3>Senior Sing 2</h3>
+                        <a href="https://www.dropbox.com/s/k96hb59wy7azbul/SeniorSing_Book2_lyrics.pdf?dl=0" class="lyrics-link" target="_blank" rel="noopener noreferrer">Download Lyrics</a>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>For more information about our senior singalongs, contact us.</p>
+        </footer>
+    </div>
+</body>
+</html>

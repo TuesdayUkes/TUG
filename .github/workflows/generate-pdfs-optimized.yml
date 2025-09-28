@@ -12,6 +12,13 @@ on:
       - '**/*.chopro'
       - '**/*.cho'
       - 'music/ChordPro/myconfig.json'
+  workflow_dispatch:
+    inputs:
+      regenerate_all:
+        description: 'Regenerate all PDFs (ignore timestamps)'
+        required: false
+        default: false
+        type: boolean
 
 env:
   FORCE_COLOR: 1
@@ -43,11 +50,21 @@ jobs:
     - name: Detect changes and generate PDFs
       id: generate
       run: |
+        # Check if this is a manual trigger with regenerate_all option
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.regenerate_all }}" = "true" ]; then
+          echo "🔄 Manual trigger - regenerating all PDFs"
+          ./.github/scripts/generate-pdfs.sh music true
+          echo "regenerated-all=true" >> $GITHUB_OUTPUT
         # Check if myconfig.json changed - if so, regenerate all PDFs
-        if git diff --name-only HEAD^ HEAD | grep -q "music/ChordPro/myconfig.json"; then
+        elif git diff --name-only HEAD^ HEAD | grep -q "music/ChordPro/myconfig.json"; then
           echo "🔄 myconfig.json changed - regenerating all PDFs"
           ./.github/scripts/generate-pdfs.sh music true
           echo "regenerated-all=true" >> $GITHUB_OUTPUT
+        # Check if this is a manual trigger without regenerate_all option
+        elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          echo "🔄 Manual trigger - processing all ChordPro files"
+          ./.github/scripts/generate-pdfs.sh music false
+          echo "regenerated-all=false" >> $GITHUB_OUTPUT
         else
           # Only process changed ChordPro files
           CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -E '\.(chopro|cho)$' || true)

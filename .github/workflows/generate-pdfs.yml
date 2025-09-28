@@ -11,6 +11,13 @@ on:
       - '**/*.chopro'
       - '**/*.cho'
       - 'music/ChordPro/myconfig.json'
+  workflow_dispatch:
+    inputs:
+      regenerate_all:
+        description: 'Regenerate all PDFs (ignore timestamps)'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   generate-pdfs:

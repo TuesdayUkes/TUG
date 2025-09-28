@@ -1,4 +1,5 @@
 name: Generate ChordPro PDFs (Optimized)
+# This workflow provides optimized PDF generation with better change detection and error handling
 
 on:
   push:
@@ -43,14 +44,30 @@ jobs:
     - name: Detect changes and generate PDFs
       id: generate
       run: |
+        # Determine base commit for comparison
+        if [ "${{ github.event_name }}" = "pull_request" ]; then
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+        else
+          # For push events, use the before SHA or HEAD^ if available
+          if [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then  
+            BASE_SHA="${{ github.event.before }}"
+          else
+            # First commit case - process all files
+            echo "🆕 First commit detected - processing all ChordPro files"
+            ./.github/scripts/generate-pdfs.sh music true
+            echo "regenerated-all=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+        fi
+        
         # Check if myconfig.json changed - if so, regenerate all PDFs
-        if git diff --name-only HEAD^ HEAD | grep -q "music/ChordPro/myconfig.json"; then
+        if git diff --name-only $BASE_SHA HEAD | grep -q "music/ChordPro/myconfig.json"; then
           echo "🔄 myconfig.json changed - regenerating all PDFs"
           ./.github/scripts/generate-pdfs.sh music true
           echo "regenerated-all=true" >> $GITHUB_OUTPUT
         else
           # Only process changed ChordPro files
-          CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -E '\.(chopro|cho)$' || true)
+          CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM $BASE_SHA HEAD | grep -E '\.(chopro|cho)$' || true)
           
           if [ -n "$CHANGED_CHOPRO" ]; then
             echo "📝 Changed ChordPro files:"

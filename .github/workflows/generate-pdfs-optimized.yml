@@ -154,11 +154,26 @@ jobs:
             });
           }
     
-    - name: Upload PDFs as artifacts
+    - name: Install Python dependencies for GenList.py
       if: steps.check-pdfs.outputs.pdfs-generated == 'true'
-      uses: actions/upload-artifact@v4
+      run: |
+        python -m pip install --upgrade pip
+        pip install first
+    
+    - name: Generate ukulele-song-archive.html
+      if: steps.check-pdfs.outputs.pdfs-generated == 'true'
+      run: |
+        echo "Running GenList.py from root directory to generate ukulele-song-archive.html..."
+        python music/scripts/GenList.py music ukulele-song-archive.html --intro --genPDF=False
+        echo "Generated ukulele-song-archive.html"
+        ls -la ukulele-song-archive.html
+    
+    - name: Deploy PDFs and Archive to GitHub Pages
+      if: steps.check-pdfs.outputs.pdfs-generated == 'true'
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        name: generated-pdfs-${{ github.run_number }}
-        path: |
-          **/*.pdf
-        retention-days: 30
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        destination_dir: .
+        keep_files: true
+        commit_message: '🎵 Update PDFs and song archive from ChordPro files'

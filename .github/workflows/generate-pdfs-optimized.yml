@@ -1,11 +1,13 @@
 name: Generate ChordPro PDFs (Optimized) - DISABLED
 
-# WORKFLOW DISABLED - No triggers will activate this workflow
-# To re-enable, uncomment the 'on:' section below
+# WORKFLOW DISABLED - Uses impossible trigger condition
+# To re-enable, replace the 'on:' section below with the commented triggers
 
-on: {}
+on:
+  push:
+    branches: [ "workflow-disabled-never-matches" ]
 
-# DISABLED TRIGGERS:
+# DISABLED TRIGGERS - To re-enable, replace the 'on:' section above with this:
 # on:
 #   push:
 #     paths:

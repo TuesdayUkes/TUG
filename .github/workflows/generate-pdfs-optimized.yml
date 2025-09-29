@@ -5,7 +5,11 @@ on:
     paths:
       - '**/*.chopro'
       - '**/*.cho'
-      - 'music/ChordPro/myconfig.json'
+      - 'music/ChordPro/myc        script: |
+          const { execSync } = require('child_process');
+          
+          // Get list of generated PDFs
+          const pdfFiles = execSync('git status --porcelain | grep "\\.pdf" | sed "s/^.../"', { encoding: 'utf8' }).trim();.json'
     branches: [ main, master ]
   pull_request:
     paths:
@@ -67,18 +71,23 @@ jobs:
           echo "regenerated-all=false" >> $GITHUB_OUTPUT
         else
           # Only process changed ChordPro files
-          CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -E '\.(chopro|cho)$' || true)
+          CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -E '\.(chopro|cho)' || true)
           
           if [ -n "$CHANGED_CHOPRO" ]; then
             echo "📝 Changed ChordPro files:"
             echo "$CHANGED_CHOPRO"
             
             # Process only changed files
-            echo "$CHANGED_CHOPRO" | while IFS= read -r file; do
+            for file in $CHANGED_CHOPRO; do
               if [ -n "$file" ] && [ -f "$file" ]; then
                 echo "Processing: $file"
                 pdf_file="${file%.*}.pdf"
-                mkdir -p "$(dirname "$pdf_file")"
+                pdf_dir="$(dirname "$pdf_file")"
+                
+                # Create PDF directory in music/PDFs/
+                pdf_output_dir="music/PDFs/${pdf_dir#music/ChordPro/}"
+                pdf_output_file="$pdf_output_dir/$(basename "$pdf_file")"
+                mkdir -p "$pdf_output_dir"
                 
                 # Run ChordPro (ignore exit code, check if PDF was created)
                 chordpro \
@@ -95,14 +104,16 @@ jobs:
                   --define=pdf:fonts:chord:color=red \
                   --text-font=helvetica \
                   --chord-font=helvetica \
-                  --output="$pdf_file" \
+                  --output="$pdf_output_file" \
                   "$file" 2>/dev/null || true
                 
                 # Check if PDF was actually created (regardless of exit code)
-                if [ -f "$pdf_file" ]; then
-                  echo "✓ Generated: $pdf_file"
+                if [ -f "$pdf_output_file" ]; then
+                  echo "✓ Generated: $pdf_output_file"
+                  # Add to git so status can detect it
+                  git add "$pdf_output_file" 2>/dev/null || true
                 else
-                  echo "⚠ Failed to generate: $pdf_file (no output file)"
+                  echo "⚠ Failed to generate: $pdf_output_file (no output file)"
                 fi
               fi
             done
@@ -116,10 +127,12 @@ jobs:
     - name: Check for generated PDFs
       id: check-pdfs
       run: |
-        if git status --porcelain | grep -E '\.pdf$'; then
+        # Check for both staged and unstaged PDF files
+        if git status --porcelain | grep '\.pdf' || git diff --cached --name-only | grep '\.pdf'; then
           echo "pdfs-generated=true" >> $GITHUB_OUTPUT
           echo "Generated PDFs:"
-          git status --porcelain | grep -E '\.pdf$'
+          git status --porcelain | grep '\.pdf' || true
+          git diff --cached --name-only | grep '\.pdf' | sed 's/^/A  /' || true
         else
           echo "pdfs-generated=false" >> $GITHUB_OUTPUT
           echo "No new PDFs generated"
@@ -155,7 +168,6 @@ jobs:
           }
     
     - name: Install Python dependencies for GenList.py
-      if: steps.check-pdfs.outputs.pdfs-generated == 'true'
       run: |
         python -m pip install --upgrade pip
         pip install first

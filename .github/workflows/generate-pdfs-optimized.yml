@@ -167,11 +167,21 @@ jobs:
         echo "Generated ukulele-song-archive.html"
         ls -la ukulele-song-archive.html || echo "Archive file not found"
     
+    - name: Prepare files for deployment (including ignored files)
+      run: |
+        # Create a temporary directory for deployment
+        mkdir -p deploy_temp
+        # Copy all files (including ignored ones)
+        cp -r . deploy_temp/
+        # List what we're deploying
+        echo "Files being deployed:"
+        ls -la deploy_temp/ukulele-song-archive.html || echo "Archive file missing"
+    
     - name: Deploy PDFs and Archive to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
+        publish_dir: ./deploy_temp
         destination_dir: .
         keep_files: true
         commit_message: '🎵 Update PDFs and song archive from ChordPro files'

@@ -15,8 +15,8 @@ echo ""
 
 # ChordPro command arguments (matching GenList.py settings)
 CHORDPRO_ARGS=(
-    "--config=Ukulele",
-    "--config=Ukulele-ly",
+    "--config=Ukulele"
+    "--config=Ukulele-ly"
     "--define=pdf:diagrams:show=top"
     "--define=settings:inline-chords=true"
     "--define=pdf:margintop=70"

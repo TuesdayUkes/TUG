@@ -73,8 +73,9 @@ jobs:
             echo "📝 Changed ChordPro files:"
             echo "$CHANGED_CHOPRO"
             
-            # Process only changed files
-            for file in $CHANGED_CHOPRO; do
+            # Process only changed files - write to temp file to avoid shell issues
+            echo "$CHANGED_CHOPRO" > /tmp/changed_files.txt
+            while IFS= read -r file; do
               if [ -n "$file" ] && [ -f "$file" ]; then
                 echo "Processing: $file"
                 pdf_file="${file%.*}.pdf"
@@ -112,7 +113,7 @@ jobs:
                   echo "⚠ Failed to generate: $pdf_output_file (no output file)"
                 fi
               fi
-            done
+            done < /tmp/changed_files.txt
             echo "regenerated-all=false" >> $GITHUB_OUTPUT
           else
             echo "ℹ No ChordPro files changed"

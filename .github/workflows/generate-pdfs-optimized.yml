@@ -5,13 +5,11 @@ on:
     paths:
       - '**/*.chopro'
       - '**/*.cho'
-      - 'music/ChordPro/myconfig.json'
     branches: [ main, master ]
   pull_request:
     paths:
       - '**/*.chopro'
       - '**/*.cho'
-      - 'music/ChordPro/myconfig.json'
   workflow_dispatch:
     inputs:
       regenerate_all:
@@ -22,6 +20,23 @@ on:
 
 env:
   FORCE_COLOR: 1
+  # Centralized ChordPro parameters - used by both generate-pdfs.sh and inline processing
+  CHORDPRO_PARAMS: >-
+    --config=ukulele
+    --config=ukulele-ly
+    --define=pdf:diagrams:show=top
+    --define=settings:inline-chords=true
+    --define=pdf:margintop=70
+    --define=pdf:marginbottom=0
+    --define=pdf:marginleft=20
+    --define=pdf:marginright=20
+    --define=pdf:headspace=50
+    --define=pdf:footspace=10
+    --define=pdf:head-first-only=true
+    --define=pdf:fonts:chord:color=red
+    --define=pdf:papersize=a5
+    --text-font=helvetica
+    --chord-font=helvetica
 
 jobs:
   generate-pdfs:
@@ -55,11 +70,7 @@ jobs:
           echo "🔄 Manual trigger - regenerating all PDFs"
           ./.github/scripts/generate-pdfs.sh music true || echo "Script completed with some errors, continuing..."
           echo "regenerated-all=true" >> $GITHUB_OUTPUT
-        # Check if myconfig.json changed - if so, regenerate all PDFs
-        elif git diff --name-only HEAD^ HEAD | grep -q "music/ChordPro/myconfig.json"; then
-          echo "🔄 myconfig.json changed - regenerating all PDFs"
-          ./.github/scripts/generate-pdfs.sh music true || echo "Script completed with some errors, continuing..."
-          echo "regenerated-all=true" >> $GITHUB_OUTPUT
+
         # Check if this is a manual trigger without regenerate_all option
         elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
           echo "🔄 Manual trigger - processing all ChordPro files"
@@ -86,23 +97,8 @@ jobs:
                 pdf_output_file="$pdf_output_dir/$(basename "$pdf_file")"
                 mkdir -p "$pdf_output_dir"
                 
-                # Run ChordPro (ignore exit code, check if PDF was created)
-                chordpro \
-                  --config=music/ChordPro/myconfig.json \
-                  --define=pdf:diagrams:show=top \
-                  --define=settings:inline-chords=true \
-                  --define=pdf:margintop=70 \
-                  --define=pdf:marginbottom=0 \
-                  --define=pdf:marginleft=20 \
-                  --define=pdf:marginright=20 \
-                  --define=pdf:headspace=50 \
-                  --define=pdf:footspace=10 \
-                  --define=pdf:head-first-only=true \
-                  --define=pdf:fonts:chord:color=red \
-                  --text-font=helvetica \
-                  --chord-font=helvetica \
-                  --output="$pdf_output_file" \
-                  "$file" 2>/dev/null || true
+                # Run ChordPro using centralized parameters (ignore exit code, check if PDF was created)
+                chordpro $CHORDPRO_PARAMS --output="$pdf_output_file" "$file" 2>/dev/null || true
                 
                 # Check if PDF was actually created (regardless of exit code)
                 if [ -f "$pdf_output_file" ]; then

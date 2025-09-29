@@ -13,24 +13,28 @@ echo "Music folder: $MUSIC_FOLDER"
 echo "Force regenerate: $FORCE_REGENERATE"
 echo ""
 
-# ChordPro command arguments (matching GenList.py settings)
-CHORDPRO_ARGS=(
-    "--config=ukulele"
-    "--config=ukulele-ly"
-    "--define=pdf:diagrams:show=top"
-    "--define=settings:inline-chords=true"
-    "--define=pdf:margintop=70"
-    "--define=pdf:marginbottom=0"
-    "--define=pdf:marginleft=10"
-    "--define=pdf:marginright=20"
-    "--define=pdf:headspace=50"
-    "--define=pdf:footspace=10"
-    "--define=pdf:head-first-only=true"
-    "--define=pdf:fonts:chord:color=red"
-    "--define=pdf:papersize=a5"
-    "--text-font=helvetica"
-    "--chord-font=helvetica"
-)
+# ChordPro command arguments - use environment variable if available, fallback to defaults
+if [ -n "$CHORDPRO_PARAMS" ]; then
+    echo "Using ChordPro parameters from environment"
+    CHORDPRO_CMD="chordpro $CHORDPRO_PARAMS"
+else
+    echo "Using fallback ChordPro parameters"
+    CHORDPRO_ARGS=(
+        "--define=pdf:diagrams:show=top"
+        "--define=settings:inline-chords=true"
+        "--define=pdf:margintop=70"
+        "--define=pdf:marginbottom=0"
+        "--define=pdf:marginleft=20"
+        "--define=pdf:marginright=20"
+        "--define=pdf:headspace=50"
+        "--define=pdf:footspace=10"
+        "--define=pdf:head-first-only=true"
+        "--define=pdf:fonts:chord:color=red"
+        "--text-font=helvetica"
+        "--chord-font=helvetica"
+    )
+    CHORDPRO_CMD="chordpro ${CHORDPRO_ARGS[*]}"
+fi
 
 # Find all ChordPro files
 echo "🔍 Finding ChordPro files..."
@@ -66,8 +70,8 @@ while IFS= read -r chopro_file; do
         # Create output directory if needed
         mkdir -p "$(dirname "$pdf_file")"
 
-        # Generate PDF (ignore exit codes)
-        chordpro "${CHORDPRO_ARGS[@]}" --output="$pdf_file" "$chopro_file" 2>/dev/null || true
+        # Generate PDF using centralized parameters (ignore exit codes)
+        $CHORDPRO_CMD --output="$pdf_file" "$chopro_file" 2>/dev/null || true
 
         # Check if PDF was actually created
         if [ -f "$pdf_file" ]; then

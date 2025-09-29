@@ -1,22 +1,28 @@
-name: Generate ChordPro PDFs (Optimized)
+name: Generate ChordPro PDFs (Optimized) - DISABLED
 
-on:
-  push:
-    paths:
-      - '**/*.chopro'
-      - '**/*.cho'
-    branches: [ main, master ]
-  pull_request:
-    paths:
-      - '**/*.chopro'
-      - '**/*.cho'
-  workflow_dispatch:
-    inputs:
-      regenerate_all:
-        description: 'Regenerate all PDFs (ignore timestamps)'
-        required: false
-        default: false
-        type: boolean
+# WORKFLOW DISABLED - No triggers will activate this workflow
+# To re-enable, uncomment the 'on:' section below
+
+on: {}
+
+# DISABLED TRIGGERS:
+# on:
+#   push:
+#     paths:
+#       - '**/*.chopro'
+#       - '**/*.cho'
+#     branches: [ main, master ]
+#   pull_request:
+#     paths:
+#       - '**/*.chopro'
+#       - '**/*.cho'
+#   workflow_dispatch:
+#     inputs:
+#       regenerate_all:
+#         description: 'Regenerate all PDFs (ignore timestamps)'
+#         required: false
+#         default: false
+#         type: boolean
 
 env:
   FORCE_COLOR: 1

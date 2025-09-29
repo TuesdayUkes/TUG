@@ -3,9 +3,9 @@
 
 Key of G
 
-{define: Am7(no5) frets 2030}
-{define: Gsus2 frets 0230}
-{define: G7sus2 frets 0210}
+{define: Am7(no5) frets 2 0 3 0}
+{define: Gsus2 frets 0 2 3 0}
+{define: G7sus2 frets 0 2 1 0}
 
 Intro: [G] [D] [F] [Am7(no5)]
 

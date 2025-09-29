@@ -5,11 +5,7 @@ on:
     paths:
       - '**/*.chopro'
       - '**/*.cho'
-      - 'music/ChordPro/myc        script: |
-          const { execSync } = require('child_process');
-          
-          // Get list of generated PDFs
-          const pdfFiles = execSync('git status --porcelain | grep "\\.pdf" | sed "s/^.../"', { encoding: 'utf8' }).trim();.json'
+      - 'music/ChordPro/myconfig.json'
     branches: [ main, master ]
   pull_request:
     paths:
@@ -146,7 +142,7 @@ jobs:
           const { execSync } = require('child_process');
           
           // Get list of generated PDFs
-          const pdfFiles = execSync('git status --porcelain | grep -E "\\.pdf$" | sed "s/^...//"', { encoding: 'utf8' }).trim();
+          const pdfFiles = execSync('git status --porcelain | grep "\\.pdf" | sed "s/^...//"', { encoding: 'utf8' }).trim();
           
           if (pdfFiles) {
             const pdfList = pdfFiles.split('\n').map(file => `- \`${file}\``).join('\n');

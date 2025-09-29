@@ -6,13 +6,11 @@
 
 MUSIC_FOLDER="${1:-music}"
 FORCE_REGENERATE="${2:-false}"
-CONFIG_FILE="music/ChordPro/myconfig.json"
 
 echo "🎵 ChordPro PDF Generator"
 echo "========================"
 echo "Music folder: $MUSIC_FOLDER"
 echo "Force regenerate: $FORCE_REGENERATE"
-echo "Config file: $CONFIG_FILE"
 echo ""
 
 # ChordPro command arguments (matching GenList.py settings)
@@ -33,14 +31,6 @@ CHORDPRO_ARGS=(
     "--text-font=helvetica"
     "--chord-font=helvetica"
 )
-
-# Add config file if it exists
-if [ -f "$CONFIG_FILE" ]; then
-    CHORDPRO_ARGS+=("--config=$CONFIG_FILE")
-    echo "✓ Using config file: $CONFIG_FILE"
-else
-    echo "⚠ Config file not found: $CONFIG_FILE"
-fi
 
 # Find all ChordPro files
 echo "🔍 Finding ChordPro files..."

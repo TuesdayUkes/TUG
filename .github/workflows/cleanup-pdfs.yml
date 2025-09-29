@@ -1,0 +1,63 @@
+name: Cleanup Incorrectly Placed PDFs
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_cleanup:
+        description: 'Type "CONFIRM" to proceed with PDF cleanup'
+        required: true
+        type: string
+
+jobs:
+  cleanup-pdfs:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.confirm_cleanup == 'CONFIRM'
+    
+    steps:
+    - name: Checkout gh-pages branch
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+    
+    - name: Remove PDFs from ChordPro directories
+      run: |
+        echo "🔍 Looking for PDFs in ChordPro directories..."
+        
+        # Find and list PDFs in music/ChordPro/ directories
+        find music/ChordPro/ -name "*.pdf" -type f 2>/dev/null || echo "No ChordPro directory found"
+        
+        # Count PDFs to be removed
+        PDF_COUNT=$(find music/ChordPro/ -name "*.pdf" -type f 2>/dev/null | wc -l)
+        echo "Found $PDF_COUNT PDFs in ChordPro directories"
+        
+        if [ "$PDF_COUNT" -gt 0 ]; then
+          echo "🗑️ Removing incorrectly placed PDFs..."
+          find music/ChordPro/ -name "*.pdf" -type f -delete
+          echo "✅ Removed $PDF_COUNT PDFs from ChordPro directories"
+          
+          # List remaining PDFs in correct location
+          echo "📁 PDFs in correct location (music/PDFs/):"
+          find music/PDFs/ -name "*.pdf" -type f 2>/dev/null | head -10 || echo "No PDFs folder found"
+        else
+          echo "ℹ️ No PDFs found in ChordPro directories"
+        fi
+    
+    - name: Commit cleanup
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        if git diff --quiet && git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git add -A
+          git commit -m "🧹 Remove incorrectly placed PDFs from ChordPro directories
+
+          - Removed PDFs that were generated in music/ChordPro/ instead of music/PDFs/
+          - These were created before the workflow was fixed to use proper output directories
+          - PDFs should only exist in music/PDFs/ for proper organization"
+          git push origin gh-pages
+          echo "✅ Cleanup committed and pushed"
+        fi

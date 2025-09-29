@@ -179,8 +179,8 @@ jobs:
       run: |
         # Create a temporary directory for deployment
         mkdir -p deploy_temp
-        # Copy all files (including ignored ones)
-        cp -r . deploy_temp/
+        # Copy all files (including ignored ones) except git and deploy directories
+        find . -maxdepth 1 -not -name '.' -not -name 'deploy_temp' -not -name '.git' -not -name '.github' -exec cp -r {} deploy_temp/ \;
         # List what we're deploying
         echo "Files being deployed:"
         ls -la deploy_temp/ukulele-song-archive.html || echo "Archive file missing"

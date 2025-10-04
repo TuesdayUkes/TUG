@@ -16,6 +16,10 @@ on:
       - '**/*.pdf'
       - '**/*.chopro'
       - '**/*.cho'
+      - '**/*.mscz'
+      - '**/*.urltxt'
+      - '**/*.hide'
+      - '**/*.easy'
       - 'robots.txt'
     branches: [ main, master ]
   workflow_dispatch:

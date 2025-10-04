@@ -14,6 +14,8 @@ on:
       - '**/*.ico'
       - '**/*.txt'
       - '**/*.pdf'
+      - '**/*.chopro'
+      - '**/*.cho'
       - 'robots.txt'
     branches: [ main, master ]
   workflow_dispatch:

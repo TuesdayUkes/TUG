@@ -212,7 +212,11 @@ searchControls = """
     <div class="filter-checkbox">
         <input type="checkbox" id="easyFilter">
         <label for="easyFilter">🎵 Show only easy songs (perfect for beginners!)</label>
-    </div>
+    </div>""" + ("""
+    <div class="filter-checkbox">
+        <input type="checkbox" id="showAllVersions">
+        <label for="showAllVersions">🗂️ Show all versions (including older duplicates)</label>
+    </div>""" if filterMethod != "none" else "") + """
     <div id="searchStats" class="search-stats" style="display: none;">
         Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> songs
     </div>
@@ -225,6 +229,7 @@ searchScript = """
 <script>
     const searchInput = document.getElementById('searchInput');
     const easyFilter = document.getElementById('easyFilter');
+    const showAllVersions = document.getElementById('showAllVersions');
     const table = document.getElementById('dataTable');
     const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
     const searchStats = document.getElementById('searchStats');
@@ -236,12 +241,13 @@ searchScript = """
 
     function updateSearchStats(visibleCount) {
         visibleCountSpan.textContent = visibleCount;
-        searchStats.style.display = (searchInput.value || easyFilter.checked) ? 'block' : 'none';
+        searchStats.style.display = (searchInput.value || easyFilter.checked || (showAllVersions && showAllVersions.checked)) ? 'block' : 'none';
     }
 
     function filterRows() {
         const searchFilter = searchInput.value.toLowerCase();
         const easyOnly = easyFilter.checked;
+        const showAll = showAllVersions ? showAllVersions.checked : true;
         let visibleCount = 0;
 
         // Add loading effect
@@ -258,7 +264,15 @@ searchScript = """
                 const shouldShow = showBySearch && showByEasy;
                 rows[i].style.display = shouldShow ? '' : 'none';
 
-                if (shouldShow) visibleCount++;
+                if (shouldShow) {
+                    visibleCount++;
+                    
+                    // Show/hide additional file versions within this row
+                    const additionalVersions = rows[i].querySelectorAll('.additional-version');
+                    additionalVersions.forEach(link => {
+                        link.style.display = showAll ? '' : 'none';
+                    });
+                }
             }
 
             updateSearchStats(visibleCount);
@@ -274,9 +288,23 @@ searchScript = """
     });
 
     easyFilter.addEventListener('change', filterRows);
+    if (showAllVersions) {
+        showAllVersions.addEventListener('change', filterRows);
+    }
 
-    // Initialize
-    updateSearchStats(rows.length);
+    // Initialize with default filtering based on server-side filter method
+    // Hide additional versions by default unless filter method was "none"
+    const defaultFilterMethod = '""" + filterMethod + """';
+    if (defaultFilterMethod !== 'none') {
+        // Hide additional file versions by default
+        const additionalVersions = document.querySelectorAll('.additional-version');
+        additionalVersions.forEach(link => {
+            link.style.display = 'none';
+        });
+    }
+    
+    // Update initial stats
+    filterRows();
 </script>
 """
 
@@ -291,21 +319,29 @@ for p in Path(musicFolder).rglob('*'):
   if p.suffix.lower() in extensions:
     allFiles.append(p.as_posix())
 
-# Apply the selected filtering method
+# Determine which files should be filtered out for JavaScript handling
+# Always include all files in HTML, but mark filtered ones with CSS classes
+visibleFiles = allFiles
+
+# Determine which files would be filtered by timestamp filtering
+newestFiles = keepNewestVersionsOnly(allFiles)
+hiddenByTimestamp = set(allFiles) - set(newestFiles)
+
+# Determine which files would be filtered by .hide files  
+visibleByHide = removeHiddenFiles(allFiles)
+hiddenByHideFiles = set(allFiles) - set(visibleByHide)
+
+# Apply the selected filtering method for the default view state
 if filterMethod == "none":
-  # Show all files - no filtering
-  visibleFiles = allFiles
+  defaultHiddenFiles = set()
 elif filterMethod == "hidden":
-  # Only apply .hide file filtering
-  visibleFiles = removeHiddenFiles(allFiles)
+  defaultHiddenFiles = hiddenByHideFiles
 elif filterMethod == "timestamp":
-  # Apply timestamp filtering first, then .hide files (for manual overrides)
-  newestFiles = keepNewestVersionsOnly(allFiles)
-  visibleFiles = removeHiddenFiles(newestFiles)
+  # Files hidden by timestamp OR by .hide files
+  defaultHiddenFiles = hiddenByTimestamp | hiddenByHideFiles
 else:
   # Fallback to timestamp method if somehow an invalid value gets through
-  newestFiles = keepNewestVersionsOnly(allFiles)
-  visibleFiles = removeHiddenFiles(newestFiles)
+  defaultHiddenFiles = hiddenByTimestamp | hiddenByHideFiles
 
 easySongs = getEasySongs(allFiles)
 
@@ -345,9 +381,25 @@ with open(outputFile, "w", encoding='utf-8') as htmlOutput:
     try:
       # Check if this song is marked as easy
       isEasy = any(str(os.path.splitext(file)[0]).lower() in easySongs for file in f[1:])
-      easyClass = ' class="easy-song"' if isEasy else ''
+      
+      # Check if this song has additional versions that were filtered out
+      # This means there are files available when "show all versions" is checked
+      hasAdditionalVersions = any(file in defaultHiddenFiles for file in f[1:])
+      
+      # Only mark as hidden-version if there are additional filtered versions available
+      # This helps users know they can see more by checking "show all versions"
+      isHiddenVersion = hasAdditionalVersions
+      
+      # Build CSS classes
+      cssClasses = []
+      if isEasy:
+        cssClasses.append("easy-song")
+      if isHiddenVersion:
+        cssClasses.append("hidden-version")
+      
+      classAttr = f' class="{" ".join(cssClasses)}"' if cssClasses else ''
 
-      htmlOutput.write(f"<tr{easyClass}>")
+      htmlOutput.write(f"<tr{classAttr}>")
       # first table column contains the row number
       htmlOutput.write(f"  <td>{row_number}</td>")
       # second table column contains the song title (f[0])
@@ -360,15 +412,19 @@ with open(outputFile, "w", encoding='utf-8') as htmlOutput:
         # Skip .easy marker files - they shouldn't appear as downloads
         if ext(i) == ".easy":
           continue
-        elif ext(i) == ".urltxt":
+        
+        # Determine if this file is hidden by the current filter method
+        fileClass = ' class="additional-version"' if i in defaultHiddenFiles else ''
+        
+        if ext(i) == ".urltxt":
           with open(i, "r") as urlFile:
             label = urlFile.readline().strip()
             address = urlFile.readline().strip()
-          htmlOutput.write(f"<a href=\"{address}\" target=\"_blank\">{label}</a><br>\n")
+          htmlOutput.write(f"<a href=\"{address}\" target=\"_blank\"{fileClass}>{label}</a><br>\n")
         elif ext(i) in downloadExtensions:
-          htmlOutput.write(f" <a href=\"{str(i).replace(' ','%20')}?v={now}\" download=\"{filename(i)}{ext(i)}\" target=\"_blank\">{ext(i)}</a><br>\n")
+          htmlOutput.write(f" <a href=\"{str(i).replace(' ','%20')}?v={now}\" download=\"{filename(i)}{ext(i)}\" target=\"_blank\"{fileClass}>{ext(i)}</a><br>\n")
         else:
-          htmlOutput.write(f"  <a href=\"{str(i).replace(' ','%20')}?v={now}\" target=\"_blank\">{ext(i)}</a><br>\n")
+          htmlOutput.write(f"  <a href=\"{str(i).replace(' ','%20')}?v={now}\" target=\"_blank\"{fileClass}>{ext(i)}</a><br>\n")
 
       # close each table row (and the table data containing file links)
       htmlOutput.write("</td></tr>\n")

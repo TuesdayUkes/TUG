@@ -15,15 +15,19 @@ parser.add_argument("outputFile")
 parser.add_argument("--intro", action=argparse.BooleanOptionalAction, default=True)
 parser.add_argument("--genPDF", action=argparse.BooleanOptionalAction, default=False)
 parser.add_argument("--forcePDF", action=argparse.BooleanOptionalAction, default=False)
+parser.add_argument("--filter", choices=["none", "hidden", "timestamp"], default="timestamp",
+                    help="Filter method: 'none' (show all files), 'hidden' (hide files with .hide), 'timestamp' (show newest versions only)")
 args = parser.parse_args()
 
 print("Generating Music List (this takes a few seconds)", file=sys.stderr)
+print(f"Using filter method: {args.filter}", file=sys.stderr)
 
 musicFolder = args.musicFolder
 outputFile = args.outputFile
 intro = args.intro
 forceNewPDF = args.forcePDF
 genPDF = args.genPDF
+filterMethod = args.filter
 
 now = datetime.now().strftime("%Y.%m.%d.%H.%M.%S")
 
@@ -85,6 +89,67 @@ def getEasySongs(allFiles):
   # Use set comprehension for better performance
   return {str(os.path.splitext(f)[0]).lower() 
           for f in allFiles if ext(f).lower() == ".easy"}
+
+def getGitTimestamp(filePath):
+  """Get the git commit timestamp for a file (newest commit that touched the file)"""
+  try:
+    result = subprocess.run(
+      ["git", "log", "-1", "--format=%ct", "--", filePath],
+      capture_output=True,
+      text=True,
+      cwd=os.path.dirname(os.path.abspath(__file__)) + "/../.."
+    )
+    if result.returncode == 0 and result.stdout.strip():
+      return int(result.stdout.strip())
+    else:
+      # Fallback to file modification time if git fails
+      return int(os.path.getmtime(filePath))
+  except:
+    # Fallback to file modification time if git command fails
+    return int(os.path.getmtime(filePath))
+
+def keepNewestVersionsOnly(allFiles):
+  """Keep only the newest version of each song file by extension type"""
+  # Group files by base name (without extension) and extension
+  from collections import defaultdict
+  filesByBasenameAndExt = defaultdict(list)
+  
+  for f in allFiles:
+    if ext(f).lower() in [".hide", ".easy"]:
+      continue  # Skip marker files
+    
+    baseName = dictCompare(filename(f))
+    extension = ext(f).lower()
+    filesByBasenameAndExt[(baseName, extension)].append(f)
+  
+  # For each group, keep only the file with the newest git timestamp
+  newestFiles = []
+  for (baseName, extension), files in filesByBasenameAndExt.items():
+    if len(files) == 1:
+      newestFiles.extend(files)
+    else:
+      # Multiple files with same basename and extension - keep the newest
+      filesWithTimestamps = []
+      for f in files:
+        timestamp = getGitTimestamp(f)
+        filesWithTimestamps.append((timestamp, f))
+      
+      # Sort by timestamp (newest first) and take the first one
+      filesWithTimestamps.sort(reverse=True)
+      newestFile = filesWithTimestamps[0][1]
+      newestFiles.append(newestFile)
+      
+      print(f"Multiple versions found for {baseName}{extension}:", file=sys.stderr)
+      for timestamp, f in filesWithTimestamps:
+        marker = "* KEPT" if f == newestFile else "  ignored"
+        print(f"  {marker}: {f} (timestamp: {timestamp})", file=sys.stderr)
+  
+  # Add back the marker files (.hide, .easy)
+  for f in allFiles:
+    if ext(f).lower() in [".hide", ".easy"]:
+      newestFiles.append(f)
+  
+  return newestFiles
 
 def removeHiddenFiles(allFiles):
   # Use set for O(1) lookup instead of list with O(n) lookup
@@ -226,7 +291,22 @@ for p in Path(musicFolder).rglob('*'):
   if p.suffix.lower() in extensions:
     allFiles.append(p.as_posix())
 
-visibleFiles = removeHiddenFiles(allFiles)
+# Apply the selected filtering method
+if filterMethod == "none":
+  # Show all files - no filtering
+  visibleFiles = allFiles
+elif filterMethod == "hidden":
+  # Only apply .hide file filtering
+  visibleFiles = removeHiddenFiles(allFiles)
+elif filterMethod == "timestamp":
+  # Apply timestamp filtering first, then .hide files (for manual overrides)
+  newestFiles = keepNewestVersionsOnly(allFiles)
+  visibleFiles = removeHiddenFiles(newestFiles)
+else:
+  # Fallback to timestamp method if somehow an invalid value gets through
+  newestFiles = keepNewestVersionsOnly(allFiles)
+  visibleFiles = removeHiddenFiles(newestFiles)
+
 easySongs = getEasySongs(allFiles)
 
 # return the first file that matches basename (there should be only zero or one

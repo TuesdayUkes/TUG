@@ -264,6 +264,39 @@ h2 {
   text-align: center;
 }
 
+/* Checkbox styling for consistent sizing */
+.filter-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.filter-checkbox label {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Hidden additional versions - remove gaps */
+.additional-version[style*="display: none"],
+.additional-version[style*="display:none"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Hide br tags that immediately follow hidden additional-version links */
+.additional-version[style*="display: none"] + br,
+.additional-version[style*="display:none"] + br {
+  display: none !important;
+}
+
 </style>
 	</head>
 

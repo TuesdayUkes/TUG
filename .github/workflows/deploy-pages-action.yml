@@ -73,13 +73,6 @@ jobs:
         echo "Generated ukulele-song-archive.html"
         ls -la ukulele-song-archive.html || echo "Archive file not found"
     
-    - name: Generate unfiltered ukulele-song-archive-unfiltered.html
-      run: |
-        echo "Running GenList.py to generate unfiltered archive..."
-        python music/scripts/GenList.py music ukulele-song-archive-unfiltered.html --intro --no-genPDF --filter=none
-        echo "Generated ukulele-song-archive-unfiltered.html"
-        ls -la ukulele-song-archive-unfiltered.html || echo "Unfiltered archive file not found"
-    
     - name: Prepare site files
       run: |
         # Create a temporary directory for the site

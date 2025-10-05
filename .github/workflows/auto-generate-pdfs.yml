@@ -24,7 +24,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        fetch-depth: 2  # Need to see what files changed
+        fetch-depth: 0  # Fetch full history to handle multi-commit pushes
     
     - name: Install ChordPro and dependencies
       run: |

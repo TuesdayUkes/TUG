@@ -62,8 +62,9 @@ jobs:
         echo "📝 Changed ChordPro files:"
         echo "$CHANGED_CHOPRO"
         
-        # Process each changed ChordPro file
-        for chopro_file in $CHANGED_CHOPRO; do
+        # Process each changed ChordPro file - save to temp file to avoid subshell issues
+        echo "$CHANGED_CHOPRO" > /tmp/changed_chopro.txt
+        while IFS= read -r chopro_file; do
           if [ -z "$chopro_file" ] || [ ! -f "$chopro_file" ]; then
             continue
           fi
@@ -105,7 +106,7 @@ jobs:
           else
             echo "  ⚠️ PDF generation failed: $pdf_file"
           fi
-        done
+        done < /tmp/changed_chopro.txt
     
     - name: Commit generated PDFs
       run: |

@@ -1,0 +1,136 @@
+name: Auto-Generate PDFs from ChordPro Files
+
+on:
+  push:
+    paths:
+      - '**/*.chopro'
+      - '**/*.cho'
+    branches: [ main, master ]
+
+# Sets permissions to allow committing generated PDFs back to the repo
+permissions:
+  contents: write
+  actions: read
+
+env:
+  FORCE_COLOR: 1
+
+jobs:
+  generate-missing-pdfs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 2  # Need to see what files changed
+    
+    - name: Install ChordPro and dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cpanminus build-essential libpod-parser-perl
+        sudo cpanm --notest App::Music::ChordPro
+        
+        # Verify installation
+        echo "ChordPro version:"
+        chordpro --version
+    
+    - name: Install genpdf-butler
+      run: |
+        echo "Installing genpdf-butler with pipx..."
+        python -m pip install --upgrade pip
+        pip install pipx
+        pipx install genpdf-butler
+        
+        # Verify installation
+        echo "genpdf-butler version:"
+        genpdf-butler --version || echo "genpdf-butler installed successfully"
+    
+    - name: Find changed ChordPro files and generate missing PDFs
+      run: |
+        echo "🔍 Finding changed ChordPro files in commit..."
+        
+        # Get list of changed ChordPro files in this commit
+        CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -E '\.(chopro|cho)' || true)
+        
+        if [ -z "$CHANGED_CHOPRO" ]; then
+          echo "ℹ️ No ChordPro files changed in this commit"
+          exit 0
+        fi
+        
+        echo "📝 Changed ChordPro files:"
+        echo "$CHANGED_CHOPRO"
+        
+        # Process each changed ChordPro file
+        for chopro_file in $CHANGED_CHOPRO; do
+          if [ -z "$chopro_file" ] || [ ! -f "$chopro_file" ]; then
+            continue
+          fi
+          
+          echo "🎵 Processing: $chopro_file"
+          
+          # Determine expected PDF path (same folder, same base name, .pdf extension)
+          pdf_file="${chopro_file%.*}.pdf"
+          
+          # Check if PDF is already updated in this commit (skip regeneration)
+          if git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -q "^${pdf_file}$"; then
+            echo "  ✓ PDF already updated in commit: $pdf_file"
+            continue
+          fi
+          
+          # Generate PDF (overwrite existing if present)
+          if [ -f "$pdf_file" ]; then
+            echo "  🔄 Overwriting existing PDF: $pdf_file"
+          else
+            echo "  ➕ Creating new PDF: $pdf_file"
+          fi
+          
+          echo "  🔨 Generating PDF: $pdf_file"
+          
+          # Create output directory if needed
+          mkdir -p "$(dirname "$pdf_file")"
+          
+          # Generate PDF using genpdf with a5 page size and chords on top
+          genpdf --pagesize a5 --showchords top "$chopro_file" 2>/dev/null || {
+            echo "  ⚠️ Failed to generate: $pdf_file"
+            continue
+          }
+          
+          # Verify PDF was created
+          if [ -f "$pdf_file" ]; then
+            echo "  ✅ Generated: $pdf_file"
+            # Add to git staging
+            git add "$pdf_file"
+          else
+            echo "  ⚠️ PDF generation failed: $pdf_file"
+          fi
+        done
+    
+    - name: Commit generated PDFs
+      run: |
+        # Configure git
+        git config --local user.email "action@github.com"
+        git config --local user.name "PDF Generator Action"
+        
+        # Check if there are any staged files
+        if git diff --cached --quiet; then
+          echo "ℹ️ No PDFs were generated"
+          exit 0
+        fi
+        
+        # Count staged PDF files
+        STAGED_PDFS=$(git diff --cached --name-only | grep '\.pdf$' | wc -l)
+        echo "📊 Generated $STAGED_PDFS PDF(s)"
+        
+        # Create commit message with generated PDF list
+        PDF_LIST=$(git diff --cached --name-only | grep '\.pdf$' | sed 's/^/- /' | tr '\n' ' ')
+        
+        # Commit the generated PDFs
+        git commit -m "🎵 Auto-generate PDFs from ChordPro files - Generated $STAGED_PDFS PDF(s): $PDF_LIST"
+        
+        # Push back to repository
+        git push origin ${{ github.ref_name }}
+        
+        echo "✅ Generated PDFs committed and pushed"
+        echo "🚀 GitHub Pages deployment will be triggered automatically by the new PDF files"

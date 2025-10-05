@@ -168,4 +168,22 @@ jobs:
         git push origin ${{ github.ref_name }}
         
         echo "✅ Generated PDFs committed and pushed"
-        echo "🚀 GitHub Pages deployment will be triggered automatically by the new PDF files"
+    
+    - name: Trigger Pages deployment
+      if: success()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          console.log('Triggering GitHub Pages deployment...');
+          try {
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'deploy-pages-action.yml',
+              ref: '${{ github.ref_name }}'
+            });
+            console.log('✅ Successfully triggered deployment workflow');
+          } catch (error) {
+            console.log('⚠️ Could not trigger deployment workflow:', error.message);
+            console.log('📄 PDFs were committed - deployment may trigger on next push');
+          }

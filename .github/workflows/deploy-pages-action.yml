@@ -23,6 +23,8 @@ on:
       - '**/*.easy'
       - 'robots.txt'
     branches: [ main, master ]
+  repository_dispatch:
+    types: [deploy-pages]
   workflow_dispatch:
     inputs:
       force_deploy:

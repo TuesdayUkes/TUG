@@ -174,16 +174,20 @@ jobs:
       uses: actions/github-script@v7
       with:
         script: |
-          console.log('Triggering GitHub Pages deployment...');
+          console.log('Triggering GitHub Pages deployment via repository dispatch...');
           try {
-            await github.rest.actions.createWorkflowDispatch({
+            await github.rest.repos.createDispatchEvent({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              workflow_id: 'deploy-pages-action.yml',
-              ref: '${{ github.ref_name }}'
+              event_type: 'deploy-pages',
+              client_payload: {
+                ref: '${{ github.ref_name }}',
+                triggered_by: 'auto-generate-pdfs',
+                message: 'Deploy after PDF generation'
+              }
             });
-            console.log('✅ Successfully triggered deployment workflow');
+            console.log('✅ Successfully triggered deployment via repository dispatch');
           } catch (error) {
-            console.log('⚠️ Could not trigger deployment workflow:', error.message);
+            console.log('⚠️ Could not trigger deployment:', error.message);
             console.log('📄 PDFs were committed - deployment may trigger on next push');
           }

@@ -49,18 +49,34 @@ jobs:
     
     - name: Find changed ChordPro files and generate missing PDFs
       run: |
-        echo "🔍 Finding changed ChordPro files in commit..."
+        echo "🔍 Finding changed ChordPro files in push..."
         
-        # Get list of changed ChordPro files in this commit
-        CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -E '\.(chopro|cho)' || true)
+        # Get list of changed ChordPro files across all commits in this push
+        # Use the range from the push event, or fall back to HEAD^ for single commits
+        if [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+          # Multi-commit push: compare against the push's base commit
+          CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM ${{ github.event.before }}..HEAD | grep -E '\.(chopro|cho)' || true)
+          echo "📊 Comparing ${{ github.event.before }}..HEAD (multi-commit push)"
+        else
+          # New branch or initial commit: compare against HEAD^
+          CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -E '\.(chopro|cho)' || true)
+          echo "📊 Comparing HEAD^..HEAD (single commit or new branch)"
+        fi
         
         if [ -z "$CHANGED_CHOPRO" ]; then
-          echo "ℹ️ No ChordPro files changed in this commit"
+          echo "ℹ️ No ChordPro files changed in this push"
           exit 0
         fi
         
         echo "📝 Changed ChordPro files:"
         echo "$CHANGED_CHOPRO"
+        
+        # Set git range for PDF checks
+        if [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+          GIT_RANGE="${{ github.event.before }}..HEAD"
+        else
+          GIT_RANGE="HEAD^..HEAD"
+        fi
         
         # Process each changed ChordPro file - save to temp file to avoid subshell issues
         echo "$CHANGED_CHOPRO" > /tmp/changed_chopro.txt
@@ -74,10 +90,28 @@ jobs:
           # Determine expected PDF path (same folder, same base name, .pdf extension)
           pdf_file="${chopro_file%.*}.pdf"
           
-          # Check if PDF is already updated in this commit (skip regeneration)
-          if git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -q "^${pdf_file}$"; then
-            echo "  ✓ PDF already updated in commit: $pdf_file"
-            continue
+          # Check if PDF needs regeneration based on commit order
+          PDF_IN_PUSH=$(git diff --name-only --diff-filter=AM $GIT_RANGE | grep "^${pdf_file}$" || true)
+          
+          if [ -n "$PDF_IN_PUSH" ]; then
+            # PDF was modified in this push - check which came last
+            CHOPRO_LAST_COMMIT=$(git log --format="%H" $GIT_RANGE -- "$chopro_file" | head -1)
+            PDF_LAST_COMMIT=$(git log --format="%H" $GIT_RANGE -- "$pdf_file" | head -1)
+            
+            if [ -n "$PDF_LAST_COMMIT" ] && [ -n "$CHOPRO_LAST_COMMIT" ]; then
+              # Compare commit timestamps to see which is newer
+              CHOPRO_TIME=$(git show --format="%ct" --no-patch "$CHOPRO_LAST_COMMIT")
+              PDF_TIME=$(git show --format="%ct" --no-patch "$PDF_LAST_COMMIT")
+              
+              if [ "$PDF_TIME" -gt "$CHOPRO_TIME" ]; then
+                echo "  ✓ PDF ($PDF_LAST_COMMIT) is newer than ChordPro ($CHOPRO_LAST_COMMIT) in this push"
+                continue
+              else
+                echo "  🔄 ChordPro ($CHOPRO_LAST_COMMIT) is newer than PDF ($PDF_LAST_COMMIT) - regenerating"
+              fi
+            else
+              echo "  🔄 PDF exists in push but regenerating due to ChordPro changes"
+            fi
           fi
           
           # Generate PDF (overwrite existing if present)

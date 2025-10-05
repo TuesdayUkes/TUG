@@ -14,8 +14,9 @@ on:
       - '**/*.ico'
       - '**/*.txt'
       - '**/*.pdf'
-      - '**/*.chopro'
-      - '**/*.cho'
+      # Note: Removed *.chopro and *.cho to prevent race condition
+      # ChordPro changes will trigger auto-generate-pdfs.yml which commits PDFs
+      # and those PDF commits will trigger this deployment workflow
       - '**/*.mscz'
       - '**/*.urltxt'
       - '**/*.hide'

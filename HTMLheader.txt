@@ -264,6 +264,24 @@ h2 {
   text-align: center;
 }
 
+/* Checkbox styling for consistent sizing */
+.filter-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.filter-checkbox label {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
 </style>
 	</head>
 

@@ -409,8 +409,8 @@ with open(outputFile, "w", encoding='utf-8') as htmlOutput:
       # Sort by extension first, then by the complete normalized path
       sorted_files = sorted(f[1:], key=lambda x: (ext(x), x.lower().replace('\\', '/')))
       for i in sorted_files:
-        # Skip .easy marker files - they shouldn't appear as downloads
-        if ext(i) == ".easy":
+        # Skip .easy and .hide marker files - they shouldn't appear as downloads
+        if ext(i) in [".easy", ".hide"]:
           continue
         
         # Determine if this file is hidden by the current filter method

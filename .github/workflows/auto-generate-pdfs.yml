@@ -26,28 +26,8 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0  # Fetch full history to handle multi-commit pushes
     
-    - name: Install ChordPro and dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y cpanminus build-essential libpod-parser-perl
-        sudo cpanm --notest App::Music::ChordPro
-        
-        # Verify installation
-        echo "ChordPro version:"
-        chordpro --version
-    
-    - name: Install genpdf-butler
-      run: |
-        echo "Installing genpdf-butler with pipx..."
-        python -m pip install --upgrade pip
-        pip install pipx
-        pipx install genpdf-butler
-        
-        # Verify installation
-        echo "genpdf-butler version:"
-        genpdf-butler --version || echo "genpdf-butler installed successfully"
-    
-    - name: Find changed ChordPro files and generate missing PDFs
+    - name: Check if PDFs need generation
+      id: check-pdfs
       run: |
         echo "🔍 Finding changed ChordPro files in push..."
         
@@ -57,37 +37,34 @@ jobs:
           # Multi-commit push: compare against the push's base commit
           CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM ${{ github.event.before }}..HEAD | grep -E '\.(chopro|cho)' || true)
           echo "📊 Comparing ${{ github.event.before }}..HEAD (multi-commit push)"
+          GIT_RANGE="${{ github.event.before }}..HEAD"
         else
           # New branch or initial commit: compare against HEAD^
           CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -E '\.(chopro|cho)' || true)
           echo "📊 Comparing HEAD^..HEAD (single commit or new branch)"
+          GIT_RANGE="HEAD^..HEAD"
         fi
         
         if [ -z "$CHANGED_CHOPRO" ]; then
           echo "ℹ️ No ChordPro files changed in this push"
+          echo "need_pdfs=false" >> $GITHUB_OUTPUT
           exit 0
         fi
         
         echo "📝 Changed ChordPro files:"
         echo "$CHANGED_CHOPRO"
         
-        # Set git range for PDF checks
-        if [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
-          GIT_RANGE="${{ github.event.before }}..HEAD"
-        else
-          GIT_RANGE="HEAD^..HEAD"
-        fi
-        
-        # Process each changed ChordPro file - save to temp file to avoid subshell issues
+        # Check if any PDFs actually need generation
+        PDFS_NEEDED=""
         echo "$CHANGED_CHOPRO" > /tmp/changed_chopro.txt
         while IFS= read -r chopro_file; do
           if [ -z "$chopro_file" ] || [ ! -f "$chopro_file" ]; then
             continue
           fi
           
-          echo "🎵 Processing: $chopro_file"
+          echo "🎵 Checking: $chopro_file"
           
-          # Determine expected PDF path (same folder, same base name, .pdf extension)
+          # Determine expected PDF path
           pdf_file="${chopro_file%.*}.pdf"
           
           # Check if PDF needs regeneration based on commit order
@@ -103,16 +80,74 @@ jobs:
               CHOPRO_TIME=$(git show --format="%ct" --no-patch "$CHOPRO_LAST_COMMIT")
               PDF_TIME=$(git show --format="%ct" --no-patch "$PDF_LAST_COMMIT")
               
-              if [ "$PDF_TIME" -gt "$CHOPRO_TIME" ]; then
-                echo "  ✓ PDF ($PDF_LAST_COMMIT) is newer than ChordPro ($CHOPRO_LAST_COMMIT) in this push"
+              if [ "$PDF_TIME" -ge "$CHOPRO_TIME" ]; then
+                echo "  ✓ PDF ($PDF_LAST_COMMIT) is current - no generation needed"
                 continue
               else
-                echo "  🔄 ChordPro ($CHOPRO_LAST_COMMIT) is newer than PDF ($PDF_LAST_COMMIT) - regenerating"
+                echo "  🔄 ChordPro ($CHOPRO_LAST_COMMIT) is newer than PDF ($PDF_LAST_COMMIT) - needs regeneration"
               fi
             else
-              echo "  🔄 PDF exists in push but regenerating due to ChordPro changes"
+              echo "  🔄 PDF exists in push but needs regeneration due to ChordPro changes"
             fi
+          else
+            echo "  ➕ No PDF exists - needs generation"
           fi
+          
+          # Add to list of PDFs that need generation
+          if [ -z "$PDFS_NEEDED" ]; then
+            PDFS_NEEDED="$chopro_file"
+          else
+            PDFS_NEEDED="$PDFS_NEEDED"$'\n'"$chopro_file"
+          fi
+        done < /tmp/changed_chopro.txt
+        
+        if [ -z "$PDFS_NEEDED" ]; then
+          echo "ℹ️ All PDFs are current - no generation needed"
+          echo "need_pdfs=false" >> $GITHUB_OUTPUT
+        else
+          echo "📋 ChordPro files needing PDF generation:"
+          echo "$PDFS_NEEDED"
+          echo "$PDFS_NEEDED" > /tmp/pdfs_needed.txt
+          echo "need_pdfs=true" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Install ChordPro and dependencies
+      if: steps.check-pdfs.outputs.need_pdfs == 'true'
+      run: |
+        echo "📦 Installing ChordPro and dependencies..."
+        sudo apt-get update
+        sudo apt-get install -y cpanminus build-essential libpod-parser-perl
+        sudo cpanm --notest App::Music::ChordPro
+        
+        # Verify installation
+        echo "ChordPro version:"
+        chordpro --version
+    
+    - name: Install genpdf-butler
+      if: steps.check-pdfs.outputs.need_pdfs == 'true'
+      run: |
+        echo "📦 Installing genpdf-butler with pipx..."
+        python -m pip install --upgrade pip
+        pip install pipx
+        pipx install genpdf-butler
+        
+        # Verify installation
+        echo "genpdf-butler version:"
+        genpdf-butler --version || echo "genpdf-butler installed successfully"
+    
+    - name: Generate PDFs
+      if: steps.check-pdfs.outputs.need_pdfs == 'true'
+      run: |
+        echo "🔨 Generating PDFs..."
+        
+        # Process each ChordPro file that needs PDF generation
+        while IFS= read -r chopro_file; do
+          if [ -z "$chopro_file" ] || [ ! -f "$chopro_file" ]; then
+            continue
+          fi
+          
+          # Determine PDF path
+          pdf_file="${chopro_file%.*}.pdf"
           
           # Generate PDF (overwrite existing if present)
           if [ -f "$pdf_file" ]; then
@@ -140,7 +175,7 @@ jobs:
           else
             echo "  ⚠️ PDF generation failed: $pdf_file"
           fi
-        done < /tmp/changed_chopro.txt
+        done < /tmp/pdfs_needed.txt
     
     - name: Commit generated PDFs
       run: |

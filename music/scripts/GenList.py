@@ -90,23 +90,68 @@ def getEasySongs(allFiles):
   return {str(os.path.splitext(f)[0]).lower() 
           for f in allFiles if ext(f).lower() == ".easy"}
 
-def getGitTimestamp(filePath):
-  """Get the git commit timestamp for a file (newest commit that touched the file)"""
+def getAllGitTimestamps(files):
+  """Get git timestamps for all files in one batch operation using a single git command"""
+  timestamps = {}
+  git_root = os.path.dirname(os.path.abspath(__file__)) + "/../.."
+  
   try:
+    # Convert all file paths to relative paths
+    relative_files = {}
+    for f in files:
+      abs_path = os.path.abspath(f)
+      try:
+        rel_path = os.path.relpath(abs_path, git_root)
+        # Normalize path separators for git
+        rel_path = rel_path.replace('\\', '/')
+        relative_files[rel_path] = f
+      except:
+        # If we can't get relative path, fall back to mtime
+        timestamps[f] = int(os.path.getmtime(f))
+    
+    if not relative_files:
+      return timestamps
+    
+    # Use git log with --name-only and custom format to get all timestamps at once
+    # Format: timestamp on one line, then changed files on following lines
     result = subprocess.run(
-      ["git", "log", "-1", "--format=%ct", "--", filePath],
+      ["git", "log", "--name-only", "--pretty=format:%ct"],
       capture_output=True,
       text=True,
-      cwd=os.path.dirname(os.path.abspath(__file__)) + "/../.."
+      cwd=git_root,
+      timeout=30  # Longer timeout for the full log
     )
-    if result.returncode == 0 and result.stdout.strip():
-      return int(result.stdout.strip())
-    else:
-      # Fallback to file modification time if git fails
-      return int(os.path.getmtime(filePath))
-  except:
-    # Fallback to file modification time if git command fails
-    return int(os.path.getmtime(filePath))
+    
+    if result.returncode == 0 and result.stdout:
+      # Parse the output: timestamp followed by list of files
+      lines = result.stdout.strip().split('\n')
+      current_timestamp = None
+      
+      for line in lines:
+        line = line.strip()
+        if not line:
+          continue
+        
+        # Check if line is a timestamp (all digits)
+        if line.isdigit():
+          current_timestamp = int(line)
+        elif current_timestamp and line in relative_files:
+          # This is a file path and we don't have its timestamp yet
+          orig_path = relative_files[line]
+          if orig_path not in timestamps:
+            timestamps[orig_path] = current_timestamp
+    
+    # For any files not found in git log, use file modification time
+    for rel_path, orig_path in relative_files.items():
+      if orig_path not in timestamps:
+        timestamps[orig_path] = int(os.path.getmtime(orig_path))
+    
+    return timestamps
+    
+  except Exception as e:
+    print(f"Error getting git timestamps: {e}", file=sys.stderr)
+    # Return mtimes as fallback for all files
+    return {f: int(os.path.getmtime(f)) for f in files}
 
 def keepNewestVersionsOnly(allFiles):
   """Keep only the newest version of each song file by extension type"""
@@ -122,6 +167,19 @@ def keepNewestVersionsOnly(allFiles):
     extension = ext(f).lower()
     filesByBasenameAndExt[(baseName, extension)].append(f)
   
+  # Collect all files that need timestamps (files with duplicates)
+  filesNeedingTimestamps = []
+  for (baseName, extension), files in filesByBasenameAndExt.items():
+    if len(files) > 1:
+      filesNeedingTimestamps.extend(files)
+  
+  # Get all timestamps in batch if there are any files with duplicates
+  if filesNeedingTimestamps:
+    print(f"Fetching git timestamps for {len(filesNeedingTimestamps)} files with duplicates...", file=sys.stderr)
+    gitTimestamps = getAllGitTimestamps(filesNeedingTimestamps)
+  else:
+    gitTimestamps = {}
+  
   # For each group, keep only the file with the newest git timestamp
   newestFiles = []
   for (baseName, extension), files in filesByBasenameAndExt.items():
@@ -131,7 +189,7 @@ def keepNewestVersionsOnly(allFiles):
       # Multiple files with same basename and extension - keep the newest
       filesWithTimestamps = []
       for f in files:
-        timestamp = getGitTimestamp(f)
+        timestamp = gitTimestamps.get(f, 0)
         filesWithTimestamps.append((timestamp, f))
       
       # Sort by timestamp (newest first) and take the first one

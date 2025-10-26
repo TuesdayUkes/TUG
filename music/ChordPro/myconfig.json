@@ -6,6 +6,16 @@
 // configurations.
 
 {
+	"contents" : [
+		{
+			"fields" : [ "title", "subtitle", "artist" ],
+			"line" : "%{title}",
+			"pageno" : "%{page}",
+			"label" : "Contents by Title",
+		"omit"	: false,
+		"template" : "stdtoc"
+	}
+	]
     // General settings.
     "settings" : {
       // Suppress empty chord lines.

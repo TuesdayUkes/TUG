@@ -24,15 +24,15 @@ python update_timestamps.py --dry-run
 # Process different HTML file
 python update_timestamps.py --file "other-page.html"
 
-# Skip backup creation
-python update_timestamps.py --no-backup
+# Create backup file (backups are NOT created by default)
+python update_timestamps.py --backup
 ```
 
 **Options:**
 - `--file, -f`: Specify HTML file to process (default: index.html)
 - `--all, -a`: Update all v= timestamps in the entire file
 - `--tables, -t`: Specify table IDs to update (default: practice-songs-table submitted-songs-table)
-- `--no-backup`: Skip creating backup file
+- `--backup`: Create backup file (default: no backup)
 - `--dry-run, -n`: Show what would be updated without making changes
 
 ## What Gets Updated
@@ -49,8 +49,8 @@ And updates them to:
 
 ## Backup Files
 
-Unless `--no-backup` is specified, the script automatically creates timestamped backup files:
-- `index.html.backup.YYYY-MM-DD-HH-MM-SS`
+By default, no backup files are created. If you want to create a backup, use the `--backup` option:
+- `index.html.backup.YYYY-MM-DD-HH-MM-SS` (only created when `--backup` is specified)
 
 ## Examples
 

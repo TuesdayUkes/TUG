@@ -101,8 +101,8 @@ def main():
     parser.add_argument('--tables', '-t', nargs='*', 
                        default=['practice-songs-table', 'submitted-songs-table'],
                        help='Table IDs to update (default: practice-songs-table submitted-songs-table)')
-    parser.add_argument('--no-backup', action='store_true',
-                       help='Skip creating backup file')
+    parser.add_argument('--backup', action='store_true',
+                       help='Create backup file (default: no backup)')
     parser.add_argument('--dry-run', '-n', action='store_true',
                        help='Show what would be updated without making changes')
     
@@ -130,8 +130,8 @@ def main():
             print(f"Error reading file: {e}")
             return 1
     
-    # Create backup unless --no-backup is specified
-    if not args.no_backup and not args.dry_run:
+    # Create backup only if --backup is specified
+    if args.backup and not args.dry_run:
         backup_file = html_file.with_suffix(f'.html.backup.{generate_timestamp()}'[:19].replace(":", "-"))
         print(f"Creating backup: {backup_file}")
         with open(backup_file, 'w', encoding='utf-8') as f:

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Favorite ukulele songs from Tuesday Ukes Group</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="At Austin's Tuesday Ukulele Group, we play favorites - and we play these popular songs, arranged for the ukulele, every week.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css?v=1.1">
+    <style>
+        .song-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: var(--surface);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .song-table td {
+            padding: 0.75rem 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .song-table tr:hover {
+            background-color: var(--background);
+        }
+
+        .song-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .song-links a {
+            padding: 0.25rem 0.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .song-links a:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+  <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-menu">
+                <a href="index.html" class="logo">
+                    <img src="TuesdayUkesLogo.png" alt="Tuesday Ukes" class="header-logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="Newbie%20Corner.html">Newbie Corner</a></li>
+                    <li><a href="Favorite%20Songs.html">Favorite Songs</a></li>
+                    <li><a href="ukulele-song-archive.html">Song Archive</a></li>
+                    <li><a href="https://groups.io/g/TUG" class="button">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <div class="card">
+            <h1>Tuesday Ukulele Group's Favorite Songs</h1>
+            <p class="lead">
+                These are songs we've played multiple times and have become our core music
+                that most of our members are familiar with. If you're looking for a song to learn
+                and lead during one of our Tuesday meetings, any of these is a good choice.
+            </p>
+
+            <table class="song-table">
+                <thead>
+                    <tr>
+                        <th>Song Title</th>
+                        <th>Links</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>Smile (Easier)</td>
+                        <td class="song-links">
+                            <a href="music/ChordPro/Winter%202023-24/Smile%20(Easier).chopro?v=2024.01.29.19.57.08" download="Smile (Easier).chopro">ChordPro</a>
+                            <a href="music/PDFs/Winter%202023-24/Smile%20(Easier).pdf?v=2024.01.29.19.57.08">PDF</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Achy Breaky Heart</td>
+                        <td class="song-links">
+                            <a href="music/ChordPro/TUG%20Archive/Achy%20Breaky%20Heart.chopro" download>ChordPro</a>
+                            <a href="music/PDFs/TUG%20Archive/Achy%20Breaky%20Heart.pdf">PDF</a>
+                            <a href="https://youtu.be/h-48_ALWlF4?t=6m48s">Video</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Texas Cookin</td>
+                        <td class="song-links">
+                            <a href="music/ChordPro/Kevin's%20Memorial/Texas%20Cookin.chopro" download>ChordPro</a>
+                            <a href="music/PDFs/Kevin's%20Memorial/Texas%20Cookin.pdf">PDF</a>
+                            <a href="https://youtu.be/75Er8Y_z5Jk?t=56m08s">Video</a>
+                        </td>
+                    </tr>
+
+    <tr>  <td>Folsom Prison Blues</td>
+      <td>
+        <a href="music/ChordPro/Spring%202023/Folsom%20Prison%20Blues.chopro" download>.chopro</a>
+        <a href="music/PDFs/Spring%202023/Folsom%20Prison%20Blues.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/hTn8F4MsCVc?t=1h10m25s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>The Gambler</td>
+      <td>
+        <a href="music/ChordPro/Summer%202022/The%20Gambler.chopro" download>.chopro</a>
+        <a href="music/PDFs/Summer%202022/The%20Gambler.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/woUAep1c-_U?t=1h57m33s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Homegrown Tomatoes</td>
+      <td>
+        <a href="music/ChordPro/Kevin's%20Memorial/Homegrown%20Tomatoes.chopro" download>.chopro</a>
+        <a href="music/PDFs/Kevin's%20Memorial/Homegrown%20Tomatoes.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://www.youtube.com/watch?v=C50RHpniwwg&t=3744s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>In Heaven There Is No Beer</td>
+      <td>
+        <a href="music/ChordPro/Winter%202020-21/In%20Heaven%20There%20Is%20No%20Beer.chopro" download>.chopro</a>
+        <a href="music/PDFs/Winter%202020-21/In%20Heaven%20There%20is%20no%20Beer.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://www.youtube.com/watch?v=YxEUYs3avQg&t=5836s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Midnight Special</td>
+      <td>
+        <a href="music/ChordPro/TUG%20Archive/The%20Midnight%20Special.chopro" download>.chopro</a>
+        <a href="music/PDFs/TUG%20Archive/The%20Midnight%20Special.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/OnLuwpfaf2A?t=4m15s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Mack the Knife</td>
+      <td>
+        <a href="music/ChordPro/Spring%202021/Mack%20the%20Knife.chopro" download>.chopro</a>
+        <a href="music/PDFs/Spring%202021/Mack%20the%20Knife.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/4At_hsO4xBI?t=8m42s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Jambalaya</td>
+      <td>
+        <a href="music/ChordPro/TUG%20Archive/Jambalaya.chopro" download>.chopro</a>
+        <a href="music/ChordPro/TUG%20Archive/Jambalaya.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/75Er8Y_z5Jk?t=1h34m43s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Stand by Me</td>
+      <td>
+        <a href="music/ChordPro/Summer%202022/Stand%20by%20Me.chopro" download>.chopro</a>
+        <a href="music/PDFs/Summer%202022/Stand%20by%20Me.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/4L1FyelND8Y">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Waltz Across Texas</td>
+      <td>
+        <a href="music/ChordPro/TUG%20Archive/Waltz%20Across%20Texas.chopro" download>.chopro</a>
+        <a href="music/PDFs/TUG%20Archive/Waltz%20Across%20Texas.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/hTn8F4MsCVc?t=9m37s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Some Beach</td>
+      <td>
+        <a href="music/ChordPro/Fall%202022/Some%20Beach.chopro" download>.chopro</a>
+        <a href="music/PDFs/Fall%202022/Some%20Beach.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/K-VApRypg18?t=1h10m52s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Sixteen Tons</td>
+      <td>
+        <a href="music/ChordPro/Winter%202022-23/Sixteen%20Tons.chopro" download>.chopro</a>
+        <a href="music/PDFs/Winter%202022-23/Sixteen%20Tons.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/K-VApRypg18?t=46m16s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Angel From Montgomery</td>
+      <td>
+        <a href="music/ChordPro/Fall%202021/ANGEL%20FROM%20MONTGOMERY.chopro" download>.chopro</a>
+        <a href="music/PDFs/Fall%202021/Angel%20From%20Montgomery.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://www.youtube.com/watch?v=N8QHmsggXvU&t=1074s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>I'll Fly Away</td>
+      <td>
+        <a href="music/ChordPro/Summer%202023/I'll%20Fly%20Away.chopro" download>.chopro</a>
+        <a href="music/PDFs/Summer%202023/I'll%20Fly%20Away.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/4Qq67G93C04?t=26m26s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Paradise</td>
+      <td>
+        <a href="music/ChordPro/Spring%202021/Paradise.chopro" download>.chopro</a>
+        <a href="music/PDFs/Spring%202021/Paradise.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://www.youtube.com/watch?v=XDUhSUT-7CI&t=4092s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Pancho and Lefty</td>
+      <td>
+        <a href="music/ChordPro/Fall%202023/Pancho%20and%20Lefty%20(Gary%20and%20Paulette).chopro?v=2024.01.22.21.02.36" download>.chopro</a>
+        <a href="music/PDFs/Fall%202023/Pancho%20and%20Lefty%20(Gary%20and%20Paulette,%20inline%20chords).pdf?v=2024.01.22.21.02.36">PDF</a>
+      </td>
+      <td>
+        <a href="https://www.youtube.com/watch?v=0oWHH0YIZqI&t=5558s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Big Rock Candy Mountain</td>
+      <td>
+        <a href="music/ChordPro/TUG%20Archive/Big%20Rock%20Candy%20Mountain.chopro" download>.chopro</a>
+        <a href="music/PDFs/Fall%202020/Big%20Rock%20Candy%20Mountain.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://www.youtube.com/watch?v=66_7Y0UNRps&t=3120s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Summertime</td>
+      <td>
+        <a href="music/ChordPro/Spring%202021/Summertime.chopro" download>.chopro</a>
+        <a href="music/PDFs/Spring%202021/Summertime.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://www.youtube.com/watch?v=HsISHfZjeV8&t=2822s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Swinging on a Star</td>
+      <td>
+        <a href="music/ChordPro/Spring%202022/Swinging%20on%20a%20Star.chopro" download>.chopro</a>
+        <a href="music/PDFs/Spring%202022/Swinging%20on%20a%20Star.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/HObLgnWQJ0M?t=255">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Ripple</td>
+      <td>
+        <a href="music/ChordPro/Summer%202023/Ripple.chopro" download>.chopro</a>
+        <a href="music/PDFs/Summer%202023/Ripple.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://youtu.be/Rj2BOgJ9-YY?t=4m44s">video</a>
+      </td>
+    </tr>
+
+    <tr>  <td>Choo Choo Ch'boogie</td>
+      <td>
+        <a href="music/ChordPro/Summer%202021/Choo%20Choo%20Ch'%20Boogie.chopro" download>.chopro</a>
+        <a href="music/PDFs/Summer%202021/Choo%20Choo%20Ch'%20Boogie.pdf">PDF</a>
+      </td>
+      <td>
+        <a href="https://www.youtube.com/watch?v=YOun9kLddfo&t=4527s">video</a>
+      </td>
+    </tr>
+
+	<tr>  <td>Sunny Side of the Street</td>
+		<td>
+      <a href="music/ChordPro/Winter%202021-22/Sunny%20Side%20of%20the%20Street.chopro?v=2024.02.12.16.31.29" download="Sunny Side of the Street.chopro">.chopro</a>
+      <a href="music/PDFs/Winter%202021-22/Sunny%20Side%20of%20the%20Street.pdf?v=2024.02.12.16.31.29">.pdf</a>
+		</td>
+		<td>
+			<a href="https://youtu.be/OnLuwpfaf2A?t=1h13m18s">video</a>
+		</td>
+	  </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">© 2025 Tuesday Ukes Group - Austin, Texas</p>
+        </div>
+    </footer>
+</body>
+</html>

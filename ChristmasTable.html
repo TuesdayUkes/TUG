@@ -56,6 +56,62 @@
         .song-links a:hover {
             background-color: var(--secondary-color);
         }
+
+        /* Search controls container */
+        .search-controls {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin: 2rem 0;
+            border: 1px solid var(--border-light);
+        }
+
+        /* Modern search input */
+        #searchInput {
+            width: 100%;
+            max-width: 500px;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: 2px solid var(--border-light);
+            border-radius: var(--radius);
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        #searchInput:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+        }
+
+        /* Search stats */
+        .search-stats {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(44, 82, 130, 0.05);
+            border-radius: var(--radius);
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        /* Loading state for when table is filtering */
+        .table-loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .search-controls {
+                padding: 1.5rem;
+            }
+            
+            #searchInput {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -79,8 +135,17 @@
             <div class="content-area">
                 <div class="card">
                     <h1>Christmas Songs</h1>
+                    
+                    <div class="search-controls">
+                        <h2>Search & Filter</h2>
+                        <input type="text" id="searchInput" placeholder="🔍 Search Christmas songs by title...">
+                        <div id="searchStats" class="search-stats" style="display: none;">
+                            Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> songs
+                        </div>
+                    </div>
+                    
                     <div class="table-container">
-                        <table class="song-table">
+                        <table id="dataTable" class="song-table">
                             <tr>
                                 <td>The Chanukah Song</td>
                                 <td class="song-links">
@@ -457,5 +522,57 @@
             <p class="text-center">© 2025 Tuesday Ukes Group. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const table = document.getElementById('dataTable');
+        const rows = table.getElementsByTagName('tr');
+        const searchStats = document.getElementById('searchStats');
+        const visibleCountSpan = document.getElementById('visibleCount');
+        const totalCountSpan = document.getElementById('totalCount');
+
+        // Set total count (exclude header row if it exists)
+        totalCountSpan.textContent = rows.length;
+
+        function updateSearchStats(visibleCount) {
+            visibleCountSpan.textContent = visibleCount;
+            searchStats.style.display = searchInput.value ? 'block' : 'none';
+        }
+
+        function filterRows() {
+            const searchFilter = searchInput.value.toLowerCase();
+            let visibleCount = 0;
+
+            // Add loading effect
+            table.classList.add('table-loading');
+
+            setTimeout(() => {
+                for (let i = 0; i < rows.length; i++) {
+                    let rowText = rows[i].textContent.toLowerCase();
+                    let showBySearch = !searchFilter || rowText.includes(searchFilter);
+
+                    if (showBySearch) {
+                        rows[i].style.display = '';
+                        visibleCount++;
+                    } else {
+                        rows[i].style.display = 'none';
+                    }
+                }
+
+                updateSearchStats(visibleCount);
+                table.classList.remove('table-loading');
+            }, 50);
+        }
+
+        // Enhanced input with debouncing
+        let searchTimeout;
+        searchInput.addEventListener('input', function() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(filterRows, 300);
+        });
+
+        // Initialize stats
+        filterRows();
+    </script>
 </body>
 </html>

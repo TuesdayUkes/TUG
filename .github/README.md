@@ -17,13 +17,13 @@ This repository contains:
 ## 📚 Documentation Table of Contents
 
 ### Core Documentation
-- **[Website CI/CD & PDF Generation](docs/CICD_README.md)** - How automated PDF generation and website deployment works
-- **[Music Library Organization](music/ChordPro/README.md)** - How the ChordPro music files are organized
+- **[Website CI/CD & PDF Generation](../docs/CICD_README.md)** - How automated PDF generation and website deployment works
+- **[Music Library Organization](../music/ChordPro/README.md)** - How the ChordPro music files are organized
 
 ### User Guides & Tools
-- **[Easy Songs System](EASY_SONGS_README.md)** - How to mark and filter beginner-friendly songs
-- **[Timestamp Updater](TIMESTAMP_UPDATE_README.md)** - Script documentation for updating version timestamps
-- **[Windows Shortcuts](SHORTCUT_INSTRUCTIONS.md)** - Desktop shortcuts for common tasks
+- **[Easy Songs System](../EASY_SONGS_README.md)** - How to mark and filter beginner-friendly songs
+- **[Timestamp Updater](../TIMESTAMP_UPDATE_README.md)** - Script documentation for updating version timestamps
+- **[Windows Shortcuts](../SHORTCUT_INSTRUCTIONS.md)** - Desktop shortcuts for common tasks
 
 ## 🚀 Quick Start
 

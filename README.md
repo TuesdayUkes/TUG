@@ -32,6 +32,8 @@ TUG/
 
 ### User Guides
 - **[Easy Songs System](EASY_SONGS_README.md)** - Beginner song filtering
+- **[Extract Songs Script](EXTRACT_SONGS_README.md)** - Website song data extraction tool
+- **[Format Index Script](FORMATINDEX_README.md)** - Convert song timestamps to HTML for video indexes
 - **[Timestamp Tools](TIMESTAMP_UPDATE_README.md)** - Version timestamp management  
 - **[Windows Shortcuts](SHORTCUT_INSTRUCTIONS.md)** - Desktop shortcuts for common tasks
 

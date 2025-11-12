@@ -5,58 +5,56 @@ This repository includes automated workflows to generate PDF files from ChordPro
 ## How it works
 
 ### Triggers
-The workflow is triggered when:
+The PDF generation workflow is triggered when:
 - Any `.chopro` or `.cho` file is modified
-- The `music/ChordPro/myconfig.json` configuration file is changed
-- Changes are pushed to main/master branch or in pull requests
+- Changes are pushed to the main/master branch (not on pull requests)
 
 ### Configuration
-The PDF generation uses the same settings as `GenList.py`:
-- Config file: `music/ChordPro/myconfig.json`
-- Diagram placement: top
-- Inline chords: enabled
-- Margins: top=70, bottom=0, left=20, right=20
-- Fonts: Helvetica for both text and chords
-- Chord color: red
+The PDF generation uses genpdf-butler with the following settings:
+- Page size: A5
+- Chord placement: top
+- No custom config file dependencies (uses genpdf-butler defaults)
 
 ### Behavior
 
-#### For All Events (Push and Pull Requests)
-- Generates PDFs for changed ChordPro files
-- If `myconfig.json` changes, regenerates ALL PDFs
-- Uploads generated PDFs as downloadable artifacts
-- Does NOT commit PDFs to the repository (artifacts only)
+#### For Push Events to Main Branch
+- Generates PDFs for changed ChordPro files that don't have current PDFs
+- Uses intelligent detection to avoid regenerating PDFs that are already up-to-date
+- **Commits generated PDFs directly to the repository**
+- Automatically triggers GitHub Pages deployment after PDF generation
+- Uses genpdf-butler with A5 page size and chords displayed on top
 
-#### For Pull Requests
-- Comments on the PR with list of generated PDFs
-- Provides direct links to download artifacts
+#### Smart PDF Generation Logic
+- Only regenerates PDFs when the ChordPro file is newer than the existing PDF
+- Compares commit timestamps to determine if regeneration is needed
+- Skips generation if PDF was updated in the same push as the ChordPro file
 
 ## Files
 
 ### Workflows
-- `.github/workflows/generate-pdfs.yml` - Full-featured workflow with detailed logging
-- `.github/workflows/generate-pdfs-optimized.yml` - Streamlined workflow (recommended)
-
-### Scripts
-- `.github/scripts/generate-pdfs.sh` - Bash script that replicates GenList.py PDF generation logic
+- `.github/workflows/auto-generate-pdfs.yml` - Main PDF generation workflow
+- `.github/workflows/deploy-pages-action.yml` - GitHub Pages deployment workflow
 
 ## Setup
 
 1. The workflows are automatically active once these files are in the repository
-2. ChordPro will be installed automatically in the GitHub runner
+2. genpdf-butler and ChordPro will be installed automatically in the GitHub runner
 3. Generated PDFs will appear in the same directory as their source .chopro files
+4. PDFs are automatically committed to the repository and deployed to GitHub Pages
 
 ## Monitoring
 
 Check the "Actions" tab in GitHub to monitor workflow runs. Each run provides:
 - Summary of files processed
-- List of generated PDFs
+- Smart detection of which PDFs actually need regeneration
+- Automatic commit of generated PDFs
+- Triggered GitHub Pages deployment
 - Any errors encountered
 
 ## Troubleshooting
 
 If PDF generation fails:
 1. Check the workflow logs in GitHub Actions
-2. Verify your ChordPro files are valid
-3. Ensure `music/ChordPro/myconfig.json` is valid JSON
-4. Check that file paths don't contain unsupported characters
+2. Verify your ChordPro files are valid syntax
+3. Check that file paths don't contain unsupported characters
+4. Ensure the repository has write permissions for the GitHub Actions workflow

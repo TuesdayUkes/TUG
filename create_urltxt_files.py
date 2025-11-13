@@ -183,6 +183,7 @@ def main():
         return
     
     created_count = 0
+    updated_count = 0
     not_found_count = 0
     already_exists_count = 0
     
@@ -191,10 +192,11 @@ def main():
     for chopro_file in all_songs:
         urltxt_file = chopro_file.with_suffix('.urltxt')
         
-        # Skip if .urltxt already exists
-        if urltxt_file.exists():
-            already_exists_count += 1
-            continue
+        # Check if .urltxt already exists
+        file_exists = urltxt_file.exists()
+        
+        # For existing files, we'll still process to check for newer recordings
+        # but we'll track them separately
         
         # Extract song title from ChordPro file
         song_title = extract_title_from_chopro(chopro_file)
@@ -208,12 +210,41 @@ def main():
         
         if match:
             date_obj, date_str, youtube_url = match
-            if create_urltxt_file(chopro_file, youtube_url, date_str):
-                created_count += 1
-                relative_path = chopro_file.relative_to(Path("music/ChordPro"))
-                print(f"CREATED: .urltxt for: {relative_path} -> {date_str}")
-            else:
-                not_found_count += 1
+            
+            # Check if we should update an existing file
+            should_update = True
+            if file_exists:
+                # Read existing file to check if it was created by script and if date is different
+                try:
+                    with open(urltxt_file, 'r', encoding='utf-8') as f:
+                        first_line = f.readline().strip()
+                        if "# Most recent recording:" in first_line:
+                            # This file was created by the script, check if date is different
+                            if f"# Most recent recording: {date_str}" in first_line:
+                                # Same date, no need to update
+                                should_update = False
+                                already_exists_count += 1
+                            # If different date, should_update remains True
+                        else:
+                            # This file was created manually, don't overwrite
+                            should_update = False
+                            already_exists_count += 1
+                except Exception:
+                    # If we can't read the file, don't update it (be safe)
+                    should_update = False
+                    already_exists_count += 1
+            
+            if should_update:
+                if create_urltxt_file(chopro_file, youtube_url, date_str):
+                    relative_path = chopro_file.relative_to(Path("music/ChordPro"))
+                    if file_exists:
+                        updated_count += 1
+                        print(f"UPDATED: .urltxt for: {relative_path} -> {date_str}")
+                    else:
+                        created_count += 1
+                        print(f"CREATED: .urltxt for: {relative_path} -> {date_str}")
+                else:
+                    not_found_count += 1
         else:
             not_found_count += 1
             # Only show first 20 "not found" messages to avoid spam
@@ -227,11 +258,12 @@ def main():
     print(f"\nSUMMARY:")
     print(f"ChordPro files processed: {len(all_songs)}")
     print(f"New .urltxt files created: {created_count}")
-    print(f"Already had .urltxt files: {already_exists_count}")
+    print(f"Existing .urltxt files updated: {updated_count}")
+    print(f"Already up-to-date .urltxt files: {already_exists_count}")
     print(f"Songs without recordings: {not_found_count}")
     
     # Show success rate
-    total_with_recordings = created_count + already_exists_count
+    total_with_recordings = created_count + updated_count + already_exists_count
     if len(all_songs) > 0:
         success_rate = (total_with_recordings / len(all_songs)) * 100
         print(f"Songs with video recordings: {total_with_recordings}/{len(all_songs)} ({success_rate:.1f}%)")

@@ -32,6 +32,8 @@ TUG/
 
 ### User Guides
 - **[Easy Songs System](EASY_SONGS_README.md)** - Beginner song filtering
+- **[Find Easy Songs Script](FIND_EASY_SONGS_README.md)** - Automated chord analysis and easy song marking
+- **[Create URL Text Files](CREATE_URLTXT_README.md)** - Link easy songs to video recordings
 - **[Extract Songs Script](EXTRACT_SONGS_README.md)** - Website song data extraction tool
 - **[Format Index Script](FORMATINDEX_README.md)** - Convert song timestamps to HTML for video indexes
 - **[Timestamp Tools](TIMESTAMP_UPDATE_README.md)** - Version timestamp management  

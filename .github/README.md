@@ -22,6 +22,8 @@ This repository contains:
 
 ### User Guides & Tools
 - **[Easy Songs System](../EASY_SONGS_README.md)** - How to mark and filter beginner-friendly songs
+- **[Find Easy Songs Script](../FIND_EASY_SONGS_README.md)** - Automatically identify and mark songs with 3 or fewer chords
+- **[Create URL Text Files](../CREATE_URLTXT_README.md)** - Link easy songs to their most recent video recordings
 - **[Extract Songs Script](../EXTRACT_SONGS_README.md)** - Tool for extracting song data from website HTML
 - **[Format Index Script](../FORMATINDEX_README.md)** - Convert timestamped song data to HTML for video indexes
 - **[Timestamp Updater](../TIMESTAMP_UPDATE_README.md)** - Script documentation for updating version timestamps

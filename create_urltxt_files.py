@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to create .urltxt files for easy songs that point to their most recent recording 
-in VideoIndex History.html
+Script to create .urltxt files for all songs that have recordings in VideoIndex History.html
 """
 
 import re
@@ -11,25 +10,19 @@ from bs4 import BeautifulSoup
 from urllib.parse import unquote
 import datetime
 
-def get_easy_songs():
-    """Find all ChordPro files that have .easy marker files"""
+def get_all_songs():
+    """Find all ChordPro files in the music directory"""
     chopro_dir = Path("music/ChordPro")
     
     if not chopro_dir.exists():
         print(f"ChordPro directory not found: {chopro_dir}")
         return []
     
-    # Find all .easy files
-    easy_files = list(chopro_dir.rglob("*.easy"))
-    easy_songs = []
+    # Find all .chopro files
+    chopro_files = list(chopro_dir.rglob("*.chopro"))
+    print(f"Found {len(chopro_files)} ChordPro files")
     
-    for easy_file in easy_files:
-        # Get the corresponding .chopro file
-        chopro_file = easy_file.with_suffix('.chopro')
-        if chopro_file.exists():
-            easy_songs.append((chopro_file, easy_file))
-    
-    return easy_songs
+    return chopro_files
 
 def parse_video_index():
     """Parse VideoIndex History.html and extract song recordings with dates"""
@@ -173,15 +166,15 @@ def create_urltxt_file(chopro_file, youtube_url, date_str):
         return False
 
 def main():
-    print("🔍 Finding easy songs...")
-    easy_songs = get_easy_songs()
-    print(f"Found {len(easy_songs)} songs with .easy markers")
+    print("Finding all ChordPro songs...")
+    all_songs = get_all_songs()
+    print(f"Found {len(all_songs)} ChordPro files")
     
-    if not easy_songs:
-        print("No easy songs found. Run find_easy_songs.py first.")
+    if not all_songs:
+        print("No ChordPro files found.")
         return
     
-    print("📺 Parsing VideoIndex History.html...")
+    print("Parsing VideoIndex History.html...")
     recordings = parse_video_index()
     print(f"Found recordings for {len(recordings)} different songs")
     
@@ -193,9 +186,9 @@ def main():
     not_found_count = 0
     already_exists_count = 0
     
-    print("🔗 Creating .urltxt files...")
+    print("Creating .urltxt files for songs with recordings...")
     
-    for chopro_file, easy_file in easy_songs:
+    for chopro_file in all_songs:
         urltxt_file = chopro_file.with_suffix('.urltxt')
         
         # Skip if .urltxt already exists
@@ -206,7 +199,7 @@ def main():
         # Extract song title from ChordPro file
         song_title = extract_title_from_chopro(chopro_file)
         if not song_title:
-            print(f"⚠️  Could not extract title from: {chopro_file.name}")
+            print(f"WARNING: Could not extract title from: {chopro_file.name}")
             not_found_count += 1
             continue
         
@@ -218,23 +211,33 @@ def main():
             if create_urltxt_file(chopro_file, youtube_url, date_str):
                 created_count += 1
                 relative_path = chopro_file.relative_to(Path("music/ChordPro"))
-                print(f"✅ Created .urltxt for: {relative_path} -> {date_str}")
+                print(f"CREATED: .urltxt for: {relative_path} -> {date_str}")
             else:
                 not_found_count += 1
         else:
             not_found_count += 1
-            relative_path = chopro_file.relative_to(Path("music/ChordPro"))
-            print(f"❌ No recording found for: {relative_path} (title: '{song_title}')")
+            # Only show first 20 "not found" messages to avoid spam
+            if not_found_count <= 20:
+                relative_path = chopro_file.relative_to(Path("music/ChordPro"))
+                print(f"NOT FOUND: No recording for: {relative_path} (title: '{song_title}')")
+            elif not_found_count == 21:
+                print(f"... (showing only first 20 'not found' messages)")
     
     # Summary report
-    print(f"\n📊 SUMMARY:")
-    print(f"Easy songs processed: {len(easy_songs)}")
+    print(f"\nSUMMARY:")
+    print(f"ChordPro files processed: {len(all_songs)}")
     print(f"New .urltxt files created: {created_count}")
     print(f"Already had .urltxt files: {already_exists_count}")
     print(f"Songs without recordings: {not_found_count}")
     
+    # Show success rate
+    total_with_recordings = created_count + already_exists_count
+    if len(all_songs) > 0:
+        success_rate = (total_with_recordings / len(all_songs)) * 100
+        print(f"Songs with video recordings: {total_with_recordings}/{len(all_songs)} ({success_rate:.1f}%)")
+    
     if not_found_count > 0:
-        print(f"\n💡 TIP: Songs without recordings may need manual review.")
+        print(f"\nTIP: Songs without recordings may need manual review.")
         print(f"Check if song titles in ChordPro files match those in VideoIndex History.html")
 
 if __name__ == "__main__":

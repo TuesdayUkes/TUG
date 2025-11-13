@@ -64,7 +64,7 @@ def extract_submitted_songs(soup):
 
     return songs
 
-def format_song_entry(song, timestamp="0:00"):
+def format_song_entry(song, timestamp="0:00:00"):
     """Format a song entry in the Music Links.txt format"""
     return f"{timestamp} {song['submitter']} ({song['title']}) {song['url']}"
 
@@ -102,7 +102,7 @@ def main():
         print(format_song_entry(song))
 
     # Also save to file
-    output_filename = "extracted_music_links.txt"
+    output_filename = "music/scripts/Music Links.txt"
     try:
         with open(output_filename, 'w', encoding='utf-8') as f:
             for song in all_songs:

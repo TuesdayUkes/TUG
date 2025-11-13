@@ -43,23 +43,23 @@ The script looks for these specific table elements:
 - Reports any errors encountered
 
 ### File Output
-- **`extracted_music_links.txt`** - YouTube video description template
-- Format: `0:00 submitter (title) url`
+- **`music/scripts/Music Links.txt`** - YouTube video description template
+- Format: `0:00:00 submitter (title) url`
 - One song per line with placeholder timestamps
 - Ready for manual editing with actual video timestamps
 
 ### Output Format Example (Initial Template)
 ```
-0:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
-0:00 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
-0:00 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
+0:00:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
+0:00:00 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
+0:00:00 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
 ```
 
 ### After Manual Editing (YouTube Ready)
 ```
-0:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
-2:45 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
-5:30 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
+0:00:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
+0:02:45 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
+0:05:30 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
 ```
 
 ## 🚀 Usage
@@ -114,9 +114,9 @@ pip install beautifulsoup4
 - Returns list of songs with actual submitter names
 - Expects 3+ columns: Submitter, Title, PDF link
 
-#### `format_song_entry(song, timestamp="0:00")`
+#### `format_song_entry(song, timestamp="0:00:00")`
 - Formats song data into Music Links.txt format
-- Default timestamp is "0:00" for all songs
+- Default timestamp is "0:00:00" for all songs
 
 ## 📊 Use Cases
 
@@ -128,7 +128,7 @@ python extract_songs.py
 # 2. Manually edit timestamps (example workflow)
 # - Watch recorded TUG session video
 # - Note actual start time of each song
-# - Update extracted_music_links.txt with real timestamps
+# - Update music/scripts/Music Links.txt with real timestamps
 # - Sort lines by chronological order of appearance
 
 # 3. Use as YouTube video description for chapter markers
@@ -137,14 +137,14 @@ python extract_songs.py
 
 ### Video Chapter Markers
 The edited file creates clickable chapter markers in YouTube videos:
-- **0:00** - Viewers can jump to video start
-- **2:45** - Click to jump to "Puff the Magic Dragon"  
-- **5:30** - Click to jump to "House of the Rising Sun"
+- **0:00:00** - Viewers can jump to video start
+- **0:02:45** - Click to jump to "Puff the Magic Dragon"  
+- **0:05:30** - Click to jump to "House of the Rising Sun"
 
 ### Integration with formatindex.py
 ```bash
 # After manual timestamp editing, file becomes input for:
-python formatindex.py extracted_music_links.txt
+python formatindex.py "music/scripts/Music Links.txt"
 # This processes the timestamped data for website integration
 ```
 
@@ -203,12 +203,12 @@ python -c "import bs4; print(bs4.__version__)"
 $ python extract_songs.py
 Extracted song data in Music Links.txt format:
 ============================================================
-0:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
-0:00 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
-0:00 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
-0:00 Mary Johnson (Blackbird) https://tuesdayukes.org/music/PDFs/Blackbird.pdf
+0:00:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
+0:00:00 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
+0:00:00 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
+0:00:00 Mary Johnson (Blackbird) https://tuesdayukes.org/music/PDFs/Blackbird.pdf
 
-Output also saved to: extracted_music_links.txt
+Output also saved to: music/scripts/Music Links.txt
 
 Total songs extracted: 4
 Practice songs: 2
@@ -219,19 +219,19 @@ Submitted songs: 2
 ```bash
 # 1. Watch the recorded TUG session video
 # 2. Note when each song actually starts
-# 3. Edit extracted_music_links.txt:
+# 3. Edit music/scripts/Music Links.txt:
 
 # Before (generated template):
-0:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
-0:00 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
-0:00 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
-0:00 Mary Johnson (Blackbird) https://tuesdayukes.org/music/PDFs/Blackbird.pdf
+0:00:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
+0:00:00 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
+0:00:00 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
+0:00:00 Mary Johnson (Blackbird) https://tuesdayukes.org/music/PDFs/Blackbird.pdf
 
 # After (edited with real timestamps, sorted chronologically):
-0:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
-3:15 Mary Johnson (Blackbird) https://tuesdayukes.org/music/PDFs/Blackbird.pdf
-6:45 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
-9:30 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
+0:00:00 group (Amazing Grace) https://tuesdayukes.org/music/PDFs/Amazing_Grace.pdf
+0:03:15 Mary Johnson (Blackbird) https://tuesdayukes.org/music/PDFs/Blackbird.pdf
+0:06:45 group (Puff the Magic Dragon) https://tuesdayukes.org/music/PDFs/Puff_Magic_Dragon.pdf
+0:09:30 John Smith (House of the Rising Sun) https://tuesdayukes.org/music/PDFs/House_Rising_Sun.pdf
 ```
 
 ### YouTube Integration

@@ -4,11 +4,10 @@ Script to create .urltxt files for all songs that have recordings in VideoIndex 
 """
 
 import re
-import os
 from pathlib import Path
 from bs4 import BeautifulSoup
-from urllib.parse import unquote
 import datetime
+from urllib.parse import unquote
 
 def get_all_songs():
     """Find all ChordPro files in the music directory"""
@@ -25,7 +24,12 @@ def get_all_songs():
     return chopro_files
 
 def parse_video_index():
-    """Parse VideoIndex History.html and extract song recordings with dates"""
+    """Parse VideoIndex History.html and extract song recordings with dates.
+
+    IMPORTANT: Keys are the exact PDF/ChordPro filename stems (lowercased),
+    derived from the href of the song link in the history HTML. This enables
+    strict, case-insensitive filename matching and avoids fuzzy matches.
+    """
     video_index_path = Path("music/scripts/VideoIndex History.html")
     
     if not video_index_path.exists():
@@ -41,7 +45,8 @@ def parse_video_index():
     
     soup = BeautifulSoup(content, 'html.parser')
     
-    # Dictionary to store song recordings: {song_title: [(date, youtube_url), ...]}
+    # Dictionary to store song recordings keyed by filename stem (lowercased):
+    # {filename_stem_lower: [(date_obj, original_date_str, youtube_url), ...]}
     recordings = {}
     current_date = None
     
@@ -68,25 +73,32 @@ def parse_video_index():
                 if link and link.get('href'):
                     timestamp_link = link.get('href')
                 
-                # Extract song title
+                # Extract song link and derive exact filename stem (lowercased)
                 song_cell = cells[2]
                 song_link = song_cell.find('a')
+                filename_key = None
                 if song_link:
-                    song_title = song_link.get_text().strip()
-                else:
-                    song_title = song_cell.get_text().strip()
-                
-                # Clean up song title for matching
-                song_title = clean_song_title(song_title)
-                
-                if timestamp_link and song_title:
-                    if song_title not in recordings:
-                        recordings[song_title] = []
-                    recordings[song_title].append((date_obj, current_date, timestamp_link))
+                    href = song_link.get('href', '').strip()
+                    if href:
+                        # 1) strip query/fragment
+                        href_clean = re.sub(r'[?#].*$', '', href)
+                        # 2) get last path component
+                        href_base = href_clean.split('/')[-1]
+                        # 3) URL-decode and drop extension
+                        href_base = unquote(href_base)
+                        href_base = re.sub(r'\.(pdf|chopro|cho)$', '', href_base, flags=re.IGNORECASE)
+                        # 4) Use exact base (except case) as key
+                        filename_key = href_base.strip().lower()
+
+                # Only record entries that have a resolvable filename key and timestamp
+                if timestamp_link and filename_key:
+                    if filename_key not in recordings:
+                        recordings[filename_key] = []
+                    recordings[filename_key].append((date_obj, current_date, timestamp_link))
     
     # Sort recordings by date (most recent first) for each song
-    for song_title in recordings:
-        recordings[song_title].sort(key=lambda x: x[0], reverse=True)
+    for key in recordings:
+        recordings[key].sort(key=lambda x: x[0], reverse=True)
     
     return recordings
 
@@ -98,9 +110,10 @@ def clean_song_title(title):
     # Remove file extensions if present
     title = re.sub(r'\.(pdf|chopro|cho)$', '', title, flags=re.IGNORECASE)
     
-    # Remove version indicators
-    title = re.sub(r'\s*\([^)]*\)\s*$', '', title)  # Remove trailing parentheses
-    title = re.sub(r'\s*-\s*[^-]*$', '', title)     # Remove trailing dashes with text
+    # Remove version indicators (keep artist/qualifiers that help disambiguate)
+    # Remove trailing parenthetical qualifiers like (Live) but keep meaningful words when inside the name
+    title = re.sub(r'\s*\((live|version|easy|easier|scroll|inline|with.*|in [A-G][b#]?|key .*?)\)\s*$', '', title, flags=re.IGNORECASE)
+    # Do NOT strip trailing "- Artist" style qualifiers; they disambiguate similar song names
     
     # Normalize whitespace
     title = re.sub(r'\s+', ' ', title).strip()
@@ -125,32 +138,19 @@ def extract_title_from_chopro(chopro_file):
     # Fallback to filename
     return clean_song_title(chopro_file.stem)
 
-def find_best_match(song_title, recordings):
-    """Find the best matching recording for a song title"""
-    song_title_clean = clean_song_title(song_title)
-    
-    # Try exact match first
-    if song_title_clean in recordings:
-        return recordings[song_title_clean][0]  # Most recent recording
-    
-    # Try fuzzy matching
-    best_match = None
-    best_score = 0
-    
-    for recorded_title in recordings:
-        # Simple fuzzy matching - check if titles contain common words
-        song_words = set(song_title_clean.split())
-        recorded_words = set(recorded_title.split())
-        
-        if song_words and recorded_words:
-            common_words = song_words.intersection(recorded_words)
-            score = len(common_words) / max(len(song_words), len(recorded_words))
-            
-            if score > best_score and score > 0.5:  # At least 50% word overlap
-                best_score = score
-                best_match = recordings[recorded_title][0]
-    
-    return best_match
+def find_best_match(song_title, recordings, hint_title=None):
+    """Find a matching recording strictly by filename stem (case-insensitive).
+
+    We match ONLY when the filename stem from the ChordPro/PDF exactly equals
+    the filename stem derived from the history HTML href (ignoring case).
+    """
+    # Prefer hint_title as the filename stem; fall back to song_title
+    key = (hint_title or song_title or '').strip().lower()
+    if not key:
+        return None
+    if key in recordings:
+        return recordings[key][0]  # Most recent recording for this filename key
+    return None
 
 def create_urltxt_file(chopro_file, youtube_url, date_str):
     """Create a .urltxt file for the given ChordPro file"""
@@ -165,112 +165,143 @@ def create_urltxt_file(chopro_file, youtube_url, date_str):
         print(f"Error creating {urltxt_file}: {e}")
         return False
 
+def get_season_priority(folder_path):
+    """Return priority for keeping files (lower = higher priority)"""
+    folder_name = str(folder_path)
+    # Prioritize 2025 first, then most recent years
+    if '2025' in folder_name:
+        return 0
+    elif 'Fall 2024' in folder_name or 'Summer 2024' in folder_name:
+        return 1
+    elif '2024' in folder_name:
+        return 2
+    elif '2023' in folder_name:
+        return 3
+    elif '2022' in folder_name:
+        return 4
+    elif '2021' in folder_name:
+        return 5
+    elif '2020' in folder_name:
+        return 6
+    elif "Kevin's Memorial" in folder_name:
+        return 7  # Keep memorial files
+    elif 'TUG Archive' in folder_name:
+        return 10  # Lower priority for archive
+    else:
+        return 8
+
 def main():
     print("Finding all ChordPro songs...")
     all_songs = get_all_songs()
     print(f"Found {len(all_songs)} ChordPro files")
-    
+
     if not all_songs:
         print("No ChordPro files found.")
         return
-    
+
     print("Parsing VideoIndex History.html...")
     recordings = parse_video_index()
     print(f"Found recordings for {len(recordings)} different songs")
-    
+
     if not recordings:
         print("No recordings found in VideoIndex History.html")
         return
-    
+
     created_count = 0
     updated_count = 0
     not_found_count = 0
+    removed_wrong_count = 0
     already_exists_count = 0
-    
-    print("Creating .urltxt files for songs with recordings...")
-    
+
+    print("Creating .urltxt files for songs with recordings (allowing multiple songs per video)...")
+
+    songs_with_matches = set()
+
     for chopro_file in all_songs:
         urltxt_file = chopro_file.with_suffix('.urltxt')
-        
-        # Check if .urltxt already exists
         file_exists = urltxt_file.exists()
-        
-        # For existing files, we'll still process to check for newer recordings
-        # but we'll track them separately
-        
-        # Extract song title from ChordPro file
+
         song_title = extract_title_from_chopro(chopro_file)
         if not song_title:
-            print(f"WARNING: Could not extract title from: {chopro_file.name}")
             not_found_count += 1
             continue
-        
-        # Find matching recording
-        match = find_best_match(song_title, recordings)
-        
-        if match:
-            date_obj, date_str, youtube_url = match
-            
-            # Check if we should update an existing file
-            should_update = True
-            if file_exists:
-                # Read existing file to check if it was created by script and if date is different
+
+        filename_hint = chopro_file.stem.lower()
+        match = find_best_match(song_title, recordings, hint_title=filename_hint)
+        if not match:
+            # No recording; possible cleanup of stale script-managed file
+            urltxt_file = chopro_file.with_suffix('.urltxt')
+            if urltxt_file.exists():
                 try:
                     with open(urltxt_file, 'r', encoding='utf-8') as f:
                         first_line = f.readline().strip()
-                        if "# Most recent recording:" in first_line:
-                            # This file was created by the script, check if date is different
-                            if f"# Most recent recording: {date_str}" in first_line:
-                                # Same date, no need to update
-                                should_update = False
-                                already_exists_count += 1
-                            # If different date, should_update remains True
-                        else:
-                            # This file was created manually, don't overwrite
-                            should_update = False
-                            already_exists_count += 1
+                    if first_line.startswith('# Most recent recording:'):
+                        try:
+                            urltxt_file.unlink()
+                            removed_wrong_count += 1
+                            relative_path = chopro_file.relative_to(Path("music/ChordPro"))
+                            print(f"REMOVED: .urltxt for: {relative_path} (no exact filename match in history)")
+                        except Exception as de:
+                            print(f"WARNING: Failed to remove {urltxt_file}: {de}")
                 except Exception:
-                    # If we can't read the file, don't update it (be safe)
-                    should_update = False
-                    already_exists_count += 1
-            
-            if should_update:
-                if create_urltxt_file(chopro_file, youtube_url, date_str):
-                    relative_path = chopro_file.relative_to(Path("music/ChordPro"))
-                    if file_exists:
-                        updated_count += 1
-                        print(f"UPDATED: .urltxt for: {relative_path} -> {date_str}")
-                    else:
-                        created_count += 1
-                        print(f"CREATED: .urltxt for: {relative_path} -> {date_str}")
-                else:
-                    not_found_count += 1
-        else:
+                    pass
             not_found_count += 1
-            # Only show first 20 "not found" messages to avoid spam
             if not_found_count <= 20:
                 relative_path = chopro_file.relative_to(Path("music/ChordPro"))
                 print(f"NOT FOUND: No recording for: {relative_path} (title: '{song_title}')")
             elif not_found_count == 21:
-                print(f"... (showing only first 20 'not found' messages)")
-    
+                print("... (showing only first 20 'not found' messages)")
+            continue
+
+        songs_with_matches.add(chopro_file)
+        date_obj, date_str, youtube_url = match
+        should_update = True
+        if file_exists:
+            try:
+                with open(urltxt_file, 'r', encoding='utf-8') as f:
+                    first_line = f.readline().strip()
+                if first_line.startswith('# Most recent recording:'):
+                    if first_line == f"# Most recent recording: {date_str}":
+                        should_update = False
+                        already_exists_count += 1
+                else:
+                    # Manual file - preserve
+                    should_update = False
+                    already_exists_count += 1
+            except Exception:
+                should_update = False
+                already_exists_count += 1
+
+        if should_update:
+            if create_urltxt_file(chopro_file, youtube_url, date_str):
+                relative_path = chopro_file.relative_to(Path("music/ChordPro"))
+                if file_exists:
+                    updated_count += 1
+                    print(f"UPDATED: .urltxt for: {relative_path} -> {date_str}")
+                else:
+                    created_count += 1
+                    print(f"CREATED: .urltxt for: {relative_path} -> {date_str}")
+            else:
+                not_found_count += 1
+
     # Summary report
-    print(f"\nSUMMARY:")
+    print("\nSUMMARY:")
     print(f"ChordPro files processed: {len(all_songs)}")
     print(f"New .urltxt files created: {created_count}")
     print(f"Existing .urltxt files updated: {updated_count}")
     print(f"Already up-to-date .urltxt files: {already_exists_count}")
     print(f"Songs without recordings: {not_found_count}")
-    
-    # Show success rate
+    if removed_wrong_count:
+        print(f"Wrong .urltxt removed (no exact match): {removed_wrong_count}")
+
     total_with_recordings = created_count + updated_count + already_exists_count
     if len(all_songs) > 0:
         success_rate = (total_with_recordings / len(all_songs)) * 100
         print(f"Songs with video recordings: {total_with_recordings}/{len(all_songs)} ({success_rate:.1f}%)")
-    
+
     if not_found_count > 0:
-        print(f"\nTIP: Songs without recordings may need manual review.")
-        print(f"Check if song titles in ChordPro files match those in VideoIndex History.html")
+        print("\nTIP: Songs without recordings may need manual review.")
+        print("Check if song titles in ChordPro files match those in VideoIndex History.html")
 
 if __name__ == "__main__":
     main()

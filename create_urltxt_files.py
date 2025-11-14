@@ -341,6 +341,55 @@ def main():
     if removed_title_duplicates:
         print(f"Title-level duplicate .urltxt removed: {removed_title_duplicates}")
 
+    # Post-pass: ensure no lingering script-managed duplicates with identical header content
+    post_pass_removed = 0
+    header_pattern = re.compile(r'^# Most recent recording: (.+)$')
+    urltxt_files = list(Path('music/ChordPro').rglob('*.urltxt'))
+    duplicate_groups = {}
+    for uf in urltxt_files:
+        try:
+            with open(uf, 'r', encoding='utf-8') as f:
+                first_line = f.readline().strip()
+            m = header_pattern.match(first_line)
+            if not m:
+                continue  # manual file; skip
+            date_str = m.group(1).strip()
+            # Title key inferred from sibling ChordPro filename if exists, else stem
+            title_key = uf.stem.lower().strip()
+            duplicate_groups.setdefault(title_key, []).append((uf, date_str))
+        except Exception:
+            continue
+
+    for title_key, entries in duplicate_groups.items():
+        if len(entries) <= 1:
+            continue
+        # Determine keeper: prefer one whose matching ChordPro file is in most recent season priority
+        def entry_sort(e):
+            urltxt_path, date_str = e
+            chopro_path = urltxt_path.with_suffix('.chopro')
+            priority = get_season_priority(chopro_path.parent)
+            # Parse date for ordering (fallback minimal)
+            try:
+                date_obj = datetime.datetime.strptime(date_str, '%B %d, %Y')
+            except Exception:
+                date_obj = datetime.datetime(1970,1,1)
+            return (-date_obj.toordinal(), priority)
+        entries.sort(key=entry_sort)
+        keeper = entries[0][0]
+        for (dup_path, _) in entries[1:]:
+            if dup_path == keeper:
+                continue
+            try:
+                dup_path.unlink()
+                post_pass_removed += 1
+                rel = dup_path.relative_to(Path('music/ChordPro'))
+                print(f"POST-PASS REMOVED duplicate: {rel}")
+            except Exception as e:
+                print(f"WARNING: Post-pass failed to remove {dup_path}: {e}")
+
+    if post_pass_removed:
+        print(f"Post-pass duplicate removals: {post_pass_removed}")
+
     total_with_recordings = created_count + updated_count + already_exists_count
     if len(all_songs) > 0:
         success_rate = (total_with_recordings / len(all_songs)) * 100

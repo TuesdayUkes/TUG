@@ -1,9 +1,11 @@
 {t: Ain't Gonna Rain No More }
 {st: Traditional; performed by Wendell Hall (1923) }
 
+{textcolour: blue}
 Intro:
-&bue: [G] It ain't gonna rain no more no more, It ain't gonna rain no [D7] more
-&bue: How in the heck can I wash my neck, if it ain't gonna rain no [G] more [D7]
+[G] It ain't gonna rain no more no more, It ain't gonna rain no [D7] more
+How in the heck can I wash my neck, if it ain't gonna rain no [G] more [D7]
+{textcolour}
 
 [G] Oh, the night was dark and dreary, and the air was full of [D7] sleet;
 An old man stood out in the cold, and his shoes were full of [G] feet [D7]
@@ -20,9 +22,11 @@ There may be bugs on some of you mugs, but there ain't no bugs on [G] me [D7]
 [G] Well the butterfly flits on wings of gold, the June Bug wings of [D7] flame.
 [D7] The bedbug has no wings at all, but he gets there just the [G] same. [D7]
 
+{textcolour: blue}
 Instrumental:
-&bue: [G] There ain't no flies on me, there ain't no flies on [D7] me
-&bue: There may be flies on some of you guys, but there ain't no flies on [G] me [D7]
+[G] There ain't no flies on me, there ain't no flies on [D7] me
+There may be flies on some of you guys, but there ain't no flies on [G] me [D7]
+{textcolour}
 
 [G] There ain't no flies on me, there ain't no flies on [D7] me
 There may be flies on some of you guys, but there ain't no flies on [G] me [D7]
@@ -39,6 +43,8 @@ There may be flies on some of you guys, but there ain't no flies on [G] me [D7]
 [G] It ain't gonna rain no more no more, it ain't gonna rain no [D7] more
 How in the heck can I wash my neck, if it ain't gonna rain no [G] more [D7]
 
+{textcolour: blue}
 Outro:
-&bue: [G] It ain't gonna rain no more no more, It ain't gonna rain no [D7] more
-&bue: How in the heck can I wash my neck, if it ain't gonna rain no [G] more [D7] [G]
+[G] It ain't gonna rain no more no more, It ain't gonna rain no [D7] more
+How in the heck can I wash my neck, if it ain't gonna rain no [G] more [D7] [G]
+{textcolour}

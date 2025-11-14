@@ -62,10 +62,10 @@ jobs:
     - name: Setup Pages
       uses: actions/configure-pages@v4
     
-    - name: Install Python dependencies for GenList.py
+    - name: Install Python dependencies for GenList.py and create_urltxt_files.py
       run: |
         python -m pip install --upgrade pip
-        pip install first
+        pip install first beautifulsoup4
     
     - name: Generate ukulele-song-archive.html
       run: |
@@ -80,6 +80,20 @@ jobs:
         python music/scripts/GenList.py music ukulele-song-archive-unfiltered.html --intro --no-genPDF --filter=none
         echo "Generated ukulele-song-archive-unfiltered.html"
         ls -la ukulele-song-archive-unfiltered.html || echo "Unfiltered archive file not found"
+    
+    - name: Generate/update .urltxt files for songs with video recordings
+      run: |
+        echo "🎥 Running create_urltxt_files.py to link songs to video recordings..."
+        if [ -f "music/scripts/create_urltxt_files.py" ]; then
+          python music/scripts/create_urltxt_files.py
+          echo "✅ URL text files generation completed"
+          
+          # Count created/updated files
+          URLTXT_COUNT=$(find music -name "*.urltxt" -type f | wc -l)
+          echo "📊 Total .urltxt files: $URLTXT_COUNT"
+        else
+          echo "⚠️ create_urltxt_files.py not found - skipping URL text file generation"
+        fi
     
     - name: Prepare site files
       run: |

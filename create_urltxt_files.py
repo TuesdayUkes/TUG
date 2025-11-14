@@ -207,29 +207,31 @@ def main():
         print("No recordings found in VideoIndex History.html")
         return
 
+    # Counters
     created_count = 0
     updated_count = 0
     not_found_count = 0
-    removed_wrong_count = 0
+    removed_wrong_count = 0  # stale (no recording) script-managed removed
     already_exists_count = 0
+    removed_title_duplicates = 0  # duplicates removed to enforce one per title
 
-    print("Creating .urltxt files for songs with recordings (allowing multiple songs per video)...")
+    print("Collecting candidate recordings per canonical title (enforcing ONE 'Most recent recording' per title)...")
 
-    songs_with_matches = set()
+    # Gather candidates keyed by canonical song title (case-insensitive)
+    # title_key -> list of dicts {chopro_file, date_obj, date_str, youtube_url}
+    title_candidates = {}
 
     for chopro_file in all_songs:
-        urltxt_file = chopro_file.with_suffix('.urltxt')
-        file_exists = urltxt_file.exists()
-
         song_title = extract_title_from_chopro(chopro_file)
         if not song_title:
             not_found_count += 1
             continue
+        title_key = song_title.lower().strip()
 
         filename_hint = chopro_file.stem.lower()
         match = find_best_match(song_title, recordings, hint_title=filename_hint)
         if not match:
-            # No recording; possible cleanup of stale script-managed file
+            # Handle stale script-managed file (no longer matches exactly)
             urltxt_file = chopro_file.with_suffix('.urltxt')
             if urltxt_file.exists():
                 try:
@@ -240,7 +242,7 @@ def main():
                             urltxt_file.unlink()
                             removed_wrong_count += 1
                             relative_path = chopro_file.relative_to(Path("music/ChordPro"))
-                            print(f"REMOVED: .urltxt for: {relative_path} (no exact filename match in history)")
+                            print(f"REMOVED (stale): {relative_path} (no exact filename match in history)")
                         except Exception as de:
                             print(f"WARNING: Failed to remove {urltxt_file}: {de}")
                 except Exception:
@@ -253,19 +255,43 @@ def main():
                 print("... (showing only first 20 'not found' messages)")
             continue
 
-        songs_with_matches.add(chopro_file)
         date_obj, date_str, youtube_url = match
+        title_candidates.setdefault(title_key, []).append({
+            'chopro_file': chopro_file,
+            'date_obj': date_obj,
+            'date_str': date_str,
+            'youtube_url': youtube_url
+        })
+
+    # Decide best candidate per title
+    def candidate_sort_key(c):
+        # Higher date first (descending), then season priority (lower better)
+        date_obj = c['date_obj']
+        # Use ordinal (robust); push pre-1970 fallback dates to bottom
+        safe_ord = date_obj.toordinal() if date_obj.year >= 1970 else 0
+        return (-safe_ord, get_season_priority(c['chopro_file'].parent))
+
+    for title_key, candidates in title_candidates.items():
+        # Sort candidates by (date desc, season priority asc)
+        candidates.sort(key=candidate_sort_key)
+        chosen = candidates[0]
+        chosen_file = chosen['chopro_file']
+        chosen_urltxt = chosen_file.with_suffix('.urltxt')
+        file_exists = chosen_urltxt.exists()
+        date_str = chosen['date_str']
+        youtube_url = chosen['youtube_url']
         should_update = True
+
         if file_exists:
             try:
-                with open(urltxt_file, 'r', encoding='utf-8') as f:
+                with open(chosen_urltxt, 'r', encoding='utf-8') as f:
                     first_line = f.readline().strip()
                 if first_line.startswith('# Most recent recording:'):
                     if first_line == f"# Most recent recording: {date_str}":
                         should_update = False
                         already_exists_count += 1
                 else:
-                    # Manual file - preserve
+                    # Manual file - preserve, do not overwrite
                     should_update = False
                     already_exists_count += 1
             except Exception:
@@ -273,16 +299,35 @@ def main():
                 already_exists_count += 1
 
         if should_update:
-            if create_urltxt_file(chopro_file, youtube_url, date_str):
-                relative_path = chopro_file.relative_to(Path("music/ChordPro"))
+            if create_urltxt_file(chosen_file, youtube_url, date_str):
+                relative_path = chosen_file.relative_to(Path("music/ChordPro"))
                 if file_exists:
                     updated_count += 1
-                    print(f"UPDATED: .urltxt for: {relative_path} -> {date_str}")
+                    print(f"UPDATED (title winner): {relative_path} -> {date_str}")
                 else:
                     created_count += 1
-                    print(f"CREATED: .urltxt for: {relative_path} -> {date_str}")
+                    print(f"CREATED (title winner): {relative_path} -> {date_str}")
             else:
                 not_found_count += 1
+
+        # Remove other script-managed duplicates for this title
+        for duplicate in candidates[1:]:
+            dup_file = duplicate['chopro_file']
+            dup_urltxt = dup_file.with_suffix('.urltxt')
+            if dup_urltxt.exists():
+                try:
+                    with open(dup_urltxt, 'r', encoding='utf-8') as f:
+                        first_line = f.readline().strip()
+                    if first_line.startswith('# Most recent recording:'):
+                        try:
+                            dup_urltxt.unlink()
+                            removed_title_duplicates += 1
+                            relative_path = dup_file.relative_to(Path("music/ChordPro"))
+                            print(f"REMOVED (duplicate title): {relative_path}")
+                        except Exception as de:
+                            print(f"WARNING: Failed to remove duplicate {dup_urltxt}: {de}")
+                except Exception:
+                    pass
 
     # Summary report
     print("\nSUMMARY:")
@@ -293,6 +338,8 @@ def main():
     print(f"Songs without recordings: {not_found_count}")
     if removed_wrong_count:
         print(f"Wrong .urltxt removed (no exact match): {removed_wrong_count}")
+    if removed_title_duplicates:
+        print(f"Title-level duplicate .urltxt removed: {removed_title_duplicates}")
 
     total_with_recordings = created_count + updated_count + already_exists_count
     if len(all_songs) > 0:

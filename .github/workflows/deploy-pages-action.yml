@@ -84,15 +84,27 @@ jobs:
     - name: Generate/update .urltxt files for songs with video recordings
       run: |
         echo "🎥 Running create_urltxt_files.py to link songs to video recordings..."
-        if [ -f "music/scripts/create_urltxt_files.py" ]; then
+        if [ -f "create_urltxt_files.py" ]; then
+          echo "Found script at repo root."
+          python create_urltxt_files.py
+          GEN_STATUS=$?
+        elif [ -f "music/scripts/create_urltxt_files.py" ]; then
+          echo "Found script under music/scripts."
           python music/scripts/create_urltxt_files.py
-          echo "✅ URL text files generation completed"
-          
-          # Count created/updated files
+          GEN_STATUS=$?
+        else
+          echo "⚠️ create_urltxt_files.py not found in root or music/scripts - skipping URL text file generation"
+          GEN_STATUS=0
+        fi
+
+        if [ "$GEN_STATUS" -eq 0 ]; then
+          echo "✅ URL text files generation completed (or skipped if not present)"
+          # Count .urltxt files
           URLTXT_COUNT=$(find music -name "*.urltxt" -type f | wc -l)
           echo "📊 Total .urltxt files: $URLTXT_COUNT"
         else
-          echo "⚠️ create_urltxt_files.py not found - skipping URL text file generation"
+          echo "❌ URL text file generation failed with status $GEN_STATUS"
+          exit $GEN_STATUS
         fi
     
     - name: Prepare site files

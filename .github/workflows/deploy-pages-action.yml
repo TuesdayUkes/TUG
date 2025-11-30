@@ -81,6 +81,13 @@ jobs:
         echo "Generated ukulele-song-archive.html"
         ls -la ukulele-song-archive.html || echo "Archive file not found"
     
+    - name: Generate xmas-songbook.html
+      run: |
+        echo "Running genlist (pipx) from root directory to generate xmas-songbook.html..."
+        genlist XmasSongbook xmas-songbook.html --intro --no-genPDF
+        echo "Generated ukulele-song-archive.html"
+        ls -la ukulele-song-archive.html || echo "Archive file not found"
+    
     - name: Generate/update .urltxt files for songs with video recordings
       run: |
         echo "🎥 Running create_urltxt_files.py to link songs to video recordings..."

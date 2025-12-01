@@ -58,7 +58,7 @@ def create_easy_marker(chopro_file):
 
 def main():
     # Start from the ChordPro directory
-    chopro_dir = Path("music/ChordPro")
+    chopro_dir = Path(".")
     
     if not chopro_dir.exists():
         print(f"ChordPro directory not found: {chopro_dir}")

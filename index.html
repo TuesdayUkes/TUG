@@ -65,6 +65,37 @@
         .hero-png {
             height: auto;
             max-width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .hero-image-wrapper picture,
+        .hero-image-wrapper img {
+            display: block;
+        }
+
+        .hero-overlay-text {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            width: 100%;
+            text-shadow:
+                -2px -2px 0 #fff,
+                2px -2px 0 #fff,
+                -2px 2px 0 #fff,
+                2px 2px 0 #fff,
+                0 2px 10px rgba(0,0,0,0.35);
         }
 
         .nav-links {
@@ -499,11 +530,14 @@
                 <section class="hero card">
                     <h1>Closed December 23!<br> No meeting that day!</h1>
                     <h1>
-                        <picture>
-                            <!-- <source srcset="Uke%20with%20Text.webp" type="image/webp"> -->
-                            <source srcset="assets/Christmas2025/ChristmasSingalongAtWildflowerTerraceApartments.webp" type="image/webp">
-                            <img src="Uke%20with%20Text.png" alt="Tuesday Ukes:" class="hero-png">
-                        </picture><br>
+                        <div class="hero-image-wrapper">
+                            <picture>
+                                <!-- <source srcset="Uke%20with%20Text.webp" type="image/webp"> -->
+                                <source srcset="assets/winterAIphoto1banner.webp" type="image/webp">
+                                <img src="assets/winterAIphoto1banner.webp" alt="Tuesday Ukes:" class="hero-png">
+                            </picture>
+                            <span class="hero-overlay-text">Tuesday Ukes</span>
+                        </div><br>
                         A ukulele club that meets weekly in Austin, Texas
                     </h1>
                     <p class="lead">Join our vibrant community of ukulele enthusiasts! We welcome players of all skill levels.</p>

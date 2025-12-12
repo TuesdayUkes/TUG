@@ -25,7 +25,8 @@
 /* Modern body styling */
 body.custom-background { 
   background: linear-gradient(135deg, var(--background) 0%, #edf2f7 100%);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+  font-size: 17px;
   line-height: 1.6;
   color: var(--text-primary);
 }
@@ -158,7 +159,7 @@ h2 {
 #dataTable td:first-child {
   font-weight: 600;
   color: var(--text-secondary);
-  font-family: 'Monaco', 'Consolas', monospace;
+  font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
   width: 80px;
   text-align: center;
   background: rgba(44, 82, 130, 0.05);

@@ -84,7 +84,7 @@ jobs:
     - name: Generate xmas-songbook.html
       run: |
         echo "Running genlist (pipx) from root directory to generate xmas-songbook.html..."
-        genlist XmasSongbook xmas-songbook.html --intro --no-genPDF
+        genlist music/XmasSongbook xmas-songbook.html --intro --no-genPDF
         echo "Generated ukulele-song-archive.html"
         ls -la ukulele-song-archive.html || echo "Archive file not found"
     

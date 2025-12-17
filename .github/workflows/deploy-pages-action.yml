@@ -21,6 +21,7 @@ on:
       - '**/*.urltxt'
       - '**/*.hide'
       - '**/*.easy'
+      - 'music/scripts/VideoIndex History.html'
       - 'robots.txt'
     branches: [ main, master ]
   repository_dispatch:
@@ -35,7 +36,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -112,6 +113,21 @@ jobs:
         else
           echo "❌ URL text file generation failed with status $GEN_STATUS"
           exit $GEN_STATUS
+        fi
+    
+    - name: Commit .urltxt updates
+      run: |
+        echo "🔍 Checking for .urltxt changes to commit..."
+        if git status --short -- ':(glob)**/*.urltxt' | grep -q .; then
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A -- ':(glob)**/*.urltxt'
+          git commit -m "chore: sync video link .urltxt files"
+          TARGET_BRANCH="${GITHUB_REF_NAME:-${GITHUB_REF#refs/heads/}}"
+          echo "📤 Pushing .urltxt updates to ${TARGET_BRANCH}"
+          git push origin "HEAD:${TARGET_BRANCH}"
+        else
+          echo "✅ No .urltxt changes detected"
         fi
     
     - name: Prepare site files

@@ -281,13 +281,17 @@ def main():
         date_str = chosen['date_str']
         youtube_url = chosen['youtube_url']
         should_update = True
+        expected_header = f"# Most recent recording: {date_str}"
+        expected_url = youtube_url.strip()
 
         if file_exists:
             try:
                 with open(chosen_urltxt, 'r', encoding='utf-8') as f:
-                    first_line = f.readline().strip()
-                if first_line.startswith('# Most recent recording:'):
-                    if first_line == f"# Most recent recording: {date_str}":
+                    lines = f.read().splitlines()
+                header_line = lines[0].strip() if lines else ''
+                url_line = lines[1].strip() if len(lines) > 1 else ''
+                if header_line.startswith('# Most recent recording:'):
+                    if header_line == expected_header and url_line == expected_url:
                         should_update = False
                         already_exists_count += 1
                 else:

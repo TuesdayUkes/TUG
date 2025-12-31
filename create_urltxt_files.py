@@ -17,8 +17,11 @@ def get_all_songs():
         print(f"ChordPro directory not found: {chopro_dir}")
         return []
     
-    # Find all .chopro files
-    chopro_files = list(chopro_dir.rglob("*.chopro"))
+    # Find all .chopro files (sorted for deterministic behavior across OS/filesystems)
+    chopro_files = sorted(
+        chopro_dir.rglob("*.chopro"),
+        key=lambda p: p.as_posix().lower(),
+    )
     print(f"Found {len(chopro_files)} ChordPro files")
     
     return chopro_files
@@ -265,11 +268,15 @@ def main():
 
     # Decide best candidate per title
     def candidate_sort_key(c):
-        # Higher date first (descending), then season priority (lower better)
+        # Higher date first (descending).
+        # Break ties by season priority (lower = higher priority), then by
+        # relative path to make behavior deterministic across OS/filesystems.
         date_obj = c['date_obj']
-        # Use ordinal (robust); push pre-1970 fallback dates to bottom
         safe_ord = date_obj.toordinal() if date_obj.year >= 1970 else 0
-        return (-safe_ord, get_season_priority(c['chopro_file'].parent))
+
+        season_rank = get_season_priority(c['chopro_file'].parent)
+        rel_path_rank = c['chopro_file'].as_posix().lower()
+        return (-safe_ord, season_rank, rel_path_rank)
 
     for title_key, candidates in title_candidates.items():
         # Sort candidates by (date desc, season priority asc)
@@ -348,7 +355,7 @@ def main():
     # Post-pass: ensure no lingering script-managed duplicates with identical header content
     post_pass_removed = 0
     header_pattern = re.compile(r'^# Most recent recording: (.+)$')
-    urltxt_files = list(Path('music/ChordPro').rglob('*.urltxt'))
+    urltxt_files = sorted(Path('music/ChordPro').rglob('*.urltxt'), key=lambda p: p.as_posix().lower())
     duplicate_groups = {}
     for uf in urltxt_files:
         try:
@@ -372,12 +379,13 @@ def main():
             urltxt_path, date_str = e
             chopro_path = urltxt_path.with_suffix('.chopro')
             priority = get_season_priority(chopro_path.parent)
+            rel_path_rank = urltxt_path.as_posix().lower()
             # Parse date for ordering (fallback minimal)
             try:
                 date_obj = datetime.datetime.strptime(date_str, '%B %d, %Y')
             except Exception:
                 date_obj = datetime.datetime(1970,1,1)
-            return (-date_obj.toordinal(), priority)
+            return (-date_obj.toordinal(), priority, rel_path_rank)
         entries.sort(key=entry_sort)
         keeper = entries[0][0]
         for (dup_path, _) in entries[1:]:

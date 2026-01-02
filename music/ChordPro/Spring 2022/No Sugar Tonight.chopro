@@ -1,5 +1,10 @@
 {t: No Sugar Tonight}
 {st: The Guess Who}
+{define Gsus2 frets 0 2 3 0}
+{define Gsus4 frets 0 2 3 3}
+{define Dsus2 frets 2 2 0 x}
+{define Dsus4 frets 2 2 3 x}
+
 (intro)
 [Gsus2] [Gsus4] [G]
 [Dsus2] [Dsus4] [D]
@@ -86,6 +91,7 @@ Now I'm [G]falling [Gsus2]from her [G] (hold) skies
 ---------3---0-
 {eot}
 
+{new_page}
 (repeat intro)
 [Gsus2] [Gsus4] [G]
 [Dsus2] [Dsus4] [D]
@@ -110,13 +116,13 @@ Now I'm [G]falling [Gsus2]from her [G] (hold) skies
 [G] [Gsus2] [G] [Gsus2]
 [G] [Gsus2] [G] [Gsus2]
 
-[G]Jocko says yes, and I believe him
-[G]When we talk about the things I say
-[G]She hasn't got the faith or the guts to leave him
-[G]When they're standing in each other's way
-[G]You're tripping back now to places you've been to
-[G]You wonder what you're gonna find
-[G]You know you've been wrong but it won't be long
+[G]Jocko says yes, and [Gsus2] I believe him
+[G]When we talk about the [Gsus2] things I say
+[G]She hasn't got the faith or the [Gsus2] guts to leave him
+[G]When they're standing in each other's [Gsus2] way
+[G]You're tripping back now to [Gsus2] places you've been to
+[G]You wonder what you're gonna [Gsus2] find
+[G]You know you've been wrong but it [Gsus2] won't be long
 [G]Before you leave 'em all far behind
 
 [C]'Cause it's the new Mother Nature [G]taking over [F]/[C]/[G]//
@@ -132,7 +138,7 @@ She's gettin' us [G] all [Gsus2]
 [G]A smoke-filled room in a [Gsus2] corner basement
 [G]The situation must be [Gsus2] right
 [G]A bag of goodies and a [Gsus2] bottle of wine
-[G]We're gonna get it on right [Gsus2] tonight
+[G]We're gonna get it on right tonight
 
 [C]'Cause it's the new Mother Nature [G]taking over [F]/[C]/[G]//
 [C]It's the new splendid lady come to [G]call [F]/[C]/[G]//

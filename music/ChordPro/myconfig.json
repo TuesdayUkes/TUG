@@ -343,7 +343,13 @@
     // Layout definitions for PDF output.
 
     "pdf" : {
-
+    "formats.title": {
+      "subtitle": [
+        ["", "%{subtitle.1}", ""],
+        ["", "%{subtitle.2}", ""],
+        ["", "%{subtitle.3}", ""]
+      ]
+    }
    	"margintop"    :  70,
   	"marginbottom" :  0,
 	"marginleft"   :  10,

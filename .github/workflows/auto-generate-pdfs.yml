@@ -6,6 +6,7 @@ on:
       - '**/*.chopro'
       - '**/*.cho'
     branches: [ main, master ]
+  workflow_dispatch:  # Allows manual triggering from GitHub Actions tab
 
 # Sets permissions to allow committing generated PDFs back to the repo
 permissions:

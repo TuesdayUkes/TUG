@@ -20,7 +20,7 @@
     gtag('config', 'G-41GGBK3HCQ');
   </script>
 
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css?v=1.4">
 <style>
 /* Modern body styling */
 body.custom-background { 

@@ -126,6 +126,15 @@ td {
     vertical-align: middle;
 }
 
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
 tr:hover {
     background-color: var(--background);
 }

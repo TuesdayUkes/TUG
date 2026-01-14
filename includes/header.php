@@ -18,4 +18,4 @@
     <link rel="stylesheet" href="/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css@ver=4.12.10.css">
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css?v=1.4">

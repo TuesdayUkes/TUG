@@ -36,7 +36,8 @@ TUG/
 - **[Create URL Text Files Script](CREATE_URLTXT_FILES_README.md)** - Link songs to video recordings (all songs, 86.5% coverage)
 - **[Extract Songs Script](EXTRACT_SONGS_README.md)** - Website song data extraction tool
 - **[Format Index Script](FORMATINDEX_README.md)** - Convert song timestamps to HTML for video indexes
-- **[Timestamp Tools](TIMESTAMP_UPDATE_README.md)** - Version timestamp management  
+- **[Timestamp Tools](TIMESTAMP_UPDATE_README.md)** - Version timestamp management
+- **[Filename Validation](FILENAME_VALIDATION_README.md)** - Cross-platform filename compatibility checker
 - **[Windows Shortcuts](SHORTCUT_INSTRUCTIONS.md)** - Desktop shortcuts for common tasks
 
 ## 🚀 Quick Commands

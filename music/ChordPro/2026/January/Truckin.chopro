@@ -1,78 +1,71 @@
-{title Truckin', Grateful Dead}
-{define D* frets 2 2 2 0}
-{define F fingers 3 0 2 0 frets 2 0 1 0}
-{define F# fingers 3 1 2 1 frets 3 1 2 1}
-{define G^ fingers 3 1 2 1 frets 4 2 3 2}
+{title Truckin'}
+{subtitle Grateful Dead, 1970}
 
-Note: [D*] = 3 beats [D] followed by 1 beat [D7]
-
-[D*] [D*] [D*] [D*] 
+[D]-[D7] x 4   
 
 [D] Truckin’ got my chips cashed in. [G] Keep truckin’, like the do-dah man
 [A] Together, more or less in line, [G] just keep truckin’ on.
-[D*] [D*] [D*] [D*] 
 
-[D*] Arrows of neon and flashing marquees out on [D*] Main Street.
-[D*] Chicago, New York, Detroit and it’s all on [D*] the same street.
-[D*] Your typical city involved in a typical [D*] day dream
-[D*] Hang it up and see what tomorrow [D*] brings.
+[D]-[D7] x 4
+
+[D] Arrows of neon and [D7] flashing marquees out on [D] Main Street. [D7]
+[D] Chicago, New York, [D7] Detroit and it’s all on [D] the same street. [D7]
+[D] Your typical city [D7] in]volved in a typical [D] day dream [D7] 
+[D] Hang it up and [D7]see what tomorrow [D] brings. [D7]
 
 [D] Dallas, got a soft machine; [G] Houston, too close to New Orleans;
 [A] New York’s got the ways and means; [G] but just won’t let you be.
-[D*] [D*] [D*] [D*] 
 
-[D*] Most of the cats that you meet on the streets speak of [D*] true love,
-[D*] Most of the time they're sittin' and cryin' at [D*] home.
-[D*] One of these days they know they gotta get [D*] goin'
-[D*] Out of the door and down on the streets all [D*] alone.
+[D]-[D7] x 4
+
+[D] Most of the cats that [D7] you meet on the streets speak of [D] true love, [D7]
+[D] Most of the time they're [D7] sittin' and cryin' at [D] home. [D7]
+[D] One of these days they [D7] know they gotta get [D] goin' [D7]
+[D] Out of the door and [D7] down on the streets all [D] alone. [D7] 
 
 [D] Truckin', like the do-dah man. [G] Once told me "You've got to play your hand"
 [A] Sometimes your cards ain't worth a dime, [G] if you don't lay 'em down.
-[D*] [D*] [D*] [D*] 
 
-{comment_box Bridge}
-[G^] Sometimes the light’s all shinin’ on me; 
-[F] [F#] [G^]
-[G^] Other times I can barely see 
-[F] [F#] [G^]
-[C] Lately it oc[Em7]curs to [E7] me 
-what a [Gmaj7] long, strange trip it’s [D] been.
-[D*] [D*] [D*] [D*] 
+[D]-[D7] x 4
 
-[D*] What in the world ever became of [D*] sweet Jane?
-[D*] She lost her sparkle, you know she isn't the [D*] same
-[D*] Livin' on reds, vitamin C, and [D*] cocaine,
-[D*] All a friend can say is "Ain't it a [D*] shame?"
+[G] Sometimes the light’s all shinin’ on [G] me [F] [C] [G]
+[G] Other times I can [C] barely [G] see [F] [C] [G]
+[C] Lately it oc-[Am]curs to [E7] me 
+what a [Gmaj7] long, strange trip it’s [D] been. [D] [D] [D]
+
+[D] What in the world ever [D7] became of [D] sweet Jane? [D7]
+[D] She lost her sparkle,  [D7] you know she isn't the [D] same  [D7]
+[D] Livin' on reds, vitamin [D7] C, and [D] cocaine, [D7]
+[D] All a friend can say [D7] is "Ain't it a [D] shame?"  [D7]
 
 [D] Truckin', up to Buffalo. Been [G] thinkin', you got to mellow slow
 [A] Takes time, to pick a place to go, and [G] just keep truckin' on.
-[D*] [D*] [D*] [D*] 
 
-[D*] Sittin' and starin' out of the hotel [D*] window.
-[D*] Got a tip they're gonna kick the door in [D*] again
-[D*] I'd like to get some sleep before I [D*] travel,
-[D*] But if you got a warrant, I guess you're gonna [D*] come in.
+[D]-[D7] x 4
+
+[D] Sittin' and starin' [D7] out of the hotel [D] window.  [D7]
+[D] Got a tip they're gonna [D7] kick the door in [D] again [D7]
+[D] I'd like to get some [D7] sleep before I [D] travel, [D7]
+[D] But if you got a warrant, [D7] I guess you're [D] gonna come in. [D7]
  
 [D] Busted, down on Bourbon Street, [G] Set up, like a bowlin' pin.
 [A] Knocked down, it gets to wearin' thin. They [G] just won't let you be.
-[D*] [D*] [D*] [D*] 
 
-[D*] You're sick of hangin' around and you'd like to [D*] travel;
-[D*] Get tired of travelin' and you want to settle [D*] down.
-[D*] I guess they can't revoke your soul for [D*] tryin',
-[D*] Get out of the door and light out and look all [D*] around.
+[D]-[D7] x 4
+
+[D] You're sick of hangin' [D7] around and you'd like to [D] travel; [D7] 
+[D] Get tired of travelin' and [D7] you want to settle [D] down. [D7] 
+[D] I guess they can't [D7] revoke your soul for [D] tryin', [D7] 
+[D] Get out of the door and [D7] light out and look all [D] around. [D7] 
  
-{comment_box Bridge}
-[G^] Sometimes the light’s all shinin’ on me; 
-[F] [F#] [G^]
-[G^] Other times I can barely see 
-[F] [F#] [G^]
-[C] Lately it oc[Em7]curs to [E7] me 
-what a [Gmaj7] long, strange trip it’s [D] been.
-[D*] [D*] [D*] [D*] 
+[G] Sometimes the light’s all shinin’ on [G] me [F] [C] [G]
+[G] Other times I can [C] barely [G] see [F] [C] [G]
+[C] Lately it oc-[Am]curs to [E7] me 
+what a [Gmaj7] long, strange trip it’s [D] been. [D] [D] [D]
 
 [D] Truckin', I'm a goin' home. [G] Whoa whoa baby, back where I belong,
 [A] Back home, sit down and patch my bones, and [G] get back truckin' on.
-[D*] [D*] [D*] [D*]   [D][*-hold]
+
+[D]-[D7] x 4   [D][*-hold]
 
 

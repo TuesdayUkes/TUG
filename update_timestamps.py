@@ -99,7 +99,7 @@ def main():
     parser.add_argument('--all', '-a', action='store_true',
                        help='Update all v= timestamps in the entire file')
     parser.add_argument('--tables', '-t', nargs='*', 
-                       default=['practice-songs-table', 'submitted-songs-table'],
+                       default=['practice-songs-table', 'submitted-songs-table', 'open-mic'],
                        help='Table IDs to update (default: practice-songs-table submitted-songs-table)')
     parser.add_argument('--backup', action='store_true',
                        help='Create backup file (default: no backup)')

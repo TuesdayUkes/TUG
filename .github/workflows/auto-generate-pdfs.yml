@@ -117,7 +117,7 @@ jobs:
       run: |
         echo "📦 Installing ChordPro and dependencies..."
         sudo apt-get update
-        sudo apt-get install -y cpanminus build-essential libpod-parser-perl
+        sudo apt-get install -y cpanminus build-essential libpod-parser-perl libharfbuzz-dev libcairo2-dev
         sudo cpanm --notest HarfBuzz::Shaper
         sudo cpanm --notest App::Music::ChordPro
         

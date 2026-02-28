@@ -128,6 +128,7 @@ td {
 
 /* Alternating row colors */
 tbody tr:nth-child(even) {
+    -- add transparency to secondary-color variable
     background-color: rgb( from var(--secondary-color) r g b / 0.05);
 }
 

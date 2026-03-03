@@ -7,22 +7,20 @@
 {meta key: Am}
 {meta tempo: 93}
 
-
-[E7] [Am] [G] [C] 
+[E7] [Am] [G] [C]
 [E7] [Am] [E7] [Am]
 
- 
 {start_of_verse: Verse 1}
 [Am] On a [E7] wagon [Am] bound for [E7] market
 [Am] There's a [Dm] calf with a [E7] mournful [Am] eye
 [Am] High a[E7]bove him [Am] there's a [E7] swallow
 [Am] Winging [Dm] swiftly [E7] through   the [Am] sky
 {end_of_verse}
- 
+
 {start_of_chorus: Chorus}
 [G] How the winds are [C] laughing
 [G] laugh with all their [C] might
-[G] Laugh and laugh the [C] whole [E7]day [Am] through and 
+[G] Laugh and laugh the [C] whole [E7]day [Am] through and
 [E7] half the summer's [Am] night
 
 [E7] Dona Dona Dona [Am] Dona
@@ -37,8 +35,18 @@
 [Am] Why don't [E7] you have [Am] wings to [E7] fly with
 [Am] Like the [Dm] swallow, so [E7] proud  and [Am] free?"
 {end_of_verse}
- 
-{comment: Chorus}
+
+{start_of_chorus: Chorus}
+[G] How the winds are [C] laughing
+[G] laugh with all their [C] might
+[G] Laugh and laugh the [C] whole [E7]day [Am] through and
+[E7] half the summer's [Am] night
+
+[E7] Dona Dona Dona [Am] Dona
+[G] Dona Dona Dona [C] Don
+[E7] Dona Dona Dona [Am] Dona
+[E7] Dona Dona Dona [Am] Don
+{end_of_chorus}
 
 {start_of_verse}
 [Am] Calves are [E7] easily [Am] bound and [E7] slaughtered
@@ -47,4 +55,14 @@
 [Am] Like the [Dm] swallow has [E7] learned to [Am] fly
 {end_of_verse}
 
-{comment: Chorus}
+{start_of_chorus: Chorus}
+[G] How the winds are [C] laughing
+[G] laugh with all their [C] might
+[G] Laugh and laugh the [C] whole [E7]day [Am] through and
+[E7] half the summer's [Am] night
+
+[E7] Dona Dona Dona [Am] Dona
+[G] Dona Dona Dona [C] Don
+[E7] Dona Dona Dona [Am] Dona
+[E7] Dona Dona Dona [Am] Don
+{end_of_chorus}

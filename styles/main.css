@@ -244,6 +244,15 @@ textarea:focus {
     margin-top: 1rem;
 }
 
+.group-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 1rem auto 0;
+    border-radius: var(--radius);
+}
+
 /* Meeting Info */
 .meeting-options {
     display: grid;

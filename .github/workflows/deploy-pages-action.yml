@@ -48,6 +48,8 @@ concurrency:
 
 env:
   FORCE_COLOR: 1
+  # Node 20 deprecation: keep Node 24 opt-in until upstream actions update.
+  # Tracking notes live in docs/CICD_README.md.
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:

@@ -104,6 +104,20 @@ permissions:
 - **FORCE_COLOR**: Enables colored output in workflow logs
 - **GitHub Tokens**: Automatically provided by GitHub Actions
 
+## ⏳ Upstream Tracking (Node 20 Deprecation)
+
+GitHub is deprecating Node 20 for JavaScript actions. This workflow opts into Node 24 via `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true`. We still see warnings because some upstream actions (or their internal dependencies) have not fully moved to Node 24 yet.
+
+### Actions to Watch
+- `actions/configure-pages@v5` (no newer major currently)
+- `actions/upload-pages-artifact@v4` (bundles `actions/upload-artifact` internally)
+- `actions/deploy-pages@v4` (no `v5` release currently)
+
+### Follow-up
+- Check for new majors that explicitly support Node 24.
+- Update this repo when new majors are released.
+- Reference: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+
 ---
 
 For more technical details, see the actual workflow files in `.github/workflows/`.

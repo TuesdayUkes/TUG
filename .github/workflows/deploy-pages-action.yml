@@ -56,13 +56,13 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0  # Fetch full history for git timestamp lookups
     
     - name: Setup Pages
-      uses: actions/configure-pages@v4
+      uses: actions/configure-pages@v5
     
     - name: Install Python dependencies for helper scripts
       run: |
@@ -79,14 +79,14 @@ jobs:
     - name: Generate ukulele-song-archive.html
       run: |
         echo "Running genlist (pipx) from root directory to generate ukulele-song-archive.html..."
-        genlist music ukulele-song-archive.html --intro --no-genPDF
+        genlist music ukulele-song-archive.html --intro --no-genPDF --no-html
         echo "Generated ukulele-song-archive.html"
         ls -la ukulele-song-archive.html || echo "Archive file not found"
     
     - name: Generate xmas-songbook.html
       run: |
         echo "Running genlist (pipx) from root directory to generate xmas-songbook.html..."
-        genlist music/XmasSongbook xmas-songbook.html --intro --no-genPDF
+        genlist music/XmasSongbook xmas-songbook.html --intro --no-genPDF --no-html
         echo "Generated ukulele-song-archive.html"
         ls -la ukulele-song-archive.html || echo "Archive file not found"
     
@@ -149,7 +149,7 @@ jobs:
         find _site -name "*.pdf" -type f | wc -l
     
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v4
       with:
         path: ./_site
 
@@ -163,4 +163,4 @@ jobs:
     steps:
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v5

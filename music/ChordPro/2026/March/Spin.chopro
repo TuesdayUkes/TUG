@@ -1,5 +1,7 @@
 {t: Spin}
 {st: by Walter Minkel (2018)}
+{define: D base-fret 2 frets 1 1 1 4}
+{define: Eb base-fret 3 frets 1 1 1 4}
 
 {textcolour: blue}
 Intro

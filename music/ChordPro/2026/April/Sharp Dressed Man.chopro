@@ -3,6 +3,7 @@
 {define: G5 base-fret 2 frets 0 1 2 4}
 {define: F5 base-fret 7 frets x x 2 2}
 {define: Eb5 base-fret 5 frets x x 2 2}
+{define: Bb5 frets x x 1 1}
 
 {comment:[Intro/Riff]}
 [F5] [Eb5] [C5] [F5] [Eb5] [C5] x6

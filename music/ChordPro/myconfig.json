@@ -352,7 +352,7 @@
     }
    	"margintop"    :  70,
   	"marginbottom" :  0,
-	"marginleft"   :  10,
+	"marginleft"   :  80,
 	"marginright"  :  80,
     	"headspace"    :  50,
     	"footspace"    :  10,
@@ -390,7 +390,7 @@
       },
   },
 
-	"papersize" : "a5",
+	"papersize" : "a4",
 
 
 	// Fonts.

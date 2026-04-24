@@ -13,10 +13,11 @@ Add song submissions to the submitted songs table in index.html using the author
 - Submitter name(s)
 
 ## Workflow
-1. Open index.html and locate the table with id submitted-songs-table.
-2. Open ukulele-song-archive.html and find the exact song entry.
-3. Capture the PDF link and the most recent recording link.
-4. Insert a new table row for each submission.
+1. Run this command in the terminal to refresh the archive: `genlist music ukulele-song-archive.html`
+2. Open index.html and locate the table with id submitted-songs-table.
+3. Open ukulele-song-archive.html and find the exact song entry.
+4. Capture the PDF link and the most recent recording link.
+5. Insert a new table row for each submission.
 
 ## Row Format
 Use this structure:

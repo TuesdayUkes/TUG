@@ -31,7 +31,9 @@ Use this structure:
 If no recording link exists, omit that line.
 
 ## Ordering Rule
-Ensure that each submitter appears once in the list before any submitter appears a second time. If a submitter already exists in the table, place their additional songs after all submitters who appear only once.
+The table is ordered in rounds: no submitter gets a second song until every submitter has had one, no submitter gets a third song until every submitter has had two, and so on. Within each round, never place two consecutive rows from the same person. When inserting new songs, treat the existing rows as already-placed rounds and slot each new song into the correct round position.
+
+Example: if the table already has Tom, Todd, Roy, Mary Jane then Walter and Mary Jane are each submitting one more song, the result is: Tom, Todd, Roy, Mary Jane, Walter, Mary Jane (not Tom, Todd, Roy, Mary Jane, Walter, Walter, Mary Jane).
 
 ## Disambiguation
 - If multiple versions exist, prefer the most recent PDF unless the user specifies a version.

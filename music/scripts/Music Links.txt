@@ -1,12 +1,19 @@
-0:20:49 Mary Jane (Our Planet) https://tuesdayukes.org/music/PDFs/Spring%202022/Our%20Planet.pdf?v=2026.05.02.09.04.19
-0:26:07 Walter (The Way) https://tuesdayukes.org/music/ChordPro/2026/May/The%20Way.pdf?v=2026.05.02.09.04.19
-0:34:16 Barbara (Your Cheating Heart) https://tuesdayukes.org/music/PDFs/Winter%202023-24/Your%20Cheating%20Heart.pdf?v=2026.05.04.20.08.48
-0:38:24 group (Ripple) https://tuesdayukes.org/music/PDFs/Summer%202023/Ripple.pdf
-0:45:13 Fancy (Will You Still Love Me Tomorrow) https://tuesdayukes.org/music/ChordPro/2026/May/Will%20You%20Still%20Love%20Me%20Tomorrow.pdf?v=2026.05.04.10.36.15
-0:49:26 Mary Jane (Galapagos) https://tuesdayukes.org/music/ChordPro/Spring%202024/Galapagos.pdf?v=2026.05.02.09.04.19
-0:54:45 Walter (The End of the World) https://tuesdayukes.org/music/PDFs/Summer%202021/The%20End%20of%20the%20World.pdf?v=2026.05.02.09.04.19
-0:57:59 Fancy (You Can close Your Eyes) https://tuesdayukes.org/music/ChordPro/2026/January/You%20Can%20close%20Your%20Eyes.pdf?v=2026.05.04.10.36.15
-1:06:23 Rich (Let Me Be There)
-1:11:01 Brenda (Bad Moon Rising) https://tuesdayukes.org/music/PDFs/2025/January/Bad%20Moon%20Rising%20-%20G.pdf?v=2026.05.04.20.08.48
-1:15:55 Barbara (Teach Your Children) https://tuesdayukes.org/music/PDFs/Winter%202023-24/Teach%20Your%20Children.pdf?v=2026.05.04.20.08.48
-1:21:41 group (Happy Trails) https://tuesdayukes.org/music/ChordPro/Summer%202022/Happy%20Trails.pdf?v=2026.05.04.20.08.48
+0:07:12 group (Sunny Side of the Street) https://tuesdayukes.org/music/PDFs/Winter%202021-22/Sunny%20Side%20of%20the%20Street.pdf?v=2024.02.12.16.31.29
+0:10:37 group (Choo Choo Ch'boogie) https://tuesdayukes.org/music/PDFs/Summer%202021/Choo%20Choo%20Ch'%20Boogie.pdf
+0:13:42 Roy (She Came in Through the Bathroom Window) https://tuesdayukes.org/music/PDFs/2025/April/She%20Came%20in%20Through%20the%20Bathroom%20Window.pdf?v=2026.04.27.10.31.55
+0:16:30 Mary Jane (Fields of Gold (Dm)) https://tuesdayukes.org/music/PDFs/Fall%202021/Fields%20of%20Gold%20(Dm).pdf?v=2026.05.11.10.36.43
+0:21:15 Walter (Stay) https://tuesdayukes.org/music/ChordPro/2026/May/Stay.pdf?v=2026.05.11.10.36.43
+0:24:19 Paul (Long Train Runnin') https://tuesdayukes.org/music/ChordPro/Winter%202020-21/Long%20Train%20Runnin'.pdf?v=2026.05.11.10.36.43
+0:28:30 Mary Jane (Forbidden Fruit) https://tuesdayukes.org/music/PDFs/Summer%202020/Forbidden%20Fruit.pdf?v=2026.05.11.10.36.43
+0:33:35 Tom (Summertime - jazz chords) https://tuesdayukes.org/music/ChordPro/2026/April/Summertime%20-%20jazz%20chords.pdf?v=2026.04.21.15.12.09
+0:37:58 Walter (Only the Lonely) https://tuesdayukes.org/music/ChordPro/Summer%202023/Only%20the%20Lonely.pdf?v=2026.05.11.10.36.43
+0:43:08 Brenda (Good Riddance) https://tuesdayukes.org/music/PDFs/Fall%202022/Good%20Riddance.pdf?v=2026.05.11.23.40.51
+0:48:19 Todd (Yoshimi Battles the Pink Robots) https://tuesdayukes.org/music/PDFs/2025/March/Yoshimi%20Battles%20the%20Pink%20Robots.pdf?v=2026.04.28.09.45.01
+0:53:38 Fancy (Autumn Leaves) https://tuesdayukes.org/music/ChordPro/2025/October/Autumn%20Leaves.pdf?v=2026.05.11.23.40.51
+0:57:04 Paulette (Wayfaring Stranger) https://tuesdayukes.org/music/PDFs/Winter%202021-22/Wayfaring%20Stranger%20-%20Scroll.pdf?v=2026.05.11.23.40.51
+1:02:08 Brenda (Little Red Uke) https://tuesdayukes.org/music/PDFs/Summer%202022/Little%20Red%20Uke.pdf?v=2026.05.11.23.40.51
+1:05:05 group (Jambalaya) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Jambalaya.pdf?v=2026.05.11.23.40.51
+1:08:20 group (Big Rock Candy Mountain) https://tuesdayukes.org/music/PDFs/Spring%202024/Big%20Rock%20Candy%20Mountain.pdf?v=2026.05.11.23.40.51
+1:11:55 group (The Bear) https://tuesdayukes.org/music/PDFs/Fall%202023/The%20Bear.pdf?v=2026.05.11.23.40.51
+1:17:42 group (Swinging on a Star) https://tuesdayukes.org/music/PDFs/Spring%202022/Swinging%20on%20a%20Star.pdf?v=2026.05.11.23.40.51
+1:21:41 group (Beer Run) https://tuesdayukes.org/music/PDFs/Winter%202021-22/Beer%20Run.pdf?v=2026.04.20.21.15.15

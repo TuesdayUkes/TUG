@@ -4,61 +4,67 @@
 {define: Gsus4 frets 0 2 3 3}
 {define: Dsus2 frets 2 2 0 0}
 {define: Dsus4 frets 2 2 3 0}
-{comment Tempo: 99}
+{comment: Tempo: 99}
 {comment: Strum: d- d- du du}
 {comment: Note: Can substitute one beat each of [*[Dsus4]]-[*[D]]-[*[Dsus2]]-[*[D]], instead of for beats of [*[D]] at end lines}
 
-{comment INTRO}
-[G] [Gsus4] [C] [D] 
-[G] [Gsus4] [C] [D] 
+{comment: INTRO}
+[G] [Gsus4] [C] [D]
+[G] [Gsus4] [C] [D]
 
-{comment VERSE 1} 
-I'm [G] trying to tell you [Gsus4] something about my [C] life [D] 
-Maybe [G] give me insight [Gsus4] between black and [C] white [D] 
+{comment: VERSE 1}
+I'm [G] trying to tell you [Gsus4] something about my [C] life [D]
+Maybe [G] give me insight [Gsus4] between black and [C] white [D]
 The [Dsus2] best thing you've ever done for [C] me
 Is to [Dsus2] help me take my life less serious-[C]ly, it's only life [G] after all [Gsus2] [C] [D]
 
-{comment VERSE 2} 
-Well [G] darkness has a [Gsus4] hunger that's in-[C]satiable [D] 
-And [G] lightness has a [Gsus4] call that's hard to [C] hear [D] 
+{comment: VERSE 2}
+Well [G] darkness has a [Gsus4] hunger that's in-[C]satiable [D]
+And [G] lightness has a [Gsus4] call that's hard to [C] hear [D]
 I [Dsus2] wrap my fear around me like a [C] blanket
 I [Dsus2] sailed my ship of safety till I [C] sank it, I'm crawling on your [G] shore [G][*/][G][*/](stop)
 
-{comment CHORUS 2}  
+{comment: CHORUS 2}
 And I [D] went to the doctor, I [C] went to the [G] mountains
 I [D] looked to the children, I [C] drank from the [G] fountains
 There's [Dsus2] more than one answer to these [C] questions
 Pointing me in a [G] crooked line [G][*/][G][*/](hold)
 And the [Dsus2] less I seek my source for some de-[C]finitive [C][*/](hold)
-[C] Closer I [G] am to fine, [D] yeah [C] 
-[C] Closer I [G] am to fine, [D] yeah [C] 
- 
-{comment VERSE 3} 
-I [G] went to see the [Gsus4] doctor of [C] philosophy [D] 
-With a [G] poster of Ras-[Gsus4]putin and a [C] beard down to his knee [D] 
+    Closer I [G] am to fine, [Gsus4] yeah [C] [D]
+    Closer I [G] am to fine, [Gsus4] yeah [C] [D]
+
+{comment: VERSE 3}
+I [G] went to see the [Gsus4] doctor of [C] philosophy [D]
+With a [G] poster of Ras-[Gsus4]putin and a [C] beard down to his knee [D]
 He [Dsus2] never did marry or [C] see a B-grade movie
 He [Dsus2] graded my performance, he [C] said he could see through me
-I spent [G] four years [Gsus4] prostrate to the higher [C] mind, 
+I spent [G] four years [Gsus4] prostrate to the higher [C] mind,
 got my paper [D] And I was [G] free [G][*/][G][*/](hold)
 
 {new_page}
-{comment CHORUS 3}    
+{comment: CHORUS 3}
 And I [D] went to the doctor, I [C] went to the [G] mountains
 I [D] looked to the children, I [C] drank from the [G] fountains
 There's [Dsus2] more than one answer to these [C] questions
 Pointing me in a [G] crooked line
 And the [Dsus2] less I seek my source for some de-[C]finitive [C][*/](hold)
-[C] Closer I [G] am to fine, [D] yeah [C] 
-[C] Closer I [G] am to fine, [D] yeah [C] 
- 
-{comment VERSE 4}
-I [G] stopped by the [Gsus4] bar at 3 a.-[C]m. [D] 
-To seek [G] solace in a [Gsus4] bottle or [C] possibly a friend [D] 
+    Closer I [G] am to fine, [Gsus4] yeah [C] [D]
+    Closer I [G] am to fine, [Gsus4] yeah [C] [D]
+
+{textcolour: blue}
+{comment: instrumental break}
+And I [Dsus2] woke up with a headache like my [C] head against a board
+[Dsus2] Twice as cloudy as I'd been the [C] night before
+{textcolour}
+
+{comment: VERSE 4}
+I [G] stopped by the [Gsus4] bar at 3 a.-[C]m. [D]
+To seek [G] solace in a [Gsus4] bottle or [C] possibly a friend [D]
 And I [Dsus2] woke up with a headache like my [C] head against a board
 [Dsus2] Twice as cloudy as I'd been the [C] night before
 When I went in seeking [G] clarity [G][*/][G][*/](hold)
 
-{comment CHORUS 4}  
+{comment: CHORUS 4}
 I [D] went to the doctor, I [C] went to the [G] mountains
 I [D] looked to the children, I [C] drank from the [G] fountain
 We [D] go to the doctor, we [C] go to the [G] mountains
@@ -68,6 +74,6 @@ We [D] read up on revival, and we [C][*/](hold) stand up for the  [G][*/](hold) 
 There's [Dsus2] more than one answer to these [C] questions
 Pointing me in a [G] crooked line
 And the [Dsus2] less I seek my source for some de-[C]finitive [C]
-[C] Closer I [G] am to fine, [D] [C] 
-[C] Closer I [G] am to fine, [D] [C] 
-[C] Closer I [G] am to fine, [D] yeah [C] [D] [C]  [G][*/](hold)
+    Closer I [G] am to fine, [Gsus4] yeah [C] [D]
+    Closer I [G] am to fine, [Gsus4] yeah [C] [D]
+    Closer I [G] am to fine, [Gsus4] yeah [C] [D]  [G][*/](hold)

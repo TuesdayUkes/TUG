@@ -1,19 +1,14 @@
-0:07:12 group (Sunny Side of the Street) https://tuesdayukes.org/music/PDFs/Winter%202021-22/Sunny%20Side%20of%20the%20Street.pdf?v=2024.02.12.16.31.29
-0:10:37 group (Choo Choo Ch'boogie) https://tuesdayukes.org/music/PDFs/Summer%202021/Choo%20Choo%20Ch'%20Boogie.pdf
-0:13:42 Roy (She Came in Through the Bathroom Window) https://tuesdayukes.org/music/PDFs/2025/April/She%20Came%20in%20Through%20the%20Bathroom%20Window.pdf?v=2026.04.27.10.31.55
-0:16:30 Mary Jane (Fields of Gold (Dm)) https://tuesdayukes.org/music/PDFs/Fall%202021/Fields%20of%20Gold%20(Dm).pdf?v=2026.05.11.10.36.43
-0:21:15 Walter (Stay) https://tuesdayukes.org/music/ChordPro/2026/May/Stay.pdf?v=2026.05.11.10.36.43
-0:24:19 Paul (Long Train Runnin') https://tuesdayukes.org/music/ChordPro/Winter%202020-21/Long%20Train%20Runnin'.pdf?v=2026.05.11.10.36.43
-0:28:30 Mary Jane (Forbidden Fruit) https://tuesdayukes.org/music/PDFs/Summer%202020/Forbidden%20Fruit.pdf?v=2026.05.11.10.36.43
-0:33:35 Tom (Summertime - jazz chords) https://tuesdayukes.org/music/ChordPro/2026/April/Summertime%20-%20jazz%20chords.pdf?v=2026.04.21.15.12.09
-0:37:58 Walter (Only the Lonely) https://tuesdayukes.org/music/ChordPro/Summer%202023/Only%20the%20Lonely.pdf?v=2026.05.11.10.36.43
-0:43:08 Brenda (Good Riddance) https://tuesdayukes.org/music/PDFs/Fall%202022/Good%20Riddance.pdf?v=2026.05.11.23.40.51
-0:48:19 Todd (Yoshimi Battles the Pink Robots) https://tuesdayukes.org/music/PDFs/2025/March/Yoshimi%20Battles%20the%20Pink%20Robots.pdf?v=2026.04.28.09.45.01
-0:53:38 Fancy (Autumn Leaves) https://tuesdayukes.org/music/ChordPro/2025/October/Autumn%20Leaves.pdf?v=2026.05.11.23.40.51
-0:57:04 Paulette (Wayfaring Stranger) https://tuesdayukes.org/music/PDFs/Winter%202021-22/Wayfaring%20Stranger%20-%20Scroll.pdf?v=2026.05.11.23.40.51
-1:02:08 Brenda (Little Red Uke) https://tuesdayukes.org/music/PDFs/Summer%202022/Little%20Red%20Uke.pdf?v=2026.05.11.23.40.51
-1:05:05 group (Jambalaya) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Jambalaya.pdf?v=2026.05.11.23.40.51
-1:08:20 group (Big Rock Candy Mountain) https://tuesdayukes.org/music/PDFs/Spring%202024/Big%20Rock%20Candy%20Mountain.pdf?v=2026.05.11.23.40.51
-1:11:55 group (The Bear) https://tuesdayukes.org/music/PDFs/Fall%202023/The%20Bear.pdf?v=2026.05.11.23.40.51
-1:17:42 group (Swinging on a Star) https://tuesdayukes.org/music/PDFs/Spring%202022/Swinging%20on%20a%20Star.pdf?v=2026.05.11.23.40.51
-1:21:41 group (Beer Run) https://tuesdayukes.org/music/PDFs/Winter%202021-22/Beer%20Run.pdf?v=2026.04.20.21.15.15
+0:11:18 group (Smile (Easier)) https://tuesdayukes.org/music/PDFs/Winter%202023-24/Smile%20(Easier).pdf?v=2026.05.18.18.08.53
+0:15:20 group (Achy Breaky Heart) https://tuesdayukes.org/music/PDFs/TUG%20Archive/Achy%20Breaky%20Heart.pdf
+0:18:35 Fancy (Ben) https://tuesdayukes.org/music/ChordPro/2026/May/Ben.pdf?v=2026.05.18.18.08.53
+0:22:02 Tom (Autumn Leaves - jazz chords) https://tuesdayukes.org/music/ChordPro/2026/May/Autumn%20Leaves%20-%20jazz%20chords.pdf?v=2026.05.18.18.08.53
+0:25:32 Walter (Singing in the Rain) https://tuesdayukes.org/music/ChordPro/2026/May/Singing%20in%20the%20Rain.pdf?v=2026.05.18.18.08.53
+0:30:04 Barbara (Living Next Door to Alice) https://tuesdayukes.org/music/ChordPro/2026/May/Living%20Next%20Door%20to%20Alice.pdf?v=2026.05.18.18.08.53
+0:34:55 Daniel (Valedictorian) https://tuesdayukes.org/music/mmusic/ChordPro/2026/May/Valedictorian.pdf?v=2026.05.19.17.43.05
+0:39:52 Fancy (Big Yellow Taxi) https://tuesdayukes.org/music/ChordPro/2026/May/Big%20Yellow%20Taxi.pdf?v=2026.05.18.18.08.53
+0:44:25 Tom (It Don't Worry Me) https://tuesdayukes.org/music/ChordPro/2026/May/It%20Don't%20Worry%20Me.pdf?v=2026.05.18.18.08.53
+0:48:15 Walter (Singing in the Bathtub) https://tuesdayukes.org/music/PDFs/Spring%202022/Singing%20in%20the%20Bathtub.pdf?v=2026.05.18.18.08.53
+0:52:44 Mary Jane (A Teenager in Love) https://tuesdayukes.org/music/PDFs/Summer%202021/A%20Teenager%20in%20Love.pdf?v=2026.05.20.23.26.18
+0:56:44 Todd (Poor People's Store) https://tuesdayukes.org/music/PDFs/Fall%202020/Poor%20People's%20Store.pdf?v=2026.05.20.23.26.18
+1:00:20 group (If You've Got the Money, I've Got the Time) https://tuesdayukes.org/music/PDFs/Fall%202020/If%20You've%20Got%20the%20Money,%20I've%20Got%20the%20Time.pdf?v=2026.05.20.23.26.18
+1:05:17 group (Forbidden Fruit) https://tuesdayukes.org/music/PDFs/Summer%202020/Forbidden%20Fruit.pdf?v=2026.05.20.23.26.18

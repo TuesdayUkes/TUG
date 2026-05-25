@@ -36,7 +36,7 @@ The table is ordered in rounds: no submitter gets a second song until every subm
 Example: if the table already has Tom, Todd, Roy, Mary Jane then Walter and Mary Jane are each submitting one more song, the result is: Tom, Todd, Roy, Mary Jane, Walter, Mary Jane (not Tom, Todd, Roy, Mary Jane, Walter, Walter, Mary Jane).
 
 ## Disambiguation
-- If multiple versions exist, prefer the most recent PDF unless the user specifies a version.
+- If multiple versions exist, prefer the most recently committed PDF unless the user specifies a version. Uncommitted or untracked files (i.e. files that appear in `git status` as new or modified) are always treated as newer than any committed file. To determine which PDF is most recent: first run `git status --short -- "music/**/*.pdf" "music/**/*.urltxt"` and treat any file listed there as the newest; if no relevant files are uncommitted, run `git log --diff-filter=AM --name-only --pretty=format: -- "music/**/*.pdf"` and pick the PDF for this song that appears in the most recent commit. For PDF links that point to an external website (e.g. Doctor Uke), use the commit date of the corresponding `.urltxt` file instead: run `git log --diff-filter=AM --name-only --pretty=format: -- "music/**/*.urltxt"` and find the `.urltxt` file whose name matches the song, then compare its commit date against the local PDF commit dates to determine which is newer; an uncommitted `.urltxt` file is treated as newer than any committed file.
 - Always prefer PDF links over .chopro when both are available.
 - If the title in the archive differs, use the archive title verbatim.
 

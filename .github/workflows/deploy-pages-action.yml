@@ -48,9 +48,6 @@ concurrency:
 
 env:
   FORCE_COLOR: 1
-  # Node 20 deprecation: keep Node 24 opt-in until upstream actions update.
-  # Tracking notes live in docs/CICD_README.md.
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
@@ -58,13 +55,13 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0  # Fetch full history for git timestamp lookups
     
     - name: Setup Pages
-      uses: actions/configure-pages@v5
+      uses: actions/configure-pages@v6
     
     - name: Install Python dependencies for helper scripts
       run: |
@@ -151,7 +148,7 @@ jobs:
         find _site -name "*.pdf" -type f | wc -l
     
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v4
+      uses: actions/upload-pages-artifact@v5
       with:
         path: ./_site
 
@@ -165,4 +162,4 @@ jobs:
     steps:
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v5

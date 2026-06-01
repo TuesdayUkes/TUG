@@ -1,0 +1,56 @@
+{title: It Don't Worry Me (Revisited)}
+{subtitle:  by Keith Carradine from "Nashville" [1975]}
+{subtitle:  Open D baritone tuning: D F# A D}
+{year: 1975}
+{composer: Keith Carradine}
+{lyricist: Keith Carradine}
+{key: D}
+
+{define: D7 base-fret 1 frets 0 3 3 4}
+{define: D_0304 base-fret 1 frets 0 3 0 4}
+{define: A7 base-fret 1 frets 2 1 0 2}
+{define: Bm7/D base-fret 2 frets 0 2 1 3}
+{define: G/D base-fret 3 frets 0 3 3 3}
+{define: A9/D base-fret 1 frets 0 1 0 2}
+
+
+[D]The price of eggs may [Ddim7]worry some
+[D_0304]But it don't [A7]worry [D]me
+[D]Tax relief may [Ddim7]never come
+[D_0304]But it don't [A7]worry [D]me
+
+[D]Economy's depressed, [D7]not me
+My [G]spirit's high as [Gm]it can be
+And [D]you may [A9/D]say that [Bm7/D]I ain't [G/D]free
+But [D_0304]it don't [A7]worry [D]me [A7]
+
+{comment:  Chorus}
+[D]It don't worry me [A7]
+[Bm]It don't worry me [G]
+[D_0304]You may say that [A7]I ain't free
+But [G]it don't worry [D]me [A7]
+
+[D]You say this train don't [Ddim7]give out rides
+[D_0304]Well it don't [A7]worry [D]me
+[D]And all the world is [Ddim7]taking sides
+[D_0304]But it don't [A7]worry [D]me
+
+[D]'cause in my empire [D7]life is sweet
+[G]If you just trust every [Gm]word you read (*)
+And [D]life may [A9/D]be a [Bm7/D]one-way [G/D]street
+But [D_0304]it don't [A7]worry [D]me [A7]
+
+{comment:  Chorus x 2}
+[D]It don't worry me [A7]
+[Bm]It don't worry me [G]
+[D_0304]You may say that [A7]I ain't free
+But [G]it don't worry [D]me [A7]
+
+{comment:  Instrumental break - take it down a notch}
+
+[D]...'cause in my empire [D7]life is sweet
+[G]If screen turns blue [Gm]rinse then repeat 
+That [D]freedom is [A9/D]is a [Bm7/D]one-way [G/D]street
+But [D_0304]it don't [A7]worry [D]me [A7]
+
+{comment:  (*) or "Just ask any bot you meet"}

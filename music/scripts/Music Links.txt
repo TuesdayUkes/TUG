@@ -1,14 +1,17 @@
-0:11:18 group (Smile (Easier)) https://tuesdayukes.org/music/PDFs/Winter%202023-24/Smile%20(Easier).pdf?v=2026.05.18.18.08.53
-0:15:20 group (Achy Breaky Heart) https://tuesdayukes.org/music/PDFs/TUG%20Archive/Achy%20Breaky%20Heart.pdf
-0:18:35 Fancy (Ben) https://tuesdayukes.org/music/ChordPro/2026/May/Ben.pdf?v=2026.05.18.18.08.53
-0:22:02 Tom (Autumn Leaves - jazz chords) https://tuesdayukes.org/music/ChordPro/2026/May/Autumn%20Leaves%20-%20jazz%20chords.pdf?v=2026.05.18.18.08.53
-0:25:32 Walter (Singing in the Rain) https://tuesdayukes.org/music/ChordPro/2026/May/Singing%20in%20the%20Rain.pdf?v=2026.05.18.18.08.53
-0:30:04 Barbara (Living Next Door to Alice) https://tuesdayukes.org/music/ChordPro/2026/May/Living%20Next%20Door%20to%20Alice.pdf?v=2026.05.18.18.08.53
-0:34:55 Daniel (Valedictorian) https://tuesdayukes.org/music/mmusic/ChordPro/2026/May/Valedictorian.pdf?v=2026.05.19.17.43.05
-0:39:52 Fancy (Big Yellow Taxi) https://tuesdayukes.org/music/ChordPro/2026/May/Big%20Yellow%20Taxi.pdf?v=2026.05.18.18.08.53
-0:44:25 Tom (It Don't Worry Me) https://tuesdayukes.org/music/ChordPro/2026/May/It%20Don't%20Worry%20Me.pdf?v=2026.05.18.18.08.53
-0:48:15 Walter (Singing in the Bathtub) https://tuesdayukes.org/music/PDFs/Spring%202022/Singing%20in%20the%20Bathtub.pdf?v=2026.05.18.18.08.53
-0:52:44 Mary Jane (A Teenager in Love) https://tuesdayukes.org/music/PDFs/Summer%202021/A%20Teenager%20in%20Love.pdf?v=2026.05.20.23.26.18
-0:56:44 Todd (Poor People's Store) https://tuesdayukes.org/music/PDFs/Fall%202020/Poor%20People's%20Store.pdf?v=2026.05.20.23.26.18
-1:00:20 group (If You've Got the Money, I've Got the Time) https://tuesdayukes.org/music/PDFs/Fall%202020/If%20You've%20Got%20the%20Money,%20I've%20Got%20the%20Time.pdf?v=2026.05.20.23.26.18
-1:05:17 group (Forbidden Fruit) https://tuesdayukes.org/music/PDFs/Summer%202020/Forbidden%20Fruit.pdf?v=2026.05.20.23.26.18
+0:09:07 group (Mack the Knife) https://tuesdayukes.org/music/PDFs/Spring%202021/Mack%20the%20Knife.pdf
+0:15:29 group (Jambalaya) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Jambalaya.pdf
+0:21:21 Roy (Only You) https://tuesdayukes.org/music/ChordPro/2026/June/Only%20You.pdf?v=2026.06.08.19.02.33
+0:24:55 Walter (The Song that Doesn't End) https://tuesdayukes.org/music/ChordPro/2026/June/The%20Song%20that%20Doesn't%20End.pdf?v=2026.06.08.19.02.33
+0:28:38 Fancy (Walkin' After Midnight) https://tuesdayukes.org/music/PDFs/Summer%202023/Walkin'%20After%20Midnight.pdf?v=2026.06.15.11.45.46
+0:33:55 Mary Jane (Hold On (Keep Your Eyes on the Prize)) https://tuesdayukes.org/music/PDFs/Winter%202022-23/Hold%20On%20(Keep%20Your%20Eyes%20on%20the%20Prize).pdf?v=2026.06.13.15.41.19
+0:40:12 Roy (Don't Bring Me Down) https://tuesdayukes.org/music/ChordPro/2026/June/Don't%20Bring%20Me%20Down.pdf?v=2026.06.14.11.36.29
+0:47:10 Rich (Ode to Billie Joe)
+0:53:33 Mary Jane (Follow the Drinkin' Gourd) https://tuesdayukes.org/music/PDFs/Summer%202024/Follow%20the%20Drinkin'%20Gourd.pdf?v=2026.06.13.15.41.19
+0:58:47 Walter (Teddy Bears' Picnic) https://tuesdayukes.org/music/PDFs/Summer%202020/Teddy%20Bears'%20Picnic.pdf?v=2026.06.15.11.42.08
+1:02:16 Fancy (You Can close Your Eyes) https://tuesdayukes.org/music/ChordPro/2026/January/You%20Can%20close%20Your%20Eyes.pdf?v=2026.06.15.11.45.46
+1:06:27 group (The Last Thing on My Mind) https://tuesdayukes.org/music/PDFs/Winter%202022-23/The%20Last%20Thing%20on%20My%20Mind.pdf?v=2026.06.16.16.35.00
+1:11:24 group (San Francisco Bay Blues) https://tuesdayukes.org/music/ChordPro/2025/September/San%20Francisco%20Bay%20Blues.pdf?v=2026.06.16.16.35.00
+1:17:05 group (Peaceful Easy Feeling) https://tuesdayukes.org/music/ChordPro/2025/July/Peaceful%20Easy%20Feeling.pdf?v=2026.06.16.16.35.00
+1:22:02 group (Yellow Submarine) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/The%20Yellow%20Submarine.pdf?v=2026.06.16.16.35.00
+1:26:20 group (Ob La Di Ob La Da) https://tuesdayukes.org/music/PDFs/Summer%202021/Ob-La-Di%20Ob-La-Da%20C.pdf?v=2026.06.16.16.35.00
+1:29:26 group (Happy Trails) https://tuesdayukes.org/music/ChordPro/Summer%202022/Happy%20Trails.pdf?v=2026.06.08.19.02.33

@@ -1,17 +1,18 @@
-0:09:07 group (Mack the Knife) https://tuesdayukes.org/music/PDFs/Spring%202021/Mack%20the%20Knife.pdf
-0:15:29 group (Jambalaya) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Jambalaya.pdf
-0:21:21 Roy (Only You) https://tuesdayukes.org/music/ChordPro/2026/June/Only%20You.pdf?v=2026.06.08.19.02.33
-0:24:55 Walter (The Song that Doesn't End) https://tuesdayukes.org/music/ChordPro/2026/June/The%20Song%20that%20Doesn't%20End.pdf?v=2026.06.08.19.02.33
-0:28:38 Fancy (Walkin' After Midnight) https://tuesdayukes.org/music/PDFs/Summer%202023/Walkin'%20After%20Midnight.pdf?v=2026.06.15.11.45.46
-0:33:55 Mary Jane (Hold On (Keep Your Eyes on the Prize)) https://tuesdayukes.org/music/PDFs/Winter%202022-23/Hold%20On%20(Keep%20Your%20Eyes%20on%20the%20Prize).pdf?v=2026.06.13.15.41.19
-0:40:12 Roy (Don't Bring Me Down) https://tuesdayukes.org/music/ChordPro/2026/June/Don't%20Bring%20Me%20Down.pdf?v=2026.06.14.11.36.29
-0:47:10 Rich (Ode to Billie Joe)
-0:53:33 Mary Jane (Follow the Drinkin' Gourd) https://tuesdayukes.org/music/PDFs/Summer%202024/Follow%20the%20Drinkin'%20Gourd.pdf?v=2026.06.13.15.41.19
-0:58:47 Walter (Teddy Bears' Picnic) https://tuesdayukes.org/music/PDFs/Summer%202020/Teddy%20Bears'%20Picnic.pdf?v=2026.06.15.11.42.08
-1:02:16 Fancy (You Can close Your Eyes) https://tuesdayukes.org/music/ChordPro/2026/January/You%20Can%20close%20Your%20Eyes.pdf?v=2026.06.15.11.45.46
-1:06:27 group (The Last Thing on My Mind) https://tuesdayukes.org/music/PDFs/Winter%202022-23/The%20Last%20Thing%20on%20My%20Mind.pdf?v=2026.06.16.16.35.00
-1:11:24 group (San Francisco Bay Blues) https://tuesdayukes.org/music/ChordPro/2025/September/San%20Francisco%20Bay%20Blues.pdf?v=2026.06.16.16.35.00
-1:17:05 group (Peaceful Easy Feeling) https://tuesdayukes.org/music/ChordPro/2025/July/Peaceful%20Easy%20Feeling.pdf?v=2026.06.16.16.35.00
-1:22:02 group (Yellow Submarine) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/The%20Yellow%20Submarine.pdf?v=2026.06.16.16.35.00
-1:26:20 group (Ob La Di Ob La Da) https://tuesdayukes.org/music/PDFs/Summer%202021/Ob-La-Di%20Ob-La-Da%20C.pdf?v=2026.06.16.16.35.00
-1:29:26 group (Happy Trails) https://tuesdayukes.org/music/ChordPro/Summer%202022/Happy%20Trails.pdf?v=2026.06.08.19.02.33
+0:20:05 group (Stand by Me) https://tuesdayukes.org/music/PDFs/Summer%202022/Stand%20by%20Me.pdf
+0:23:44 group (Waltz Across Texas) https://tuesdayukes.org/music/PDFs/TUG%20Archive/Waltz%20Across%20Texas.pdf
+0:27:42 Mary Jane (Rolling Down to Old Maui) https://tuesdayukes.org/music/ChordPro/2026/June/Rolling%20Down%20to%20Old%20Maui.pdf?v=2026.06.19.13.06.28
+0:33:34 Todd (Everlong) https://tuesdayukes.org/music/ChordPro/2026/June/Everlong.pdf?v=2026.06.09.09.23.21
+0:38:55 Walter (Popeye the Sailor Man) https://tuesdayukes.org/music/PDFs/Spring%202023/Popeye%20the%20Sailor%20Man.pdf?v=2026.06.19.13.08.53
+0:42:29 Daniel (America) https://storage.googleapis.com/uketunes.firebasestorage.app/America%20-%20v2a.pdf
+0:48:14 Paul (Is She Really Going Out with Him) https://tuesdayukes.org/music/ChordPro/2026/June/Is%20She%20Really%20Going%20Out%20with%20Him.pdf?v=2026.06.22.09.57.09
+0:53:01 Charlie (Let Us Walk the Bridge) https://tuesdayukes.org/music/ChordPro/2026/June/Let%20Us%20Walk%20the%20Bridge.pdf?v=2026.06.23.12.09.15
+0:57:21 Daniel (Honeymoon Wine) https://tuesdayukes.org/music/ChordPro/2026/June/Honeymoon%20Wine.pdf?v=2026.06.22.13.36.57
+1:01:45 Mary Jane (Fiddler's Green) https://tuesdayukes.org/music/ChordPro/Summer%202020/Fiddler's%20Green.pdf?v=2026.06.19.13.06.28
+1:09:32 Brenda (Mad World) https://tuesdayukes.org/music/PDFs/Fall%202022/Mad%20World.pdf?v=2026.06.23.22.04.12
+1:12:35 Walter (Stealing, Stealing) https://tuesdayukes.org/music/PDFs/Summer%202023/Stealing,%20Stealing.pdf?v=2026.06.19.13.08.53
+1:17:00 Mary Jane (On This Longest Day) https://tuesdayukes.org/music/PDFs/Summer%202024/On%20This%20Longest%20Day.pdf?v=2026.06.23.22.04.12
+1:22:06 group (After the Gold Rush) https://tuesdayukes.org/music/PDFs/Fall%202020/After%20the%20Gold%20Rush.pdf?v=2026.06.23.22.04.12
+1:25:02 group (Carolina in My Mind) https://tuesdayukes.org/music/PDFs/Fall%202023/Carolina%20in%20My%20Mind.pdf?v=2026.06.23.22.04.12 
+1:31:26 group (Fade into You) https://tuesdayukes.org/music/ChordPro/2026/June/Fade%20into%20You.pdf?v=2026.06.23.22.04.12
+1:37:25 group (The Weight) https://tuesdayukes.org/music/PDFs/Summer%202023/The%20Weight.pdf?v=2026.06.23.22.04.12
+1:43:00 group (Happy Trails) https://tuesdayukes.org/music/ChordPro/Summer%202022/Happy%20Trails.pdf?v=2026.06.08.19.02.33

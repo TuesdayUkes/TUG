@@ -1,7 +1,28 @@
 {title: Minnie the Moocher}
 {subtitle: Cab Callaway, 1931}
 
-[Em]   [B7]   [Em]   [Em]
+{comment INSTRUMENTAL }
+{tabsize: 100%}
+{tabfont: Courier-Bold}
+{sot}
+   [NC]       [Em]       [B7]       [Em]       [Em]
+A |----------|-2---0----|-02-------|-2---0----|----------|
+E |-------03-|-------3--|-------03-|--------3-|--0----03-|
+C |----------|----------|----------|----------|----------|
+G |----------|----------|----------|----------|----------|
+    1&2&3&4&   1&2&3&4&   1&2&3&4&   1&2&3&4&   1&2&3&4&   
+
+   [Em]       [B7]       [C7]       [Em]
+                          11
+A |-2---0----|-02----22-|-22993322-|----------|
+E |-------03-|----------|----------|-3--2--0--|
+C |----------|----------|----------|----------|
+G |----------|----------|----------|----------|
+    1&2&3&4&   1&2&3&4&   1&2&3&4&   1&2&3&4&     
+{eot}
+
+
+[Em]   [Em]   
 
 [Em] Folks, here's the story 'bout Minnie the Moocher
 [C7] She was a red-hot [B7] hoochie- [Em] cootcher
@@ -28,6 +49,8 @@ But [C7] Minnie had a heart as [B7] big as a [Em] whale
 [Em] He gave her a home built of gold and steel
 [C7] A diamond car with the [B7] platinum [Em] wheels
 
+{new_page}
+
 {comment: Double Speed}
 [Em] Hi-de-hi-de-hi-de-hi-de-hi-de-hi-de-hi! (response)
 [C7] Ho-de-ho-de-ho-de-ho-de-ho-de-ho-de-ho! (response)
@@ -35,7 +58,7 @@ But [C7] Minnie had a heart as [B7] big as a [Em] whale
 [Em] Skip-de-dip-dip-dip-diddly-dip-dip-didly-dip-dip-diddly-dip-dip-boy (response)
 
 {comment: Normal Speed}
- [Em] He gave her his townhouse and his racing horses
+[Em] He gave her his townhouse and his racing horses
 [C7] Each meal she ate was a [B7] dozen [Em] courses
 [Em] She had a million dollars worth of nickels and dimes
 She [C7] sat around and counted them all a [B7] million [Em] times

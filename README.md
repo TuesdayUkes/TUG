@@ -84,8 +84,11 @@ python music/scripts/GenList.py music ukulele-song-archive.html --intro
 # Rebuild local site artifacts using the same path as CI
 python build_site.py
 
-# Regenerate sitemap (public HTML pages plus linked PDFs)
+# Regenerate sitemap index plus HTML/PDF/ChordPro child sitemaps
 python generate_sitemap.py
+
+# Print only sitemap resource counts
+python generate_sitemap.py --summary --dry-run
 ```
 
 ---

@@ -4,10 +4,11 @@
 from __future__ import annotations
 
 import argparse
+from html.parser import HTMLParser
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, unquote, urlsplit
 
 
 BASE_URL = "https://tuesdayukes.org"
@@ -29,6 +30,23 @@ EXCLUDED_PATH_PARTS = {
     "docs",
     "music/ChordPro",
 }
+
+
+class LinkExtractor(HTMLParser):
+    """Collect href attribute values from anchor tags."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.hrefs: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "a":
+            return
+
+        for attr_name, attr_value in attrs:
+            if attr_name == "href" and attr_value:
+                self.hrefs.append(attr_value)
+                break
 
 
 def is_excluded(path: Path) -> bool:
@@ -53,6 +71,42 @@ def iter_public_html_files() -> list[Path]:
         html_files.append(path)
 
     return sorted(html_files, key=lambda item: item.relative_to(SCRIPT_DIR).as_posix().lower())
+
+
+def iter_internal_pdf_files() -> list[Path]:
+    pdf_files: dict[str, Path] = {}
+
+    for html_path in iter_public_html_files():
+        extractor = LinkExtractor()
+        extractor.feed(html_path.read_text(encoding="utf-8"))
+
+        for href in extractor.hrefs:
+            parsed = urlsplit(href)
+
+            if parsed.scheme or parsed.netloc:
+                continue
+
+            if not parsed.path.lower().endswith(".pdf"):
+                continue
+
+            decoded_path = Path(unquote(parsed.path.lstrip("/")))
+            if parsed.path.startswith("/"):
+                candidate = (SCRIPT_DIR / decoded_path).resolve()
+            else:
+                candidate = (html_path.parent / decoded_path).resolve()
+
+            try:
+                relative_candidate = candidate.relative_to(SCRIPT_DIR)
+            except ValueError:
+                continue
+
+            if not candidate.is_file():
+                continue
+
+            relative_key = relative_candidate.as_posix().lower()
+            pdf_files.setdefault(relative_key, candidate)
+
+    return [pdf_files[key] for key in sorted(pdf_files)]
 
 
 def build_url(path: Path) -> str:
@@ -94,6 +148,16 @@ def build_sitemap_content() -> tuple[str, list[str]]:
     entries = []
 
     for path in iter_public_html_files():
+        url = build_url(path)
+        urls.append(url)
+        entries.append(
+            "  <url>\n"
+            f"    <loc>{url}</loc>\n"
+            f"    <lastmod>{last_modified_date(path)}</lastmod>\n"
+            "  </url>"
+        )
+
+    for path in iter_internal_pdf_files():
         url = build_url(path)
         urls.append(url)
         entries.append(

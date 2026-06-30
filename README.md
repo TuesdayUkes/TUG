@@ -80,6 +80,12 @@ python -m http.server 8000
 
 # Generate song archive
 python music/scripts/GenList.py music ukulele-song-archive.html --intro
+
+# Rebuild local site artifacts using the same path as CI
+python build_site.py
+
+# Regenerate sitemap
+python generate_sitemap.py
 ```
 
 ---

@@ -12,7 +12,7 @@ This repository includes sophisticated automated workflows that handle PDF gener
 
 ### Website Deployment Workflow  
 - **Trigger**: When website files (HTML, CSS, JS, images, PDFs) are modified
-- **Process**: Builds complete website with generated song archive
+- **Process**: Builds complete website with generated song archive and sitemap
 - **Output**: Deploys to GitHub Pages at [tuesdayukes.org](https://tuesdayukes.org/)
 
 ## ⚙️ Configuration
@@ -64,8 +64,9 @@ Check the "Actions" tab for:
 ### Typical Workflow Sequence
 1. 📝 ChordPro file committed → PDF generation triggered
 2. 🎵 PDF generated and committed → Website deployment triggered  
-3. 🚀 Website deployed with updated content
-4. ✅ Process complete, changes live
+3. 🗺️ Site artifacts regenerated, including `ukulele-song-archive.html`, `xmas-songbook.html`, and `sitemap.xml`
+4. 🚀 Website deployed with updated content
+5. ✅ Process complete, changes live
 
 ## 🐛 Troubleshooting
 

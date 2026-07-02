@@ -127,7 +127,7 @@ jobs:
       id: deployment
       uses: actions/deploy-pages@v5
       with:
-        # Default polling timeout is 10m; raise it for larger artifacts/backlog periods.
-        timeout: 1800000
+        # Max allowed by actions/deploy-pages is 600000 ms (10 minutes).
+        timeout: 600000
         # Allow more transient API/status errors while polling deployment state.
         error_count: 20

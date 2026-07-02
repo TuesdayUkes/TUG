@@ -199,7 +199,7 @@ jobs:
         PDF_LIST=$(git diff --cached --name-only | grep '\.pdf$' | sed 's/^/- /' | tr '\n' ' ')
         
         # Commit the generated PDFs
-        git commit -m "🎵 Auto-generate PDFs from ChordPro files - Generated $STAGED_PDFS PDF(s): $PDF_LIST"
+        git commit -m "🎵 Auto-generate PDFs from ChordPro files - Generated $STAGED_PDFS PDF(s): $PDF_LIST [skip ci]"
         
         # Push back to repository
         git push origin ${{ github.ref_name }}

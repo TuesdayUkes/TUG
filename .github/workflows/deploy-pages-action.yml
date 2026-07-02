@@ -115,6 +115,7 @@ jobs:
         path: ./_site
 
   deploy:
+    timeout-minutes: 45
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -125,3 +126,8 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v5
+      with:
+        # Default polling timeout is 10m; raise it for larger artifacts/backlog periods.
+        timeout: 1800000
+        # Allow more transient API/status errors while polling deployment state.
+        error_count: 20

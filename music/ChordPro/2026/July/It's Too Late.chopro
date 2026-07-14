@@ -1,0 +1,71 @@
+{t: It's Too Late}
+{st:Carole King}
+{define E7sus4 frets 2 2 0 2}
+{define Fmaj7 base-fret 3 frets 3 3 0 0}
+{define D6 frets 2 2 2 2}
+
+{comment Tempo: 101}
+{comment Main strum: d- du -u du (Island strum)}
+{comment Intro strum: [*[Am]] d- d- dudu  /  [*[D6]] d- du -u du}
+
+{comment INTRO}
+[Am7] [D6] [Am7] [D6]
+
+{comment VERSE 1}
+[Am7] Stayed in bed all morning just to [D6] pass the time
+[Am7] There's something wrong here there can [D6] be no denying
+[Am7] One of us is changing or [Gm7] maybe we've just stopped [Fmaj7] trying [*/--//--/-//--/]
+
+{comment CHORUS 1}
+And it's [Bbmaj7] too late baby now [Fmaj7] it's too late
+Though we [Bbmaj7] really did try to [Fmaj7] make it
+[Bbmaj7] Something inside has [Fmaj7] died
+And I can't [Dm7] hide and I just can't [E7sus4]-[E7] fake it 
+
+{comment INTERLUDE 1}
+[Am7] oh no no [D6] no no [Am7] [D6]
+
+{comment VERSE 2}
+It [Am7] used to be so easy living [D6] here with you
+[Am7] You were light and breezy and I [D6] knew just what to do
+Now [Am7] you look so unhappy and [Gm7] I feel like a [Fmaj7] fool [*/--//--/-//--/]
+
+{comment CHORUS 2}
+And it's [Bbmaj7] too late baby now [Fmaj7] it's too late
+Though we [Bbmaj7] really did try to [Fmaj7] make it
+[Bbmaj7] Something inside has [Fmaj7] died
+And I can't [Dm7] hide and I just can't [E7sus4]-[G7]  fake it, oh 
+
+{comment INSTRUMENTAL 1}
+[Cmaj7] no no [Fmaj7] 
+[Bbmaj7] [Am7]
+[Gm7] ' ' -doo-doo   [Fmaj7] doo-doo-doo-doo
+[Dm7]   [E7]
+
+{comment INTERLUDE 2}
+[Am7] [D6] [Am7] [D6]
+
+{new_page}
+
+{comment VERSE 3}
+[Am7] There'll be good times again for [D6] me and you
+But we [Am7] just can't stay together don't you [D6] feel it too
+Still I'm [Am7] glad for what we had
+[Gm7] And how I once [Fmaj7] loved you [*/--//--/-//--/]
+
+{comment CHORUS 3}
+But it's [Bbmaj7] too late baby now [Fmaj7] it's too late
+Though we [Bbmaj7] really did try to [Fmaj7] make it
+[Bbmaj7] Something inside has [Fmaj7] died
+And I can't [Dm7] hide and I just can't [E7sus4]-[G7]  fake it, oh 
+
+{comment INSTRUMENTAL 2}
+[Cmaj7] no no-no [Fmaj7] no no 
+[Bbmaj7] [Am7]
+[Gm7]    [Fmaj7]
+[Dm7]    [E7sus4]-[G7] 
+
+{comment ENDING}
+It’s too [Cmaj7] late [Fmaj7] baby
+It’s too [Cmaj7] late now [Fmaj7] darlin'
+It’s too [Cmaj7] late [*/--//--/-//--/]

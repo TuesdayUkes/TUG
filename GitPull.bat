@@ -17,7 +17,7 @@ if errorlevel 1 goto error
 pipx install genlist-butler --force
 if errorlevel 1 goto error
 
-python build_site.py
+genlist music ukulele-song-archive.html
 if errorlevel 1 goto error
 
 echo.

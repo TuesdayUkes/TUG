@@ -1,0 +1,60 @@
+{title: Hello, Goodbye}
+{subtitle: The Beatles, 1967}
+{define G7sus2 frets 0 2 1 0}
+{define F7 frets 2 3 1 3}
+{define D7 frets 2 0 2 0}
+{define G# frets x 2 3 2}
+
+{comment Tempo: 96}       
+{comment First sung note is D}
+
+{comment VERSE 1}
+[Dm] / You say yes, /// [C] / I say no ///
+[G7] / You say stop /// and [Am] / I say (strum) go, go, 
+[G7] Go [Am/C]-[Am]  Oh, [G7] no 
+
+{comment CHORUS}
+[G7] / You say good-[G7sus2] / bye and [F] / I say hel-[C]lo, 
+Hello, hel-[Am]lo I don't know [F] why you say good-[G#]bye, I say hel-[C]lo,  
+Hello, hel-[Am]lo I don't know [F] why you say good-[G#]bye, I say hel-[C]lo. 
+
+{comment VERSE 2}
+[Dm] / I say high, /// [C] / you say low /// 
+[G7] / You say why, /// and [Am] / I say (strum) I don't 
+[G7] know [Am/C]-[Am]  Oh, [G7] no 
+
+{comment CHORUS}
+[G7] / You say good-[G7sus2] / bye and [F] / I say hel-[C]lo, 
+Hello, hel-[Am]lo I don't know [F] why you say good-[G#]bye, I say hel-[C]lo,  
+Hello, hel-[Am]lo I don't know [F] why you say good-[G#]bye, I say hel-[C]lo. 
+
+{comment VERSE 3}
+[Dm]    [C] ' ' why, why, why [G7] Why   .... do you [Am] say .... goodbye, good
+[G7] bye  [Am/C]-[Am]  Oh, [G7] no 
+
+{comment CHORUS}
+[G7] / You say good-[G7sus2] / bye and [F] / I say hel-[C]lo, 
+Hello, hel-[Am]lo I don't know [F] why you say good-[G#]bye, I say hel-[C]lo,  
+Hello, hel-[Am]lo I don't know [F] why you say good-[G#]bye, I say hel-[C]lo. 
+
+{comment VERSE 4}
+[Dm] / You say yes, /// [C] / I say no ///
+[G7] / You say stop /// and [Am] / I say (strum) go, go, 
+[G7] Go [Am/C]-[Am]  Oh, [G7] no 
+
+{new_page}
+
+{comment CHORUS}
+[G7] / You say good-[G7sus2] / bye and [F] / I say hel-[C]lo, 
+Hello, hel-[Am]lo I don't know [F] why you say good-[G#]bye, I say hel-[C]lo,  
+Hello, hel-[Am]lo I don't know [F] why you say good-[G#]bye, I say hel-[C]lo
+Hello, hel-[Am]lo I don't know [F] why you say good-[G#]bye, I say hel-
+[C] lo oh-oh [Cm] whoah oh-oh [D7] whoah  [Cdim7] ' '     Hel- [C] / lo oh oh   
+
+[*(Pause 4 beats)]
+
+{comment OUTTRO}
+[C] Hey-la  hey-hey [C] lo-ah   [C] Hey-la  hey-hey [C] lo-ah   
+[C] Hey-la  hey-hey [C] lo-ah   [C] Hey-la  hey-hey [C] lo-ah   
+I don't know [F] why you say good-[G#]bye, I say hel-
+[C] lo oh-oh [Cm] whoah oh-oh [D7] whoah  [Cdim7]  '  '    Hel- [C] / lo oh oh 

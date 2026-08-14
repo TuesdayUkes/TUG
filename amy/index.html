@@ -12,6 +12,24 @@
 
     <link rel="stylesheet" href="../styles/main.css?v=2026.03.11.14.21.50">
     <style>
+        .search-box {
+            width: 100%;
+            max-width: 420px;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--border-light);
+            border-radius: 999px;
+            font-size: 1rem;
+            margin: 1rem 0 1.25rem;
+            background: var(--surface);
+            color: var(--text-color);
+            box-shadow: var(--shadow);
+        }
+
+        .search-box:focus {
+            outline: 2px solid rgba(76, 175, 80, 0.25);
+            border-color: var(--primary-color);
+        }
+
         .song-table {
             width: 100%;
             border-collapse: collapse;
@@ -79,6 +97,7 @@
         <div class="card">
             <h1>Amy's Songs</h1>
             <p class="lead">A short list of songs pulled from the TUG archive.</p>
+            <input id="song-search" class="search-box" type="search" placeholder="Search songs..." aria-label="Search songs" />
 
             <table class="song-table">
                 <thead>
@@ -247,6 +266,75 @@
             </table>
         </div>
     </main>
+
+    <script>
+        const searchInput = document.getElementById('song-search');
+        const rows = Array.from(document.querySelectorAll('.song-table tbody tr'));
+
+        function normalizeText(value) {
+            return (value || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+        }
+
+        function levenshteinDistance(a, b) {
+            if (a === b) return 0;
+            if (a.length === 0) return b.length;
+            if (b.length === 0) return a.length;
+
+            const prev = Array(b.length + 1).fill(0);
+            for (let j = 0; j <= b.length; j++) {
+                prev[j] = j;
+            }
+
+            for (let i = 1; i <= a.length; i++) {
+                let current = [i];
+                for (let j = 1; j <= b.length; j++) {
+                    const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+                    current[j] = Math.min(
+                        prev[j] + 1,
+                        current[j - 1] + 1,
+                        prev[j - 1] + cost
+                    );
+                }
+                prev.splice(0, prev.length, ...current);
+            }
+
+            return prev[b.length];
+        }
+
+        function fuzzyMatches(title, query) {
+            const normalizedTitle = normalizeText(title);
+            const normalizedQuery = normalizeText(query);
+
+            if (!normalizedQuery) return true;
+            if (normalizedTitle.includes(normalizedQuery)) return true;
+
+            const maxDistance = Math.max(1, Math.ceil(normalizedQuery.length * 0.25));
+
+            if (normalizedTitle.length >= normalizedQuery.length) {
+                const windowSize = normalizedQuery.length;
+                for (let i = 0; i <= normalizedTitle.length - windowSize; i++) {
+                    const window = normalizedTitle.slice(i, i + windowSize);
+                    if (levenshteinDistance(window, normalizedQuery) <= maxDistance) {
+                        return true;
+                    }
+                }
+            }
+
+            return levenshteinDistance(normalizedTitle, normalizedQuery) <= maxDistance;
+        }
+
+        if (searchInput) {
+            searchInput.addEventListener('input', function () {
+                const query = this.value.trim();
+
+                rows.forEach((row) => {
+                    const title = row.cells[0]?.textContent?.trim() || '';
+                    const matches = fuzzyMatches(title, query);
+                    row.style.display = matches ? '' : 'none';
+                });
+            });
+        }
+    </script>
 
 </body>
 </html>

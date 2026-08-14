@@ -1,17 +1,15 @@
-0:03:01 Mary Jane (My Ramblin' Boy) https://tuesdayukes.org/music/PDFs/Winter%202023-24/My%20Ramblin'%20Boy.pdf?v=2026.07.22.17.13.55
-0:10:30 Walter (Heart and Soul) https://tuesdayukes.org/music/ChordPro/2026/July/Heart%20and%20Soul.pdf?v=2026.07.21.14.38.59
-0:13:03 Roy (Cecilia) https://tuesdayukes.org/music/PDFs/2025/March/Cecilia.pdf?v=2026.07.21.14.38.59
-0:16:50 Charlie (Ukulele Moon) https://www.ukesterbrown.com/uploads/2/5/5/8/2558158/ukulele_moon.pdf
-0:22:58 Daniel (Workin' at the Car Wash Blues) https://tuesdayukes.org/music/ChordPro/2026/July/Workin'%20at%20the%20Car%20Wash%20Blues.pdf?v=2026.07.21.16.26.03
-0:29:51 Brenda (Da Doo Ron Ron) https://tuesdayukes.org/music/PDFs/Winter%202022-23/Da%20Doo%20Ron%20Ron.pdf?v=2026.07.22.17.13.55
-0:33:14 Mary Jane (Reconciliation) https://tuesdayukes.org/music/ChordPro/2026/July/Reconciliation.pdf?v=2026.07.21.14.38.59
-0:38:34 Walter (Rockin' Pneumonia and the Boogie-Woogie Flu) https://tuesdayukes.org/music/ChordPro/2026/July/Rockin'%20Pneumonia%20and%20the%20Boogie-Woogie%20Flu.pdf?v=2026.07.21.14.38.59
-0:42:24 Roy (River of Dreams) https://tuesdayukes.org/music/ChordPro/2026/July/River%20of%20Dreams.pdf?v=2026.07.21.14.38.59
-0:48:15 Debbie (Daydream Believer) https://tuesdayukes.org/music/ChordPro/2026/July/Daydream%20Believer.pdf?v=2026.07.21.14.40.23
-0:51:21 Daniel (Don't It Make My Brown Eyes Blue) https://tuesdayukes.org/music/PDFs/2025/March/Don't%20It%20Make%20My%20Brown%20Eyes%20Blue.pdf?v=2026.07.17.20.21.38
-0:55:15 group (Angel From Montgomery) https://tuesdayukes.org/music/PDFs/Fall%202021/Angel%20From%20Montgomery.pdf
-1:00:35 Mary Jane (Paintin' Up the Town) http://localhost/music/PDFs/Summer%202020/Paintin'%20Up%20the%20Town.pdf?v=2026.07.21.14.40.23
-1:04:06 group (I'll Fly Away) https://tuesdayukes.org/music/PDFs/Summer%202023/I'll%20Fly%20Away.pdf
-1:09:16 group (Will the Circle Be Unbroken) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Will%20the%20Circle%20be%20Unbroken.pdf?v=2026.07.22.17.13.55
-1:14:10 group (Man of Constant Sorrow) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Man%20Of%20Constant%20Sorrow.pdf?v=2026.07.22.17.13.55
-1:16:34 group (Happy Trails) https://tuesdayukes.org/music/ChordPro/Summer%202022/Happy%20Trails.pdf?v=2026.07.21.14.38.59
+0:05:27 Walter (Someday (you'll be sorry)) https://tuesdayukes.org/music/ChordPro/2026/August/Someday%20(you'll%20be%20sorry).pdf?v=2026.08.11.10.29.30
+0:10:01 Mary Jane (The Sky Road (Leaving for America)) https://tuesdayukes.org/music/ChordPro/2026/August/The%20Sky%20Road%20(Leaving%20for%20America).pdf?v=2026.08.11.10.29.30
+0:15:52 Roy (It Don't Come Easy) https://tuesdayukes.org/music/ChordPro/2026/August/It%20Don't%20Come%20Easy.pdf?v=2026.08.11.10.29.30
+0:19:33 Fancy (Waltz Across Texas) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Waltz%20Across%20Texas.pdf?v=2026.08.11.22.50.41
+0:23:58 Daniel (Love Calling) https://tuesdayukes.org/music/ChordPro/2026/August/Love%20Calling.pdf?v=2026.08.11.17.26.13
+0:28:35 Walter (The Dummy Song) https://tuesdayukes.org/music/ChordPro/2026/August/The%20Dummy%20Song.pdf?v=2026.08.11.10.29.30
+0:32:24 Mary Jane (Rain Just Falls) https://tuesdayukes.org/music/PDFs/Spring%202022/Rain%20Just%20Falls.pdf?v=2026.08.11.10.29.30
+0:36:23 Roy (Act Naturally) https://tuesdayukes.org/music/PDFs/Winter%202021-22/Act%20Naturally.pdf?v=2026.08.11.10.29.30
+0:40:38 group (Swinging on a Star) https://tuesdayukes.org/music/PDFs/Spring%202022/Swinging%20on%20a%20Star.pdf
+0:43:50 group (Summertime) https://tuesdayukes.org/music/PDFs/Spring%202021/Summertime.pdf
+0:50:58 group (Summertime Blues) https://tuesdayukes.org/music/PDFs/Summer%202020/Summertime%20Blues.pdf?v=2026.08.11.22.50.41
+0:54:25 group (Poor Poor Pitiful Me) https://tuesdayukes.org/music/ChordPro/2025/June/Poor%20Poor%20Pitiful%20Me.pdf?v=2026.08.11.22.50.41
+0:57:58 group (The Purple People Eater) https://tuesdayukes.org/music/PDFs/Fall%202023/The%20Purple%20People%20Eater.pdf?v=2026.08.11.22.50.41
+1:01:50 group (Love Potion Number 9) https://tuesdayukes.org/music/ChordPro/TUG%20Archive/Love%20Potion%20Number%209.pdf?v=2026.08.11.22.50.41
+1:04:21 group (Happy Trails) https://tuesdayukes.org/music/ChordPro/Summer%202022/Happy%20Trails.pdf?v=2026.08.11.10.29.30

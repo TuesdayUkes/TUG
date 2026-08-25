@@ -43,3 +43,5 @@ Example: if the table already has Tom, Todd, Roy, Mary Jane then Walter and Mary
 ## Quality Checks
 - Verify links are copied exactly (including query strings and timestamps).
 - Keep HTML formatting consistent with existing rows.
+- Follow every rule in this skill exactly. Do not improvise or shortcut the ordering logic.
+- Before finalizing, verify the table still obeys the round-order rule and stop if any insertion would violate it.

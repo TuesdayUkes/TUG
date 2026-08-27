@@ -45,3 +45,9 @@ Example: if the table already has Tom, Todd, Roy, Mary Jane then Walter and Mary
 - Keep HTML formatting consistent with existing rows.
 - Follow every rule in this skill exactly. Do not improvise or shortcut the ordering logic.
 - Before finalizing, verify the table still obeys the round-order rule and stop if any insertion would violate it.
+
+## Correctness Check
+- Before saying the update is finished, confirm the inserted song is the correct one for the submitter and matches the archive entry exactly.
+- Check that the actual PDF file exists at the target path and that the final link matches the canonical archive location, not a guessed or stale path.
+- Re-read the surrounding table rows to confirm the submission was placed in the correct round position and does not break the ordering rule.
+- If any verification fails, do not finalize the change; fix the row or links and re-check before completion.

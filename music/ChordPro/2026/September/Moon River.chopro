@@ -1,0 +1,43 @@
+{t: Moon River}
+{st: Song: Henry Mancini / Lyrics: Johnny Mercer , 1961}
+{define C#dim  frets 0 1 0 1}
+{define C#m7 frets 1 1 0 2}
+{define Gmaj7 frets 0 2 2 2}
+{define Dmaj7no5 base-fret 7 frets 0 1 1 3}
+{comment: 3/4 time)
+
+{comment: Intro}
+[G]   [G]
+
+{comment: Verse 1}
+[G] Moon [Em] River, [C] wider than a [G] mile
+I'm [C] crossing you in [G] style some-[Am]day [B7]
+Oh, [Em] dream [G7] maker, you [C] heart [F] breaker
+Where-[Em]ever you're [C#dim] going, 
+I'm [Bm7] [*/] go-[E7] [*/] ing your [Am] [*/] way [D7] [*/]
+
+{comment: Verse 2}
+[G] Two [Em] drifters, [C] off to see the [G] world
+There's [C] such a lot of [G] world to [Am] see [B7]
+We're [Em] af-[Em7]ter the [Em6] same [C#dim] [*/]
+Rainbow's [Gmaj7] end, [C] [*/]
+Waiting ‘round the [Gmaj7] bend [C] [*/]
+My huckleberry [Gmaj7]friend, 
+[Em7] Moon [Am] River [D7] and [G] me 
+
+[Gmaj7] [*///]    [D7] [*/ (hold)]
+
+{comment: Verse 3    ("Ohhh" first two lines)}
+{textcolour: blue}
+{textfont sans Italic 12}
+[G] Two [Em] drifters, [C] off to see the [G] world
+There's [C] such a lot of [G] world to [Am] see [B7]
+{textcolour}
+{textfont}
+We're [Em] af-[Em7]ter the [Em6] same [C#dim] [*/]
+Rainbow's [Gmaj7] end, [C] [*/]
+Waiting ‘round the [Gmaj7] bend [C] [*/]
+My huckleberry [Gmaj7]friend, 
+[Em7] Moon [Am] River [D7] and [G] me 
+
+[Gmaj7] [*///]    [Dmaj7no5] [*/ (hold)]

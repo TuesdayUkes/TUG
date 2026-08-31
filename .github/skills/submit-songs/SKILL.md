@@ -31,7 +31,11 @@ Use this structure:
 If no recording link exists, omit that line.
 
 ## Ordering Rule
-The table is ordered in rounds: no submitter gets a second song until every submitter has had one, no submitter gets a third song until every submitter has had two, and so on. Within each round, never place two consecutive rows from the same person. When inserting new songs, treat the existing rows as already-placed rounds and slot each new song into the correct round position.
+The table is ordered in rounds. The first round must contain every currently active submitter exactly once. A person may not appear again in a later round until every other submitter has also appeared once in round one. Similarly, a person may not appear a third time until every submitter has appeared twice, and so on. Within each round, never place two consecutive rows from the same person.
+
+When inserting new songs, treat the existing rows as already-placed rounds and slot each new song into the correct round position. Do not create a second-round row for a person before every submitter has appeared once in round one.
+
+Example: if the table already has Tom, Todd, Roy, Mary Jane and Walter submits two songs, the correct result is: Tom, Todd, Roy, Mary Jane, Walter, Walter? No — because Walter has not yet appeared in round one. The actual correct placement is: Tom, Todd, Roy, Mary Jane, Walter, Roy, Mary Jane, Walter (not Tom, Todd, Roy, Mary Jane, Walter, Walter, Roy, Mary Jane). In other words, everyone must appear in round one before any second-round repeat is placed.
 
 Example: if the table already has Tom, Todd, Roy, Mary Jane then Walter and Mary Jane are each submitting one more song, the result is: Tom, Todd, Roy, Mary Jane, Walter, Mary Jane (not Tom, Todd, Roy, Mary Jane, Walter, Walter, Mary Jane).
 

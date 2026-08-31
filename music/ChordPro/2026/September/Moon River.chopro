@@ -1,10 +1,11 @@
 {t: Moon River}
 {st: Song: Henry Mancini / Lyrics: Johnny Mercer , 1961}
+{define B7 fingers 1 2 1 1 frets 2 3 2 2}
 {define C#dim  frets 0 1 0 1}
 {define C#m7 frets 1 1 0 2}
 {define Gmaj7 frets 0 2 2 2}
 {define Dmaj7no5 base-fret 7 frets 0 1 1 3}
-{comment: 3/4 time)
+{comment: 3/4 time}
 
 {comment: Intro}
 [G]   [G]
@@ -27,7 +28,7 @@ My huckleberry [Gmaj7]friend,
 
 [Gmaj7] [*///]    [D7] [*/ (hold)]
 
-{comment: Verse 3    ("Ohhh" first two lines)}
+{comment: Verse 3    ("Ooooo" the first two lines)}
 {textcolour: blue}
 {textfont sans Italic 12}
 [G] Two [Em] drifters, [C] off to see the [G] world

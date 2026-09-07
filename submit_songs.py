@@ -30,26 +30,53 @@ def normalize(text: str) -> str:
 
 
 def find_best_file(song_title: str) -> str | None:
-    """Search the music tree for a PDF (preferred) or .chopro matching the song title."""
+    """Search the music tree for a PDF (preferred) or .chopro matching the song title.
+
+    Chooses the best candidate by scoring filename closeness (exact match, substring,
+    word overlap and sequence similarity). Prefers PDFs when scores tie.
+    """
     base = Path('music')
     if not base.exists():
         return None
 
     want = normalize(song_title)
-    candidates = []
-    for p in base.rglob('*'):
-        if p.is_file() and p.suffix.lower() in ('.pdf', '.chopro'):
-            name = normalize(p.stem)
-            want_words = want.split()
-            if all(w in name for w in want_words):
-                candidates.append(p)
+    want_words = want.split()
 
+    # collect all candidate files
+    candidates = [p for p in base.rglob('*') if p.is_file() and p.suffix.lower() in ('.pdf', '.chopro')]
     if not candidates:
         return None
 
-    pdfs = [p for p in candidates if p.suffix.lower() == '.pdf']
-    chosen = pdfs[0] if pdfs else candidates[0]
-    return str(chosen).replace('\\', '/')
+    # score candidates
+    from difflib import SequenceMatcher
+
+    best = None
+    best_score = -10**9
+    for p in candidates:
+        name = normalize(p.stem)
+        name_words = name.split()
+        # exact match
+        score = 0
+        if name == want:
+            score += 2000
+        # substring match (words in order)
+        if want in name:
+            score += 800
+        # word overlap
+        common = sum(1 for w in want_words if w in name_words)
+        score += common * 150
+        # similarity ratio for fuzzy matching
+        ratio = SequenceMatcher(None, name, want).ratio()
+        score += int(ratio * 200)
+        # prefer PDFs slightly
+        if p.suffix.lower() == '.pdf':
+            score += 50
+
+        if score > best_score:
+            best_score = score
+            best = p
+
+    return str(best).replace('\\', '/') if best else None
 
 
 def find_most_recent_recording(song_title: str) -> Optional[Dict[str, str]]:

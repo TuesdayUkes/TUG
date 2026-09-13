@@ -185,17 +185,19 @@ def make_valid_href(href: str) -> str:
     # Treat obvious absolute URLs or protocol-relative URLs specially
     if '://' in href or href.startswith('//') or href.startswith('mailto:'):
         parts = urlsplit(href)
-        path = quote(parts.path, safe='/')
-        query = quote(parts.query, safe='=&;:/?@')
-        fragment = quote(parts.fragment, safe='')
+        # decode any existing percent-escapes, then re-encode to avoid double-encoding
+        path = quote(unquote(parts.path), safe='/')
+        query = quote(unquote(parts.query), safe='=&;:/?@')
+        fragment = quote(unquote(parts.fragment), safe='')
         return urlunsplit((parts.scheme, parts.netloc, path, query, fragment))
 
     # Normalize file path separators and encode components
     href = href.replace('\\', '/')
     parts = urlsplit(href)
-    path = quote(parts.path, safe='/')
-    query = quote(parts.query, safe='=&;:/?@')
-    fragment = quote(parts.fragment, safe='')
+    # decode any existing percent-escapes, then re-encode to avoid double-encoding
+    path = quote(unquote(parts.path), safe='/')
+    query = quote(unquote(parts.query), safe='=&;:/?@')
+    fragment = quote(unquote(parts.fragment), safe='')
     return urlunsplit((parts.scheme, parts.netloc, path, query, fragment))
 
 

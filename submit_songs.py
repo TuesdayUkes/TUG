@@ -19,7 +19,7 @@ from pathlib import Path
 import re
 import sys
 from typing import Optional, Dict
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse, unquote, quote, urlsplit, urlunsplit
 
 
 def normalize(text: str) -> str:
@@ -172,6 +172,33 @@ def insert_submission(rows, submitter, title, pdf_link):
     return rows
 
 
+def make_valid_href(href: str) -> str:
+    """Return a URL-safe href by percent-encoding path/query/fragment parts.
+
+    - If href looks like an absolute URL (contains '://', protocol-relative '//' or 'mailto:'),
+      encode the path/query/fragment and preserve scheme/netloc.
+    - Otherwise treat as a relative or file path: normalize backslashes and encode the path/query/fragment.
+    """
+    if not href:
+        return href
+    href = str(href)
+    # Treat obvious absolute URLs or protocol-relative URLs specially
+    if '://' in href or href.startswith('//') or href.startswith('mailto:'):
+        parts = urlsplit(href)
+        path = quote(parts.path, safe='/')
+        query = quote(parts.query, safe='=&;:/?@')
+        fragment = quote(parts.fragment, safe='')
+        return urlunsplit((parts.scheme, parts.netloc, path, query, fragment))
+
+    # Normalize file path separators and encode components
+    href = href.replace('\\', '/')
+    parts = urlsplit(href)
+    path = quote(parts.path, safe='/')
+    query = quote(parts.query, safe='=&;:/?@')
+    fragment = quote(parts.fragment, safe='')
+    return urlunsplit((parts.scheme, parts.netloc, path, query, fragment))
+
+
 def row_to_tag(soup, row):
     tr = soup.new_tag('tr')
     td1 = soup.new_tag('td')
@@ -180,7 +207,8 @@ def row_to_tag(soup, row):
     td2.string = row['title']
     td3 = soup.new_tag('td')
     if row.get('pdf'):
-        a = soup.new_tag('a', href=row['pdf'], target='_blank')
+        href = make_valid_href(row['pdf'])
+        a = soup.new_tag('a', href=href, target='_blank')
         a.string = '.pdf'
         td3.append(a)
     # optionally append recording link on its own line in the same cell
@@ -189,7 +217,8 @@ def row_to_tag(soup, row):
         # insert a break before the recording link
         br = soup.new_tag('br')
         td3.append(br)
-        ra = soup.new_tag('a', href=rec.get('href', '#'), target='_blank')
+        rec_href = make_valid_href(rec.get('href', '#'))
+        ra = soup.new_tag('a', href=rec_href, target='_blank')
         label = '# Most recent recording'
         if rec.get('date'):
             label = f"# Most recent recording: {rec['date']}"

@@ -90,13 +90,26 @@ def find_most_recent_recording(song_title: str) -> Optional[Dict[str, str]]:
             continue
         soup = BeautifulSoup(p.read_text(encoding='utf-8'), 'html.parser')
         want = normalize(song_title)
+        want_words = want.split()
         for tr in soup.find_all('tr'):
-            txt = normalize(tr.get_text())
-            want_words = want.split()
-            if all(w in txt for w in want_words):
-                # prefer youtube links
+            # Restrict matching to the title cell only (usually the second <td>).
+            tds = tr.find_all('td')
+            if not tds:
+                continue
+            title_td = tds[1] if len(tds) >= 2 else None
+            if title_td is None:
+                # fallback: pick first non-empty td
+                for td in tds:
+                    if td.get_text(strip=True):
+                        title_td = td
+                        break
+            if title_td is None:
+                continue
+            txt = normalize(title_td.get_text())
+            # require the full normalized phrase to appear in the title cell (preserves order)
+            if want in txt:
+                # prefer youtube links in the same row
                 anchors = [a for a in tr.find_all('a', href=True)]
-                # only consider youtube links as valid recordings
                 youtube = [a for a in anchors if 'youtu' in a['href'] or 'youtube.com' in a['href']]
                 pick = youtube[0] if youtube else None
                 if pick:
@@ -377,6 +390,15 @@ def main():
                 ft = file_title_from_href(pdf_candidate)
                 if ft:
                     r['title'] = ft
+
+    # Refresh recording links from the archive for all final rows.
+    # Overwrite any existing `recording` values so the table reflects current archive data.
+    for r in final_rows:
+        rec = find_most_recent_recording(r['title'])
+        if rec:
+            r['recording'] = rec
+        else:
+            r.pop('recording', None)
 
     # remove existing data rows
     for tr in table.find_all('tr'):

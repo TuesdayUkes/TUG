@@ -1,113 +1,118 @@
-{title: The Long and Winding Road}
-{subtitle: The Beatles, 1970}
-{define G7sus2 frets 0 2 1 0}
-{define C7* frets 3 0 0 3}
-{define C7sus4 frets 0 0 1 1}
-{define Am7 frets 2 0 3 0}
-
-{comment Verse 1}
-{tabsize: 120%}
-{tabfont: Courier-Bold}
-{sot}
-             The long and winding  road         That
-                [C](hold)         [F][G7sus2]
-  A | ... -----|-3---2-----------|-1-1-1---1-1-----|
-  E | ... ---3-|---------3-0-----|---2-2---2-2-----|
-  C | ... -----|-----------------|-2---------------|
-  G | ... -----|-----------------|-----------------|
-      ...  4 &   1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &
-{end_of_tab}
-
-The [C] [*/] long and winding [F] [*/] road [G7sus2] [*/] [*/]   [*/] [*/] 
-That [C] leads [Am/C] to [C7*] your [F] door [Am] [Am7] [F]
-Will [Em7] never disap[Am]pear [Am7] 
-[Dm] I've seen that [G7] road be-[C7sus4]fore [C7*]
-[F] It [Em7] always leads [Am] me here [Am7]
-[Dm] Lead me [G7] to your [C] door
-
-{comment Verse 2}
-{sot}
-             The wild and windy    night       That the
-                [C](hold)         [F][G7sus2]
-  A | ... -----|-3---2-----------|-1-1-1---1-1-----|
-  E | ... ---3-|---------3-0-----|---2-2---2-2-----|
-  C | ... -----|-----------------|-2---------------|
-  G | ... -----|-----------------|-----------------|
-      ...  4 &   1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &
-{end_of_tab}
-
-{comment Verse 2}
-The [C] [*/] wild and windy [F] [*/] night [G7sus2] [*/] [*/]   [*/] [*/] 
-That the [C] rain [Am/C] washed [C7*] a[F]way [Am] [Am7] [F]
-Has [Em7] left a pool of [Am] tears [Am7]
-[Dm] Crying [G7] for the [C7sus4] day [C7]
-[F] Why [Em7] leave me standing [Am] here [Am7]
-[Dm] Let me [G7] know the [C] way
-
-{comment Chorus}
-[C] Many times I've [F] been alone
-And [Em7] many times I've [G7sus2] cried [G7]
-[C]Any way you'll [F] never know
-The [Em7] many ways I've [G7sus2] tried [G7]
-
-{comment Verse 3}
-{sot}
-  But still they lead me back
-     [C](hold)         [F][G7sus2]
-  A |-3---2-----------|-1-1-1---1-1-----|
-  E |---------3-0-----|---2-2---2-2-----|
-  C |-----------------|-2---------------|
-  G |-----------------|-----------------|
-      1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &   
-{end_of_tab}
-
-But [C] [*/] still they lead  me [F] [*/] back [G7sus2] [*/] [*/]   [*/] [*/] 
-To the [C] long [Am/C] win[C7*]ding [F] road [Am] [Am7] [F]
-You [Em7] left me standing [Am] here [Am7]
-[Dm] A long [G7] long time a-[C7sus4]go [C7]
-[F] Don't [Em7] leave me [Am] waiting here [Am7]
-[Dm] Lead me [G7] to your [C] door
-
-{comment Interlude}
-{sot}             
-                                          
-     [C]     [Dm]      [Em7]  [G7sus2][G7]  
-  A |-2333--0-530---0-|--0--------0-----|
-  E |-----------------|-3-----0-3-------|
-  C |-----------------|---0-------------|
-  G |-----------------|-----------------|
-      1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &  
-
-     [C]     [Dm]      [Em7]  [G7sus2][G7]  
-  A |-2333--0-530---0-|--0--------0---2-|
-  E |-----------------|-3-----0-3-------|
-  C |-----------------|---0-------------|
-  G |-----------------|-----------------|
-      1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &   
-
-     still they lead me back        To the
-     [C](hold)         [F]
-  A |-3---2-----------|-1-1-1---1-1-----|
-  E |---------3-0-----|---2-2---2-2-----|
-  C |-----------------|-2---------------|
-  G |-----------------|-----------------|
-      1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &   
-{end_of_tab}
-
-{comment Verse 4}
-But [C] [*/] still they lead me [F] [*/] back [G7sus2] [*/] [*/]   [*/] [*/] 
-To the [C] long [Am/C] win[C7*]ding [F] road [Am] [Am7] [F]
-You [Em7] left me standing [Am] here [Am7]
-[Dm] A long [G7] long time a-[C7sus4]go [C7]
-[F] Don't [Em7] keep me waiting [Am] here [Am7]
-[Dm] Lead me [G7] to your [C] [*/ (hold)] door [F] [*/ (hold)] [C] [*/ (hold)] 
-
-{start_of_tab}
-     Door   
-     [C](hold)         [F]              [C](hold)        
-  A |-3---2-----------|-1-1-1---1-1----|-3---------------|
-  E |---------3-0-----|---2-2---2-2----|-0---------------|
-  C |-----------------|-2--------------|-0---------------|
-  G |-----------------|----------------|-0---------------|
-      1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &   
-{end_of_tab}
+{title: The Long and Winding Road}
+{subtitle: The Beatles, 1970}
+{define G7sus2 frets 0 2 1 0}
+{define C7* frets 3 0 0 3}
+{define C7sus4 frets 0 0 1 1}
+{define Am7 frets 2 0 3 0}
+
+{comment Verse 1}
+
+{tabsize: 120%}
+{tabfont: Courier-Bold}
+{sot}
+         [C]               [F][G7sus2]
+A |-----|-3---2-----------|-1-1-1---1-1-----|  played with
+E |---3-|---------3-0-----|---2-2---2-2-----|  the first line
+C |-----|-----------------|-2---------------|
+G |-----|-----------------|-----------------|
+    4 &   1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &
+{end_of_tab}
+
+The               [C] [*/] long and winding      [F] [*/] road [G7sus2] [*/] [*/]   [*/] [*/]
+That [C] leads [Am/C] to [C7*] your [F] door [Am]  [Am7]  [F]
+Will [Em7] never disap[Am]pear [Am7] 
+[Dm] I've seen that [G7] road be-[C7sus4]fore [C7*]
+[F] It [Em7] always leads [Am] me here [Am7]
+[Dm] Lead me [G7] to your [C] door
+
+{comment Verse 2}
+
+{sot}
+         [C]               [F][G7sus2]
+A |-----|-3---2-----------|-1-1-1---1-1-----|  played with
+E |---3-|---------3-0-----|---2-2---2-2-----|  the first line
+C |-----|-----------------|-2---------------|  the first line
+G |-----|-----------------|-----------------|
+    4 &   1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &
+{end_of_tab}
+
+The                [C] [*/] wild and windy         [F] [*/] night [G7sus2] [*/] [*/]   [*/] [*/] 
+That the [C] rain [Am/C] washed [C7*] a-[F]way [Am]  [Am7]  [F]
+Has [Em7] left a pool of [Am] tears [Am7]
+[Dm] Crying [G7] for the [C7sus4] day [C7]
+[F] Why [Em7] leave me standing [Am] here [Am7]
+[Dm] Let me [G7] know the [C] way
+
+{comment Chorus}
+
+[C] Many times I've [F] been alone
+And [Em7] many times I've [G7sus2] cried [G7]
+[C] 0Any way you'll [F] never know
+The [Em7] many ways I've [G7sus2] tried [G7]
+
+{new_page}
+
+{comment Verse 3}
+
+{sot}
+   [C]              [F][G7sus2]
+A |-3---2-----------|-1-1-1---1-1-----|
+E |---------3-0-----|---2-2---2-2-----|
+C |-----------------|-2---------------|
+G |-----------------|-----------------|
+    1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &   
+{end_of_tab}
+
+But  [C] [*/] still they lead  me      [F] [*/] back [G7sus2] [*/] [*/]   [*/] [*/] 
+To the [C] long [Am/C] win[C7*]ding [F] road [Am]  [Am7]  [F]
+You [Em7] left me standing [Am] here [Am7]
+[Dm] A long [G7] long time a-[C7sus4]go [C7]
+[F] Don't [Em7] leave me [Am] waiting here [Am7]
+[Dm] Lead me [G7] to your [C] door
+
+{comment Interlude}
+
+{start_of_tab}            
+   [C]     [Dm]      [Em7]  [G7sus2][G7]  
+A |-2h33--0-5p30--0-|--0--------0-----|
+E |-----------------|-3-----0-3-------|
+C |-----------------|---0-------------|
+G |-----------------|-----------------|
+    1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &  
+
+   [C]     [Dm]      [Em7]  [G7sus2][G7]  
+A |-2h33--0-5p30--0-|--0--------0---2-|
+E |-----------------|-3-----0-3-------|
+C |-----------------|---0-------------|
+G |-----------------|-----------------|
+    1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &   
+{end_of_tab}
+
+{comment Verse 4}
+
+{sot} 
+   [C]              [F][G7sus2]
+A |-3---2-----------|-1-1-1---1-1-----|
+E |---------3-0-----|---2-2---2-2-----|
+C |-----------------|-2---------------|
+G |-----------------|-----------------|
+    1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &   
+{end_of_tab}
+
+But [C] [*/] still they lead me [F] [*/] back [G7sus2] [*/] [*/]   [*/] [*/] 
+To the [C] long [Am/C] win[C7*]ding [F] road [Am]  [Am7]  [F]
+You [Em7] left me standing [Am] here [Am7]
+[Dm] A long [G7] long time a-[C7sus4]go [C7]
+[F] Don't [Em7] keep me waiting [Am] here [Am7]
+[Dm] Lead me [G7] to your [C][*/] door   
+[F] [*/]  [G7sus2] [*/] [*/]   [*/] [*/] [C] [*/ hold] 
+
+{start_of_tab}
+    Door   
+   [C]              [F][G7sus2]       [C]      
+A |-3---2-----------|-1-1-1---1-1----|-3--
+E |---------3-0-----|---2-2---2-2----|-0--
+C |-----------------|-2--------------|-0--
+G |-----------------|----------------|-0--
+    1 & 2 & 3 & 4 &   1 & 2 & 3 & 4 &  1 & 
+{end_of_tab}

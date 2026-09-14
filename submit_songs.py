@@ -283,6 +283,16 @@ def main():
     parser.add_argument('--index', default='index.html', help='Path to index.html')
     args = parser.parse_args()
 
+    # Filter out standalone conjunction tokens (e.g. the word 'and') which
+    # users sometimes insert unquoted between quoted titles like:
+    #   ./submit_songs.py --submitter Roy "Song A" and "Song B"
+    # In that case the shell passes the bare token 'and' which should not be
+    # treated as a song title.
+    titles = [t for t in args.titles if not re.fullmatch(r'(?i)(and|&)', t.strip())]
+    if not titles:
+        print('No song titles provided after filtering connectors like "and".')
+        sys.exit(1)
+
     index_path = Path(args.index)
     if not index_path.exists():
         print('index.html not found at', index_path)
@@ -320,7 +330,7 @@ def main():
                 title = ft
         rows.append({'submitter': r['submitter'], 'title': title, 'pdf': pdf, 'recording': r.get('recording')})
 
-    for title in args.titles:
+    for title in titles:
         pdf = find_best_file(title) or ''
         rec = find_most_recent_recording(title)
 

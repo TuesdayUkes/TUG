@@ -1,6 +1,14 @@
-{t: Raglan Road}
-{st: w. Irish poet Patrick Kavanagh 1946}
-{st: m. traditional song "The Dawning of the Day" (Fáinne Geal an Lae)]}
+{t: On Raglan Road}
+{st:  open G tuning on tenor: G B D G}
+
+{define: G base-fret 1 frets 0 0 0 0}
+{define: C base-fret 0 frets 0 1 2 0}
+{define: Bm base-fret 0 frets 4 3 0 4}
+{define: Em base-fret 0 frets 0 0 2 0}
+{define: D base-fret 0 frets 2 1 0 2}
+{define: Am base-fret 0 frets 2 1 2 2}
+
+
 
 Verse 1:
 On [G]Raglan Road on an [Bm]autumn [C]day

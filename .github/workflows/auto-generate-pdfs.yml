@@ -32,75 +32,107 @@ jobs:
       run: |
         echo "🔍 Finding changed ChordPro files in push..."
         
-        # Get list of changed ChordPro files across all commits in this push
-        # Use the range from the push event, or fall back to HEAD^ for single commits
+        # Determine git range from the push event
         if [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
-          # Multi-commit push: compare against the push's base commit
-          CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM ${{ github.event.before }}..HEAD | grep -E '\.(chopro|cho)' || true)
-          echo "📊 Comparing ${{ github.event.before }}..HEAD (multi-commit push)"
           GIT_RANGE="${{ github.event.before }}..HEAD"
+          echo "📊 Comparing ${{ github.event.before }}..HEAD (multi-commit push)"
         else
-          # New branch or initial commit: compare against HEAD^
-          CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM HEAD^ HEAD | grep -E '\.(chopro|cho)' || true)
-          echo "📊 Comparing HEAD^..HEAD (single commit or new branch)"
           GIT_RANGE="HEAD^..HEAD"
+          echo "📊 Comparing HEAD^..HEAD (single commit or new branch)"
         fi
         
-        if [ -z "$CHANGED_CHOPRO" ]; then
+        # Get added/modified ChordPro files
+        CHANGED_CHOPRO=$(git diff --name-only --diff-filter=AM $GIT_RANGE | grep -E '\.(chopro|cho)' || true)
+        
+        # Get renamed ChordPro files (tab-separated: R<score> <old> <new>)
+        RENAMED_CHOPRO_STATUS=$(git diff --name-status --diff-filter=R $GIT_RANGE | grep -E '\.(chopro|cho)' || true)
+        
+        if [ -z "$CHANGED_CHOPRO" ] && [ -z "$RENAMED_CHOPRO_STATUS" ]; then
           echo "ℹ️ No ChordPro files changed in this push"
           echo "need_pdfs=false" >> $GITHUB_OUTPUT
+          echo "has_deletions=false" >> $GITHUB_OUTPUT
           exit 0
         fi
         
-        echo "📝 Changed ChordPro files:"
-        echo "$CHANGED_CHOPRO"
-        
-        # Check if any PDFs actually need generation
+        # Initialize tracking state
+        > /tmp/old_pdfs_to_delete.txt
         PDFS_NEEDED=""
-        echo "$CHANGED_CHOPRO" > /tmp/changed_chopro.txt
-        while IFS= read -r chopro_file; do
-          if [ -z "$chopro_file" ] || [ ! -f "$chopro_file" ]; then
-            continue
-          fi
+        
+        # Process added/modified ChordPro files
+        if [ -n "$CHANGED_CHOPRO" ]; then
+          echo "📝 Added/modified ChordPro files:"
+          echo "$CHANGED_CHOPRO"
           
-          echo "🎵 Checking: $chopro_file"
-          
-          # Determine expected PDF path
-          pdf_file="${chopro_file%.*}.pdf"
-          
-          # Check if PDF needs regeneration based on commit order
-          PDF_IN_PUSH=$(git diff --name-only --diff-filter=AM $GIT_RANGE | grep "^${pdf_file}$" || true)
-          
-          if [ -n "$PDF_IN_PUSH" ]; then
-            # PDF was modified in this push - check which came last
-            CHOPRO_LAST_COMMIT=$(git log --format="%H" $GIT_RANGE -- "$chopro_file" | head -1)
-            PDF_LAST_COMMIT=$(git log --format="%H" $GIT_RANGE -- "$pdf_file" | head -1)
+          echo "$CHANGED_CHOPRO" > /tmp/changed_chopro.txt
+          while IFS= read -r chopro_file; do
+            if [ -z "$chopro_file" ] || [ ! -f "$chopro_file" ]; then
+              continue
+            fi
             
-            if [ -n "$PDF_LAST_COMMIT" ] && [ -n "$CHOPRO_LAST_COMMIT" ]; then
-              # Compare commit timestamps to see which is newer
-              CHOPRO_TIME=$(git show --format="%ct" --no-patch "$CHOPRO_LAST_COMMIT")
-              PDF_TIME=$(git show --format="%ct" --no-patch "$PDF_LAST_COMMIT")
+            echo "🎵 Checking: $chopro_file"
+            
+            # Determine expected PDF path
+            pdf_file="${chopro_file%.*}.pdf"
+            
+            # Check if PDF needs regeneration based on commit order
+            PDF_IN_PUSH=$(git diff --name-only --diff-filter=AM $GIT_RANGE | grep "^${pdf_file}$" || true)
+            
+            if [ -n "$PDF_IN_PUSH" ]; then
+              # PDF was modified in this push - check which came last
+              CHOPRO_LAST_COMMIT=$(git log --format="%H" $GIT_RANGE -- "$chopro_file" | head -1)
+              PDF_LAST_COMMIT=$(git log --format="%H" $GIT_RANGE -- "$pdf_file" | head -1)
               
-              if [ "$PDF_TIME" -ge "$CHOPRO_TIME" ]; then
-                echo "  ✓ PDF ($PDF_LAST_COMMIT) is current - no generation needed"
-                continue
+              if [ -n "$PDF_LAST_COMMIT" ] && [ -n "$CHOPRO_LAST_COMMIT" ]; then
+                # Compare commit timestamps to see which is newer
+                CHOPRO_TIME=$(git show --format="%ct" --no-patch "$CHOPRO_LAST_COMMIT")
+                PDF_TIME=$(git show --format="%ct" --no-patch "$PDF_LAST_COMMIT")
+                
+                if [ "$PDF_TIME" -ge "$CHOPRO_TIME" ]; then
+                  echo "  ✓ PDF ($PDF_LAST_COMMIT) is current - no generation needed"
+                  continue
+                else
+                  echo "  🔄 ChordPro ($CHOPRO_LAST_COMMIT) is newer than PDF ($PDF_LAST_COMMIT) - needs regeneration"
+                fi
               else
-                echo "  🔄 ChordPro ($CHOPRO_LAST_COMMIT) is newer than PDF ($PDF_LAST_COMMIT) - needs regeneration"
+                echo "  🔄 PDF exists in push but needs regeneration due to ChordPro changes"
               fi
             else
-              echo "  🔄 PDF exists in push but needs regeneration due to ChordPro changes"
+              echo "  ➕ No PDF exists - needs generation"
             fi
-          else
-            echo "  ➕ No PDF exists - needs generation"
-          fi
+            
+            # Add to list of PDFs that need generation
+            if [ -z "$PDFS_NEEDED" ]; then
+              PDFS_NEEDED="$chopro_file"
+            else
+              PDFS_NEEDED="$PDFS_NEEDED"$'\n'"$chopro_file"
+            fi
+          done < /tmp/changed_chopro.txt
+        fi
+        
+        # Process renamed ChordPro files
+        if [ -n "$RENAMED_CHOPRO_STATUS" ]; then
+          echo "📝 Renamed ChordPro files:"
+          echo "$RENAMED_CHOPRO_STATUS"
           
-          # Add to list of PDFs that need generation
-          if [ -z "$PDFS_NEEDED" ]; then
-            PDFS_NEEDED="$chopro_file"
-          else
-            PDFS_NEEDED="$PDFS_NEEDED"$'\n'"$chopro_file"
-          fi
-        done < /tmp/changed_chopro.txt
+          while IFS=$'\t' read -r status old_name new_name; do
+            old_pdf="${old_name%.*}.pdf"
+            echo "  🗑️ Will delete old PDF: $old_pdf"
+            echo "$old_pdf" >> /tmp/old_pdfs_to_delete.txt
+            
+            if [ -f "$new_name" ]; then
+              echo "  ➕ Will generate new PDF: ${new_name%.*}.pdf"
+              if [ -z "$PDFS_NEEDED" ]; then
+                PDFS_NEEDED="$new_name"
+              else
+                PDFS_NEEDED="$PDFS_NEEDED"$'\n'"$new_name"
+              fi
+            fi
+          done <<< "$RENAMED_CHOPRO_STATUS"
+          
+          echo "has_deletions=true" >> $GITHUB_OUTPUT
+        else
+          echo "has_deletions=false" >> $GITHUB_OUTPUT
+        fi
         
         if [ -z "$PDFS_NEEDED" ]; then
           echo "ℹ️ All PDFs are current - no generation needed"
@@ -112,6 +144,24 @@ jobs:
           echo "need_pdfs=true" >> $GITHUB_OUTPUT
         fi
     
+    - name: Delete old PDFs for renamed ChordPro files
+      if: steps.check-pdfs.outputs.has_deletions == 'true'
+      run: |
+        echo "🗑️ Deleting old PDFs for renamed ChordPro files..."
+        git config --local user.email "action@github.com"
+        git config --local user.name "PDF Generator Action"
+        while IFS= read -r old_pdf; do
+          if [ -z "$old_pdf" ]; then
+            continue
+          fi
+          if [ -f "$old_pdf" ]; then
+            echo "  🗑️ Deleting: $old_pdf"
+            git rm "$old_pdf"
+          else
+            echo "  ⚠️ Old PDF not found (already absent): $old_pdf"
+          fi
+        done < /tmp/old_pdfs_to_delete.txt
+
     - name: Install ChordPro and dependencies
       if: steps.check-pdfs.outputs.need_pdfs == 'true'
       run: |
@@ -181,30 +231,44 @@ jobs:
     
     - name: Commit generated PDFs
       run: |
-        # Configure git
+        # Configure git (may already be set from delete step, harmless to repeat)
         git config --local user.email "action@github.com"
         git config --local user.name "PDF Generator Action"
         
         # Check if there are any staged files
         if git diff --cached --quiet; then
-          echo "ℹ️ No PDFs were generated"
+          echo "ℹ️ No PDF changes to commit"
           exit 0
         fi
         
-        # Count staged PDF files
-        STAGED_PDFS=$(git diff --cached --name-only | grep '\.pdf$' | wc -l)
-        echo "📊 Generated $STAGED_PDFS PDF(s)"
+        # Count generated and deleted PDFs separately
+        GENERATED_PDFS=$(git diff --cached --name-only --diff-filter=A | grep '\.pdf$' | wc -l)
+        UPDATED_PDFS=$(git diff --cached --name-only --diff-filter=M | grep '\.pdf$' | wc -l)
+        DELETED_PDFS=$(git diff --cached --name-only --diff-filter=D | grep '\.pdf$' | wc -l)
+        TOTAL_GENERATED=$((GENERATED_PDFS + UPDATED_PDFS))
         
-        # Create commit message with generated PDF list
-        PDF_LIST=$(git diff --cached --name-only | grep '\.pdf$' | sed 's/^/- /' | tr '\n' ' ')
+        # Build commit message parts
+        MSG_PARTS=""
+        if [ "$TOTAL_GENERATED" -gt 0 ]; then
+          PDF_LIST=$(git diff --cached --name-only --diff-filter=AM | grep '\.pdf$' | sed 's/^/- /' | tr '\n' ' ')
+          MSG_PARTS="Generated $TOTAL_GENERATED PDF(s): $PDF_LIST"
+        fi
+        if [ "$DELETED_PDFS" -gt 0 ]; then
+          DEL_LIST=$(git diff --cached --name-only --diff-filter=D | grep '\.pdf$' | sed 's/^/- /' | tr '\n' ' ')
+          if [ -n "$MSG_PARTS" ]; then
+            MSG_PARTS="$MSG_PARTS | Deleted $DELETED_PDFS PDF(s): $DEL_LIST"
+          else
+            MSG_PARTS="Deleted $DELETED_PDFS PDF(s): $DEL_LIST"
+          fi
+        fi
         
-        # Commit the generated PDFs
-        git commit -m "🎵 Auto-generate PDFs from ChordPro files - Generated $STAGED_PDFS PDF(s): $PDF_LIST [skip ci]"
+        # Commit
+        git commit -m "🎵 Auto-generate PDFs from ChordPro files - $MSG_PARTS [skip ci]"
         
         # Push back to repository
         git push origin ${{ github.ref_name }}
         
-        echo "✅ Generated PDFs committed and pushed"
+        echo "✅ PDF changes committed and pushed"
     
     - name: Trigger Pages deployment
       if: success()

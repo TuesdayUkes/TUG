@@ -1,37 +1,34 @@
 {title: From the Morning}
 {artist: Nick Drake}
 
-# Simplified ukulele arrangement (not the original guitar voicings)
+{define: DaddG frets 0 2 2 0}
+{define: A7sus4 frets 0 1 0 0}
+# Ukulele group practice sheet standard G-C-E-A tuning
 
-# Chords: C (0003)  G (0232)  Am (2000)  F (2010)
+# Chord diagrams: strings left to right GCE A; filled dots = fret, o = open string.
 
-# Suggested strum: Down, down-up, up-down-up (slow and gentle)
+# Practice adaptation - chord-change timing NOT verified against Matt Stead's tutorial.
 
 Verse 1
-[C]A day once dawned, and it was [G]beautiful
-[Am]A day once dawned from the [F]ground
-[C]Then the night she [G]fell
-[Am]And the air was [F]beautiful
-[C]The night she [G]fell all a[C]round
+[DaddG]A day once [G]dawned, and it was [DaddG]beautiful [G]
+[DaddG]A day once [G]dawned from the [A7sus4]ground [A7]
+[DaddG]Then the night she [G]fell, and the [DaddG]air was beautiful [G]
+[DaddG]The night she [G]fell all a[DaddG]round [G]
 
 Refrain
-[F]So look, see the [C]days
-The [G]endless coloured [Am]ways
-[F]Go play the [G]game that you [C]learnt
-From the [C]morning
+[DaddG]So look, see the [A7sus4]days [A7]
+[G]The endless coloured [DaddG]ways [G]
+[DaddG]Go play the [G]game that you [A7sus4]learnt [A7]
+From the [DaddG]morning [G]
 
 Verse 2
-[C]And now we [G]rise
-[Am]And we are [F]everywhere
-[C]And now we [G]rise from the [C]ground
-[C]And see she [G]flies
-[Am]She is [F]everywhere
-[C]See she [G]flies all a[C]round
+[DaddG]And now we [G]rise, and we are [DaddG]everywhere [G]
+[DaddG]And now we [G]rise from the [A7sus4]ground [A7]
+[DaddG]And see she [G]flies, she is [DaddG]everywhere [G]
+[DaddG]See she [G]flies all a[DaddG]round [G]
 
 Refrain
-[F]So look, see the [C]sights
-The [G]endless summer [Am]nights
-[F]And go play the [G]game that you [C]learnt
-From the [C]mornin'
-
-# Tip: Start with one gentle down-strum per chord, then add the strum pattern.
+[DaddG]So look, see the [A7sus4]sights [A7]
+[G]The endless summer [DaddG]nights [G]
+[DaddG]And go play the [G]game that you [A7sus4]learnt [A7]
+From the [DaddG]morning [G]

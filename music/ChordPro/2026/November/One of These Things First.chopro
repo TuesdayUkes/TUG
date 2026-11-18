@@ -1,0 +1,86 @@
+{title: One of These Things First}
+{subtitle: Nick Drake}
+{comment: Soprano ukulele (GCEA) | Key of D - lower for alto voice}
+
+{define: D frets 2 2 2 0}
+{define: Em7 frets 0 2 0 2}
+{define: F#m frets 2 1 2 0}
+{define: Em frets 0 4 3 2}
+{define: G frets 0 2 3 2}
+{define: F frets 2 0 1 0}
+
+{comment: INTRO (4x)}
+ [D] | [Em7] | [F#m] | [D] | [Em7]
+
+{comment: VERSE 1}
+[Em7]I could have been a [F#m]sailor
+[Em7]Could have been a [D]cook
+[Em7]I could have been a [F#m]lover
+[Em7]Could have been a [D]book
+[Em7]I could have been a [F#m]signpost
+[Em7]Could have been a [G]clock
+[F]As simple as a [Em]kettle
+[D]Steady as a [Em7]rock
+[F#m]I could be
+[Em7]Here and [D]now
+[Em7] [F#m] [Em7]
+[F]I would be, I should [Em]be
+[D]But [Em7]how? [F#m] [Em7]
+
+{comment: CHORUS}
+[G]I could have been [Em]
+[D]One of these things [Em7]first [F#m]
+[Em7]I could have been [G]
+[Em]One of these things [D]first [Em7] [F#m] [Em7]
+
+{comment: INTRO / INTERLUDE: }
+ [D] | [Em7] | [F#m] | [D] | [Em7]
+
+{comment: VERSE 2}
+[Em7]I could have been your [F#m]pillar
+[Em7]Could have been your [D]door
+[Em7]I could have stayed [F#m]beside you
+[Em7]Could have stayed for [D]more
+[Em7]I could have been your [F#m]statue
+[Em7]Could have been your [G]friend
+[F]A whole long [Em]lifetime
+[D]Could have been the [Em7]end
+[F#m]I could be
+[Em7]Yours so [D]true
+[Em7] [F#m] [Em7]
+[F]I would be
+[Em]I should be
+[D]Through and [Em7]through [F#m] [Em7]
+
+{comment: CHORUS}
+[G]I could have been [Em]
+[D]One of these things [Em7]first [F#m] [Em7]
+[G]I could have been [Em]
+[D]One of these things [Em7]first [F#m]
+
+{comment: INSTRUMENTAL}
+[D] | [Em7] | [F#m] | [D] | [Em7]
+[F] | [Em] | [D] | [Em7] | [F#m] | [Em7]
+
+{comment: VERSE 3}
+[Em7]I could have been a [F#m]whistle
+[Em7]Could have been a [D]flute
+[Em7]A real live [F#m]giver
+[Em7]Could have been a [D]boot
+[Em7]I could have been a [F#m]signpost
+[Em7]Could have been a [G]clock
+[F]As simple as a [Em]kettle
+[D]Steady as a [Em7]rock
+
+{comment: CHORUS 2}
+[F]I could be
+[Em]Even [D]here [Em7] [F#m] [Em7]
+[F]I would be, I should [Em]be
+[D]So [Em7]near [F#m]
+[G]I could have been [Em]
+[D]One of these things [Em7]first [F#m]
+[G]I could have been [Em]
+[D]One of these things [Em7]first [F#m]
+
+{comment: OUTRO}
+[G] | [Em] | [D] | [Em7] | [F#m] | [D] | [Em7] | [D]

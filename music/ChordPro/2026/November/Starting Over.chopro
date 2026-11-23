@@ -1,6 +1,6 @@
 {title: Starting Over}
 {subtitle:  Writers: Chris Stapleton & Mike Hobson / Artist: Chris Stapleton (2020)}
-{define: Gsus4 frets 0 2 2 3}
+{define: Gsus4 frets 0 2 3 3}
 {define: Cadd9 frets 0 2 0 3}
 {define: Dsus2 frets 2 2 0 0}
 
@@ -63,7 +63,7 @@ Starting [Cmaj7]  over      [Cmaj7]-[C]    [Cmaj7]    [Cmaj7]-[C]
 [Am]    [Em]    [D]   [D]-[Dsus2]   
 [D]-[Dsus2]    [D]-[Dsus2]
 
-{comment: Chorus}
+{comment: Chorus 3}
 [Em7] It don't [D] matter to [G] me
 Wherever we [Cadd9] are is where I [D] wanna be [G]
 And [Em7] Honey, for [D] once in our [G] life
@@ -77,4 +77,87 @@ Starting [Cmaj7]  over      [Cmaj7]-[C]    [Cmaj7]    [Cmaj7]-[C]
 [Cmaj7] hoooooo  [Cmaj7]-[C]    [Cmaj7]    [Cmaj7]-[C] 
 [G] Ooooooooo [G] ooooooooo [G] ooooooooo [G] ooo-hoo-hoo
 [Cmaj7] hoooooo  [Cmaj7]-[C]    [Cmaj7]    [Cmaj7]-[C] 
+[G][*/ (hold)]
+
+
+
+
+
+
+
+
+
+-------------------------------------------------
+| See simplified version on next page |
+-------------------------------------------------
+
+{new_page}
+
+{comment: Intro}
+[G]              [G]               [G]              [G]
+[Cmaj7]     [Cmaj7]      [Cmaj7]     [Cmaj7]
+[G]              [G]               [G]              [G]
+[Cmaj7]     [Cmaj7]      [Cmaj7]     [Cmaj7]  
+
+{comment: Verse 1}
+Well, the [G] road rolls out like a welcome mat   [G]   [G] 
+To a [Cmaj7] better place than the one we're at   [Cmaj7]   [Cmaj7]
+And [D] I ain't got no kinda plan   [D]   [D]
+I've [C] had all of this town I can stand   [Cmaj7]   [Cmaj7]
+
+{comment: Verse 2}
+I [G] got friends out on the coast   [G]   [G]
+We can [Cmaj7] jump in the water and see what floats   [Cmaj7]   [Cmaj7]
+[D] We've been saving for a rainy day   [D]   [D]
+Let's [C] beat the storm and be on our way   [Cmaj7]    [Cmaj7]
+
+{comment: Chorus 1}
+[Em7] It don't [D] matter to [G] me
+Wherever we [Cadd9] are is where I [D] wanna be [G]
+And [Em7] Honey, for [D] once in our [G] life
+Let's take our [Cadd9] chances and [D] roll the dice [G]
+[D] I can be your lucky penny,   [Cadd9] you can be my four-leaf [Cadd9] clover
+Starting [G] over   [G]   [G]   [G]
+[Cmaj7]   [Cmaj7]   [Cmaj7]   [Cmaj7]
+
+{comment: Verse 3}
+This [G] might not be an easy time   [G]   [G]
+There's [Cmaj7] rivers to cross and hills to climb   [Cmaj7]   [Cmaj7]
+[D] Some days we might fall apart   [D]   [D]
+And [C] some nights might feel cold and dark   [Cmaj7]   [Cmaj7]
+
+{comment: Verse 4}
+When no-[G]body wins afraid of losing  [G]   [G] 
+And the [Cmaj7] hard roads are the ones worth choosing   [Cmaj7]   [Cmaj7]
+[D] Some days we'll look back and smile   [D]   [D]
+And [C] know it was worth every   [Cmaj7]   [Cmaj7]
+
+{comment: Chorus 2}
+[Em7] It don't [D] matter to [G] me
+Wherever we [Cadd9] are is where I [D] wanna be [G]
+And [Em7] Honey, for [D] once in our [G] life
+Let's take our [Cadd9] chances and [D] roll the dice [G]
+[D] I can be your lucky penny,   [Cadd9] you can be my four-leaf [Cadd9] clover
+Starting [G] over   [G]   [G]   [G] 
+Starting [Cmaj7]  over   [Cmaj7]   [Cmaj7]   [Cmaj7]
+
+{comment: Bridge}
+[Am]    [Em]    [G]   [G]
+[Am]    [Em]    [D]   [D]  
+[D]       [D]
+
+{comment: Chorus 3}
+[Em7] It don't [D] matter to [G] me
+Wherever we [Cadd9] are is where I [D] wanna be [G]
+And [Em7] Honey, for [D] once in our [G] life
+Let's take our [Cadd9] chances and [D] roll the dice [G]
+[D] I can be your lucky penny,   [Cadd9] you can be my four-leaf [Cadd9] clover
+Starting [G] over   [G]   [G]   [G] 
+Starting [Cmaj7]  over   [Cmaj7]   [Cmaj7]   [Cmaj7]
+
+{comment: Ending}
+[G] Ooooooooo [G] ooooooooo [G] ooooooooo [G] ooo-hoo-hoo
+[Cmaj7] hoooooo  [Cmaj7]   [Cmaj7]   [Cmaj7]
+[G] Ooooooooo [G] ooooooooo [G] ooooooooo [G] ooo-hoo-hoo
+[Cmaj7] hoooooo  [Cmaj7]   [Cmaj7]   [Cmaj7]
 [G][*/ (hold)]

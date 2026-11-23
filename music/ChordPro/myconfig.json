@@ -413,5 +413,17 @@
 	    },
 	},
     },
+
+  "parser": {
+    "preprocess": {
+      "songline": [
+        {
+          "pattern": "^/?&([a-zA-Z0-9#]+)/?:\\s*(.*)$",
+          "replace": "<span color=\"$1\">$2</span>"
+        }
+      ]
+    }
+  }
+
 }
 // End of config.

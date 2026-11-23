@@ -4,6 +4,10 @@
 {define: Cadd9 frets 0 2 0 3}
 {define: Dsus2 frets 2 2 0 0}
 
+{comment: Suggested strums: }
+{comment: - Measures with 1 chord: (d- du du du)}
+{comment: - Measures with 2 chords separated by "-" : (d- du -u du) with chord changes is on the first "u"}
+
 {comment: Intro}
 [G]              [G]-[Gsus4]               [G]              [G]-[Gsus4]
 [Cmaj7]     [Cmaj7]-[C]               [Cmaj7]     [Cmaj7]-[C] 
@@ -11,37 +15,37 @@
 [Cmaj7]     [Cmaj7]-[C]               [Cmaj7]     [Cmaj7]-[C]  
 
 {comment: Verse 1}
-Well, the [G] road rolls out like a welcome mat       [G]-[Gsus4]   [G] 
-To a [Cmaj7] better place than the one we're at    [Cmaj7]-[C]   [Cmaj7]
-And [D] I ain't got no kinda plan                               [D]-[Dsus2]   [D]-[Dsus2] 
-I've [C] had all of this town I can stand                    [Cmaj7]          [Cmaj7]
+Well, the [G] road rolls out like a welcome mat       [G]-[Gsus4]    [G] 
+To a [Cmaj7] better place than the one we're at    [Cmaj7]-[C]    [Cmaj7]
+And [D] I ain't got no kinda plan                               [D]-[Dsus2]     [D]-[Dsus2] 
+I've [C] had all of this town I can stand                    [C]-[Cmaj7]     [Cmaj7]
 
 {comment: Verse 2}
-I [G] got friends out on the coast                                           [G]-[Gsus4]   [G]
-We can [Cmaj7] jump in the water and see what floats     [Cmaj7]-[C]   [Cmaj7]
-[D] We've been saving for a rainy day                                  [D]-[Dsus2]   [D]-[Dsus2]
-Let's [C] beat the storm and be on our way                         [Cmaj7]         [Cmaj7]
+I [G] got friends out on the coast                                           [G]-[Gsus4]    [G]
+We can [Cmaj7] jump in the water and see what floats     [Cmaj7]-[C]    [Cmaj7]
+[D] We've been saving for a rainy day                                  [D]-[Dsus2]    [D]-[Dsus2]
+Let's [C] beat the storm and be on our way                         [C]-[Cmaj7]    [Cmaj7]
 
 {comment: Chorus 1}
 [Em7] It don't [D] matter to [G] me
 Wherever we [Cadd9] are is where I [D] wanna be [G]
 And [Em7] Honey, for [D] once in our [G] life
 Let's take our [Cadd9] chances and [D] roll the dice [G]
-[D] I can be your lucky penny,   [Cadd9] you can be my four-leaf clover
+[D] I can be your lucky penny,   [Cadd9] you can be my four-leaf [Cadd9] clover
 Starting [G] over                [G]-[Gsus4]   [G]    [G]-[Gsus4]
 [Cmaj7]     [Cmaj7]-[C]     [Cmaj7]     [Cmaj7]-[C]
 
 {comment: Verse 3}
-This [G] might not be an easy time                                [G]-[Gsus4]   [G]  
-There's [Cmaj7] rivers to cross and hills to climb        [Cmaj7]-[C]   [Cmaj7]
-[D] Some days we might fall apart                                 [D]-[Dsus2]   [D]-[Dsus2]
-And [C] some nights might feel cold and dark              [Cmaj7]          [Cmaj7]
+This [G] might not be an easy time                                [G]-[Gsus4]    [G]  
+There's [Cmaj7] rivers to cross and hills to climb        [Cmaj7]-[C]    [Cmaj7]
+[D] Some days we might fall apart                                 [D]-[Dsus2]    [D]-[Dsus2]
+And [C] some nights might feel cold and dark              [C]-[Cmaj7]    [Cmaj7]
 
 {comment: Verse 4}
-When no-[G]body wins afraid of losing                                     [G]-[Gsus4]   [G]  
-And the [Cmaj7] hard roads are the ones worth choosing      [Cmaj7]-[C]   [Cmaj7]
-[D] Some days we'll look back and smile                                 [D]-[Dsus2]   [D]-[Dsus2]
-And [C] know it was worth every mile                                        [Cmaj7]          [Cmaj7]
+When no-[G]body wins afraid of losing                                      [G]-[Gsus4]    [G]  
+And the [Cmaj7] hard roads are the ones worth choosing      [Cmaj7]-[C]    [Cmaj7]
+[D] Some days we'll look back and smile                                  [D]-[Dsus2]    [D]-[Dsus2]
+And [C] know it was worth every mile                                        [C]-[Cmaj7]     [Cmaj7]
 
 {new_page}
 
@@ -50,13 +54,14 @@ And [C] know it was worth every mile                                        [Cma
 Wherever we [Cadd9] are is where I [D]wanna be [G]
 And [Em7] Honey, for [D] once in our [G] life
 Let's take our [Cadd9] chances and [D] roll the dice [G]
-[D] I can be your lucky penny, [Cadd9] you can be my four-leaf clover
+[D] I can be your lucky penny, [Cadd9] you can be my four-leaf [Cadd9] clover
 Starting [G] over                [G]-[Gsus4]   [G]    [G]-[Gsus4] 
 Starting [Cmaj7]  over      [Cmaj7]-[C]    [Cmaj7]    [Cmaj7]-[C]  
 
 {comment: Bridge}
 [Am]    [Em]    [G]   [G]
-[Am]    [Em]    [D]   [D]-[Dsus2]   [D]-[Dsus2]   [D]-[Dsus2]
+[Am]    [Em]    [D]   [D]-[Dsus2]   
+[D]-[Dsus2]    [D]-[Dsus2]
 
 {comment: Chorus}
 [Em7] It don't [D] matter to [G] me

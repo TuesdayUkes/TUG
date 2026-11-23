@@ -19,23 +19,42 @@ def update_v_timestamps_in_content(content):
     Update v= timestamps in URLs within content.
     Only updates URLs that contain .pdf and have v= parameters.
     """
-    # Pattern to match URLs with v= parameters (focusing on PDF links)
-    pattern = r'(href="[^"]*\.pdf\?v=)([^"]*)"'
-    
+    # Match PDF hrefs as a whole so query parameters and fragments after v= survive.
+    pattern = r'href="([^"]*\.pdf(?:\?[^"#]*)?(?:#[^"]*)?)"'
+
     new_timestamp = generate_timestamp()
     updated_count = 0
     
     def replace_timestamp(match):
         nonlocal updated_count
-        url_start = match.group(1)  # Everything up to and including "v="
-        old_timestamp = match.group(2)  # The old timestamp
-        
+        href = match.group(1)
+        url, separator, fragment = href.partition('#')
+        path, query_separator, query = url.partition('?')
+        if not query_separator or not path.lower().endswith('.pdf'):
+            return match.group(0)
+
+        parameters = query.split('&')
+        timestamp_indexes = [
+            index for index, parameter in enumerate(parameters)
+            if parameter.partition('=')[0] == 'v'
+            and parameter.partition('=')[1]
+        ]
+        if not timestamp_indexes:
+            return match.group(0)
+
+        old_timestamp = parameters[timestamp_indexes[0]].partition('=')[2]
+        for index in timestamp_indexes:
+            parameters[index] = f'v={new_timestamp}'
+
         print(f"  Updating: {old_timestamp} -> {new_timestamp}")
         updated_count += 1
-        return f'{url_start}{new_timestamp}"'
+        updated_href = f'{path}?{"&".join(parameters)}'
+        if separator:
+            updated_href += f'#{fragment}'
+        return f'href="{updated_href}"'
     
     # Replace all v= timestamps in PDF URLs
-    updated_content = re.sub(pattern, replace_timestamp, content)
+    updated_content = re.sub(pattern, replace_timestamp, content, flags=re.IGNORECASE)
     
     return updated_content, updated_count
 

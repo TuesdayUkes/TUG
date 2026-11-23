@@ -16,6 +16,7 @@ Behavior (implements the skill rules):
 import argparse
 from bs4 import BeautifulSoup
 from pathlib import Path
+from datetime import datetime
 import re
 import sys
 from typing import Optional, Dict
@@ -214,6 +215,17 @@ def make_valid_href(href: str) -> str:
     return urlunsplit((parts.scheme, parts.netloc, path, query, fragment))
 
 
+def add_cache_busting_timestamp(href: str, timestamp: str) -> str:
+    """Add or replace the v= cache-busting parameter on a PDF link."""
+    parts = urlsplit(make_valid_href(href))
+    if not parts.path.lower().endswith('.pdf'):
+        return href
+
+    query = [f'v={timestamp}']
+    query.extend(item for item in parts.query.split('&') if item and item.partition('=')[0] != 'v')
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, '&'.join(query), parts.fragment))
+
+
 def row_to_tag(soup, row):
     tr = soup.new_tag('tr')
     td1 = soup.new_tag('td')
@@ -293,6 +305,7 @@ def main():
         print('No song titles provided after filtering connectors like "and".')
         sys.exit(1)
 
+    cache_busting_timestamp = datetime.now().strftime('%Y.%m.%d.%H.%M.%S')
     index_path = Path(args.index)
     if not index_path.exists():
         print('index.html not found at', index_path)
@@ -346,7 +359,7 @@ def main():
             existing_row = rows.pop(existing_idx)
             # update metadata if newly discovered
             if not existing_row.get('pdf') and pdf:
-                existing_row['pdf'] = pdf
+                existing_row['pdf'] = add_cache_busting_timestamp(pdf, cache_busting_timestamp)
             if not existing_row.get('recording') and rec:
                 existing_row['recording'] = rec
 
@@ -364,7 +377,8 @@ def main():
                     break
         else:
             # insert new row following round-order rules
-            rows = insert_submission(rows, args.submitter, title, pdf)
+            pdf_link = add_cache_busting_timestamp(pdf, cache_busting_timestamp) if pdf else ''
+            rows = insert_submission(rows, args.submitter, title, pdf_link)
             # if pdf was found, replace the displayed title with the file stem
             if pdf:
                 ft = file_title_from_href(pdf)
@@ -395,7 +409,7 @@ def main():
         if not r.get('pdf'):
             pdf_candidate = find_best_file(r['title'])
             if pdf_candidate:
-                r['pdf'] = pdf_candidate
+                r['pdf'] = add_cache_busting_timestamp(pdf_candidate, cache_busting_timestamp)
                 # update displayed title to file stem
                 ft = file_title_from_href(pdf_candidate)
                 if ft:

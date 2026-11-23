@@ -35,6 +35,7 @@ Options
 Behavior / Key points
 ---------------------
 - Searches `music/` recursively for matching PDF files (preferred) or `.chopro` files; matching is fuzzy (title words must appear in the filename).
+- Adds or refreshes a `v=YYYY.MM.DD.HH.MM.SS` cache-busting parameter on PDF links newly added by the script; existing PDF links are preserved. The parameter format is compatible with `update_timestamps.py`, which preserves any other query parameters and fragments when refreshing it.
 - Preserves existing metadata in the table: any PDF hrefs and YouTube "Most recent recording" anchors found in the table are preserved.
 - Only YouTube links (anchors containing `youtu`/`youtube.com`) are considered valid recordings.
 - A `<br>` is inserted before any recording link so the recording appears on its own line in the same cell as the PDF.
